@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion"
 import { CalendarDays, FileText, FileCheck, UserCheck } from 'lucide-react'
+import { Button } from "./ui/button"
+import Link from "next/link"
 
 const timelineData = [
   {
@@ -91,6 +93,14 @@ export function Dates() {
         </div>
       </div>
     </div>
+        <Link href={'/schedule'} className="width-full bg-black">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 border-black py-4 border-2">
+      <div className="text-center font-mono text-3xl">
+      Schedule
+      </div >
+
+    </div>
+        </Link>
     </div>
           </>
   )

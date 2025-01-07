@@ -46,6 +46,11 @@ const paperItems = [
     href: "/mode-of-presentation",
     description: "Learn about different presentation modes",
   },
+  {
+    title: "Schedule",
+    href: "/schedule",
+    description: "Learn about all day schedule",
+  },
 ]
 
 const ListItem = React.forwardRef(({ className, title, children, ...props }, ref) => {
@@ -120,6 +125,12 @@ export function Navbar() {
           >
             Venue
           </Link>
+          {/* <Link
+            href="/schedule"
+            className="text-sm font-medium transition-colors hover:text-primary"
+          >
+            schedule
+          </Link> */}
         </div>
 
         {/* Center Logo */}

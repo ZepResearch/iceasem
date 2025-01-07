@@ -68,7 +68,69 @@ const packages = [
 
 export default function PricingPage() {
   const [billingType, setBillingType] = useState('standard')
-
+  
+    const [isLoading, setIsLoading] = useState(null)
+    const host = process.env.NEXT_PUBLIC_APP_URL
+  
+    const generateOrderId = () => {
+      return `SPO${Date.now()}${Math.floor(Math.random() * 1000)}`
+    }
+  
+    const initiateCCavenuePayment = async (packageName, amount) => {
+      try {
+        setIsLoading(packageName)
+  
+        const paymentData = {
+          merchant_id: process.env.NEXT_PUBLIC_CCAVENUE_MERCHANT_ID,
+          order_id: generateOrderId(),
+          amount: amount.toString(),
+          currency: "USD",
+          redirect_url: `${host}/api/ccavenue/handle`,
+          cancel_url: `${host}/api/ccavenue/handle`,
+          language: "EN"
+        }
+  
+        const response = await fetch("/api/ccavenue/encrypt", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(paymentData),
+        })
+  
+        if (!response.ok) {
+          throw new Error("Failed to encrypt order data")
+        }
+  
+        const { encRequest } = await response.json()
+  
+        const form = document.createElement("form")
+        form.method = "POST"
+        form.action = "https://secure.ccavenue.com/transaction/transaction.do?command=initiateTransaction"
+  
+        const fields = {
+          encRequest,
+          access_code: process.env.NEXT_PUBLIC_CCAVENUE_ACCESS_CODE,
+          merchant_id: process.env.NEXT_PUBLIC_CCAVENUE_MERCHANT_ID,
+        }
+  
+        Object.entries(fields).forEach(([key, value]) => {
+          const input = document.createElement("input")
+          input.type = "hidden"
+          input.name = key
+          input.value = value
+          form.appendChild(input)
+        })
+  
+        document.body.appendChild(form)
+        form.submit()
+      } catch (error) {
+        console.error("Payment initiation failed:", error)
+        alert("Failed to initiate payment. Please try again.")
+      } finally {
+        setIsLoading(null)
+      }
+    } 
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -96,29 +158,6 @@ export default function PricingPage() {
             Conference Sponsorship Packages
           </motion.h1>
           
-          {/* <div className="inline-flex rounded-lg bg-[#0F172A] p-1">
-            <button
-              onClick={() => setBillingType('standard')}
-              className={`px-4 py-2 text-sm rounded-md ${
-                billingType === 'standard'
-                  ? 'bg-white text-[#0F172A]'
-                  : 'text-white'
-              }`}
-            >
-              Standard Rate
-            </button>
-            <button
-              onClick={() => setBillingType('early')}
-              className={`px-4 py-2 text-sm rounded-md ${
-                billingType === 'early'
-                  ? 'bg-white text-[#0F172A]'
-                  : 'text-white'
-              }`}
-            >
-              Early Bird
-            </button>
-          </div> */}
-
           <motion.div 
             variants={container}
             initial="hidden"
@@ -150,21 +189,22 @@ export default function PricingPage() {
                           ? 'bg-gradient-to-br from-[#c5e167] to-[#a4d8b4] hover:bg-[#4ADE80]/90 text-[#0F172A]' 
                           : 'bg-[#0F172A] hover:bg-[#0F172A]/90 text-white'
                       }`}
+                      onClick={() => initiateCCavenuePayment(pkg.name, pkg.price)}
+                      disabled={isLoading === pkg.name}
                     >
-                      Become a Sponsor
+                      {isLoading === pkg.name ? 'Processing...' : 'Become a Sponsor'}
                     </Button>
                     <Link href="/contact">
-                    <Button
-                   
-                      variant="outline" 
-                      className={`w-full mt-2 ${
-                        pkg.isPopular 
-                          ? 'border-white text-black hover:bg-white/10 hover:text-white' 
-                          : 'border-[#0F172A]  hover:bg-[#0F172A]/10'
-                      }`}
-                    >
-                      Contact Us
-                    </Button>
+                      <Button
+                        variant="outline" 
+                        className={`w-full mt-2 ${
+                          pkg.isPopular 
+                            ? 'border-white text-black hover:bg-white/10 hover:text-white' 
+                            : 'border-[#0F172A] hover:bg-[#0F172A]/10'
+                        }`}
+                      >
+                        Contact Us
+                      </Button>
                     </Link>
                     <div className="pt-6">
                       <p className={`text-sm font-medium mb-4 ${

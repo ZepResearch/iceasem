@@ -28,9 +28,9 @@ const quickLinks = [
 ]
 
 const legalLinks = [
-  { name: "Terms & Conditions", href: "/terms" },
-  { name: "Cancellation Policy", href: "/cancellation" },
-  { name: "Privacy Policy", href: "/privacy" },
+  { name: "Terms & Conditions", href: "/terms-&-condition" },
+  { name: "Cancellation Policy", href: "/cancellation-policy" },
+  { name: "Privacy Policy", href: "/privacy-policy" },
 ]
 
 const socialLinks = [
@@ -189,20 +189,25 @@ export function Footer() {
                 variant="default" 
                 className="bg-[#ff9966] hover:bg-[#ff9966]/90 text-[#1d3c34] font-semibold px-6 py-3 rounded-full transition-colors duration-300"
               >
+              <Link href="/registration" >
                 Register Now
+              </Link>
               </Button>
               <div className="bg-white p-6 rounded-2xl shadow-lg space-y-4">
                 <span className="inline-block px-3 py-1 bg-[#ff9966]/20 text-[#ff9966] rounded-full text-xs font-medium">
                   Call for Papers
                 </span>
                 <h3 className="text-2xl font-bold text-[#1d3c34]">Submit your paper</h3>
+
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="bg-[#1d3c34] text-white px-6 py-3 rounded-full flex items-center justify-between w-full group transition-colors duration-300 hover:bg-[#1d3c34]/90"
                 >
+                <Link href="/submission" className="inline-flex">
                   <span className="font-semibold">Submit now</span>
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+                </Link>
                 </motion.button>
               </div>
             </motion.div>

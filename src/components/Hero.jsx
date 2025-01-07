@@ -30,7 +30,6 @@ export function Hero() {
               />
               */}
               <h1 className="mb-8 font-bold font-mono text-3xl inline-flex items-center"><MicroscopeIcon/>|ICASEM</h1>
-              <img src="https://res.cloudinary.com/dwlhesiyi/image/upload/v1729260387/erph7fml9unxiowlmrmg.png"/>
               <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-8 leading-tight">
               International Conference on {" "}
                 <span className="underline decoration-wavy decoration-green-500">
