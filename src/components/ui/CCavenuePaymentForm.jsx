@@ -4,8 +4,6 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 
-
-
 export function CCavenuePaymentForm({ isOpen, onClose, ticketName, amount, onSubmit }) {
   const [formData, setFormData] = useState({
     billing_email: '',
@@ -17,6 +15,10 @@ export function CCavenuePaymentForm({ isOpen, onClose, ticketName, amount, onSub
     billing_country: '',
     billing_tel: '',
   });
+
+  const TAX_RATE = 0.06; // 6% tax rate
+  const taxAmount = amount * TAX_RATE;
+  const totalAmount = amount + taxAmount;
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -72,9 +74,19 @@ export function CCavenuePaymentForm({ isOpen, onClose, ticketName, amount, onSub
             <Label htmlFor="billing_tel">Phone Number</Label>
             <Input id="billing_tel" name="billing_tel" type="tel" required onChange={handleChange} />
           </div>
-          <div className="mt-6">
-            <Label>Amount</Label>
-            <div className="text-2xl font-bold">${amount}</div>
+          <div className="mt-6 space-y-2">
+            <div className="flex justify-between">
+              <Label>Subtotal:</Label>
+              <div className="font-medium">${amount.toFixed(2)}</div>
+            </div>
+            <div className="flex justify-between">
+              <Label>Tax (6%):</Label>
+              <div className="font-medium">${taxAmount.toFixed(2)}</div>
+            </div>
+            <div className="flex justify-between pt-2 border-t">
+              <Label>Total Amount:</Label>
+              <div className="text-2xl font-bold">${totalAmount.toFixed(2)}</div>
+            </div>
           </div>
           <Button type="submit" className="w-full mt-6">Proceed to Payment</Button>
         </form>
@@ -82,4 +94,3 @@ export function CCavenuePaymentForm({ isOpen, onClose, ticketName, amount, onSub
     </Dialog>
   );
 }
-

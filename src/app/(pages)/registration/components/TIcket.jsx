@@ -58,11 +58,16 @@ export default function Ticket() {
     try {
       setIsLoading(selectedTicket.name);
 
+      const TAX_RATE = 0.06; // 6% tax rate
+      const subtotal = selectedTicket.price;
+      const taxAmount = subtotal * TAX_RATE;
+      const totalAmount = subtotal + taxAmount;
+
       const paymentData = {
         merchant_id: process.env.NEXT_PUBLIC_CCAVENUE_MERCHANT_ID,
         order_id: generateOrderId(),
         name: selectedTicket.name,
-        amount: selectedTicket.price.toString(),
+        amount: totalAmount.toFixed(2),
         currency: "USD",
         redirect_url: `${host}/api/ccavenue/handle`,
         cancel_url: `${host}/api/ccavenue/handle`,
