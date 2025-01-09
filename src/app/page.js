@@ -8,6 +8,7 @@ import { Hero } from "@/components/Hero";
 
 import Objective from "@/components/Objective";
 import SDGSection from "@/components/SDGS";
+import SpeakerSection from "@/components/Speakers";
 import Testimonial from "@/components/Testominial";
 
 import TicketCTA from "@/components/TicketCTA";
@@ -20,6 +21,7 @@ export default function Home() {
       <CoOrganizationLogos/>
       <About/>
       <Objective/>
+      <SpeakerSection/>
       <SDGSection/>
       <Dates/>
       <CTASection/>
