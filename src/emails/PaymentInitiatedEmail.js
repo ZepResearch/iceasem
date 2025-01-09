@@ -102,20 +102,27 @@ const PaymentInitiatedEmail = (data) => {
                   <p>Dear ${data.billing_name},</p>
                   <p>We're pleased to confirm that your payment has been initiated for the following order:</p>
                   <ul>
-                      <li><strong>Order ID:</strong> ${data.order_id}</li>
+                      <li><strong>Registration ID:</strong> ${data.order_id}</li>
+                      <li><strong>Name:</strong> ${data.billing_name}</li>
                       <li><strong>Amount:</strong> ${data.currency} ${data.amount}</li>
-                      <li><strong>Ticket:</strong> ${data.name}</li>
+                      <li><strong>Email:</strong> ${data.billing_email}</li>
+                      <li><strong>Number:</strong> ${data.billing_tel}</li>
+                      <li><strong>City:</strong> ${data.billing_city}</li>
+                      <li><strong>State:</strong> ${data.billing_state}</li>
+                      <li><strong>Zip Code:</strong> ${data.billing_zip}</li>
+                      <li><strong>Country:</strong> ${data.billing_country}</li>
+                      <li><strong>Billing Address:</strong> ${data.billing_address}</li>
+                      <li><strong>Registration Type:</strong> ${data.name}</li>
                   </ul>
                   <p>Please note that this email confirms that your payment process has started. You will receive another confirmation once the payment is successfully processed.</p>
                   <p>If you have any questions or concerns, please don't hesitate to contact our support team.</p>
                   <p>Thank you for your purchase!</p>
-                  <p>Best regards,<br>Your Event Team</p>
-                  <a href="#" class="button">View Order Details</a>
+                  <p>Best regards,<br>ICASEM Team</p>
               </div>
           </div>
           <div class="footer">
               <p>This is an automated email. Please do not reply to this message.</p>
-              <p>&copy; 2023 Your Company Name. All rights reserved.</p>
+              <p>&copy; 2025 Zep Research. All rights reserved.</p>
           </div>
       </div>
   </body>
