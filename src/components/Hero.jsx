@@ -32,7 +32,7 @@ export function Hero() {
               <h1 className="mb-8 font-bold font-mono text-3xl inline-flex items-center"><MicroscopeIcon/>|ICASEM</h1>
               <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-8 leading-tight">
               International Conference on {" "}
-                <span className="underline decoration-wavy decoration-green-500">
+                <span className="">
                 Applied Science, Engineering & Management 
                 </span>{" "}
                
@@ -70,10 +70,10 @@ export function Hero() {
                   17+ Speakers of our  organization
                 </span>
               </div>
-              <div className="flex items-center gap-4 text-sm text-red-500 font-medium mt-4">
+              <div className="flex items-center gap-4 text-base  text-red-500 font-semibold mt-4">
                 <div className="flex items-center gap-2">
                   <Calendar className="h-4 w-4" />
-                  April 15-17, 2024
+                  April 2nd - 3rd, 2025
                 </div>
                 <div className="flex items-center gap-2 ">
                   <MapPin className="h-4 w-4" />

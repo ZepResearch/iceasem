@@ -28,11 +28,10 @@ export default function AboutUs() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-900 mb-4">
-                Welcome to the International Conference on Applied Science, Engineering & Management (ICASEM) in Vietnam. We are a premier platform dedicated to bringing together researchers, scientists, engineers, and managers from around the world to share their expertise and insights in the fields of applied science, engineering, and management.
+                Welcome to the International Conference on Applied Science, Engineering & Management (ICASEM), a distinguished academic platform designed to unite researchers, scientists, engineers, and professionals from across the globe. ICASEM serves as a catalyst for knowledge exchange, fostering innovation and collaboration in the rapidly evolving fields of applied science, engineering, and management.
                 </p>
                 <p className="text-gray-900">
-                Our mission is to foster collaboration, showcase cutting-edge research, and develop practical solutions to address the challenges in these rapidly evolving fields. Through presentations, workshops, and networking opportunities, we aim to inspire innovation and drive progress in applied science, engineering, and management. ICASEM is where theory meets practice, and ideas transform into impactful solutions.
-                </p>
+                Our conference showcases cutting-edge research and practical advancements, encouraging interdisciplinary dialogue and partnerships to address complex global challenges. By providing a dynamic environment for presentations, workshops, and networking, ICASEM supports academic excellence and professional growth, shaping the future of research and innovation in Vietnam and beyond.                </p>
               </CardContent>
             </Card>
           </motion.div>
@@ -81,12 +80,16 @@ export default function AboutUs() {
               <CardTitle className='text-3xl text-pretty font-medium underline  decoration-wavy decoration-green-500'>Our Mission</CardTitle>
               <CardDescription>Driving innovation and excellence in applied fields</CardDescription>
             </CardHeader>
-            <CardContent>
+            <CardContent className="text-sm">
               <p className="text-gray-900 mb-4">
-                The International Conference on Applied Science, Engineering & Management brings together experts, researchers, and industry professionals to address the most pressing challenges and opportunities in these fields.
+              <strong>What We Stand For:</strong> ICASEM advances applied science, engineering, and management by uniting global experts, fostering collaboration, and promoting innovative solutions to address practical challenges and drive progress across industries and communities.
+              </p>
+              <p className="text-gray-900 mb-4">
+              <strong>Our Commitment:</strong>We create opportunities for collaboration, showcase groundbreaking research, and exchange ideas to empower participants in addressing real-world challenges, driving transformative solutions, and enhancing the quality of life globally.
               </p>
               <p className="text-gray-900">
-                Our goal is to foster collaboration, share groundbreaking research, and develop practical strategies to advance applied science, engineering, and management practices across various sectors in Vietnam and internationally.
+              <strong>Shaping the Future:</strong>ICASEM bridges academia and industry, promoting impactful solutions to global challenges through research and innovation, inspiring progress, and supporting sustainable development to benefit society and industries worldwide.
+
               </p>
             </CardContent>
           </Card>

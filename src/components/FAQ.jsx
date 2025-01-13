@@ -104,7 +104,7 @@ export default function FAQ() {
               <div className="space-y-4 text-sm font-semibold">
                 <div className="flex items-end">
                   <Mail className="mr-2 text-primary" />
-                  <span>icasem@info.com</span>
+                  <span>submit@icasem.org                  </span>
                 </div>
                 <div className="flex items-end">
                   <Phone className="mr-2 text-primary" />
@@ -112,7 +112,7 @@ export default function FAQ() {
                 </div>
                 <div className="flex items-end">
                   <MapPin className="mr-2 text-primary" />
-                  <span>Conference Hall, University Campus, New Delhi - 110001, India</span>
+                  <span>[add detail address]</span>
                 </div>
               </div>
               <Link href={'/contact'}>

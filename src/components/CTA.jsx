@@ -113,7 +113,7 @@ export default function CTASection() {
           {/* Bottom Two Cards */}
           <div className="grid grid-cols-2 gap-6">
             <CTACard
-            href="/register"
+            href="/registration"
               title="Register"
               description="Adapt your strategies to maximize personal and professional success"
               color="bg-gradient-to-br from-blue-500 to-blue-600"
@@ -122,7 +122,7 @@ export default function CTASection() {
               pattern={patterns.register}
             />
             <CTACard
-               href="/about-zepresearch"
+               href="/about-organizers"
               title="About Organization"
               description="Gain confidence in your abilities and foment an empowered mindset"
               color="bg-gradient-to-br from-purple-500 to-purple-600"

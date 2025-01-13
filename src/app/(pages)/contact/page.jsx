@@ -154,7 +154,7 @@ export default function ContactUs() {
               <div className="space-y-2">
                 <div className="flex items-center">
                   <Mail className="mr-2 text-lime-700" />
-                  <span>info@wfcces.com</span>
+                  <span>submit@icasem.org                  </span>
                 </div>
                 <div className="flex items-center">
                   <Phone className="mr-2 text-lime-700" />
