@@ -37,7 +37,7 @@ export function Dates() {
           description: record.description,
           icon: iconMap[record.icon],
           align: index % 2 === 0 ? 'left' : 'right'
-        }))
+        })).reverse()
 
         setTimelineData(formattedData)
       } catch (error) {
@@ -51,12 +51,12 @@ export function Dates() {
   return (
     <>
       <div className="py-12">
-        <p className="mx-auto text-pretty text-center text-4xl font-medium tracking-tight text-gray-950 sm:text-5xl underline decoration-wavy decoration-green-500">
+        <p className="mx-auto text-pretty text-center text-4xl font-medium tracking-tight text-gray-950 sm:text-5xl ">
           Key Dates to Remember
         </p>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-l-2 border-r-2 border-black">
           <div className="relative">
-            <div className="space-y-12 md:space-y-24">
+            <div className="space-y-12 md:space-y-24 flex-col">
               {timelineData.map((item, index) => (
                 <motion.div
                   key={item.date}

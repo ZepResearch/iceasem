@@ -145,7 +145,7 @@ export default function ContactUs() {
         ]}
       /> */}
             <div>
-              <h2 className="text-3xl font-semibold  mb-4 underline underline-offset-4 decoration-wavy decoration-lime-500">
+              <h2 className="text-3xl font-semibold  mb-4 ">
                 Get in Touch
               </h2>
               <p className="text-muted-foreground mb-4">

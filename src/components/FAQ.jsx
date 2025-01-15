@@ -38,7 +38,7 @@ export default function FAQ() {
       <div className="mx-auto max-w-screen-2xl px-6 py-24">
         <div className="lg:grid lg:grid-cols-12 lg:gap-8">
           <div className="lg:col-span-5">
-            <h2 className="text-4xl sm:text-7xl font-medium text-pretty tracking-tight underline decoration-wavy decoration-green-500">
+            <h2 className="text-4xl sm:text-7xl font-medium text-pretty tracking-tight ">
               Frequently <br /> Asked <br />Questions
             </h2>
             <p className="mt-4 text-lg leading-7 dark:text-gray-200">

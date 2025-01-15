@@ -64,7 +64,7 @@ export default function AboutCompany() {
         <motion.div variants={itemVariants} className="mt-12 text-center pb-12">
           <Card className="bg-white/50 backdrop-blur-sm border-2 border-primary/20 inline-block">
             <CardHeader>
-              <CardTitle className="text-2xl font-bold text-primary underline  decoration-wavy decoration-green-500">Zep Research</CardTitle>
+              <CardTitle className="text-2xl font-bold text-primary ">Zep Research</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground px-12">
@@ -78,7 +78,7 @@ export default function AboutCompany() {
           <motion.div variants={itemVariants}>
             <Card className="h-full bg-white/50 backdrop-blur-sm border-2 border-primary/20">
               <CardHeader>
-                <CardTitle className="text-2xl font-bold text-primary underline  decoration-wavy decoration-green-500">Our Mission</CardTitle>
+                <CardTitle className="text-2xl font-bold text-primary ">Our Mission</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
@@ -91,7 +91,7 @@ export default function AboutCompany() {
           <motion.div variants={itemVariants}>
             <Card className="h-full bg-white/50 backdrop-blur-sm border-2 border-primary/20">
               <CardHeader>
-                <CardTitle className="text-2xl font-bold text-primary underline  decoration-wavy decoration-green-500">Conference Highlights</CardTitle>
+                <CardTitle className="text-2xl font-bold text-primary ">Conference Highlights</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="grid grid-cols-2 gap-4">

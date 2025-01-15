@@ -81,14 +81,14 @@ export default function SubmissionGuidelines() {
       initial="hidden"
       animate={controls}
       variants={containerVariants}
-      className="py-16 px-4 bg-lime-50"
+      className="py-16 px-4 "
     >
       <div className="max-w-4xl mx-auto">
         <motion.div variants={itemVariants} className="text-center mb-12">
           <Badge variant="outline" className="mb-4 text-lg px-4 py-1">
             ICASEM
           </Badge>
-          <h2 className="text-4xl font-bold text-primary mb-4 underline  decoration-wavy decoration-green-500">
+          <h2 className="text-4xl font-bold text-primary mb-4 ">
             Submission Guidelines
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">

@@ -23,7 +23,7 @@ export default function AboutUs() {
           >
             <Card>
               <CardHeader>
-                <CardTitle className='text-3xl text-pretty font-medium underline  decoration-wavy decoration-green-500'>About ICASEM</CardTitle>
+                <CardTitle className='text-3xl text-pretty font-bold '>About ICASEM</CardTitle>
                 <CardDescription>Advancing Knowledge and Innovation in Vietnam</CardDescription>
               </CardHeader>
               <CardContent>
@@ -60,7 +60,7 @@ export default function AboutUs() {
         >
           <Card className="max-w-3xl">
             <CardHeader>
-              <CardTitle className='text-3xl text-pretty font-medium underline  decoration-wavy decoration-green-500'>Join Us in Advancing Knowledge</CardTitle>
+              <CardTitle className='text-3xl text-pretty font-bold '>Join Us in Advancing Knowledge</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-gray-900 mb-4">
@@ -77,7 +77,7 @@ export default function AboutUs() {
           </Card>
           <Card className="max-w-3xl">
             <CardHeader>
-              <CardTitle className='text-3xl text-pretty font-medium underline  decoration-wavy decoration-green-500'>Our Mission</CardTitle>
+              <CardTitle className='text-3xl text-pretty font-bold '>Our Mission</CardTitle>
               <CardDescription>Driving innovation and excellence in applied fields</CardDescription>
             </CardHeader>
             <CardContent className="text-sm">
@@ -104,7 +104,7 @@ export default function AboutUs() {
         >
           <Card>
             <CardHeader>
-              <CardTitle className='text-3xl text-pretty font-medium underline  decoration-wavy decoration-green-500'>Why Attend ICASEM 2025</CardTitle>
+              <CardTitle className='text-3xl text-pretty font-bold '>Why Attend ICASEM 2025</CardTitle>
               <CardDescription>A unique opportunity to engage with global experts and innovators</CardDescription>
             </CardHeader>
             <CardContent>
@@ -155,7 +155,7 @@ export default function AboutUs() {
         >
           <Card>
             <CardHeader>
-              <CardTitle className='text-3xl text-pretty font-medium underline  decoration-wavy decoration-green-500'>Who Can Attend</CardTitle>
+              <CardTitle className='text-3xl text-pretty font-bold '>Who Can Attend</CardTitle>
               <CardDescription>Join our diverse community of innovators and experts</CardDescription>
             </CardHeader>
             <CardContent>

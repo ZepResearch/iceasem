@@ -47,7 +47,7 @@ export default function Component() {
     },
   };
   return (
-    <div className="min-h-screen bg-lime-50">
+    <div className="min-h-screen ">
       <div className="container mx-auto px-4 py-16">
         <motion.div variants={itemVariants} className="text-center mb-12">
           <Badge variant="outline" className="mb-4 text-lg px-4 py-1">
@@ -97,7 +97,7 @@ export default function Component() {
                 />
               </div>
               <div className="md:w-1/2 p-6 md:p-8">
-                <h2 className="text-3xl font-bold mb-4 underline  decoration-wavy decoration-green-500 flex items-center">
+                <h2 className="text-3xl font-bold mb-4  flex items-center">
                   <mode.icon className="w-8 h-8 mr-2" />
                   {mode.title}
                 </h2>

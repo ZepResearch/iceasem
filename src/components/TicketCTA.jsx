@@ -15,7 +15,7 @@ export default function ConferenceTickets() {
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-5xl mb-12 text-pretty font-medium text-center text-gray-900 underline  decoration-wavy decoration-green-500"
+              className="text-5xl mb-12 text-pretty  text-center text-gray-900 font-bold"
             >Conference Tickets
             </motion.h1>
         <div className="grid gap-8 lg:grid-cols-3">

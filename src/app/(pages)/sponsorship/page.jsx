@@ -147,7 +147,7 @@ export default function PricingPage() {
   }
 
   return (
-    <div className="min-h-screen bg-white py-12 md:py-24 lg:py-32">
+    <div className="min-h-screen bg-lime-50 py-12 md:py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center space-y-8 text-center">
           <motion.h1 

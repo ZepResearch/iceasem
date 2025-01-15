@@ -62,7 +62,7 @@ export default function VenuePage() {
     <div className="min-h-screen bg-white">
       <main className="container mx-auto px-4 py-16">
         <motion.h1
-          className="text-4xl font-bold text-gray-900 mb-12 text-center underline  decoration-wavy decoration-green-500"
+          className="text-4xl font-bold text-gray-900 mb-12 text-center "
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -127,7 +127,7 @@ export default function VenuePage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-2xl font-semibold text-gray-900 mb-6 underline  decoration-wavy decoration-green-500">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6 ">
             Nearby Places to Visit in Kuala Lumpur
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

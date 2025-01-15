@@ -2,7 +2,7 @@ export default function Objective() {
   return (
     <div className="py-24 sm:py-8">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-screen-2xl lg:px-8">
-        <p className="mx-auto mt-2  text-pretty text-center text-4xl font-medium tracking-tight text-gray-950 sm:text-5xl underline  decoration-wavy decoration-green-500">
+        <p className="mx-auto mt-2  text-pretty text-center text-4xl font-medium tracking-tight text-gray-950 sm:text-5xl ">
            Conference Objectives
         </p>
         <div className="mt-10 grid gap-4 sm:mt-16 grid-cols-1 lg:grid-cols-3">

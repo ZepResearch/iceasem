@@ -133,7 +133,7 @@ export default function Ticket() {
   return (
     <div className="min-h-full bg-background text-foreground py-12 px-4">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-4xl font-bold text-center mb-12 underline decoration-wavy decoration-green-500">
+        <h1 className="text-4xl font-bold text-center mb-12 text-primary">  
           Choose Your Experience
         </h1>
 
@@ -145,7 +145,7 @@ export default function Ticket() {
                   <div className="flex-grow p-6 pr-4">
                     <div className="space-y-4">
                       <div className="space-y-2">
-                        <h3 className="text-2xl font-bold tracking-wide underline underline-offset-4 decoration-lime-500">
+                        <h3 className="text-2xl font-bold tracking-wide ">
                           {ticket.name}
                         </h3>
                         <div className="text-xs uppercase tracking-wider opacity-80">

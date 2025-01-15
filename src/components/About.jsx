@@ -99,7 +99,7 @@ export default function About() {
                 />
                 <div className="absolute inset-0 p-4 flex flex-col justify-between">
                   <div>
-                  <h2 className="md:text-5xl text-2xl font-bold text-white underline decoration-wavy decoration-green-500 mb-">Speaker</h2>
+                  <h2 className="md:text-5xl text-2xl font-bold text-white  mb-">Speaker</h2>
 
                     <div className="md:text-5xl text-2xl font-bold text-white mb-"> <CountUp
                           end={35}
@@ -139,7 +139,7 @@ export default function About() {
                             decimals={1} // Specifies the number of decimal places
                             formattingFn={(value) => (value / 10).toFixed(1)}
                         />%</div>
-                  <h2 className="md:text-4xl text-sm font-bold text-white mb-2 underline decoration-wavy decoration-green-500">Uptime guarantee</h2>
+                  <h2 className="md:text-4xl text-sm font-bold text-white mb-2 ">Uptime guarantee</h2>
                     <p className="text-xs text-gray-200">Build connections with industry leaders, researchers, and like-minded professionals.</p>
                   </div>
                   {/* <motion.button

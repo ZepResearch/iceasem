@@ -73,7 +73,7 @@ export default function SDGSection() {
     <section className="w-full py-16 px-4">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-center text-3xl md:text-5xl font-medium mb-12 text-pretty lea">
-          <span className="font-semibold underline decoration-wavy decoration-green-500 ">ICASEM  2025</span> is Dedicated to Advancing the
+          <span className="font-semibold  ">ICASEM  2025</span> is Dedicated to Advancing the
            Nations Sustainable Development Goals (SDGS)
         </h1>
         
