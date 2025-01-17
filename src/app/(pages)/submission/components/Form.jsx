@@ -181,7 +181,7 @@ export default function SubmitForm() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit}  className="space-y-6">
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                   <div className="space-y-2">
                     <Label htmlFor="authorName">Author Name</Label>
@@ -238,6 +238,7 @@ export default function SubmitForm() {
                       name="coAuthorName"
                       value={formData.coAuthorName}
                       onChange={handleChange}
+                      required
                     />
                   </div>
                   <div className="space-y-2">
@@ -279,7 +280,7 @@ export default function SubmitForm() {
                     {...getRootProps()}
                     className="border-2 border-dashed border-gray-300 rounded-md p-4 text-center cursor-pointer"
                   >
-                    <input {...getInputProps()} />
+                    <input {...getInputProps()} required/>
                     {isDragActive ? (
                       <p>Drop the PDF file here ...</p>
                     ) : (
@@ -303,6 +304,7 @@ export default function SubmitForm() {
                   <RadioGroup
                     name="paperType"
                     value={formData.paperType}
+                    required
                     onValueChange={(value) =>
                       setFormData((prev) => ({ ...prev, paperType: value }))
                     }
@@ -321,6 +323,7 @@ export default function SubmitForm() {
                   <Label htmlFor="presentationType">Presentation Type</Label>
                   <Select
                     name="presentationType"
+                    required
                     value={formData.presentationType}
                     onValueChange={(value) =>
                       setFormData((prev) => ({
@@ -343,6 +346,7 @@ export default function SubmitForm() {
                   <Textarea
                     id="message"
                     name="message"
+                    required
                     value={formData.message}
                     onChange={handleChange}
                     rows={4}
@@ -353,6 +357,7 @@ export default function SubmitForm() {
                     How this conference came to be known to you
                   </Label>
                   <Select
+                  required
                     name="conferenceSource"
                     value={formData.conferenceSource}
                     onValueChange={(value) =>

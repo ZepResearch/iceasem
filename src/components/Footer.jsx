@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { motion } from "framer-motion"
-import { Linkedin, Instagram, Twitter, ArrowRight, Facebook, Youtube } from 'lucide-react'
+import { Linkedin, Instagram, Twitter, ArrowRight, Facebook, Youtube, PhoneCall, MapPin, MailIcon } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 
@@ -80,7 +80,7 @@ const item = {
 
 export function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-blue-600 to-indigo-900 py-20 px-4 md:px-8">
+    <footer className="bg-gradient-to-r from-blue-600 to-indigo-900 py-8 px-4 md:px-8">
       <div className="max-w-7xl mx-auto">
         <motion.div
           variants={container}
@@ -99,7 +99,7 @@ export function Footer() {
           </motion.h2>
 
           {/* Links Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-0">
             {/* About Links */}
             <motion.div variants={item} className="space-y-6">
               <h3 className="text-xl font-semibold text-[#c4d2f8]">About</h3>
@@ -215,24 +215,24 @@ export function Footer() {
             </motion.div>
           </div>
         </motion.div>
-        <motion.div variants={item} className="py-6">
+        <motion.div variants={item} className="pt-2">
               <h3 className="text-xl font-semibold text-[#c4d2f8]">Contact Us</h3>
-              <ul className=" gap-5  flex">
-                <li className="text-[#c4d2f8] text-lg">
-                  <span className="font-semibold">Email:</span> submit@icasem.org
+              <ul className=" gap-7  flex">
+                <li className="text-[#c4d2f8] text-lg inline-flex gap-2">
+                  <span className="font-semibold"><MailIcon/></span> submit@icasem.org
                 </li>
-                <li className="text-[#c4d2f8] text-lg">
-                  <span className="font-semibold">Phone:</span> 82600 80050
+                <li className="text-[#c4d2f8] text-lg inline-flex gap-2">
+                  <span className="font-semibold"><PhoneCall/></span>91+ 82600 80050
                 </li>
-                <li className="text-[#c4d2f8] text-lg">
-                  <span className="font-semibold">Location:</span> Vietnam
+                <li className="text-[#c4d2f8] text-lg inline-flex gap-2">
+                  <span className="font-semibold"><MapPin/></span> Vietnam
                 </li>
               </ul>
             </motion.div>
         {/* Copyright */}
         <motion.div 
           variants={item}
-          className="mt-8 border-t border-[#c4d2f8]/60 text-center text-sm text-[#c4d2f8]/90"
+          className="mt-4 pt-2 border-t border-[#c4d2f8]/60 text-center text-base text-[#c4d2f8]/90"
         >
           © 2025 ICASEM. All rights reserved.
         </motion.div>

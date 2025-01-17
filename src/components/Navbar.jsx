@@ -16,6 +16,7 @@ import {
 import { cn } from "@/lib/utils"
 import { MobileNav } from "./ui/MobileNav"
 import Image from "next/image"
+import { Button } from "./ui/button"
 
 const aboutItems = [
   {
@@ -107,12 +108,7 @@ export function Navbar() {
           >
             Committee
           </Link>
-          <Link
-            href="/submission"
-            className="text-sm font-medium transition-colors hover:text-primary"
-          >
-            Submission
-          </Link>
+         
           <Link
             href="/sponsorship"
             className="text-sm font-medium transition-colors hover:text-primary"
@@ -124,6 +120,12 @@ export function Navbar() {
             className="text-sm font-medium transition-colors hover:text-primary"
           >
             Venue
+          </Link>
+          <Link
+            href="/contact"
+            className="text-sm font-medium transition-colors hover:text-primary"
+          >
+            contact us
           </Link>
           {/* <Link
             href="/schedule"
@@ -147,7 +149,7 @@ export function Navbar() {
         </motion.div>
 
         {/* Right Section - Hidden on Mobile */}
-        <div className="hidden lg:flex items-center space-x-6">
+        <div className="hidden lg:flex items-center space-x-3">
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
@@ -194,10 +196,10 @@ export function Navbar() {
           </NavigationMenu>
 
           <Link
-            href="/contact"
-            className="text-sm font-medium transition-colors hover:text-primary"
-          >
-            Contact Us
+            href="/submission"
+            className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-9 px-4 py-2"
+            >
+            submission          
           </Link>
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Link

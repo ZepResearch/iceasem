@@ -20,7 +20,7 @@ export function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <Card className="relative overflow-hidden bg-gradient-to-r from-blue-300 to-blue-800  p-8 h-full rounded-br-none rounded-tr-[150px]">
+          <Card className="relative overflow-hidden bg-gradient-to-tr from-blue-100 to-blue-800  p-8 h-full rounded-br-none rounded-tr-[150px]">
             <div className="relative z-10 flex flex-col h-full">
               {/* <Image
                 src="/icasem_black.svg"
@@ -33,14 +33,31 @@ export function Hero() {
               {/* <h1 className="mb-8 font-bold font-mono text-3xl inline-flex items-center"><MicroscopeIcon/>|ICASEM</h1> */}
                           <Image src="/whiteLogo.svg" width={130} height={130} alt="logo" />
               
-              <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-8 leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-4 leading-tight">
               International Conference on {" "}
                 <span className="">
                 Applied Science, Engineering & Management 
                 </span>{" "}
                
               </h1>
+              <div className="flex sm:flex-row flex-col-reverse  items-start  justify-start gap-3 px-4 max-w-2xl  backdrop-blur-sm  my-2 py-2 rounded-3xl">
+                <img
+                  src=" https://res.cloudinary.com/dwlhesiyi/image/upload/v1729260387/erph7fml9unxiowlmrmg.png"
+                  alt=""
+                  className="h-12 drop-shadow-lg"
+                />
+          <img
+            src="https://res.cloudinary.com/dwlhesiyi/image/upload/v1728043047/yqhbu4xrrwcab48qtpfw.png"
+            alt=""
+            className="h-12 drop-shadow-sm"
+          />
+          <img
+            src="https://res.cloudinary.com/dwlhesiyi/image/upload/v1728043732/dpwtq9cenauyctsvd9vg.png"
+            alt=""
+            className="h-12 drop-shadow-sm"
+          />
 
+        </div>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <Link href={'/registration'}>
               <Button className="bg-black text-white hover:bg-black/90">
