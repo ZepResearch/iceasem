@@ -128,7 +128,7 @@ export default function VenuePage() {
           transition={{ duration: 0.5 }}
         >
           <h2 className="text-2xl font-semibold text-gray-900 mb-6 ">
-            Nearby Places to Visit in Kuala Lumpur
+            Nearby Places to Visit in Vietnam
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {nearbyPlaces.map((place, index) => (
