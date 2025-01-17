@@ -40,7 +40,7 @@ export default function AboutCompany() {
     { icon: MapPin, text: "Vietnam" },
     { icon: Users, text: "500+ Expected Attendees" },
     { icon: Globe, text: "International Speakers" },
-    { icon: Mail, text: "info@icasem.com" },
+    { icon: Mail, text: "submit@icasem.org" },
     { icon: Phone, text: "+91 82600 80050" },
   ]
 

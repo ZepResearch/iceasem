@@ -215,11 +215,24 @@ export function Footer() {
             </motion.div>
           </div>
         </motion.div>
-        
+        <motion.div variants={item} className="py-6">
+              <h3 className="text-xl font-semibold text-[#c4d2f8]">Contact Us</h3>
+              <ul className=" gap-5  flex">
+                <li className="text-[#c4d2f8] text-lg">
+                  <span className="font-semibold">Email:</span> submit@icasem.org
+                </li>
+                <li className="text-[#c4d2f8] text-lg">
+                  <span className="font-semibold">Phone:</span> 82600 80050
+                </li>
+                <li className="text-[#c4d2f8] text-lg">
+                  <span className="font-semibold">Location:</span> Vietnam
+                </li>
+              </ul>
+            </motion.div>
         {/* Copyright */}
         <motion.div 
           variants={item}
-          className="mt-16 pt-8 border-t border-[#c4d2f8]/60 text-center text-sm text-[#c4d2f8]/90"
+          className="mt-8 border-t border-[#c4d2f8]/60 text-center text-sm text-[#c4d2f8]/90"
         >
           © 2025 ICASEM. All rights reserved.
         </motion.div>
