@@ -185,7 +185,7 @@ export default function ThemeAndTopics() {
             </CardHeader>
             <CardContent className="p-6">
               <p className="leading-relaxed text-lg text-muted-foreground">
-                The International Conference on Applied Science, Engineering & Management, scheduled for May 22–23, 2025, in Singapore, brings together researchers, engineers, industry professionals, and academics to share cutting-edge developments in their respective fields.
+                The International Conference on Applied Science, Engineering & Management, scheduled for April 2nd–3rd, 2025, in Singapore, brings together researchers, engineers, industry professionals, and academics to share cutting-edge developments in their respective fields.
               </p>
               <p className="leading-relaxed text-lg text-muted-foreground mt-4">
                 This premier conference provides a dynamic platform for knowledge exchange, featuring keynote speakers, technical sessions, and workshops focused on bridging the gap between theoretical research and practical applications.
