@@ -155,7 +155,7 @@ export default function SubmitForm() {
   };
 
   return (
-    <section className="py-12 bg-gradient-to-br from-lime-50 to-cyan-50 dark:from-orange-900 dark:to-yellow-900">
+    <section className="py-12 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-orange-900 dark:to-yellow-900">
       <div className="container mx-auto px-4">
         <div className="grid gap-8 lg:grid-cols-3">
           <div className="lg:col-span-1">
@@ -167,7 +167,7 @@ export default function SubmitForm() {
               guidance.
             </p>
             <img
-              src="https://illustrations.popsy.co/lime/paper-plane.svg"
+              src="https://illustrations.popsy.co/blue/paper-plane.svg"
               alt="Product screenshot"
               className=""
               width={400}

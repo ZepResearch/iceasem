@@ -50,7 +50,7 @@ export default function Process() {
               key={index}
               className="p-6 bg-background flex flex-col items-center text-center relative"
             >
-              <div className="bg-lime-600 text-primary-foreground rounded-full p-3 mb-4">
+              <div className="bg-blue-600 text-primary-foreground rounded-full p-3 mb-4">
                 {step.icon}
               </div>
               <h3 className="font-semibold mb-2">{step.title}</h3>

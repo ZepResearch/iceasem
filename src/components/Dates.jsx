@@ -83,7 +83,7 @@ export function Dates() {
                           <h4 className="text-xl font-bold mb-2 text-center sm:text-left">{item.title}</h4>
                           <p className="text-gray-600 text-center sm:text-left">{item.description}</p>
                         </div>
-                        <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-[#f3ff75] drop-shadow-sm flex items-center justify-center flex-shrink-0 order-1 sm:order-2">
+                        <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-blue-300 drop-shadow-sm flex items-center justify-center flex-shrink-0 order-1 sm:order-2">
                           {item.icon && <item.icon className="w-6 h-6 sm:w-8 sm:h-8 text-black" />}
                         </div>
                       </div>

@@ -36,12 +36,12 @@ export default function AboutCompany() {
   }
 
   const conferenceFeatures = [
-    { icon: CalendarDays, text: "2-day event: May 22nd - 23rd, 2025" },
+    { icon: CalendarDays, text: `2-day event: April 2nd - 3rd, 2025` },
     { icon: MapPin, text: "Vietnam" },
     { icon: Users, text: "500+ Expected Attendees" },
     { icon: Globe, text: "International Speakers" },
     { icon: Mail, text: "info@icasem.com" },
-    { icon: Phone, text: "+91 7358737843" },
+    { icon: Phone, text: "+91 82600 80050" },
   ]
 
   return (
@@ -54,7 +54,7 @@ export default function AboutCompany() {
     >
       <div className="max-w-6xl mx-auto">
         <motion.div variants={itemVariants} className="text-center mb-12">
-          <Badge variant="outline" className="mb-4 text-lg px-4 py-1 border-lime-600">About Zep Research</Badge>
+          <Badge variant="outline" className="mb-4 text-lg px-4 py-1 border-blue-600">About Zep Research</Badge>
           <h2 className="text-4xl font-bold text-primary mb-4">International Conference on Applied Science, Engineering & Management</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             A premier event bringing together industry professionals, researchers, and academics from around the world.
@@ -114,7 +114,7 @@ export default function AboutCompany() {
                 Join us in shaping the future of tourism and hospitality
               </CardDescription>
               <p className="text-muted-foreground">
-              April - 23rd, 2025 • Vietnam
+              April  2<sup>nd</sup> - 3<sup>rd</sup>, 2025 • Vietnam
               </p>
             </CardContent>
           </Card>

@@ -141,7 +141,8 @@ export function Navbar() {
           transition={{ duration: 0.5 }}
         >
           <Link href="/" className="flex items-center space-x-2 ml-20">
-          <h1 className=" font-bold font-mono text-3xl inline-flex items-center"><MicroscopeIcon/>|ICASEM</h1>
+            <Image src="/logo.svg" width={130} height={130} alt="logo" />
+          {/* <h1 className=" font-bold font-mono text-3xl inline-flex items-center"><MicroscopeIcon/>|ICASEM</h1> */}
           </Link>
         </motion.div>
 

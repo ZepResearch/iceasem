@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 
 export default function AboutUs() {
   return (
-    <section className="py-16 bg-lime-50">
+    <section className="py-16 bg-blue-50">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -195,7 +195,7 @@ export default function AboutUs() {
               
               <div className="mt-8 text-center">
                 <p className="text-lg font-semibold text-gray-900">
-                  Join us in Vietnam on September 15<sup>th</sup> - 17<sup>th</sup>, 2025 for a transformative experience that empowers you to lead innovation and advance your field!
+                  Join us in Vietnam on April 2<sup>nd</sup> - 3<sup>rd</sup>, 2025 for a transformative experience that empowers you to lead innovation and advance your field!
                 </p>
               </div>
             </CardContent>

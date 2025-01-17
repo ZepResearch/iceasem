@@ -15,7 +15,7 @@ export default function Component() {
       description:
         "Present your research through a live speech to the audience. Oral presentations offer a dynamic way to share your findings, engage with your peers, and receive immediate feedback. This format allows for in-depth discussion of your methodology, results, and conclusions, providing a platform to showcase your expertise in tourism management and hospitality.",
       icon: Mic,
-      image: "https://illustrations.popsy.co/lime/woman-with-a-laptop.svg",
+      image: "https://illustrations.popsy.co/blue/woman-with-a-laptop.svg",
       content:
         "The presentation times for oral sessions are as follows: contributed presentations are 15 minutes. Please note: You must provide your presentation for preloading. Please submit your presentation (in English, copy-edited and proofread) via email to info[@]ictmh.org, no longer than 10 business days before the events starts. If for any reason, you are unable to submit your presentation in advance of the Conference, then you can preload your presentation to a laptop via registration desk area when you arrive at the Conference, you must preload this at least two hours before you are due to present.",
     },
@@ -24,7 +24,7 @@ export default function Component() {
       description:
         "Showcase your work visually with an academic poster. Poster presentations offer a unique opportunity to present your research in a concise, visually appealing format. This mode allows for more informal, one-on-one interactions with conference attendees, facilitating in-depth discussions and networking opportunities. It's an excellent way to present preliminary findings or ongoing research in the field of tourism and hospitality management.",
       icon: ImageIcon,
-      image: "https://illustrations.popsy.co/lime/web-design.svg",
+      image: "https://illustrations.popsy.co/blue/web-design.svg",
       content:
         "Each Poster will be displayed at the Conference for 03 Minutes. Posters should be one page PDF or Image to be shown in Webinar. All Posters will be uploaded on the Conference Website before the conference for all the participants to download or go through it",
     },
@@ -33,7 +33,7 @@ export default function Component() {
       description:
         "Present remotely through our online conference platform. Virtual presentations offer flexibility and accessibility, allowing you to share your research with a global audience without the need for travel. This mode of presentation leverages technology to facilitate real-time interaction, Q&A sessions, and networking opportunities, ensuring that distance is no barrier to participating in this important tourism and hospitality management conference.",
       icon: Video,
-      image: "https://illustrations.popsy.co/lime/customer-support.svg",
+      image: "https://illustrations.popsy.co/blue/customer-support.svg",
       content:
         "Join Live Virtual Sessions. The conference program for Virtual presentations will be emailed to participants one week before the conference. Virtual presentations will be delivered via an online electronic forum (Webinar). Virtual session attendees will receive the Webinar invitation link a few days before the Conference. Joining the webinar session is easy and takes just a few seconds. Simply click the link in the invitation, you will proceed to your session immediately. Just remember to register first if you wish to attend as a Virtual presenter.",
     },
@@ -64,7 +64,7 @@ export default function Component() {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-5xl font-bold text-center mb-8 text-lime-600 dark:text-lime-300"
+          className="text-5xl font-bold text-center mb-8 text-blue-600 dark:text-blue-300"
         >
          
         </motion.h1>
@@ -105,7 +105,7 @@ export default function Component() {
                   {mode.description}
                 </p>
                 <Button
-                  className="mb-4 bg-lime-500 hover:bg-lime-600 text-white"
+                  className="mb-4 bg-blue-500 hover:bg-blue-600 text-white"
                   onClick={() =>
                     setActiveMode(activeMode === index ? null : index)
                   }
@@ -119,7 +119,7 @@ export default function Component() {
                     exit={{ opacity: 0, height: 0 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <p className="text-gray-700 dark:text-gray-300 mt-4 p-4 bg-lime-100 dark:bg-lime-900 rounded-lg">
+                    <p className="text-gray-700 dark:text-gray-300 mt-4 p-4 bg-blue-100 dark:bg-blue-900 rounded-lg">
                       {mode.content}
                     </p>
                   </motion.div>

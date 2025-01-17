@@ -72,7 +72,7 @@ export default function ConferenceTickets() {
                         <div className="text-base font-semibold">Full Conference Access</div>
                       </div>
                       <div className="text-right">
-                        <div className="text-2xl font-bold text-yellow-400 drop-shadow-md">$217</div>
+                        <div className="text-2xl font-bold text-yellow-400 drop-shadow-md">$219</div>
                         <div className="text-xs text-gray-500">/person</div>
                       </div>
                     </div>
@@ -131,7 +131,7 @@ export default function ConferenceTickets() {
                         <div className="text-base font-semibold">VIP Experience</div>
                       </div>
                       <div className="text-right">
-                        <div className="text-2xl font-bold text-blue-600">$317</div>
+                        <div className="text-2xl font-bold text-blue-600">$319</div>
                         <div className="text-xs text-gray-500">/person</div>
                       </div>
                     </div>

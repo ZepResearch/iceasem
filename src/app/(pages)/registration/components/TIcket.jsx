@@ -140,7 +140,7 @@ export default function Ticket() {
         <div className="space-y-8">
           {tickets.map((ticket, index) => (
             <div key={index} className="flex items-center justify-center">
-              <Card className="relative w-full max-w-3xl bg-lime-100 overflow-hidden border-none">
+              <Card className="relative w-full max-w-3xl bg-blue-100 overflow-hidden border-none">
                 <div className="flex flex-col md:flex-row">
                   <div className="flex-grow p-6 pr-4">
                     <div className="space-y-4">
@@ -165,7 +165,7 @@ export default function Ticket() {
                       </ul>
                     </div>
                   </div>
-                  <div className="relative flex-shrink-0 w-full md:w-48 md:border-l border-dashed border-lime-500 flex flex-col justify-center items-center">
+                  <div className="relative flex-shrink-0 w-full md:w-48 md:border-l border-dashed border-blue-500 flex flex-col justify-center items-center">
                     <div className="hidden md:block absolute top-0 left-0 w-10 h-10 bg-background rounded-full -translate-x-1/2 -translate-y-1/2" />
                     <div className="hidden md:block absolute bottom-0 left-0 w-10 h-10 bg-background rounded-full -translate-x-1/2 translate-y-1/2" />
                     <div className="text-center space-y-4 p-6">

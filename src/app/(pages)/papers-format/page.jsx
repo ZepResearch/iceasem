@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Download, FileText, Image, FileCode, Upload } from 'lucide-react';
+import Link from "next/link";
 
 export default function SubmissionGuidelines() {
   const controls = useAnimation();
@@ -49,7 +50,7 @@ export default function SubmissionGuidelines() {
         "Include: Research objectives, Methodology, Key results, Conclusions",
         "Use clear, concise language, avoiding jargon or acronyms",
       ],
-      downloadLink: "/path-to-abstract-template.docx",
+      downloadLink: "/paper-format/Abstract.docx",
     },
     {
       title: "Full Paper Format",
@@ -60,7 +61,7 @@ export default function SubmissionGuidelines() {
         "Sections: Title, Abstract, Keywords, Introduction, Methodology, Results, Discussion, Conclusion, References",
         "Follow APA 7th edition for citations and references",
       ],
-      downloadLink: "/path-to-full-paper-template.docx",
+      downloadLink: "/paper-format/Manuscript.doc",
     },
     {
       title: "Poster Format",
@@ -71,7 +72,7 @@ export default function SubmissionGuidelines() {
         "Sections: Title, Authors and Affiliation, Introduction, Methods, Results, Conclusions, Key References",
         "Use graphics, charts, and images to enhance understanding and presentation",
       ],
-      downloadLink: "/path-to-poster-template.pptx",
+      downloadLink: "/",
     },
   ];
 
@@ -105,7 +106,7 @@ export default function SubmissionGuidelines() {
           {formatSections.map((section, index) => (
             <motion.div key={index} variants={itemVariants}>
               <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white/50 backdrop-blur-sm border-2 border-primary/20">
-                <CardHeader className="bg-gradient-to-br from-[#c5e167] to-[#a4d8b4]  text-primary-foreground p-6">
+                <CardHeader className="bg-gradient-to-br from-[#67a0e1] to-[#a4a5d8]  text-primary-foreground p-6">
                   <CardTitle className="text-2xl flex items-center gap-2">
                     {section.icon}
                     {section.title}
@@ -117,13 +118,15 @@ export default function SubmissionGuidelines() {
                       <li key={i} className="mb-2">{item}</li>
                     ))}
                   </ul>
+                  <Link href={section.downloadLink}>
                   <Button
                     className="w-full sm:w-auto border-2 border-primary py-5 font-bold"
                     variant="secondary"
-                  >
+                    >
                     <Download className="mr-2 h-4 w-4 text-primary" />
                     Download {section.title} Template
                   </Button>
+                    </Link>
                 </CardContent>
               </Card>
             </motion.div>
@@ -132,7 +135,7 @@ export default function SubmissionGuidelines() {
 
         <motion.div variants={itemVariants} className="mt-12">
           <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white/50 backdrop-blur-sm border-2 border-primary/20">
-            <CardHeader className="bg-gradient-to-r from-emerald-500 to-lime-600 text-primary-foreground p-6">
+            <CardHeader className="bg-gradient-to-r from-cyan-500 to-blue-600 text-primary-foreground p-6">
               <CardTitle className="text-2xl flex items-center gap-2">
                 <Upload className="w-8 h-8" />
                 Submission Process
@@ -144,13 +147,15 @@ export default function SubmissionGuidelines() {
                 <li className="mb-2">Peer Review: Submissions will undergo a peer review process for evaluation.</li>
                 <li className="mb-2">Final Submission: Once accepted, submit the final version of your paper for publication.</li>
               </ol>
+              <Link href={'/submission'}>
               <Button
                 className="w-full sm:w-auto border-2 border-primary py-5 font-bold"
                 variant="secondary"
-              >
+                >
                 <Upload className="mr-2 h-4 w-4 text-primary" />
                 Go to Submission Portal
               </Button>
+                </Link>
             </CardContent>
           </Card>
         </motion.div>

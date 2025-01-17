@@ -5,12 +5,12 @@ import { Mail, MapPin, Phone } from "lucide-react"
 export default function PrivacyPolicyPage() {
   return (
     <div className="container mx-auto py-12 px-4 max-w-4xl">
-      <h1 className="text-4xl font-bold text-center mb-2 pb-2 underline underline-offset-4 decoration-lime-400 decoration-wavy inline-block">
+      <h1 className="text-4xl font-bold text-center mb-2 pb-2 underline underline-offset-4 decoration-blue-400 decoration-wavy inline-block">
         Privacy Policy
       </h1>
       
       <Card className="mt-8 bg-white shadow-lg">
-        <CardHeader className="bg-gradient-to-br from-[#c5e167] to-[#a4d8b4] text-white rounded-md">
+        <CardHeader className="bg-gradient-to-br from-[#679ce1] to-[#a4b4d8] text-white rounded-md">
           <CardTitle className="text-2xl drop-shadow-md">ICASEM Privacy Policy</CardTitle>
         </CardHeader>
         <CardContent className="p-6">
@@ -75,7 +75,7 @@ export default function PrivacyPolicyPage() {
           </Accordion>
 
           <div className="mt-8 border-t pt-6">
-            <h2 className="text-xl font-semibold text-lime-600 mb-4">Contact Information</h2>
+            <h2 className="text-xl font-semibold text-blue-600 mb-4">Contact Information</h2>
             <div className="text-gray-700 font-medium space-y-2">
               <div className="flex items-center">
                 <Mail className="mr-2 text-primary" />

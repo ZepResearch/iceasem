@@ -25,13 +25,13 @@ const SpeakerCard = ({ name, role, image, bio,collectionId, id, country, college
       className="w-full h-72 object-fill" 
     />
     <div className="p-4">
-      <h3 className="text-xl font-semibold text-lime-800">{name}</h3>
-      <p className="text-lime-600">{role}</p>
+      <h3 className="text-xl font-semibold text-blue-800">{name}</h3>
+      <p className="text-blue-600">{role}</p>
       <p className="text-sm">{college}</p>
       <p className="text-sm">{country}</p>
       <button
         onClick={() => onMoreInfo({ name, role, image, bio ,collectionId, id ,country,college}) }
-        className="mt-2 px-4 py-2 bg-lime-600 text-white rounded hover:bg-lime-700 transition-colors duration-300"
+        className="mt-2 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors duration-300"
       >
         More info
       </button>
@@ -84,16 +84,16 @@ const Drawer = ({ isOpen, onClose, speaker }) => (
               alt={speaker.name}
               className="w-full h-auto object-fill rounded-lg mb-4 mt-4"
             />
-            <h2 className="text-2xl font-bold text-lime-800 mb-2">
+            <h2 className="text-2xl font-bold text-blue-800 mb-2">
               {speaker.name}
             </h2>
-            <h3 className="text-xl text-lime-600 ">{speaker.role}</h3>
+            <h3 className="text-xl text-blue-600 ">{speaker.role}</h3>
             <p className="text-sm mt-1 mb-4">{speaker.country}</p>
             <p className="text-sm">{speaker.college}</p>
             <p className="text-gray-700 flex-grow mt-4">{speaker.bio}</p>
             <button
               onClick={onClose}
-              className="mt-6 w-full px-4 py-2 bg-lime-600 text-white rounded hover:bg-lime-700 transition-colors duration-300"
+              className="mt-6 w-full px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors duration-300"
             >
               Close
             </button>
@@ -173,15 +173,15 @@ export default function SpeakerSection() {
 
   if (loading) {
     return (
-      <div className="bg-lime-50 min-h-screen flex items-center justify-center">
-        <div className="text-lime-600 text-xl">Loading speakers...</div>
+      <div className="bg-blue-50 min-h-screen flex items-center justify-center">
+        <div className="text-blue-600 text-xl">Loading speakers...</div>
       </div>
     );
   }
 
   if (error) {
     return (
-      <div className="bg-lime-50 min-h-screen flex items-center justify-center">
+      <div className="bg-blue-50 min-h-screen flex items-center justify-center">
         <div className="text-red-600 text-xl">{error}</div>
       </div>
     );
@@ -200,8 +200,8 @@ export default function SpeakerSection() {
               onClick={() => setActiveCategory(category.id)}
               className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
                 activeCategory === category.id
-                  ? "bg-lime-600 text-white shadow-md"
-                  : "bg-lime-100 text-lime-800 hover:bg-lime-200"
+                  ? "bg-blue-600 text-white shadow-md"
+                  : "bg-blue-100 text-blue-800 hover:bg-blue-200"
               }`}
             >
               {category.title}

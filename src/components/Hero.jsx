@@ -8,6 +8,7 @@ import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { WaveTexture } from "./ui/wave-texture"
 import { PinPoint } from "./ui/pin-point"
+import Link from "next/link"
 
 export function Hero() {
   return (
@@ -19,7 +20,7 @@ export function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <Card className="relative overflow-hidden bg-gradient-to-r from-[#f3ff75] via-yellow-200 to-lime-300 p-8 h-full rounded-br-none rounded-tr-[150px]">
+          <Card className="relative overflow-hidden bg-gradient-to-r from-blue-300 to-blue-800  p-8 h-full rounded-br-none rounded-tr-[150px]">
             <div className="relative z-10 flex flex-col h-full">
               {/* <Image
                 src="/icasem_black.svg"
@@ -29,7 +30,9 @@ export function Hero() {
                 className="mb-8"
               />
               */}
-              <h1 className="mb-8 font-bold font-mono text-3xl inline-flex items-center"><MicroscopeIcon/>|ICASEM</h1>
+              {/* <h1 className="mb-8 font-bold font-mono text-3xl inline-flex items-center"><MicroscopeIcon/>|ICASEM</h1> */}
+                          <Image src="/whiteLogo.svg" width={130} height={130} alt="logo" />
+              
               <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-8 leading-tight">
               International Conference on {" "}
                 <span className="">
@@ -39,12 +42,16 @@ export function Hero() {
               </h1>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
+                <Link href={'/registration'}>
               <Button className="bg-black text-white hover:bg-black/90">
                  Register Now
                 </Button>
+                </Link>
+                <Link href={'/about-conference'}>
                 <Button className="bg-black text-white hover:bg-black/90">
                   Learn More <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
+                </Link>
               </div>
 
               <div className="flex items-center gap-2">
@@ -70,7 +77,7 @@ export function Hero() {
                   17+ Speakers of our  organization
                 </span>
               </div>
-              <div className="flex items-center gap-4 text-base  text-red-500 font-semibold mt-4">
+              <div className="flex items-center gap-4 text-base  text-gray-50 drop-shadow-md font-semibold mt-4">
                 <div className="flex items-center gap-2">
                   <Calendar className="h-4 w-4" />
                   April 2nd - 3rd, 2025

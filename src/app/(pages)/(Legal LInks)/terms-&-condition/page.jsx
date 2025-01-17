@@ -4,12 +4,12 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 export default function TermsAndConditionsPage() {
   return (
     <div className="container mx-auto py-12 px-4 max-w-4xl">
-      <h1 className="text-4xl font-bold text-center mb-2 pb-2 underline underline-offset-4 decoration-lime-400 inline-block">
+      <h1 className="text-4xl font-bold text-center mb-2 pb-2 inline-block">
         Terms and Conditions
       </h1>
       
       <Card className="mt-8 bg-white shadow-lg">
-        <CardHeader className="bg-gradient-to-br from-[#c5e167] to-[#a4d8b4] text-white rounded-md">
+        <CardHeader className="bg-gradient-to-br from-[#67b4e1] to-[#a4bad8] text-white rounded-md">
           <CardTitle className="text-2xl drop-shadow-md">Welcome to ICASEM</CardTitle>
         </CardHeader>
         <CardContent className="p-6">
@@ -86,7 +86,7 @@ export default function TermsAndConditionsPage() {
           </Accordion>
 
           <div className="mt-8 border-t pt-6">
-            <h2 className="text-xl font-semibold text-lime-600 mb-4">Contact Information</h2>
+            <h2 className="text-xl font-semibold text-blue-600 mb-4">Contact Information</h2>
             <p className="text-gray-700">
               For inquiries about these terms, please contact the ICASEM Secretariat:
             </p>

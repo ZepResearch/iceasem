@@ -4,6 +4,7 @@ import Link from "next/link"
 import { motion } from "framer-motion"
 import { Linkedin, Instagram, Twitter, ArrowRight, Facebook, Youtube } from 'lucide-react'
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 const aboutLinks = [
   { name: "Conference", href: "/about-conference" },
@@ -36,27 +37,27 @@ const legalLinks = [
 const socialLinks = [
     { 
         icon: Facebook, 
-        href: "https://linkedin.com",
+        href: "https://www.facebook.com/profile.php?id=61561809783777",
         label: "Facebook"
       },
-      { 
+        { 
           icon: Instagram, 
-          href: "https://instagram.com",
+          href: "https://www.instagram.com/zepresearch",
           label: "Instagram"
         },
         { 
             icon: Twitter, 
-            href: "https://twitter.com",
+            href: "https://x.com/Zepresearch",
             label: "Twitter"
           },
         { 
           icon: Linkedin, 
-          href: "https://linkedin.com",
+          href: "https://www.linkedin.com/company/zep-research/",
           label: "LinkedIn"
         },
         { 
             icon: Youtube, 
-            href: "https://twitter.com",
+            href: "https://youtube.com/@zepresearch",
             label: "Youtube"
           },
  
@@ -79,7 +80,7 @@ const item = {
 
 export function Footer() {
   return (
-    <footer className="bg-gradient-to-br from-[#c5e167] to-[#a4d8b4] py-20 px-4 md:px-8">
+    <footer className="bg-gradient-to-r from-blue-600 to-indigo-900 py-20 px-4 md:px-8">
       <div className="max-w-7xl mx-auto">
         <motion.div
           variants={container}
@@ -91,8 +92,9 @@ export function Footer() {
           {/* Heading */}
           <motion.h2 
             variants={item}
-            className="text-4xl md:text-5xl font-bold text-[#1d3c34] max-w-2xl leading-tight"
+            className="text-4xl md:text-5xl font-bold text-[#c4d2f8] max-w-2xl leading-tight"
           >
+          <Image src="/whiteLogo.svg" width={150} height={50} alt="ICASEM" className="pb-4 " />
             Where Science, Engineering, and Management Converge
           </motion.h2>
 
@@ -100,13 +102,13 @@ export function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
             {/* About Links */}
             <motion.div variants={item} className="space-y-6">
-              <h3 className="text-xl font-semibold text-[#1d3c34]">About</h3>
+              <h3 className="text-xl font-semibold text-[#c4d2f8]">About</h3>
               <ul className="space-y-3">
                 {aboutLinks.map((link) => (
                   <li key={link.name}>
                     <Link 
                       href={link.href}
-                      className="text-[#1d3c34]/80 hover:text-[#1d3c34] transition-colors duration-300 text-sm"
+                      className="text-[#c4d2f8]/80 hover:text-[#c4d2f8] transition-colors duration-300 text-sm"
                     >
                       {link.name}
                     </Link>
@@ -117,13 +119,13 @@ export function Footer() {
 
             {/* Call for Papers Links */}
             <motion.div variants={item} className="space-y-6">
-              <h3 className="text-xl font-semibold text-[#1d3c34]">Call for Papers</h3>
+              <h3 className="text-xl font-semibold text-[#c4d2f8]">Call for Papers</h3>
               <ul className="space-y-3">
                 {callForPapersLinks.map((link) => (
                   <li key={link.name}>
                     <Link 
                       href={link.href}
-                      className="text-[#1d3c34]/80 hover:text-[#1d3c34] transition-colors duration-300 text-sm"
+                      className="text-[#c4d2f8]/80 hover:text-[#c4d2f8] transition-colors duration-300 text-sm"
                     >
                       {link.name}
                     </Link>
@@ -134,13 +136,13 @@ export function Footer() {
 
             {/* Quick Links */}
             <motion.div variants={item} className="space-y-6">
-              <h3 className="text-xl font-semibold text-[#1d3c34]">Quick Links</h3>
+              <h3 className="text-xl font-semibold text-[#c4d2f8]">Quick Links</h3>
               <ul className="space-y-3">
                 {quickLinks.map((link) => (
                   <li key={link.name}>
                     <Link 
                       href={link.href}
-                      className="text-[#1d3c34]/80 hover:text-[#1d3c34] transition-colors duration-300 text-sm"
+                      className="text-[#c4d2f8]/80 hover:text-[#c4d2f8] transition-colors duration-300 text-sm"
                     >
                       {link.name}
                     </Link>
@@ -151,13 +153,13 @@ export function Footer() {
 
             {/* Legal Links */}
             <motion.div variants={item} className="space-y-6">
-              <h3 className="text-xl font-semibold text-[#1d3c34]">Legal</h3>
+              <h3 className="text-xl font-semibold text-[#c4d2f8]">Legal</h3>
               <ul className="space-y-3">
                 {legalLinks.map((link) => (
                   <li key={link.name}>
                     <Link 
                       href={link.href}
-                      className="text-[#1d3c34]/80 hover:text-[#1d3c34] transition-colors duration-300 text-sm"
+                      className="text-[#c4d2f8]/80 hover:text-[#c4d2f8] transition-colors duration-300 text-sm"
                     >
                       {link.name}
                     </Link>
@@ -168,7 +170,7 @@ export function Footer() {
 
             {/* Social Links and CTA */}
             <motion.div variants={item} className="space-y-6">
-              <h3 className="text-xl font-semibold text-[#1d3c34]">Connect</h3>
+              <h3 className="text-xl font-semibold text-[#c4d2f8]">Connect</h3>
               <div className="flex gap-4">
                 {socialLinks.map((social) => (
                   <motion.a
@@ -176,7 +178,7 @@ export function Footer() {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-[#1d3c34] text-white p-3 rounded-full hover:bg-[#1d3c34]/80 transition-colors duration-300"
+                    className="bg-[#4d66ac] text-white p-3 rounded-full hover:bg-[#4360b1]/80 transition-colors duration-300"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                     aria-label={social.label}
@@ -187,7 +189,7 @@ export function Footer() {
               </div>
               <Button 
                 variant="default" 
-                className="bg-[#ff9966] hover:bg-[#ff9966]/90 text-[#1d3c34] font-semibold px-6 py-3 rounded-full transition-colors duration-300"
+                className="bg-[#ff9966] hover:bg-[#ff9966]/90 text-white font-semibold px-6 py-3 rounded-full transition-colors duration-300"
               >
               <Link href="/registration" >
                 Register Now
@@ -197,15 +199,15 @@ export function Footer() {
                 <span className="inline-block px-3 py-1 bg-[#ff9966]/20 text-[#ff9966] rounded-full text-xs font-medium">
                   Call for Papers
                 </span>
-                <h3 className="text-2xl font-bold text-[#1d3c34]">Submit your paper</h3>
+                <h3 className="text-2xl font-bold text-gray-900">Submit your paper</h3>
 
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="bg-[#1d3c34] text-white px-6 py-3 rounded-full flex items-center justify-between w-full group transition-colors duration-300 hover:bg-[#1d3c34]/90"
+                  className="bg-[#c4d2f8] text-gray-900 px-6 py-3 rounded-full flex items-center justify-between w-full group transition-colors duration-300 hover:bg-[#c4d2f8]/90"
                 >
-                <Link href="/submission" className="inline-flex">
-                  <span className="font-semibold">Submit now</span>
+                <Link href="/submission" className="inline-flex items-center gap-2">
+                  <span className="font-semibold ">Submit now</span>
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </Link>
                 </motion.button>
@@ -217,7 +219,7 @@ export function Footer() {
         {/* Copyright */}
         <motion.div 
           variants={item}
-          className="mt-16 pt-8 border-t border-[#1d3c34]/60 text-center text-sm text-[#1d3c34]/90"
+          className="mt-16 pt-8 border-t border-[#c4d2f8]/60 text-center text-sm text-[#c4d2f8]/90"
         >
           © 2025 ICASEM. All rights reserved.
         </motion.div>

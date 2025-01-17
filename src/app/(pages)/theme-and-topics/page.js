@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef,useState } from 'react'
 import { motion, useAnimation, useInView } from 'framer-motion'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -8,18 +8,58 @@ import { Badge } from '@/components/ui/badge'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Calendar, FileText, UserPlus, BirdIcon, File } from 'lucide-react'
 import Link from 'next/link'
+import PocketBase from 'pocketbase'
+
+
+const pb = new PocketBase('https://icasem.pockethost.io')
+const iconMap = {
+  bird: <BirdIcon className="h-6 w-6" />,
+  user: <UserPlus className="h-6 w-6" />,
+  file: <FileText className="h-6 w-6" />,
+  document: <File className="h-6 w-6" />
+}
+
 
 export default function ThemeAndTopics() {
   const controls = useAnimation()
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, amount: 0.1 })
+  const [timelineData, setTimelineData] = useState([])
 
   useEffect(() => {
     if (isInView) {
       controls.start('visible')
     }
   }, [controls, isInView])
+  useEffect(() => {
+    async function fetchTimelineData() {
+      try {
+        const records = await pb.collection('dates').getFullList({
+          sort: '-created',
+          requestKey: null,
+        })
 
+        const formattedData = records.map((record) => ({
+          date: record.date,
+          event: record.title,
+          icon: iconMap[record.icon] || <Calendar className="h-6 w-6" />
+        }))
+
+        setTimelineData(formattedData)
+      } catch (error) {
+        console.error("Error fetching timeline data:", error)
+        // Fallback to default data if fetch fails
+        setTimelineData([
+          { date: "January 4, 2025", event: "Early bird registration deadline", icon: <BirdIcon className="h-6 w-6" /> },
+          { date: "January 10, 2025", event: "Abstract submission deadline", icon: <UserPlus className="h-6 w-6" /> },
+          { date: "February 1, 2025", event: "Full paper submission deadline", icon: <FileText className="h-6 w-6" /> },
+          { date: "February 10, 2025", event: "Registration deadline", icon: <File className="h-6 w-6" /> },
+        ])
+      }
+    }
+
+    fetchTimelineData()
+  }, [])
   const containerVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: { 
@@ -140,7 +180,7 @@ export default function ThemeAndTopics() {
 
         <motion.div variants={itemVariants}>
           <Card className="overflow-hidden shadow-2xl bg-white/50 backdrop-blur-sm border-2 border-primary/20">
-            <CardHeader className="bg-gradient-to-br from-[#c5e167] to-[#a4d8b4] text-primary-foreground p-6">
+            <CardHeader className="bg-gradient-to-br from-[#67dde1] to-[#a4a7d8] text-primary-foreground p-6">
               <CardTitle className="text-3xl">Conference Overview</CardTitle>
             </CardHeader>
             <CardContent className="p-6">
@@ -160,13 +200,13 @@ export default function ThemeAndTopics() {
         <motion.div variants={itemVariants} className="mt-12">
           <Card className="overflow-hidden shadow-2xl  backdrop-blur-sm border-2 border-primary/20">
             <CardHeader className="bg-white text-secondary-foreground p-6 border-b-2">
-              <CardTitle className="text-3xl underline  decoration-wavy decoration-green-500 ">Session and Tracks</CardTitle>
+              <CardTitle className="text-3xl  ">Session and Tracks</CardTitle>
             </CardHeader>
             <CardContent className="p-6 bg">
               <p className="mb-6 text-lg text-black">
                 The conference welcomes submissions in the following areas of applied science, engineering, and management. Related topics not listed below will also be considered.
               </p>
-              <Accordion type="single" collapsible className="w-full bg-gradient-to-br p-4 rounded-lg from-[#c5e167]/30 to-[#a4d8b4]/50">
+              <Accordion type="single" collapsible className="w-full  p-4 rounded-lg bg-gradient-to-r from-cyan-200/50 to-blue-500/30">
                 {topics.map((topic, index) => (
                   <AccordionItem key={index} value={`item-${index}`}>
                     <AccordionTrigger className="text-lg font-semibold border-b-[1px] border-gray-950/50 hover:no-underline">{topic.title}</AccordionTrigger>
@@ -186,7 +226,7 @@ export default function ThemeAndTopics() {
 
         <motion.div variants={itemVariants} className="mt-12">
           <Card className="overflow-hidden shadow-2xl bg-white/50 backdrop-blur-sm border-2 border-primary/20">
-            <CardHeader className="bg-muted text-lime-500 p-6 border-b-2 border-lime-400 rounded-md">
+            <CardHeader className="bg-muted text-blue-500 p-6 border-b-2 border-blue-400 rounded-md">
               <CardTitle className="text-3xl">Submission Guidelines</CardTitle>
             </CardHeader>
             <CardContent className="p-6">
@@ -214,32 +254,23 @@ export default function ThemeAndTopics() {
 
         <motion.div variants={itemVariants} className="mt-12">
           <Card className="overflow-hidden shadow-2xl bg-white/50 backdrop-blur-sm border-2 border-primary/20">
-            <CardHeader className="bg-gradient-to-tr from-[#c5e167] to-[#a4d8b4] text-primary-foreground p-6">
+            <CardHeader className="bg-gradient-to-tr from-[#67bae1] to-[#aca4d8] text-primary-foreground p-6">
               <CardTitle className="text-3xl flex items-center">
                 <Calendar className="mr-2 h-8 w-8" />
                 Important Dates
               </CardTitle>
             </CardHeader>
             <CardContent className="p-6">
-              <ul className="space-y-4">
-                {[
-                  { date: "January 4, 2025", event: "Early bird registration deadline", icon: <BirdIcon className="h-6 w-6" /> },
-                  { date: "January 10, 2025", event: "Abstract submission deadline", icon: <UserPlus className="h-6 w-6" /> },
-                  { date: "February 1, 2025", event: "Full paper submission deadline", icon: <FileText className="h-6 w-6" /> },
-                  { date: "February 10, 2025", event: "Registration deadline", icon: <File className="h-6 w-6" /> },
-                  { date: "May 22-23, 2025", event: "Conference Dates", icon: <Calendar className="h-6 w-6" /> }
-                ].map((item, index) => (
-                  <li key={index} className="flex items-center">
-                    <div className="mr-2 text-primary">
-                      {item.icon}
-                    </div>
-                    <span className="text-lg text-muted-foreground">
-                      <strong>{item.date}:</strong> {item.event}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            </CardContent>
+    <ul className=" flex flex-col-reverse py-2">
+      {timelineData.map((item, index) => (
+        <li key={index} className="flex items-center py-1 ">
+          <span className="text-lg text-muted-foreground ">
+            <strong>{item.date}:</strong> {item.event}
+          </span>
+        </li>
+      ))}
+    </ul>
+  </CardContent>
           </Card>
         </motion.div>
       </div>

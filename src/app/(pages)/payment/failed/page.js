@@ -14,7 +14,7 @@ export default function PaymentFailed() {
   }, []);
 
   const handleTryAgain = () => {
-    router.push('/payment');
+    router.push('/registration');
   };
 
   const handleBackHome = () => {

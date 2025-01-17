@@ -104,7 +104,7 @@ export default function ContactUs() {
                     width="1056"
                     draggable={false} />
             {/* <Image
-              src="https://illustrations.popsy.co/lime/telephone-call.svg"
+              src="https://illustrations.popsy.co/blue/telephone-call.svg"
               alt="Contact Us"
               width={400}
               height={300}
@@ -153,15 +153,15 @@ export default function ContactUs() {
               </p>
               <div className="space-y-2">
                 <div className="flex items-center">
-                  <Mail className="mr-2 text-lime-700" />
+                  <Mail className="mr-2 text-blue-700" />
                   <span>submit@icasem.org                  </span>
                 </div>
                 <div className="flex items-center">
-                  <Phone className="mr-2 text-lime-700" />
+                  <Phone className="mr-2 text-blue-700" />
                   <span>+91 82600 80050</span>
                 </div>
                 <div className="flex items-center">
-                  <MapPin className="mr-2 text-lime-700" />
+                  <MapPin className="mr-2 text-blue-700" />
                   <span>DCB-330, 3rd Floor, DLF Cyber City, Patia, Bhubaneswar, ODISHA - 751024 India</span>
                 </div>
               </div>
@@ -174,11 +174,11 @@ export default function ContactUs() {
                 <a href="https://www.facebook.com/profile.php?id=61561809783777" className="text-primary hover:text-primary/80">
                   <Facebook size={24} />
                 </a>
-                <a href="https://x.com/Zepresearch" className="text-primary hover:text-primary/80">
-                  <Twitter size={24} />
-                </a>
                 <a href="https://www.instagram.com/zepresearch/" className="text-primary hover:text-primary/80">
                   <Instagram size={24} />
+                </a>
+                <a href="https://x.com/Zepresearch" className="text-primary hover:text-primary/80">
+                  <Twitter size={24} />
                 </a>
                 <a href="https://www.linkedin.com/company/zep-research/" className="text-primary hover:text-primary/80">
                   <Linkedin size={24} />

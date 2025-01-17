@@ -25,7 +25,7 @@ export default function About() {
                 <h1 className="md:text-9xl text-8xl font-mono font-bold text-white ">
                   About
                 </h1>
-                <h1 className="md:text-7xl text-5xl font-mono font-bold text-[#f3ff75] md:-mt-6 -mt-4">
+                <h1 className="md:text-7xl text-5xl font-mono font-bold text-blue-300 md:-mt-6 -mt-4">
                   Conference
                   
                 </h1>
@@ -38,7 +38,7 @@ export default function About() {
 
                 <motion.button
                   whileHover={{ scale: 1.05 }}
-                  className="bg-[#f3ff75] text-black px-6 py-3 rounded-lg font-semibold inline-flex items-center gap-2"
+                  className="bg-blue-300 text-black px-6 py-3 rounded-lg font-semibold inline-flex items-center gap-2"
                 >
                   Know more
                   <ArrowRight className="h-4 w-4" />

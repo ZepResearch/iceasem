@@ -147,7 +147,7 @@ export default function PricingPage() {
   }
 
   return (
-    <div className="min-h-screen bg-lime-50 py-12 md:py-24 lg:py-32">
+    <div className="min-h-screen bg-blue-50 py-12 md:py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center space-y-8 text-center">
           <motion.h1 
@@ -172,7 +172,7 @@ export default function PricingPage() {
                     : 'bg-white border border-gray-200'
                 }`}>
                   {pkg.isPopular && (
-                    <div className="absolute -top-3 right-4 px-3 py-1 text-xs font-medium bg-gradient-to-br from-[#c5e167] to-[#a4d8b4] text-white rounded-full">
+                    <div className="absolute -top-3 right-4 px-3 py-1 text-xs font-medium bg-gradient-to-br from-[#67c9e1] to-[#a9a4d8] text-white rounded-full">
                       Popular
                     </div>
                   )}
@@ -186,7 +186,7 @@ export default function PricingPage() {
                     <Button 
                       className={`w-full ${
                         pkg.isPopular 
-                          ? 'bg-gradient-to-br from-[#c5e167] to-[#a4d8b4] hover:bg-[#4ADE80]/90 text-[#0F172A]' 
+                          ? 'bg-gradient-to-br from-[#67b0e1] to-[#a4a9d8] hover:bg-[#4ADE80]/90 text-[#f5f5f5]' 
                           : 'bg-[#0F172A] hover:bg-[#0F172A]/90 text-white'
                       }`}
                       onClick={() => initiateCCavenuePayment(pkg.name, pkg.price)}

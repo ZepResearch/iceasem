@@ -14,7 +14,7 @@ export function PinPoint({ label, x, y }) {
       transition={{ type: "spring", duration: 0.5 }}
     >
       <span className="flex h-2 w-2">
-        <span className="relative inline-flex rounded-full h-2 w-2 bg-yellow-500 animate-pulse"></span>
+        <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-400 animate-pulse"></span>
       </span>
       <span className="ml-2 text-sm font-medium text-white bg-black/50 px-2 py-1 rounded-full">
         {label}
