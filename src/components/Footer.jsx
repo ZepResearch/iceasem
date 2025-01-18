@@ -11,7 +11,7 @@ const aboutLinks = [
   { name: "Zep Research", href: "/about-organizers" },
   { name: "Committee", href: "/committee" },
   { name: "Sponsorship", href: "/sponsorship" },
-  { name: "Speakers", href: "/speakers" },
+  // { name: "Speakers", href: "/speakers" },
 ]
 
 const callForPapersLinks = [
@@ -24,7 +24,7 @@ const quickLinks = [
   { name: "Submission", href: "/submission" },
   { name: "Venue", href: "/venue" },
   { name: "Contact", href: "/contact" },
-  { name: "Award", href: "/award" },
+  { name: "Award", href: "/awards" },
   { name: "Registration", href: "/registration" },
 ]
 
