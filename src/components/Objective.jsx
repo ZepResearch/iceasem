@@ -19,13 +19,13 @@ export default function Objective() {
               </div>
               <div className="flex items-center justify-center px-8 max-lg:pb-12 max-lg:pt-10 sm:px-10 lg:pb-2">
                 <img
-                  className="w-full"
-                  src="https://illustrations.popsy.co/blue/paper-documents.svg"
+                  className="w-full rounded-2xl"
+                  src="https://images.unsplash.com/photo-1565813086292-604790c8a97b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Networking at conference"
                 />
               </div>
 
-              <div className="px-8 pt-8 sm:px-10 sm:pt-10">
+              <div className="px-8 pt-8 sm:px-10 sm:py-10" >
                 <p className="mt-2 text-2xl/7 font-medium tracking-tight text-gray-950 text-left">
                 Student Engagement
                 </p>
@@ -33,10 +33,10 @@ export default function Objective() {
                 The conference aims to actively involve students by providing platforms for presenting research through oral presentations, posters, and innovative demonstrations. 
                 </p>
               </div>
-              <div className="flex items-center justify-center px-8 max-lg:pb-12 max-lg:pt-10 sm:px-10 lg:pb-2">
+              <div className="flex items-center justify-center px-8 max-lg:pb-12 max-lg:pt-10 sm:px-10 lg:pb-2 mb-4">
                 <img
-                  className="w-full"
-                  src="https://illustrations.popsy.co/blue/freelancer.svg"
+                  className="px-4   rounded-3xl"
+                  src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Networking at conference"
                 />
               </div>
@@ -68,7 +68,7 @@ export default function Objective() {
 
           <div className="relative lg:col-start-3">
             <div className="absolute inset-px rounded-lg bg-blue max-lg:rounded-t-[2rem]"></div>
-            <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
+            <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)] drop-shadow-lg">
               <div className="px-8 pt-8 sm:px-10 sm:pt-10">
                 <p className="mt-2 text-2xl/7 font-medium tracking-tight text-gray-950 max-lg:text-center">
                   Networking
@@ -79,8 +79,8 @@ export default function Objective() {
               </div>
               <div className="flex flex-1 items-center justify-center px-8 max-lg:pb-12 max-lg:pt-10 sm:px-10 lg:pb-2">
                 <img
-                  className="w-full"
-                  src="https://illustrations.popsy.co/blue/shaking-hands.svg"
+                  className="w-full rounded-2xl"
+                  src="https://images.unsplash.com/photo-1523908511403-7fc7b25592f4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Networking at conference"
                 />
               </div>
@@ -99,8 +99,8 @@ export default function Objective() {
               </div>
               <div className="flex flex-1 justify-center items-center [container-type:inline-size] lg:pb-2">
                 <img
-                  className=""
-                  src="https://illustrations.popsy.co/blue/man-riding-a-rocket.svg"
+                  className=" rounded-2xl w-4/5"
+                  src="https://plus.unsplash.com/premium_photo-1672759362307-00e0fb2d1db8?q=80&w=2157&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Innovative technology"
                 />
               </div>
@@ -119,8 +119,8 @@ export default function Objective() {
               </div>
               <div className="flex flex-1 justify-center items-center [container-type:inline-size]">
                 <img
-                  className="w-3/4"
-                  src="https://illustrations.popsy.co/blue/communication.svg"
+                  className="w-4/5 rounded-2xl"
+                  src="https://plus.unsplash.com/premium_photo-1723867236011-6099f308dab0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Interdisciplinary team collaboration"
                 />
               </div>
