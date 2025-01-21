@@ -40,6 +40,7 @@ export function Hero() {
                 </span>{" "}
                
               </h1>
+              <p className="text-xl">&quot;Advancing Engineering and Management for a Better Tomorrow&quot;</p>
               <div className="flex sm:flex-row flex-col-reverse  items-start  justify-start gap-3 px-4 max-w-2xl  backdrop-blur-sm  my-2 py-2 rounded-3xl">
                 <img
                   src=" https://res.cloudinary.com/dwlhesiyi/image/upload/v1729260387/erph7fml9unxiowlmrmg.png"
