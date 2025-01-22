@@ -111,7 +111,7 @@ export default function AboutCompany() {
           <Card className="bg-white/50 backdrop-blur-sm border-2 border-primary/20 inline-block">
             <CardContent className="p-6">
               <CardDescription className="text-lg font-medium text-primary mb-2">
-                Join us in shaping the future of tourism and hospitality
+                Join us in shaping the future of Applied Science, Engineering & Management
               </CardDescription>
               <p className="text-muted-foreground">
               April  2<sup>nd</sup> - 3<sup>rd</sup>, 2025 • Vietnam
