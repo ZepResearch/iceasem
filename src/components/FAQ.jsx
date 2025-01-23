@@ -104,7 +104,7 @@ export default function FAQ() {
               <div className="space-y-4 text-sm font-semibold">
                 <div className="flex items-end">
                   <Mail className="mr-2 text-primary" />
-                  <span>submit@icasem.org                  </span>
+                  <span>submit@icasem.org</span>
                 </div>
                 <div className="flex items-end">
                   <Phone className="mr-2 text-primary" />

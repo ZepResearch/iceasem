@@ -90,7 +90,7 @@ export function Navbar() {
     <motion.div
       className={cn(
         "fixed top-0 w-full z-50 transition-all duration-300",
-        isScrolled ? "bg-background/80 backdrop-blur-lg shadow-sm" : "bg-background"
+        isScrolled ? "bg-gradient-to-r from-teal-200/40 to-blue-200/50 backdrop-blur-lg shadow-sm" : "bg-gradient-to-r from-teal-200/70 to-blue-200/70"
       )}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
@@ -101,56 +101,8 @@ export function Navbar() {
         <MobileNav />
 
         {/* Left Section - Hidden on Mobile */}
-        <div className="hidden lg:flex gap-6 mr-6">
-          <Link
-            href="/committee"
-            className="text-sm font-medium transition-colors hover:text-primary"
-          >
-            Committee
-          </Link>
-         
-          <Link
-            href="/sponsorship"
-            className="text-sm font-medium transition-colors hover:text-primary"
-          >
-            Sponsorship
-          </Link>
-          <Link
-            href="/venue"
-            className="text-sm font-medium transition-colors hover:text-primary"
-          >
-            Venue
-          </Link>
-          <Link
-            href="/contact"
-            className="text-sm font-medium transition-colors hover:text-primary"
-          >
-            contact us
-          </Link>
-          {/* <Link
-            href="/schedule"
-            className="text-sm font-medium transition-colors hover:text-primary"
-          >
-            schedule
-          </Link> */}
-        </div>
-
-        {/* Center Logo */}
-        <motion.div
-          className="flex-1 flex justify-center "
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          <Link href="/" className="flex items-center space-x-2 ml-20">
-            <Image src="/logo.svg" width={130} height={130} alt="logo" />
-          {/* <h1 className=" font-bold font-mono text-3xl inline-flex items-center"><MicroscopeIcon/>|ICASEM</h1> */}
-          </Link>
-        </motion.div>
-
-        {/* Right Section - Hidden on Mobile */}
-        <div className="hidden lg:flex items-center space-x-3">
-          <NavigationMenu>
+        <div className="hidden lg:flex justify-center items-center gap-6 mr-6">
+        <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuTrigger>
@@ -194,7 +146,56 @@ export function Navbar() {
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
+          <Link
+            href="/committee"
+            className="text-sm font-medium transition-colors hover:text-primary"
+          >
+            Committee
+          </Link>
+         
+          <Link
+            href="/sponsorship"
+            className="text-sm font-medium transition-colors hover:text-primary"
+          >
+            Sponsorship
+          </Link>
+         
+          {/* <Link
+            href="/schedule"
+            className="text-sm font-medium transition-colors hover:text-primary"
+          >
+            schedule
+          </Link> */}
+        </div>
 
+        {/* Center Logo */}
+        <motion.div
+          className="flex-1 flex justify-center "
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <Link href="/" className="flex items-center space-x-2 ">
+            <Image src="/logo.svg" width={130} height={130} alt="logo" />
+          {/* <h1 className=" font-bold font-mono text-3xl inline-flex items-center"><MicroscopeIcon/>|ICASEM</h1> */}
+          </Link>
+        </motion.div>
+
+        {/* Right Section - Hidden on Mobile */}
+        <div className="hidden lg:flex items-center space-x-3">
+          
+        <Link
+            href="/venue"
+            className="text-sm font-medium transition-colors hover:text-primary pr-8"
+          >
+            Venue
+          </Link>
+          <Link
+            href="/contact"
+            className="text-sm font-medium transition-colors hover:text-primary pr-8 "
+          >
+            contact us
+          </Link>
           <Link
             href="/submission"
             className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-9 px-4 py-2"

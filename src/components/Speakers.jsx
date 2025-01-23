@@ -22,7 +22,7 @@ const SpeakerCard = ({ name, role, image, bio,collectionId, id, country, college
     <img 
       src={ `https://icasem.pockethost.io/api/files/${collectionId}/${id}/${image}` } 
       alt={name} 
-      className="w-full h-72 object-fill" 
+      className="w-full h-72 object-contain bg-gray-200" 
     />
     <div className="p-4">
       <h3 className="text-xl font-semibold text-blue-800">{name}</h3>
@@ -82,7 +82,7 @@ const Drawer = ({ isOpen, onClose, speaker }) => (
             <img
               src={`https://icasem.pockethost.io/api/files/${speaker.collectionId}/${speaker.id}/${speaker.image}` }
               alt={speaker.name}
-              className="w-full h-auto object-fill rounded-lg mb-4 mt-4"
+              className="w-full h-96 object-contain rounded-lg mb-4 mt-4"
             />
             <h2 className="text-2xl font-bold text-blue-800 mb-2">
               {speaker.name}
@@ -103,7 +103,15 @@ const Drawer = ({ isOpen, onClose, speaker }) => (
     )}
   </AnimatePresence>
 );
-
+// First, let's create a utility function to determine grid column placement
+function getGridClass(itemCount) {
+  if (itemCount === 1) {
+    return "lg:col-start-2" // Center in 3-column grid
+  } else if (itemCount === 2) {
+    return "lg:col-span-1" // Default span for 2 items
+  }
+  return "" // Default for 3 or more items
+}
 export default function SpeakerSection() {
   const [activeCategory, setActiveCategory] = useState("Guest Speaker");
   const [selectedSpeaker, setSelectedSpeaker] = useState(null);
@@ -209,26 +217,27 @@ export default function SpeakerSection() {
           ))}
         </div>
         <AnimatePresence mode="wait">
-          <motion.div
-            key={activeCategory}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.3 }}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-          >
-            {speakers[activeCategory]?.map((speaker, index) => (
-              <motion.div
-                key={speaker.id}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3, delay: index * 0.1 }}
-              >
-                <SpeakerCard {...speaker} onMoreInfo={handleMoreInfo} />
-              </motion.div>
-            ))}
-          </motion.div>
-        </AnimatePresence>
+        <motion.div
+          key={activeCategory}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.3 }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
+          {speakers[activeCategory]?.map((speaker, index) => (
+            <motion.div
+              key={speaker.id}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, delay: index * 0.1 }}
+              className={`${getGridClass(speakers[activeCategory].length)}`}
+            >
+              <SpeakerCard {...speaker} onMoreInfo={handleMoreInfo} />
+            </motion.div>
+          ))}
+        </motion.div>
+      </AnimatePresence>
         <Drawer
           isOpen={isDrawerOpen}
           onClose={closeDrawer}

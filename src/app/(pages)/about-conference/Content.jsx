@@ -43,11 +43,11 @@ export default function AboutUs() {
             className="relative h-64 md:h-full"
           >
             <Image
-              src="/assets/about.jpg"
+              src="https://plus.unsplash.com/premium_photo-1705267936187-aceda1a6c1a6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Illustration of applied science, engineering, and management concepts"
               layout="fill"
               objectFit="contain"
-              className="rounded-3xl"
+              className="rounded-3xl p-1  "
             />
           </motion.div>
         </div>

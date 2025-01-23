@@ -44,27 +44,28 @@ export default function Objective() {
             <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-t-[2rem]"></div>
           </div>
 
-          {/* <div className="relative lg:col-start-2">
+          <div className="relative lg:col-start-2">
             <div className="absolute inset-px rounded-lg bg- max-lg:rounded-t-[2rem]"></div>
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
               <div className="px-8 pt-8 sm:px-10 sm:pt-10">
                 <p className="mt-2 text-2xl/7 font-medium tracking-tight text-gray-950 max-lg:text-center">
-                  Networking
+                  Professional Development
                 </p>
                 <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-                  Create opportunities for researchers, practitioners, and industry professionals to connect and collaborate.
+                Enhance your career through mentorship programs, skill-building workshops, and exclusive industry connections.
+                Engage with leaders in your field and discover new opportunities for growth.
                 </p>
               </div>
               <div className="flex flex-1 items-center justify-center px-8 max-lg:pb-12 max-lg:pt-10 sm:px-10 lg:pb-2">
                 <img
-                  className="w-full"
-                  src="https://illustrations.popsy.co/blue/shaking-hands.svg"
+                  className="px-4   rounded-3xl"
+                  src="https://images.unsplash.com/photo-1651608670852-1f4203ca8966?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Networking at conference"
                 />
               </div>
             </div>
             <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-t-[2rem]"></div>
-          </div> */}
+          </div>
 
           <div className="relative lg:col-start-3">
             <div className="absolute inset-px rounded-lg bg-blue max-lg:rounded-t-[2rem]"></div>

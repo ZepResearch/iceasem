@@ -36,13 +36,14 @@ export default function About() {
                 <p className="md:text-base text-sm text-gray-200 mb-0.5 text-justify">Welcome to the International Conference on Applied Science, Engineering & Management (ICASEM), a premier platform that brings together leading researchers, academics, and students to exchange groundbreaking ideas and innovations across multidisciplinary domains.</p>
                 <p className="md:text-sm text-xs  text-gray-200 mb-4 text-justify">Our conference is dedicated to fostering collaboration, promoting knowledge-sharing, and advancing the frontiers of Applied Science, Engineering, and Management. Whether you’re presenting cutting-edge research, networking with peers, or exploring new opportunities for collaboration, ICASEM provides the perfect environment to engage with the global academic and professional community.</p>
 
-                <motion.button
+                <motion.a
+                href="/about-conference"
                   whileHover={{ scale: 1.05 }}
                   className="bg-blue-300 text-black px-6 py-3 rounded-lg font-semibold inline-flex items-center gap-2"
                 >
                   Know more
                   <ArrowRight className="h-4 w-4" />
-                </motion.button>
+                </motion.a>
               </div>
             </div>
           </Card>
@@ -72,13 +73,14 @@ export default function About() {
                         />+</div>
                   <p className="text-sm text-gray-200 ">5,087 of 8,000 Registered </p>
                 </div>
-                <motion.button
+                <motion.a
+                  href="/registration"
                   whileHover={{ scale: 1.05 }}
                   className="bg-blue-500 text-white px-6 md:py-3 py-1 rounded-lg md:font-semibold inline-flex items-center gap-2"
                 >
                   Register Here
                   <ArrowRight className="h-4 w-4" />
-                </motion.button>
+                </motion.a>
               </div>
             </Card>
           </motion.div>

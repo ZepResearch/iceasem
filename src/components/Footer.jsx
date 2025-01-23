@@ -87,15 +87,23 @@ export function Footer() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="space-y-16"
+          className="space-y-8"
         >
           {/* Heading */}
+            <div className="inline-flex">
+
+          <Image src="/whiteLogo.svg" width={150} height={50} alt="ICASEM" className=" " />
+          <div className="inline-flex justify-start items-center text-white text-2xl sm:text-3xl font-bold">
+          <Image src="https://res.cloudinary.com/dwlhesiyi/image/upload/v1726731577/il2wr5yxd2w1sarnj3it.svg" width={100} height={40} alt="ICASEM" className=" " />
+          <span className="-ml-3">Zep Research</span> 
+          </div>
+            </div>
+          
           <motion.h2 
             variants={item}
-            className="text-4xl md:text-5xl font-bold text-[#c4d2f8] max-w-2xl leading-tight"
+            className="text-3xl md:text-4xl  font-bold text-[#c4d2f8] max-w-2xl leading-tight"
           >
-          <Image src="/whiteLogo.svg" width={150} height={50} alt="ICASEM" className="pb-4 " />
-            Where Science, Engineering, and Management Converge
+            Where Science, Engineering, <br /> and Management Converge
           </motion.h2>
 
           {/* Links Grid */}
@@ -135,7 +143,7 @@ export function Footer() {
             </motion.div>
 
             {/* Quick Links */}
-            <motion.div variants={item} className="space-y-6">
+            <motion.div variants={item} className="space-y-6 pb-4">
               <h3 className="text-xl font-semibold text-[#c4d2f8]">Quick Links</h3>
               <ul className="space-y-3">
                 {quickLinks.map((link) => (
@@ -152,7 +160,7 @@ export function Footer() {
             </motion.div>
 
             {/* Legal Links */}
-            <motion.div variants={item} className="space-y-6">
+            <motion.div variants={item} className="space-y-6 pb-4">
               <h3 className="text-xl font-semibold text-[#c4d2f8]">Legal</h3>
               <ul className="space-y-3">
                 {legalLinks.map((link) => (
@@ -169,7 +177,7 @@ export function Footer() {
             </motion.div>
 
             {/* Social Links and CTA */}
-            <motion.div variants={item} className="space-y-6">
+            <motion.div variants={item} className="space-y-6" >
               <h3 className="text-xl font-semibold text-[#c4d2f8]">Connect</h3>
               <div className="flex gap-4">
                 {socialLinks.map((social) => (
@@ -195,7 +203,7 @@ export function Footer() {
                 Register Now
               </Link>
               </Button>
-              <div className="bg-white p-6 rounded-2xl shadow-lg space-y-4">
+              {/* <div className="bg-white p-6 rounded-2xl shadow-lg space-y-4">
                 <span className="inline-block px-3 py-1 bg-[#ff9966]/20 text-[#ff9966] rounded-full text-xs font-medium">
                   Call for Papers
                 </span>
@@ -211,24 +219,25 @@ export function Footer() {
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </Link>
                 </motion.button>
-              </div>
-            </motion.div>
-          </div>
-        </motion.div>
-        <motion.div variants={item} className="pt-2">
-              <h3 className="text-xl font-semibold text-[#c4d2f8]">Contact Us</h3>
-              <ul className=" gap-7  flex">
-                <li className="text-[#c4d2f8] text-lg inline-flex gap-2">
+              </div> */}
+             <div className="bg-white px-6 py-2 rounded-2xl shadow-lg space-y-2 flex flex-col">
+              <h3 className="text-lg  font-semibold text-[#2855d1]">Contact Us</h3>
+              <ul className=" gap-2  flex flex-col">
+                <li className="text-[#040711] text-base inline-flex gap-2">
                   <span className="font-semibold"><MailIcon/></span> submit@icasem.org
                 </li>
-                <li className="text-[#c4d2f8] text-lg inline-flex gap-2">
+                <li className="text-[#000102] text-base inline-flex gap-2">
                   <span className="font-semibold"><PhoneCall/></span>91+ 82600 80050
                 </li>
-                <li className="text-[#c4d2f8] text-lg inline-flex gap-2">
+                <li className="text-[#000000] text-base inline-flex gap-2">
                   <span className="font-semibold"><MapPin/></span> Vietnam
                 </li>
               </ul>
+            </div>
             </motion.div>
+          </div>
+        </motion.div>
+        
         {/* Copyright */}
         <motion.div 
           variants={item}
