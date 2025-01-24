@@ -64,7 +64,7 @@ export default function CTASection() {
         {/* Left Column */}
         <div className="grid gap-6">
           {/* Top Two Cards */}
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-2 grid-cols-1   gap-6">
             <CTACard
             href="/awards"
               title="Awards"
@@ -111,7 +111,7 @@ export default function CTASection() {
             pattern={patterns.venue}
           />
           {/* Bottom Two Cards */}
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-2 grid-cols-1 gap-6">
             <CTACard
             href="/registration"
               title="Register"

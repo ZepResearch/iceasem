@@ -131,7 +131,7 @@ export default function ConferenceTickets() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-4xl mb-8 text-center text-gray-900 font-medium text-pretty"
+            className="text-5xl mb-8 text-center text-gray-900 font-medium text-pretty"
           >
             Presenter Tickets
           </motion.h2>
@@ -149,7 +149,7 @@ export default function ConferenceTickets() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-4xl mb-8 text-center text-gray-900 font-medium text-pretty"
+            className="text-5xl mb-8 text-center text-gray-900 font-medium text-pretty"
           >
             Listener Tickets
           </motion.h2>
