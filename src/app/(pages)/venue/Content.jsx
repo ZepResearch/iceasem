@@ -127,7 +127,7 @@ export default function VenuePage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-2xl font-semibold text-gray-900 mb-6 ">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6 text-center ">
             Nearby Places to Visit in Vietnam
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
