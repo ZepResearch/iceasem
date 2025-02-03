@@ -91,11 +91,9 @@ export default function VenuePage() {
                   <p>(detail address)</p>
                 </div>
                 <p className="text-gray-600 mb-4">
-                  The Kuala Lumpur city Centre is a world-class facility
-                  designed to host international events. With its strategic location
-                  in the heart of Kuala Lumpur and state-of-the-art amenities,
-                  it&apos;s the perfect setting for our World Forum on sustainability
-                  and climate change.
+                The Vietnam National Convention Center is a world-class facility designed to host international events.
+                 With its strategic location in the heart of Hanoi and state-of-the-art amenities,
+                  it&apos;s the perfect setting for our World Forum on Sustainability and Climate Change.
                 </p>
                 <Badge className="bg-gray-100 text-gray-700">
                   Eco-Certified Venue
