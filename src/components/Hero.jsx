@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowRight, Calendar, MapPin } from "lucide-react"
+import { ArrowRight, Calendar, Headphones, MapPin } from "lucide-react"
 import Image from "next/image"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -10,7 +10,30 @@ import Link from "next/link"
 
 export function Hero() {
   return (
-    <section className="w-full mx-auto px-4 py-12 mt-12">
+    <section className="w-full relative mx-auto px-4 py-12 mt-12">
+<motion.div
+        className="sm:absolute top-24 sm:right-12 right-5 z-10 bg-white/90 backdrop-blur-sm text-black p-4 rounded-lg object-center ml-12 w-64 my-4 shadow-2xl"
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: 1, duration: 0.5 }}
+      >
+        <h3 className="font-bold text-lg mb-2">Hybrid Conference</h3>
+        <p className="text-sm mb-2">Experience the conference your way:</p>
+        <ul className="list-disc list-inside text-sm">
+          <li>Attend in person in Delhi</li>
+          <li>Join virtually from anywhere</li>
+        </ul>
+        <div className="mt-3 flex items-center justify-between text-xs">
+          <span className="flex items-center">
+            <MapPin className="w-4 h-4 mr-1" />
+            Physical
+          </span>
+          <span className="flex items-center">
+            <Headphones className="w-4 h-4 mr-1" />
+            Virtual
+          </span>
+        </div>
+      </motion.div>
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
         <Card className="relative overflow-hidden bg-gradient-to-tr from-gray-900 to-gray-900 p-8 min-h-[80vh] rounded-3xl">
           <div className="absolute inset-0 z-0">
