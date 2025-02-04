@@ -20,7 +20,7 @@ export function Hero() {
         <h3 className="font-bold text-lg mb-2">Hybrid Conference</h3>
         <p className="text-sm mb-2">Experience the conference your way:</p>
         <ul className="list-disc list-inside text-sm">
-          <li>Attend in person in Delhi</li>
+          <li>Attend in person in Vietnam</li>
           <li>Join virtually from anywhere</li>
         </ul>
         <div className="mt-3 flex items-center justify-between text-xs">
