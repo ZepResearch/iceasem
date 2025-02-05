@@ -12,7 +12,7 @@ export function Hero() {
   return (
     <section className="w-full relative mx-auto px-4 py-12 mt-12">
 <motion.div
-        className="sm:absolute top-24 sm:right-12 right-5 z-10 bg-white/90 backdrop-blur-sm text-black p-4 rounded-lg object-center ml-12 w-64 my-4 shadow-2xl"
+        className="sm:absolute top-24 sm:right-12 right-5 z-10 bg-gradient-to-r from-teal-200/80 to-lime-200/90 backdrop-blur-sm text-black p-4 rounded-lg object-center ml-12 w-64 my-4 shadow-2xl"
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 1, duration: 0.5 }}
