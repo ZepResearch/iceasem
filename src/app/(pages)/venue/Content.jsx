@@ -110,7 +110,7 @@ export default function VenuePage() {
           >
   
             <iframe
-           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d195.2664305983908!2d106.6661allowfullscreen="
+           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1958.2664305983908!2d106.6661allowfullscreen="" loading="lazy" referrerpolicy3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d1f91fa43789%3A0x4e998d0900ac63cb!2zVG_DoCBOaMOgIFbEg24gUGjDsm5nIEJNIFRvd2Vy!5e0!3m2!1sen!2sin!4v1740125524514!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0 }}
