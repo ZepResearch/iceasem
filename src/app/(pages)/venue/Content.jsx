@@ -88,7 +88,7 @@ export default function VenuePage() {
               <CardContent>
                 <div className="flex items-center mb-4 font-semibold text-gray-700">
                   <MapPin className="mr-2 text-gray-500" />
-                  <p>(detail address)</p>
+                  <p>330, Nguyen Van Troi Street, Hiep Thanh Ward, Thu Dau Mot City, Binh Duong Province, Vietnam</p>
                 </div>
                 <p className="text-gray-600 mb-4">
                 The Vietnam National Convention Center is a world-class facility designed to host international events.
