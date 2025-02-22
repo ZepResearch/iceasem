@@ -108,9 +108,8 @@ export default function VenuePage() {
             transition={{ duration: 0.5 }}
             className="h-[400px]"
           >
-  
             <iframe
-           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1958.2664305983908!2d106.6661allowfullscreen="" loading="lazy" referrerpolicy3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d1f91fa43789%3A0x4e998d0900ac63cb!2zVG_DoCBOaMOgIFbEg24gUGjDsm5nIEJNIFRvd2Vy!5e0!3m2!1sen!2sin!4v1740125524514!5m2!1sen!2sin"
+           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.5887403926718!2d106.65631167540248!3d10.99438258916796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d1115edecf1f%3A0x1b0ea38180a0a5c5!2zMzMwIMSQLiBOZ3V54buFbiBWxINuIFRy4buXaSwgSGnhu4dwIFRow6BuaCwgVGjhu6cgROG6p3UgTeG7mXQsIELDrG5oIETGsMahbmcsIFZpZXRuYW0!5e0!3m2!1sen!2sin!4v1740203781244!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0 }}
