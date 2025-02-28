@@ -112,7 +112,7 @@ export default function FAQ() {
                 </div>
                 <div className="flex items-end">
                   <MapPin className="mr-2 text-primary" />
-                  <span>[add detail address]</span>
+                  <span>DCB-330, 3rd Floor, DLF Cyber City, Patia, Bhubaneswar, ODISHA - 751024 India                  </span>
                 </div>
               </div>
               <Link href={'/contact'}>
