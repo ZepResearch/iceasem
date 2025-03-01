@@ -19,6 +19,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import Image from "next/image"
 
 export function MobileNav() {
   const [isOpen, setIsOpen] = React.useState(false)
@@ -35,8 +36,7 @@ export function MobileNav() {
         <SheetHeader>
           <SheetTitle>
             <Link href="/" className="flex items-center space-x-2" onClick={() => setIsOpen(false)}>
-              <Building2 className="h-6 w-6" />
-              <span className="font-bold text-xl">Logo</span>
+              <Image src={"/logo.svg"} alt="ZEP Research" width={100} height={100} />
             </Link>
           </SheetTitle>
         </SheetHeader>
@@ -78,7 +78,7 @@ export function MobileNav() {
                     About Conference
                   </Link>
                   <Link
-                    href="/about-zep"
+                    href="/about-organizers"
                     className="text-sm transition-colors hover:text-primary"
                     onClick={() => setIsOpen(false)}
                   >
@@ -93,21 +93,21 @@ export function MobileNav() {
               <AccordionContent>
                 <div className="flex flex-col space-y-2">
                   <Link
-                    href="/themes"
+                    href="/theme-and-topics"
                     className="text-sm transition-colors hover:text-primary"
                     onClick={() => setIsOpen(false)}
                   >
                     Theme and Topics
                   </Link>
                   <Link
-                    href="/format"
+                    href="/papers-format"
                     className="text-sm transition-colors hover:text-primary"
                     onClick={() => setIsOpen(false)}
                   >
                     Papers Format
                   </Link>
                   <Link
-                    href="/presentation"
+                    href="/mode-of-presentation"
                     className="text-sm transition-colors hover:text-primary"
                     onClick={() => setIsOpen(false)}
                   >
@@ -127,7 +127,7 @@ export function MobileNav() {
               Contact Us
             </Link>
             <Link
-              href="/register"
+              href="/registration"
               className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-9 px-4 py-2"
               onClick={() => setIsOpen(false)}
             >
