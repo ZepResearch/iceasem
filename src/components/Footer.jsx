@@ -227,7 +227,7 @@ export function Footer() {
                   <span className="font-semibold"><MailIcon/></span> submit@icasem.org
                 </li>
                 <li className="text-[#000102] text-base inline-flex gap-2">
-                  <span className="font-semibold"><PhoneCall/></span>91+ 82600 80050
+                  <span className="font-semibold"><PhoneCall/></span>+91 82600 80050
                 </li>
                 <li className="text-[#000000] text-base inline-flex gap-2">
                   <span className="font-semibold"><MapPin/></span> Vietnam
