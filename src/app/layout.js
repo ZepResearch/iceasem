@@ -3,6 +3,8 @@ import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ToastProvider } from "@/components/ui/ToastProvider";
+import TawkToChat from "@/components/TawkToChat";
+import { FloatingWhatsAppButton } from "@/components/whatsapp";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -78,6 +80,8 @@ export default function RootLayout({ children }) {
         {children}
         <Footer/>
         <ToastProvider/>
+        <TawkToChat/>
+        <FloatingWhatsAppButton phoneNumber="8260080050" message="How can we assist you?" />
       </body>
     </html>
   );
