@@ -126,7 +126,7 @@ export default function SpeakerSection() {
         setLoading(true);
         // Fetch all speakers
         const records = await pb.collection('speakers').getFullList({
-          sort: 'name',
+          sort: 'order',
           expand: 'image', // Expand the image relation if needed
           requestKey: null,
         });
