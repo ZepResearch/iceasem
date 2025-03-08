@@ -89,9 +89,9 @@ export default function SubmissionGuidelines() {
           <Badge variant="outline" className="mb-4 text-lg px-4 py-1">
             ICASEM
           </Badge>
-          <h2 className="text-4xl font-bold text-primary mb-4 ">
+          <h1 className="text-4xl font-bold text-primary mb-4 ">
             Submission Guidelines
-          </h2>
+          </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Please adhere to the following guidelines to ensure your submission meets the conference standards for the International Conference on Applied Science, Engineering & Management.
           </p>

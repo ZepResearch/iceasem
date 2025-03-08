@@ -40,7 +40,7 @@ export default function CancellationPolicy() {
         </CardHeader>
         <CardContent className="p-8">
           <section className="mb-10">
-            <h2 className="text-2xl font-semibold text-blue-600 mb-4">Overview</h2>
+            <h1 className="text-2xl font-semibold text-blue-600 mb-4">Overview</h1>
             <p className="text-gray-700 leading-relaxed">
               This policy outlines the terms for cancellation of registration and paper submission for the International Conference on Applied Science, Engineering & Management (ICASEM).
             </p>

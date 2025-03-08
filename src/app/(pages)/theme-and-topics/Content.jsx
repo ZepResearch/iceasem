@@ -172,7 +172,7 @@ export default function ThemeAndTopics() {
       <div className="max-w-6xl mx-auto">
         <motion.div variants={itemVariants} className="text-center mb-12">
           <Badge variant="outline" className="mb-4 text-lg px-4 py-1">Conference Themes</Badge>
-          <h2 className="text-4xl font-bold text-primary mb-4">Theme and Topics</h2>
+          <h1 className="text-4xl font-bold text-primary mb-4">Theme and Topics</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Advancing innovation through interdisciplinary research in applied sciences, engineering, and management.
           </p>
