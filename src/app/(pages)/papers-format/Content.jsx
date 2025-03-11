@@ -93,8 +93,7 @@ export default function SubmissionGuidelines() {
             Submission Guidelines
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Please adhere to the following guidelines to ensure your submission meets the conference standards for the International Conference on Applied Science, Engineering & Management.
-          </p>
+          To meet the standards of the International Conference on Applied Science, Engineering & Management, please follow these guidelines for your submission.          </p>
         </motion.div>
 
         <motion.div

@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   metadataBase: new URL('https://www.icasem.org/'),
   title: {
-    default: 'ICASEM  | International Conference on Applied Science, Engineering & Management',
+    default: 'ICASEM: Applied Science & Management Conference',
     template: '%s | ICASEM '
   },
   description: 'International Conference on Applied Science, Engineering & Management (ICASEM) - A global platform for researchers, scientists, engineers, and professionals to exchange knowledge and foster innovation.',
@@ -44,7 +44,7 @@ export const metadata = {
     telephone: false,
   },
   openGraph: {
-    title: 'ICASEM  | International Conference on Applied Science, Engineering & Management',
+    title: 'ICASEM: Applied Science & Management Conference',
     description: 'Join global researchers, scientists, and professionals at ICASEM 2024 to explore cutting-edge developments in applied science, engineering, and management.',
     url: 'https://www.icasem.org/',
     siteName: 'ICASEM 2024',
@@ -53,7 +53,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'ICASEM  | International Conference on Applied Science, Engineering & Management',
+    title: 'ICASEM: Applied Science & Management Conference',
     description: 'Join global researchers, scientists, and professionals at ICASEM 2024 to explore cutting-edge developments in applied science, engineering, and management.',
   },
   robots: {

@@ -57,17 +57,17 @@ export function Hero() {
             <div className="flex flex-wrap items-center justify-start gap-4 mb-8">
               <img
                 src="https://res.cloudinary.com/dwlhesiyi/image/upload/v1729260387/erph7fml9unxiowlmrmg.png"
-                alt=""
+                alt="logo"
                 className="h-12 drop-shadow-lg"
               />
               <img
                 src="https://res.cloudinary.com/dwlhesiyi/image/upload/v1728043047/yqhbu4xrrwcab48qtpfw.png"
-                alt=""
+                alt="logo2"
                 className="h-12 drop-shadow-sm"
               />
               <img
                 src="https://res.cloudinary.com/dwlhesiyi/image/upload/v1728043732/dpwtq9cenauyctsvd9vg.png"
-                alt=""
+                alt="logo3"
                 className="h-12 drop-shadow-sm bg-white/70 rounded-2xl"
               />
             </div>

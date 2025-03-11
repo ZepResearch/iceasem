@@ -25,16 +25,16 @@ export default function About() {
                 <h1 className="md:text-9xl text-8xl font-mono font-bold text-white ">
                   About
                 </h1>
-                <h1 className="md:text-7xl text-5xl font-mono font-bold text-blue-300 md:-mt-6 -mt-4">
+                <h2 className="md:text-7xl text-5xl font-mono font-bold text-blue-300 md:-mt-6 -mt-4">
                   Conference
                   
-                </h1>
+                </h2>
                 <p></p>
               </div>
               <div>
                
-                <p className="md:text-base text-sm text-gray-200 mb-0.5 text-justify">Welcome to the International Conference on Applied Science, Engineering & Management (ICASEM), a premier platform that brings together leading researchers, academics, and students to exchange groundbreaking ideas and innovations across multidisciplinary domains.</p>
-                <p className="md:text-sm text-xs  text-gray-200 mb-4 text-justify">Our conference is dedicated to fostering collaboration, promoting knowledge-sharing, and advancing the frontiers of Applied Science, Engineering, and Management. Whether you’re presenting cutting-edge research, networking with peers, or exploring new opportunities for collaboration, ICASEM provides the perfect environment to engage with the global academic and professional community.</p>
+                <p className="md:text-base text-sm text-gray-200 mb-0.5 text-justify">Join top researchers, academics, and students at the International Conference on Applied Science, Engineering & Management. This event is a hub for sharing new ideas and innovations across multiple fields.</p>
+                <p className="md:text-sm text-xs  text-gray-200 mb-4 text-justify">ICASEM fosters collaboration, knowledge-sharing, and progress in these disciplines. Whether you're presenting research, networking, or exploring partnerships, this conference is the perfect place to connect with the global academic and professional community.</p>
 
                 <motion.a
                 href="/about-conference"

@@ -60,22 +60,7 @@ export default function ModePresentaion() {
             Choose your preferred method of presenting at the International Conference on Applied Science, Engineering & Management
           </p>
         </motion.div>
-        {/* <motion.h1
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-5xl font-bold text-center mb-8 text-blue-600 dark:text-blue-300"
-        >
-         
-        </motion.h1>
-        <motion.p
-          initial={{ opacity: 0, y: -30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-xl text-center mb-12 text-gray-700 dark:text-gray-300"
-        >
-          
-        </motion.p> */}
+      
         {presentationModes.map((mode, index) => (
           <motion.div
             key={index}

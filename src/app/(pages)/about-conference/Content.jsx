@@ -12,7 +12,7 @@ export default function AboutUs() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h1 className="text-5xl font-bold text-center mb-8 text-gray-900">About the International Conference on Applied Science, Engineering & Management </h1>
+          <h1 className="text-5xl font-bold text-center mb-8 text-gray-900">About Conference </h1>
         </motion.div>
         
         <div className="grid md:grid-cols-2 gap-8 items-center">

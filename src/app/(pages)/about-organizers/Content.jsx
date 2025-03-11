@@ -68,8 +68,7 @@ export default function AboutCompany() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground px-12">
-              At Zep Research, we specialize in organizing and hosting academic conferences and webinars that bring together researchers, educators, and professionals from around the globe. Our expertly curated events foster meaningful exchanges of ideas, knowledge sharing, and collaborations, creating opportunities for both seasoned scholars and emerging researchers to connect and grow.
-            </p>
+              Zep Research organizes academic conferences and webinars that unite researchers, educators, and professionals worldwide. Our curated events encourage idea exchange, knowledge sharing, and collaboration, providing growth opportunities for both experienced scholars and emerging researchers.            </p>
             </CardContent>
           </Card>
         </motion.div>
@@ -82,8 +81,7 @@ export default function AboutCompany() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Our mission is to advance the field of Applied Science, Engineering & Management by providing a platform for knowledge exchange, networking, and collaboration. We strive to address current challenges, explore emerging opportunities, and shape the future of the industry through insightful discussions and presentations.
-                </p>
+                Our mission is to advance Applied Science, Engineering & Management by fostering knowledge exchange, networking, and collaboration. We aim to tackle challenges, explore new opportunities, and shape the industry's future through insightful discussions and presentations.                </p>
               </CardContent>
             </Card>
           </motion.div>

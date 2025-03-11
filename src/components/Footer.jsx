@@ -48,7 +48,7 @@ const socialLinks = [
         { 
             icon: Twitter, 
             href: "https://x.com/Zepresearch",
-            label: "Twitter"
+            label: "X"
           },
         { 
           icon: Linkedin, 
