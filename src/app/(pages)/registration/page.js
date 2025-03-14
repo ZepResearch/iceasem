@@ -3,7 +3,7 @@ import Ticket from './components/TIcket'
 import Process from './components/Proccse'
 import CTACancle from './components/Cta-Cancle-Policy'
 export const metadata = {
-  title: 'Registration  ICASEM 2025 | International Conference on Applied Science, Engineering & Management',
+  title: 'ICASEM 2025 Registration | Intl. Conf. on Science & Engg.',
   description: 'Learn about ICASEM 2025, a premier conference uniting global experts in applied science, engineering, and management. Join us in Vietnam for groundbreaking research and networking.',
   keywords: [
     'ICASEM 2025',

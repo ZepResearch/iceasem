@@ -4,7 +4,7 @@ import { Award, BookOpen, Users } from 'lucide-react'
 
 
 export const metadata = {
-  title: 'Award ICASEM 2025 | International Conference on Applied Science, Engineering & Management',
+  title: 'ICASEM 2025 Award | Intl. Conf. on Science & Engg.',
   description: 'Learn about ICASEM 2025, a premier conference uniting global experts in applied science, engineering, and management. Join us in Vietnam for groundbreaking research and networking.',
   keywords: [
     'ICASEM 2025',
@@ -19,7 +19,7 @@ export const metadata = {
     'innovation conference'
   ],
   openGraph: {
-    title: 'About ICASEM 2025 | International Conference on Applied Science, Engineering & Management',
+    title: 'ICASEM 2025 Award | Intl. Conf. on Science & Engg.',
     description: 'Join leading experts at ICASEM 2025 in Vietnam. Explore cutting-edge research in applied science, engineering, and management while networking with global innovators.',
     type: 'website',
     

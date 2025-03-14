@@ -1,7 +1,7 @@
 import React from 'react'
 import ModePresentaion from './Content'
 export const metadata = {
-  title: 'Mode of Presentation ICASEM 2025 | International Conference on Applied Science, Engineering & Management',
+  title: 'ICASEM 2025 Mode of Presentation | Intl. Conf. on Science & Engg.',
   description: 'Learn about ICASEM 2025, a premier conference uniting global experts in applied science, engineering, and management. Join us in Vietnam for groundbreaking research and networking.',
   keywords: [
     'ICASEM 2025',
