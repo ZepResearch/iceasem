@@ -38,7 +38,7 @@ export function Dates() {
   }, [])
 
   return (
-    <div className="min-h-full  py-16 px-4">
+    <div className="min-h-full py-16 px-4">
       <div className="max-w-7xl mx-auto">
         <motion.h1
           className="text-center mb-16"
@@ -46,7 +46,7 @@ export function Dates() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <span className="text-4xl md:text-5xl font-medium   drop-shadow-sm">
+          <span className="text-4xl md:text-5xl font-medium drop-shadow-sm">
             Important Dates
           </span>
         </motion.h1>
@@ -61,24 +61,24 @@ export function Dates() {
               whileHover={{ y: -5, transition: { duration: 0.2 } }}
               className="group"
             >
-              <Card className=" bg-white rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-2xl border-2 border-blue-100 hover:border-blue-300">
-               
-
+              <Card className={`bg-white rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-2xl border-2 ${index === 0 ? 'border-gray-200 hover:border-gray-300 opacity-75' : 'border-blue-100 hover:border-blue-300'}`}>
                 <CardContent className="pt-12 pb-8 px-6">
                   <div className="relative">
                     <div className="text-center space-y-4">
-                    <div className="w-16 h-16 mx-auto">
-                  <div className="w-full h-full rounded-full bg-gradient-to-br from-blue-400 to-blue-600 p-0.5 shadow-lg">
-                    <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
-                      <Calendar className="w-8 h-8 text-blue-600 transform group-hover:scale-110 transition-transform duration-300" />
-                    </div>
-                  </div>
-                </div>
-                      <h3 className="font-bold text-xl text-gray-800 group-hover:text-blue-600 transition-colors duration-300">
+                      <div className="w-16 h-16 mx-auto">
+                        <div className={`w-full h-full rounded-full ${index === 0 ? 'bg-gradient-to-br from-gray-400 to-gray-500' : 'bg-gradient-to-br from-blue-400 to-blue-600'} p-0.5 shadow-lg`}>
+                          <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
+                            <Calendar className={`w-8 h-8 ${index === 0 ? 'text-gray-500' : 'text-blue-600'} transform group-hover:scale-110 transition-transform duration-300`} />
+                          </div>
+                        </div>
+                      </div>
+                      <h3 className={`font-bold text-xl ${index === 0 ? 'text-gray-500 line-through group-hover:text-gray-600' : 'text-gray-800 group-hover:text-blue-600'} transition-colors duration-300`}>
                         {item.title}
                       </h3>
-                      <div className="bg-gradient-to-r from-blue-100 via-blue-50 to-blue-100 rounded-xl py-3 px-4 shadow-inner">
-                        <p className="text-blue-800 font-semibold tracking-wide text-lg">{item.date}</p>
+                      <div className={`${index === 0 ? 'bg-gradient-to-r from-gray-100 via-gray-50 to-gray-100' : 'bg-gradient-to-r from-blue-100 via-blue-50 to-blue-100'} rounded-xl py-3 px-4 shadow-inner`}>
+                        <p className={`${index === 0 ? 'text-gray-500 line-through' : 'text-blue-800'} font-semibold tracking-wide text-lg`}>
+                          {item.date}
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -114,4 +114,3 @@ export function Dates() {
     </div>
   )
 }
-
