@@ -263,11 +263,11 @@ export default function ThemeAndTopics() {
             <CardContent className="p-6">
     <ul className=" flex flex-col-reverse py-2">
       {timelineData.map((item, index) => (
-        <li key={index} className="flex items-center py-1 ">
-          <span className="text-lg text-muted-foreground ">
-            <strong>{item.date}:</strong> {item.event}
-          </span>
-        </li>
+       <li key={index} className={`flex items-center py-1 ${index === timelineData.length - 1 ? 'line-through text-gray-900' : ''}`}>
+       <span className="text-lg text-muted-foreground">
+         <strong>{item.date}:</strong> {item.event}
+       </span>
+     </li>
       ))}
     </ul>
   </CardContent>
