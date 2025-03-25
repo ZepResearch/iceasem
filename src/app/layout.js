@@ -5,6 +5,7 @@ import { Footer } from "@/components/Footer";
 import { ToastProvider } from "@/components/ui/ToastProvider";
 import TawkToChat from "@/components/TawkToChat";
 import { FloatingWhatsAppButton } from "@/components/whatsapp";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -76,6 +77,25 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased mt-12`}
         >
+          {/* <!-- Google tag (gtag.js) --> */}
+          <Script 
+          async 
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16904992699"
+          strategy="afterInteractive"
+        />
+        <Script 
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-16904992699');
+            `
+          }}
+        />
+
         <Navbar/>
         {children}
         <Footer/>
