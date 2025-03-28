@@ -4,8 +4,8 @@ import { Separator } from "@/components/ui/separator"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 export const metadata = {
-  title: 'ICASEM 2025 Cancellation Policy | Intl. Conf. on Science & Engg.',
-  description: 'Learn about ICASEM 2025, a premier conference uniting global experts in applied science, engineering, and management. Join us in Vietnam for groundbreaking research and networking.',
+  title: 'ICASEM 2025 Cancellation Policy ',
+  description: 'Join ICASEM 2025 in Vietnam, a top conference for applied science, engineering & management. Connect with global experts & explore groundbreaking research.',
   keywords: [
     'ICASEM 2025',
     'about ICASEM',
@@ -19,10 +19,13 @@ export const metadata = {
     'innovation conference'
   ],
   openGraph: {
-    title: 'About ICASEM 2025 | International Conference on Applied Science, Engineering & Management',
+    title: 'About ICASEM 2025 ',
     description: 'Join leading experts at ICASEM 2025 in Vietnam. Explore cutting-edge research in applied science, engineering, and management while networking with global innovators.',
     type: 'website',
     
+  },
+  alternates: {
+    canonical: 'https://www.icsthm.com'
   },
   twitter: {
     card: 'summary_large_image',
@@ -81,7 +84,7 @@ export default function CancellationPolicy() {
           <Separator className="my-8" />
 
           <section className="mb-10">
-            <h2 className="text-2xl font-semibold text-blue-600 mb-4">Cancellation Process</h2>
+            <h3 className="text-2xl font-semibold text-blue-600 mb-4">Cancellation Process</h3>
             <ol className="list-decimal list-inside text-gray-700 space-y-2 leading-relaxed">
               <li>Access your ICASEM account dashboard</li>
               <li>Select 'Manage Registration'</li>
@@ -94,7 +97,7 @@ export default function CancellationPolicy() {
           <Separator className="my-8" />
 
           <section className="mb-10">
-            <h2 className="text-2xl font-semibold text-blue-600 mb-4">Special Considerations</h2>
+            <h4 className="text-2xl font-semibold text-blue-600 mb-4">Special Considerations</h4>
             <p className="text-gray-700 leading-relaxed">
               Accepted papers withdrawn from the conference will still appear in the proceedings unless withdrawn before the camera-ready submission deadline. Author substitutions must be approved by the program committee.
             </p>
@@ -103,7 +106,7 @@ export default function CancellationPolicy() {
           <Separator className="my-8" />
 
           <section>
-            <h2 className="text-2xl font-semibold text-blue-600 mb-4">Support</h2>
+            <h5 className="text-2xl font-semibold text-blue-600 mb-4">Support</h5>
             <p className="text-gray-700 leading-relaxed mb-2">
               For assistance with cancellations or special circumstances, contact the conference secretariat.
             </p>

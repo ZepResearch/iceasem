@@ -18,7 +18,7 @@ export const metadata = {
   ],
   openGraph: {
     title: 'ICASEM 2025 Venue | Intl. Conf. on Science & Engg.',
-    description: 'Join leading experts at ICASEM 2025 in Vietnam. Explore cutting-edge research in applied science, engineering, and management while networking with global innovators.',
+    description: 'Join ICASEM 2025 in Vietnam, a top conference for applied science, engineering & management. Connect with global experts & explore groundbreaking research.',
     type: 'website',
     
   },
@@ -27,7 +27,10 @@ export const metadata = {
     title: 'About ICASEM 2025',
     description: 'Join leading experts at ICASEM 2025 in Vietnam. Explore cutting-edge research in applied science, engineering, and management.',
    
-  }
+  },
+  alternates: {
+    canonical: 'https://www.icsthm.com'
+  },
 }
 function page() {
   return (

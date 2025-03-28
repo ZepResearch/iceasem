@@ -57,6 +57,9 @@ export const metadata = {
     title: 'ICASEM: Applied Science & Management Conference',
     description: 'Join global researchers, scientists, and professionals at ICASEM 2024 to explore cutting-edge developments in applied science, engineering, and management.',
   },
+  alternates: {
+    canonical: 'https://www.icsthm.com'
+  },
   robots: {
     index: true,
     follow: true,

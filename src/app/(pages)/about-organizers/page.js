@@ -3,8 +3,8 @@ import AboutCompany from './Content'
 
 
 export const metadata = {
-  title: 'ICASEM 2025 About Organizers | Intl. Conf. on Science & Engg.',
-  description: 'Learn about ICASEM 2025, a premier conference uniting global experts in applied science, engineering, and management. Join us in Vietnam for groundbreaking research and networking.',
+  title: 'ICASEM 2025 About Organizers ',
+  description: 'Join ICASEM 2025 in Vietnam, a top conference for applied science, engineering & management. Connect with global experts & explore groundbreaking research.',
   keywords: [
     'ICASEM 2025',
     'about ICASEM',
@@ -28,7 +28,10 @@ export const metadata = {
     title: 'About ICASEM 2025',
     description: 'Join leading experts at ICASEM 2025 in Vietnam. Explore cutting-edge research in applied science, engineering, and management.',
    
-  }
+  },
+  alternates: {
+    canonical: 'https://www.icsthm.com'
+  },
 }
 
 function page() {

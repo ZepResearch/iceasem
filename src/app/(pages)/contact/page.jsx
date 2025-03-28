@@ -1,8 +1,8 @@
 import React from 'react'
 import ContactUs from './Content'
 export const metadata = {
-  title: 'ICASEM 2025 Contact Us | Intl. Conf. on Science & Engg.',
-  description: 'Learn about ICASEM 2025, a premier conference uniting global experts in applied science, engineering, and management. Join us in Vietnam for groundbreaking research and networking.',
+  title: 'ICASEM 2025 Contact Us ',
+  description: 'Join ICASEM 2025 in Vietnam, a top conference for applied science, engineering & management. Connect with global experts & explore groundbreaking research.',
   keywords: [
     'ICASEM 2025',
     'about ICASEM',
@@ -16,10 +16,13 @@ export const metadata = {
     'innovation conference'
   ],
   openGraph: {
-    title: 'ICASEM 2025 Contact Us | Intl. Conf. on Science & Engg.',
+    title: 'ICASEM 2025 Contact Us ',
     description: 'Join leading experts at ICASEM 2025 in Vietnam. Explore cutting-edge research in applied science, engineering, and management while networking with global innovators.',
     type: 'website',
     
+  },
+  alternates: {
+    canonical: 'https://www.icsthm.com'
   },
   twitter: {
     card: 'summary_large_image',

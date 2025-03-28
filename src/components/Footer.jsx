@@ -99,12 +99,12 @@ export function Footer() {
           </div>
             </div>
           
-          <motion.h2 
+          <motion.h1 
             variants={item}
             className="text-3xl md:text-4xl  font-bold text-[#c4d2f8] max-w-2xl leading-tight"
           >
             Where Science, Engineering, <br /> and Management Converge
-          </motion.h2>
+          </motion.h1>
 
           {/* Links Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-0">

@@ -3,7 +3,7 @@ import SubmitForm from "./components/Form";
 
 
 export const metadata = {
-  title: 'ICASEM 2025 Paper Submission | Intl. Conference on Science & Engineering',
+  title: 'ICASEM 2025 Paper Submission ',
   description: 'Learn about ICASEM 2025, a premier conference uniting global experts in applied science, engineering, and management. Join us in Vietnam for groundbreaking research and networking.',
   keywords: [
     'ICASEM 2025',
@@ -18,8 +18,8 @@ export const metadata = {
     'innovation conference'
   ],
   openGraph: {
-    title: 'ICASEM 2025 Paper Submission | Intl. Conference on Science & Engineering',
-    description: 'Join leading experts at ICASEM 2025 in Vietnam. Explore cutting-edge research in applied science, engineering, and management while networking with global innovators.',
+    title: 'ICASEM 2025 Paper Submission ',
+    description: 'Join ICASEM 2025 in Vietnam, a top conference for applied science, engineering & management. Connect with global experts & explore groundbreaking research.',
     type: 'website',
     
   },
@@ -28,7 +28,10 @@ export const metadata = {
     title: 'About ICASEM 2025',
     description: 'Join leading experts at ICASEM 2025 in Vietnam. Explore cutting-edge research in applied science, engineering, and management.',
    
-  }
+  },
+  alternates: {
+    canonical: 'https://www.icsthm.com'
+  },
 }
 function page() {
   return (
