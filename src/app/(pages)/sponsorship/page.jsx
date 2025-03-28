@@ -18,7 +18,7 @@ export const metadata = {
     'innovation conference'
   ],
   alternates: {
-    canonical: 'https://www.icsthm.com'
+    canonical: 'https://www.icsthm.com/sponsorship'
   },
   openGraph: {
     title: 'About ICASEM 2025 | International Conference on Applied Science, Engineering & Management',

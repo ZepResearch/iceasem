@@ -27,7 +27,7 @@ export const metadata = {
     
   },
   alternates: {
-    canonical: 'https://www.icsthm.com'
+    canonical: 'https://www.icsthm.com/payment'
   },
   twitter: {
     card: 'summary_large_image',

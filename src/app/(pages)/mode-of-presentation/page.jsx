@@ -22,7 +22,7 @@ export const metadata = {
     
   },
   alternates: {
-    canonical: 'https://www.icsthm.com'
+    canonical: 'https://www.icsthm.com/mode-of-presentation'
   },
   twitter: {
     card: 'summary_large_image',

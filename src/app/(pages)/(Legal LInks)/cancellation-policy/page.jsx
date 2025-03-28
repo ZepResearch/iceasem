@@ -25,7 +25,7 @@ export const metadata = {
     
   },
   alternates: {
-    canonical: 'https://www.icsthm.com'
+    canonical: 'https://www.icsthm.com/cancellation-policy'
   },
   twitter: {
     card: 'summary_large_image',

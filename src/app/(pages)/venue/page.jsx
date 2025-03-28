@@ -29,7 +29,7 @@ export const metadata = {
    
   },
   alternates: {
-    canonical: 'https://www.icsthm.com'
+    canonical: 'https://www.icsthm.com/venue'
   },
 }
 function page() {

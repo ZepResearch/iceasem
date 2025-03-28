@@ -82,10 +82,10 @@ export default function ModePresentaion() {
                 />
               </div>
               <div className="md:w-1/2 p-6 md:p-8">
-                <h2 className="text-3xl font-bold mb-4  flex items-center">
+                <span className="text-3xl font-bold mb-4  flex items-center">
                   <mode.icon className="w-8 h-8 mr-2" />
                   {mode.title}
-                </h2>
+                </span>
                 <p className="text-lg mb-6 text-gray-700 dark:text-gray-300">
                   {mode.description}
                 </p>
