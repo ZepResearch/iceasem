@@ -1,252 +1,331 @@
 "use client"
 
+import { useState, useEffect } from "react"
 import Link from "next/link"
-import { motion } from "framer-motion"
-import { Linkedin, Instagram, Twitter, ArrowRight, Facebook, Youtube, PhoneCall, MapPin, MailIcon } from 'lucide-react'
-import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import { Facebook, Twitter, Instagram, Linkedin, ArrowUp, Calendar, MapPin, Youtube, Mail, Phone, Globe, Users, Award, BookOpen, Building2 } from 'lucide-react'
 
-const aboutLinks = [
-  { name: "Conference", href: "/about-conference" },
-  { name: "Zep Research", href: "/about-organizers" },
-  { name: "Committee", href: "/committee" },
-  { name: "Sponsorship", href: "/sponsorship" },
-  // { name: "Speakers", href: "/speakers" },
-]
+export default function Footer() {
+  const [showScrollTop, setShowScrollTop] = useState(false)
 
-const callForPapersLinks = [
-  { name: "Theme and Topics", href: "/theme-and-topics" },
-  { name: "Papers Format", href: "/papers-format" },
-  { name: "Mode of Presentation", href: "/mode-of-presentation" },
-]
+  // Navigation links grouped for footer
+  const footerLinks = [
+    {
+      title: "About",
+      links: [
+        { href: "/about-conference", label: "About Conference" },
+        { href: "/about-organizers", label: "About Organizers" },
+      ],
+    },
+    {
+      title: "Program",
+      links: [
+        { href: "/theme-and-topics", label: "Themes and Topics" },
+        { href: "/papers-format", label: "Paper Formats" },
+        { href: "/mode-of-presentation", label: "Mode of Presentation" },
+        { href: "/schedule", label: "Conference Schedule" },
+      ],
+    },
+    {
+      title: "Participate",
+      links: [
+        { href: "/committee", label: "Committee" },
+        { href: "/submission", label: "Submission" },
+        { href: "/venue", label: "Venue" },
+        { href: "/awards", label: "Awards" },
+      ],
+    },
+    {
+      title: "Connect",
+      links: [
+        { href: "/contact", label: "Contact" },
+        { href: "/sponsorship", label: "Exhibit & Sponsor" },
+        { href: "/registration", label: "Registration" },
+        // { href: "/privacy-policy", label: "Privacy Policy" },
+      ],
+    },
+  ]
 
-const quickLinks = [
-  { name: "Submission", href: "/submission" },
-  { name: "Venue", href: "/venue" },
-  { name: "Contact", href: "/contact" },
-  { name: "Award", href: "/awards" },
-  { name: "Registration", href: "/registration" },
-]
+  // Quick stats for the conference
+  const conferenceStats = [
+    {
+      icon: <Users className="w-6 h-6" />,
+      number: "500+",
+      label: "Expected Attendees",
+    },
+    {
+      icon: <Globe className="w-6 h-6" />,
+      number: "50+",
+      label: "Countries",
+    },
+    {
+      icon: <BookOpen className="w-6 h-6" />,
+      number: "100+",
+      label: "Research Papers",
+    },
+    {
+      icon: <Award className="w-6 h-6" />,
+      number: "25+",
+      label: "Expert Speakers",
+    },
+  ]
 
-const legalLinks = [
-  { name: "Terms & Conditions", href: "/terms-&-condition" },
-  { name: "Cancellation Policy", href: "/cancellation-policy" },
-  { name: "Privacy Policy", href: "/privacy-policy" },
-]
-
-const socialLinks = [
-    { 
-        icon: Facebook, 
-        href: "https://www.facebook.com/profile.php?id=61561809783777",
-        label: "Facebook"
-      },
-        { 
-          icon: Instagram, 
-          href: "https://www.instagram.com/zepresearch",
-          label: "Instagram"
-        },
-        { 
-            icon: Twitter, 
-            href: "https://x.com/Zepresearch",
-            label: "X"
-          },
-        { 
-          icon: Linkedin, 
-          href: "https://www.linkedin.com/company/zep-research/",
-          label: "LinkedIn"
-        },
-        { 
-            icon: Youtube, 
-            href: "https://youtube.com/@zepresearch",
-            label: "Youtube"
-          },
- 
-]
-
-const container = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1
+  // Handle scroll to top button visibility
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowScrollTop(true)
+      } else {
+        setShowScrollTop(false)
+      }
     }
+
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
+
+  // Scroll to top function
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    })
   }
-}
 
-const item = {
-  hidden: { opacity: 0, y: 20 },
-  show: { opacity: 1, y: 0 }
-}
-
-export function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-blue-600 to-indigo-900 py-8 px-4 md:px-8">
-      <div className="max-w-7xl mx-auto">
-        <motion.div
-          variants={container}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          className="space-y-8"
-        >
-          {/* Heading */}
-            <div className="inline-flex">
+    <footer className="relative bg-[#07416b] text-white overflow-hidden">
+      {/* 3D Geometric Elements with ICASEM colors */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        {/* Large sphere */}
+        <div
+          className="absolute -right-20 -bottom-40 w-80 h-80 rounded-full bg-gradient-to-tl from-[#00adef]/30 via-[#07416b]/40 to-[#00adef]/30"
+          style={{ filter: "blur(40px)" }}
+        ></div>
 
-          <Image src="/whiteLogo.svg" width={150} height={50} alt="ICASEM" className=" " />
-          <div className="inline-flex justify-start items-center text-white text-2xl sm:text-3xl font-bold">
-          <Image src="https://res.cloudinary.com/dwlhesiyi/image/upload/v1726731577/il2wr5yxd2w1sarnj3it.svg" width={100} height={40} alt="ICASEM" className=" " />
-          <span className="-ml-3">Zep Research</span> 
-          </div>
-            </div>
-          
-          <motion.h1 
-            variants={item}
-            className="text-3xl md:text-4xl  font-bold text-[#c4d2f8] max-w-2xl leading-tight"
-          >
-            Where Science, Engineering, <br /> and Management Converge
-          </motion.h1>
+        {/* Small floating circles */}
+        <div
+          className="absolute left-1/4 top-1/4 w-16 h-16 rounded-full bg-[#00adef]/10 animate-pulse"
+          style={{ animationDelay: "0s" }}
+        ></div>
 
-          {/* Links Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-0">
-            {/* About Links */}
-            <motion.div variants={item} className="space-y-6">
-              <h3 className="text-xl font-semibold text-[#c4d2f8]">About</h3>
-              <ul className="space-y-3">
-                {aboutLinks.map((link) => (
-                  <li key={link.name}>
-                    <Link 
-                      href={link.href}
-                      className="text-[#c4d2f8]/80 hover:text-[#c4d2f8] transition-colors duration-300 text-sm"
-                    >
-                      {link.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
+        <div
+          className="absolute right-1/3 top-1/2 w-12 h-12 rounded-full bg-[#00adef]/10 animate-pulse"
+          style={{ animationDelay: "-2s" }}
+        ></div>
 
-            {/* Call for Papers Links */}
-            <motion.div variants={item} className="space-y-6">
-              <h3 className="text-xl font-semibold text-[#c4d2f8]">Call for Papers</h3>
-              <ul className="space-y-3">
-                {callForPapersLinks.map((link) => (
-                  <li key={link.name}>
-                    <Link 
-                      href={link.href}
-                      className="text-[#c4d2f8]/80 hover:text-[#c4d2f8] transition-colors duration-300 text-sm"
-                    >
-                      {link.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
+        <div
+          className="absolute left-1/2 bottom-1/4 w-20 h-20 rounded-full bg-[#00adef]/10 animate-pulse"
+          style={{ animationDelay: "-1s" }}
+        ></div>
 
-            {/* Quick Links */}
-            <motion.div variants={item} className="space-y-6 pb-4">
-              <h3 className="text-xl font-semibold text-[#c4d2f8]">Quick Links</h3>
-              <ul className="space-y-3">
-                {quickLinks.map((link) => (
-                  <li key={link.name}>
-                    <Link 
-                      href={link.href}
-                      className="text-[#c4d2f8]/80 hover:text-[#c4d2f8] transition-colors duration-300 text-sm"
-                    >
-                      {link.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
+        {/* Geometric shapes */}
+        <div
+          className="absolute left-10 bottom-10 w-32 h-32 bg-[#00adef]/5"
+          style={{
+            clipPath: "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)",
+            transform: "rotate(15deg)",
+          }}
+        ></div>
 
-            {/* Legal Links */}
-            <motion.div variants={item} className="space-y-6 pb-4">
-              <h3 className="text-xl font-semibold text-[#c4d2f8]">Legal</h3>
-              <ul className="space-y-3">
-                {legalLinks.map((link) => (
-                  <li key={link.name}>
-                    <Link 
-                      href={link.href}
-                      className="text-[#c4d2f8]/80 hover:text-[#c4d2f8] transition-colors duration-300 text-sm"
-                    >
-                      {link.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
+        <div
+          className="absolute right-1/4 top-10 w-24 h-24 bg-[#00adef]/5"
+          style={{
+            clipPath: "polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)",
+            transform: "rotate(-10deg)",
+          }}
+        ></div>
 
-            {/* Social Links and CTA */}
-            <motion.div variants={item} className="space-y-6" >
-              <h3 className="text-xl font-semibold text-[#c4d2f8]">Connect</h3>
-              <div className="flex gap-4">
-                {socialLinks.map((social) => (
-                  <motion.a
-                    key={social.label}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-[#4d66ac] text-white p-3 rounded-full hover:bg-[#4360b1]/80 transition-colors duration-300"
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                    aria-label={social.label}
-                  >
-                    <social.icon className="w-5 h-5" />
-                  </motion.a>
-                ))}
-              </div>
-              <Button 
-                variant="default" 
-                className="bg-[#ff9966] hover:bg-[#ff9966]/90 text-white font-semibold px-6 py-3 rounded-full transition-colors duration-300"
-              >
-              <Link href="/registration" >
-                Register Now
-              </Link>
-              </Button>
-              {/* <div className="bg-white p-6 rounded-2xl shadow-lg space-y-4">
-                <span className="inline-block px-3 py-1 bg-[#ff9966]/20 text-[#ff9966] rounded-full text-xs font-medium">
-                  Call for Papers
-                </span>
-                <h3 className="text-2xl font-bold text-gray-900">Submit your paper</h3>
-
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="bg-[#c4d2f8] text-gray-900 px-6 py-3 rounded-full flex items-center justify-between w-full group transition-colors duration-300 hover:bg-[#c4d2f8]/90"
-                >
-                <Link href="/submission" className="inline-flex items-center gap-2">
-                  <span className="font-semibold ">Submit now</span>
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-                </Link>
-                </motion.button>
-              </div> */}
-             <div className="bg-white px-6 py-2 rounded-2xl shadow-lg space-y-2 flex flex-col">
-              <h3 className="text-lg  font-semibold text-[#2855d1]">Contact Us</h3>
-              <ul className=" gap-2  flex flex-col">
-                <li className="text-[#040711] text-base inline-flex gap-2">
-                  <span className="font-semibold"><MailIcon/></span> submit@icasem.org
-                </li>
-                <li className="text-[#000102] text-base inline-flex gap-2">
-                  <span className="font-semibold"><PhoneCall/></span>+91 82600 80050
-                </li>
-                <li className="text-[#000000] text-base inline-flex gap-2">
-                  <span className="font-semibold"><MapPin/></span> Vietnam
-                </li>
-              </ul>
-            </div>
-            </motion.div>
-          </div>
-        </motion.div>
-        
-        {/* Copyright */}
-        <motion.div 
-          variants={item}
-          className="mt-4 pt-2 border-t border-[#c4d2f8]/60 text-center text-base text-[#c4d2f8]/90"
-        >
-          © 2025 ICASEM. All rights reserved.
-        </motion.div>
+        {/* Subtle grid lines */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="h-px w-full bg-[#00adef] absolute top-1/4"></div>
+          <div className="h-px w-full bg-[#00adef] absolute top-2/4"></div>
+          <div className="h-px w-full bg-[#00adef] absolute top-3/4"></div>
+          <div className="w-px h-full bg-[#00adef] absolute left-1/4"></div>
+          <div className="w-px h-full bg-[#00adef] absolute left-2/4"></div>
+          <div className="w-px h-full bg-[#00adef] absolute left-3/4"></div>
+        </div>
       </div>
+
+      <div className="container mx-auto px-4 py-16 relative z-10 max-w-7xl">
+        {/* Top Section with Conference Info and Stats */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-2">
+          {/* Left Side - Conference Information */}
+          <div>
+            <div className="flex items-center space-x-3 mb-6">
+              <Link href="/">
+                <div className="flex items-center space-x-3 bg-white/90 backdrop-blur-md px-6 rounded-lg py-2 ">
+                  <Image
+                    src="/logo.svg" 
+                    alt="ICASEM Logo"
+                    width={200}  
+                    height={50}
+                    className="  z-10"
+                  />
+                </div>
+              </Link>
+            </div>
+
+            
+            <p className="text-white/80 mb-6 max-w-xl leading-relaxed">
+              Join us for Singapore's premier conference bringing together leading researchers to explore cutting-edge innovations in Applied Science, Engineering & Management. 
+            
+            </p>
+
+         
+          </div>
+
+          {/* Right Side - Conference Stats */}
+          <div className="grid grid-cols-1 gap-1">
+             {/* Conference Details */}
+            <div className="space-y-2 mb-2">
+              <div className="grid grid-cols-2 gap-4">
+
+              
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-[#00adef]/20 rounded-lg flex items-center justify-center">
+                  <Calendar className="w-5 h-5 text-[#00adef]" />
+                </div>
+                <div>
+                  <p className="text-white font-semibold">November 14-15, 2024</p>
+                  <p className="text-white/70 text-sm">Two days of innovation and networking</p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-[#00adef]/20 rounded-lg flex items-center justify-center">
+                  <MapPin className="w-5 h-5 text-[#00adef]" />
+                </div>
+                <div>
+                  <p className="text-white font-semibold">Singapore</p>
+                  <p className="text-white/70 text-sm">Marina Bay Convention Centre</p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-[#00adef]/20 rounded-lg flex items-center justify-center">
+                  <Mail className="w-5 h-5 text-[#00adef]" />
+                </div>
+                <div>
+                  <a
+                    href="mailto:submit@icasem.org"
+                    className="text-white font-semibold hover:text-[#00adef] transition-colors"
+                  >
+                    submit@icasem.org
+                  </a>
+                  <p className="text-white/70 text-sm">Paper submissions & inquiries</p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-[#00adef]/20 rounded-lg flex items-center justify-center">
+                  <Phone className="w-5 h-5 text-[#00adef]" />
+                </div>
+                <div>
+                  <a
+                    href="tel:+917848854815"
+                    className="text-white font-semibold hover:text-[#00adef] transition-colors"
+                  >
+                    +91 78488 54815
+                  </a>
+                  <p className="text-white/70 text-sm">Conference support hotline</p>
+                </div>
+              </div>
+              </div>
+            </div>
+
+            {/* Social Media Links */}
+            <div className="flex space-x-4">
+              <a
+                href="#"
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#00adef] transition-colors group"
+              >
+                <Facebook className="w-5 h-5 group-hover:text-white" />
+              </a>
+              <a
+                href="#"
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#00adef] transition-colors group"
+              >
+                <Twitter className="w-5 h-5 group-hover:text-white" />
+              </a>
+              <a
+                href="#"
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#00adef] transition-colors group"
+              >
+                <Instagram className="w-5 h-5 group-hover:text-white" />
+              </a>
+              <a
+                href="#"
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#00adef] transition-colors group"
+              >
+                <Linkedin className="w-5 h-5 group-hover:text-white" />
+              </a>
+              <a
+                href="#"
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#00adef] transition-colors group"
+              >
+                <Youtube className="w-5 h-5 group-hover:text-white" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Navigation Links */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-14">
+          {footerLinks.map((group, index) => (
+            <div key={index}>
+              <h4 className="font-bold text-lg mb-4 text-[#00adef]">{group.title}</h4>
+              <ul className="space-y-3">
+                {group.links.map((link, linkIndex) => (
+                  <li key={linkIndex}>
+                    <Link
+                      href={link.href}
+                      className="text-white/70 hover:text-white hover:text-[#00adef] transition-colors flex items-center group"
+                    >
+                      <span className="group-hover:translate-x-1 transition-transform">{link.label}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
+    
+
+        {/* Bottom Section */}
+        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <div className="flex flex-col md:flex-row items-center gap-4 mb-4 md:mb-0">
+            <p className="text-white/60 text-sm">
+              © 2024 ICASEM. All rights reserved. Organized with excellence in Singapore.
+            </p>
+            <div className="flex items-center gap-2 text-white/60 text-sm">
+              <Globe className="w-4 h-4" />
+              <span>icasem.org</span>
+            </div>
+          </div>
+          <div className="flex flex-wrap gap-6">
+            <Link href="/terms-&-condition" className="text-white/60 text-sm hover:text-[#00adef] transition-colors">
+              Terms of Service
+            </Link>
+            <Link href="/privacy-policy" className="text-white/60 text-sm hover:text-[#00adef] transition-colors">
+              Privacy Policy
+            </Link>
+            <Link href="/cancellation-policy" className="text-white/60 text-sm hover:text-[#00adef] transition-colors">
+              Cancellation Policy
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      {/* Scroll to top button */}
+      <button
+        onClick={scrollToTop}
+        className={`fixed right-6 bottom-6 w-12 h-12 rounded-full bg-[#00adef] text-white flex items-center justify-center shadow-lg transition-all duration-300 z-50 hover:bg-[#0099d4] ${
+          showScrollTop ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 pointer-events-none"
+        }`}
+      >
+        <ArrowUp size={20} />
+      </button>
     </footer>
   )
 }
-

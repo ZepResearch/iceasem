@@ -1,11 +1,11 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Navbar } from "@/components/Navbar";
-import { Footer } from "@/components/Footer";
+
 import { ToastProvider } from "@/components/ui/ToastProvider";
 import TawkToChat from "@/components/TawkToChat";
 import { FloatingWhatsAppButton } from "@/components/whatsapp";
-import Script from "next/script";
+import Footer from "@/components/Footer";
+import Nav from "@/components/Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -78,12 +78,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased mt-12`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased mt-12 bg-[#f0f4f8] `}
         >
           {/* <!-- Google tag (gtag.js) --> */}
          
 
-        <Navbar/>
+        <Nav/>
         {children}
         <Footer/>
         <ToastProvider/>

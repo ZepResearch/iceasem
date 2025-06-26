@@ -39,7 +39,7 @@ function page() {
       <OrganizingCommittee/>
         {/* 
         <ScientificCommittee/>   */}
-        <IACommitte/>
+        {/* <IACommitte/> */}
     </div>
   )
 }

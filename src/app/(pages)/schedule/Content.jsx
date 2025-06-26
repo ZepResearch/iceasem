@@ -10,7 +10,7 @@ import { addDays } from "date-fns"
 
 const scheduleData = [
   {
-    date: "April - 2nd | Registration",
+    date: "November - 14th | Registration",
     items: [
       { time: "8:00AM - 9:15AM", title: "Registration" },
       { time: "9:15AM - 9:30AM", title: "Inaugural Function" },
@@ -38,7 +38,7 @@ const scheduleData = [
   //   ]
   // },
   {
-    date: "April - 3rd | Closing Day",
+    date: "November - 15th | Closing Day",
     items: [
       { time: "9:00AM - 9:30AM", title: "Registration" },
       { time: "9:30AM - 10:00AM", title: "Closing Ceremony Opening Remarks" },
@@ -54,7 +54,7 @@ const scheduleData = [
 ]
 
 export default function ConferenceSchedule() {
-  const startDate = new Date(2025, 3, 2) // March 21, 2024
+  const startDate = new Date(2025, 10, 14) // March 21, 2024
   const [selectedDates, setSelectedDates] = useState([
     startDate,
     addDays(startDate, 1),
@@ -69,7 +69,7 @@ export default function ConferenceSchedule() {
             Shaping Tomorrow&apos;s Sustainable Landscape
           </h1>
           <p className="text-muted-foreground">
-            Join us April 2<sup>nd</sup> - 3<sup>rd</sup> for three days of cutting-edge insights and networking. Reserve your spot today!
+            Join us November 14<sup>th</sup> - 15<sup>th</sup> for three days of cutting-edge insights and networking. Reserve your spot today!
           </p>
         </div>
 

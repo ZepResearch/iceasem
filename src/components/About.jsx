@@ -1,163 +1,125 @@
-"use client"
+import React from 'react'
+import { Card } from './ui/card'
+import Image from 'next/image'
+import { Button } from './ui/button'
+import { Calendar } from 'lucide-react'
+import Link from 'next/link'
 
-import { motion } from "framer-motion"
-import { Card } from "@/components/ui/card"
-import { ArrowRight } from 'lucide-react'
-import CountUp from "react-countup";
-export default function About() {
+function About() {
   return (
-    <div className="container h-full mx-auto p-4 py-12">
-      <div className="grid gap-4  md:grid-cols-2">
-        {/* Left Side - Marathon Card */}
-        <motion.div
-          whileHover={{ scale: 1.02 }}
-          transition={{ duration: 0.2 }}
-        >
-          <Card className="relative h-[710px]  overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-t  from-black/70 to-black/30" />
-            <img
-              src="https://images.unsplash.com/photo-1553851919-596510268b99?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="Marathon runner"
-              className="h-full w-full object-cover"
-            />
-            <div className="absolute inset-0 p-6 flex flex-col justify-between">
-              <div>
-                <h1 className="md:text-9xl text-8xl font-mono font-bold text-white ">
-                  About
-                </h1>
-                <h2 className="md:text-7xl text-5xl font-mono font-bold text-blue-300 md:-mt-6 -mt-4">
-                  Conference
-                  
-                </h2>
-                <p></p>
+    <div className='max-w-screen-2xl mx-auto bg-[#f0f4f8]  '>
+       <div className="px-6 py-4">
+          <Card className="bg-white rounded-2xl p-6 lg:p-8 overflow-hidden">
+            <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+              {/* Left side - Image */}
+              <div className="w-full lg:w-1/2">
+                <div className="relative">
+                  <div className="w-full h-64 sm:h-80 lg:h-96 bg-gradient-to-br from-[#00adef] to-[#07416b] rounded-2xl overflow-hidden flex items-center justify-center">
+                    <Image
+                      src="/gallery/about.webp"
+                      alt="About ICASEM Conference"
+                      width={500}
+                      height={400}
+                      className="w-full h-full object-cover "
+                    />
+                  </div>
+             
+                </div>
               </div>
-              <div>
-               
-                <p className="md:text-base text-sm text-gray-200 mb-0.5 text-justify">Join top researchers, academics, and students at the International Conference on Applied Science, Engineering & Management. This event is a hub for sharing new ideas and innovations across multiple fields.</p>
-                <p className="md:text-sm text-xs  text-gray-200 mb-4 text-justify">ICASEM fosters collaboration, knowledge-sharing, and progress in these disciplines. Whether you're presenting research, networking, or exploring partnerships, this conference is the perfect place to connect with the global academic and professional community.</p>
 
-                <motion.a
-                href="/about-conference"
-                  whileHover={{ scale: 1.05 }}
-                  className="bg-blue-300 text-black px-6 py-3 rounded-lg font-semibold inline-flex items-center gap-2"
-                >
-                  Know more
-                  <ArrowRight className="h-4 w-4" />
-                </motion.a>
+              {/* Right side - Content */}
+              <div className="w-full lg:w-1/2">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-4 h-4 bg-[#00adef] rounded-full"></div>
+                  <span className="text-gray-600 text-sm lg:text-base font-medium">About Conference</span>
+                </div>
+
+                <h2 className="text-3xl lg:text-4xl font-bold text-[#07416b] leading-tight mb-6">
+                  Advancing Science Through Collaboration
+                </h2>
+
+                <div className="space-y-4 mb-8">
+                  <p className="text-gray-600 text-base lg:text-lg leading-relaxed">
+                    The International Conference on Applied Science, Engineering & Management (ICASEM) brings together
+                    leading researchers, industry professionals, and academics from around the world to share
+                    cutting-edge innovations and foster meaningful collaborations.
+                  </p>
+
+                  <p className="text-gray-600 text-base lg:text-lg leading-relaxed">
+                    Our mission is to create a platform where theoretical knowledge meets practical application, driving
+                    forward the frontiers of science and engineering for a better tomorrow.
+                  </p>
+                </div>
+
+                {/* Key highlights */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 bg-[#00adef] rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="text-white text-sm font-bold">✓</span>
+                    </div>
+                    <span className="text-[#07416b] font-semibold text-sm lg:text-base">
+                      Peer-reviewed Publications
+                    </span>
+                  </div>
+
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 bg-[#00adef] rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="text-white text-sm font-bold">✓</span>
+                    </div>
+                    <span className="text-[#07416b] font-semibold text-sm lg:text-base">Global Networking</span>
+                  </div>
+
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 bg-[#00adef] rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="text-white text-sm font-bold">✓</span>
+                    </div>
+                    <span className="text-[#07416b] font-semibold text-sm lg:text-base">Industry Partnerships</span>
+                  </div>
+
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 bg-[#00adef] rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="text-white text-sm font-bold">✓</span>
+                    </div>
+                    <span className="text-[#07416b] font-semibold text-sm lg:text-base">Innovation Showcase</span>
+                  </div>
+                </div>
+
+                {/* Stats */}
+                <div className="flex flex-wrap gap-6 lg:gap-8 mb-8">
+                  <div className="text-center">
+                    <div className="text-2xl lg:text-3xl font-bold text-[#07416b]">2+</div>
+                    <div className="text-gray-600 text-sm">Years Running</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl lg:text-3xl font-bold text-[#07416b]">500+</div>
+                    <div className="text-gray-600 text-sm">Past Attendees</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl lg:text-3xl font-bold text-[#07416b]">50+</div>
+                    <div className="text-gray-600 text-sm">Research Papers</div>
+                  </div>
+                </div>
+
+                {/* CTA */}
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Link href="/about-conference">
+                  <Button className="bg-[#00adef] text-white px-6  rounded-full hover:bg-[#0099d4] text-base py-6">
+                    Learn More
+                  </Button>
+                  </Link>
+                  <Link href="/schedule">
+                  <button className="flex items-center justify-center gap-2 text-[#07416b] hover:text-[#00adef] px-6 py-3 border border-[#07416b] rounded-full hover:border-[#00adef] transition-colors text-base">
+                    <Calendar className="w-5 h-5" />
+                    View Schedule
+                  </button>
+                  </Link>
+                </div>
               </div>
             </div>
           </Card>
-        </motion.div>
-
-        {/* Right Side - Grid Layout */}
-        <div className="flex flex-col gap-4">
-          {/* Half Marathon Card */}
-          <motion.div
-            whileHover={{ scale: 1.02 }}
-            transition={{ duration: 0.2 }}
-          >
-            <Card className="relative  overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-black/30" />
-              <img
-                src="https://images.unsplash.com/photo-1521019795854-14e15f600980?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="Half Marathon runners"
-                className="h-full w-full object-cover"
-              />
-              <div className="absolute inset-0 p-6 flex flex-col justify-between items-start">
-                <div className="mb-4">
-                  <h2 className="md:text-8xl text-4xl font-bold text-white mb-2 ">Attendees</h2>
-                  <div className="md:text-7xl text-3xl font-bold text-white mb-2"> <CountUp
-                          end={8000}
-                          duration={2.5}
-                          decimals={8000 % 1 !== 0 ? 1 : 0}
-                        />+</div>
-                  <p className="text-sm text-gray-200 ">5,087 of 8,000 Registered </p>
-                </div>
-                <motion.a
-                  href="/registration"
-                  whileHover={{ scale: 1.05 }}
-                  className="bg-blue-500 text-white px-6 md:py-3 py-1 rounded-lg md:font-semibold inline-flex items-center gap-2"
-                >
-                  Register Here
-                  <ArrowRight className="h-4 w-4" />
-                </motion.a>
-              </div>
-            </Card>
-          </motion.div>
-
-          {/* 10K and 5K Cards Grid */}
-          <div className="grid grid-cols-2 gap-4">
-            {/* 10K Card */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              transition={{ duration: 0.2 }}
-            >
-              <Card className="relative h-full overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-black/30" />
-                <img
-                  src="https://images.unsplash.com/photo-1527577440030-436a36b07401?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="10K runner"
-                  className="h-full w-full object-cover"
-                />
-                <div className="absolute inset-0 p-4 flex flex-col justify-between">
-                  <div>
-                  <h2 className="md:text-5xl text-2xl font-bold text-white  mb-">Speaker</h2>
-
-                    <div className="md:text-5xl text-2xl font-bold text-white mb-"> <CountUp
-                          end={35}
-                          duration={2.5}
-                          decimals={35 % 1 !== 0 ? 1 : 0}
-                        />+</div>
-                    <p className="text-xs text-gray-200">Gain insights from renowned speakers</p>
-                  </div>
-                  {/* <motion.button
-                    whileHover={{ scale: 1.05 }}
-                    className="bg-white text-black px-4 py-2 rounded-lg font-semibold text-sm inline-flex items-center gap-2"
-                  >
-                    Register Here
-                    <ArrowRight className="h-4 w-4" />
-                  </motion.button> */}
-                </div>
-              </Card>
-            </motion.div>
-
-            {/* 5K Card */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              transition={{ duration: 0.2 }}
-            >
-              <Card className="relative h-full overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-black/30" />
-                <img
-                  src="https://images.unsplash.com/photo-1541079606130-1f46216e419d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="5K runner"
-                  className="h-full w-full object-cover"
-                />
-                <div className="absolute inset-0 p-4 flex flex-col justify-between">
-                  <div>
-                    <div className="md:text-5xl font-bold text-white mb-"><CountUp
-                            end={999}
-                            duration={2.5}
-                            decimals={1} // Specifies the number of decimal places
-                            formattingFn={(value) => (value / 10).toFixed(1)}
-                        />%</div>
-                  <h2 className="md:text-4xl text-sm font-bold text-white mb-2 ">Uptime guarantee</h2>
-                    <p className="text-xs text-gray-200">Build connections with industry leaders, researchers, and like-minded professionals.</p>
-                  </div>
-                  {/* <motion.button
-                    whileHover={{ scale: 1.05 }}
-                    className="bg-white text-black px-4 py-2 rounded-lg font-semibold text-sm inline-flex items-center gap-2"
-                  >
-                    Register Here
-                    <ArrowRight className="h-4 w-4" />
-                  </motion.button> */}
-                </div>
-              </Card>
-            </motion.div>
-          </div>
         </div>
-      </div>
     </div>
   )
 }
 
+export default About

@@ -2,31 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 20 14.3% 4.1%;
+    --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;
-    --card-foreground: 20 14.3% 4.1%;
+    --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
-    --popover-foreground: 20 14.3% 4.1%;
-    --primary: 24 9.8% 10%;
-    --primary-foreground: 60 9.1% 97.8%;
-    --secondary: 60 4.8% 95.9%;
-    --secondary-foreground: 24 9.8% 10%;
-    --muted: 60 4.8% 95.9%;
-    --muted-foreground: 25 5.3% 44.7%;
-    --accent: 60 4.8% 95.9%;
-    --accent-foreground: 24 9.8% 10%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222.2 47.4% 11.2%;
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 60 9.1% 97.8%;
-    --border: 20 5.9% 90%;
-    --input: 20 5.9% 90%;
-    --ring: 20 14.3% 4.1%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
     --chart-3: 197 37% 24%;
@@ -34,26 +30,27 @@ body {
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
   }
+
   .dark {
-    --background: 20 14.3% 4.1%;
-    --foreground: 60 9.1% 97.8%;
-    --card: 20 14.3% 4.1%;
-    --card-foreground: 60 9.1% 97.8%;
-    --popover: 20 14.3% 4.1%;
-    --popover-foreground: 60 9.1% 97.8%;
-    --primary: 60 9.1% 97.8%;
-    --primary-foreground: 24 9.8% 10%;
-    --secondary: 12 6.5% 15.1%;
-    --secondary-foreground: 60 9.1% 97.8%;
-    --muted: 12 6.5% 15.1%;
-    --muted-foreground: 24 5.4% 63.9%;
-    --accent: 12 6.5% 15.1%;
-    --accent-foreground: 60 9.1% 97.8%;
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 60 9.1% 97.8%;
-    --border: 12 6.5% 15.1%;
-    --input: 12 6.5% 15.1%;
-    --ring: 24 5.7% 82.9%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
     --chart-1: 220 70% 50%;
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
@@ -68,5 +65,152 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Zoom-responsive container - DESKTOP ONLY */
+.zoom-container {
+  transform-origin: top left;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Media queries for different zoom levels - EXCLUDE MOBILE */
+@media screen and (min-resolution: 144dpi) and (max-resolution: 191dpi) and (min-width: 769px) {
+  /* 150% zoom - Desktop only */
+  .zoom-container {
+    transform: scale(0.85);
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (max-resolution: 239dpi) and (min-width: 769px) {
+  /* 200% zoom - Desktop only */
+  .zoom-container {
+    transform: scale(0.7);
+  }
+}
+
+@media screen and (min-resolution: 240dpi) and (max-resolution: 287dpi) and (min-width: 769px) {
+  /* 250% zoom - Desktop only */
+  .zoom-container {
+    transform: scale(0.6);
+  }
+}
+
+@media screen and (min-resolution: 288dpi) and (min-width: 769px) {
+  /* 300%+ zoom - Desktop only */
+  .zoom-container {
+    transform: scale(0.5);
+  }
+}
+
+/* Alternative approach using viewport width detection - DESKTOP ONLY */
+@media screen and (max-width: 1200px) and (min-width: 1024px) {
+  .zoom-container {
+    transform: scale(0.9);
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 769px) {
+  .zoom-container {
+    transform: scale(0.8);
+  }
+}
+
+/* Prevent horizontal scrolling */
+body {
+  overflow-x: hidden;
+}
+
+/* Ensure all containers respect the zoom scaling */
+.zoom-container * {
+  box-sizing: border-box;
+}
+
+/* Mobile-specific fixes - NO ZOOM TRANSFORMATIONS */
+@media screen and (max-width: 768px) {
+  /* Reset any zoom transformations on mobile */
+  .zoom-container {
+    transform: none !important;
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  /* Ensure no element can cause horizontal overflow */
+  * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Fix any potential flex issues */
+  .flex {
+    min-width: 0;
+  }
+
+  /* Ensure cards don't exceed viewport */
+  [class*="rounded-2xl"] {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+@layer utilities {
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-float-slow {
+    animation: float 8s ease-in-out infinite;
+  }
+
+  .animate-spin-slow {
+    animation: spin 20s linear infinite;
+  }
+
+  .animate-marquee {
+    animation: marquee 20s linear infinite;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Additional mobile viewport fix */
+@media screen and (max-width: 480px) {
+  .zoom-container {
+    transform: none !important;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 }

@@ -74,8 +74,8 @@ export default function TermsAndConditionsPage() {
               <AccordionTrigger>Cancellation Policy</AccordionTrigger>
               <AccordionContent>
                 <ul className="list-disc pl-5 space-y-2 text-gray-700">
-                  <li>Cancellations before [date] receive 70% refund.</li>
-                  <li>No refunds for cancellations after [date].</li>
+                  <li>Cancellations before 60 Days receive 100% refund.</li>
+                  <li>No refunds for cancellations after 60 Days.</li>
                   <li>Substitutions from the same organization are permitted.</li>
                 </ul>
               </AccordionContent>

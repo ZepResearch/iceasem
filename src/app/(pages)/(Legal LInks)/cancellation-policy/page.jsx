@@ -62,19 +62,12 @@ export default function CancellationPolicy() {
               </TableHeader>
               <TableBody>
                 <TableRow>
-                  <TableCell className="font-medium">Before paper submission deadline</TableCell>
-                  <TableCell>90% refund</TableCell>
+                  <TableCell className="font-medium">Full refund if cancelled 60+ days before the conference</TableCell>
+                  <TableCell>100% refund</TableCell>
                 </TableRow>
+              
                 <TableRow>
-                  <TableCell className="font-medium">After submission, before acceptance</TableCell>
-                  <TableCell>70% refund</TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell className="font-medium">After paper acceptance</TableCell>
-                  <TableCell>50% refund</TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell className="font-medium">14 days before conference</TableCell>
+                  <TableCell className="font-medium">60 days before conference</TableCell>
                   <TableCell>No refund</TableCell>
                 </TableRow>
               </TableBody>
@@ -83,16 +76,6 @@ export default function CancellationPolicy() {
 
           <Separator className="my-8" />
 
-          <section className="mb-10">
-            <h3 className="text-2xl font-semibold text-blue-600 mb-4">Cancellation Process</h3>
-            <ol className="list-decimal list-inside text-gray-700 space-y-2 leading-relaxed">
-              <li>Access your ICASEM account dashboard</li>
-              <li>Select 'Manage Registration'</li>
-              <li>Choose 'Cancel Registration'</li>
-              <li>Specify reason for cancellation</li>
-              <li>Submit supporting documentation if required</li>
-            </ol>
-          </section>
 
           <Separator className="my-8" />
 

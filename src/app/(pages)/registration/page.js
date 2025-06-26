@@ -1,7 +1,6 @@
 import React from 'react'
-import Ticket from './components/TIcket'
-import Process from './components/Proccse'
-import CTACancle from './components/Cta-Cancle-Policy'
+
+import RegistrationPage from './Content'
 export const metadata = {
   title: 'ICASEM 2025 Registration ',
   description: 'Join ICASEM 2025 in Vietnam, a top conference for applied science, engineering & management. Connect with global experts & explore groundbreaking research.',
@@ -36,9 +35,7 @@ export const metadata = {
 function page() {
   return (
     <div>
-        <Ticket/>
-        <Process/>
-        <CTACancle/>
+       <RegistrationPage/>
     </div>
   )
 }
