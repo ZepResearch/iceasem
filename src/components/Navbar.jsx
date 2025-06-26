@@ -103,10 +103,8 @@ function Nav() {
             <SheetContent side="right" className="w-64 p-0">
               <div className="flex flex-col h-full">
                 <div className="flex items-center space-x-2 px-6 py-4 border-b">
-                  <div className="w-8 h-8 bg-gray-900 rounded-lg flex items-center justify-center">
-                    <Activity className="w-5 h-5 text-white" />
-                  </div>
-                  <span className="text-lg font-semibold text-gray-900">Emerging Trends <span className='text-orange-500'>Conf.</span></span>
+                             <Image src={"/logo.svg"} alt='logo' height={300} width={190} className=" text-white" />
+
                 </div>
                 <nav className="flex flex-col gap-1 px-6 py-4">
                   {navLinks.map((link) =>
