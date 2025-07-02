@@ -47,7 +47,7 @@ export default function TimelineSection() {
 
   if (loading) {
     return (
-      <div className="flex justify-center items-center min-h-[400px]">
+      <div className="flex justify-center items-center min-h-[400px]" id="timeline">
         <div className="relative h-16 w-16">
           <div className="absolute inset-0 rounded-full border-2 border-transparent border-t-[#00adef] animate-spin"></div>
           <div

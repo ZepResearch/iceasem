@@ -32,9 +32,9 @@ export default function FaqSection() {
       title: "Registration & Participation",
       faqs: [
         {
-          question: "How do I register for ICASEM 2024?",
+          question: "How do I register for ICASEM 2025?",
           answer:
-            "You can register online through our official website. Early bird registration is available until October 15, 2024. Choose between in-person attendance in Singapore or virtual participation through our hybrid platform.",
+            `You can register online through our official website. Early bird registration is available until its Date. Choose between in-person attendance in Singapore or virtual participation through our hybrid platform.`,
         },
         {
           question: "What are the registration fees?",
@@ -44,7 +44,7 @@ export default function FaqSection() {
         {
           question: "Can I attend virtually?",
           answer:
-            "Yes! ICASEM 2024 offers a hybrid format. Virtual attendees can participate in live sessions, access recorded presentations, join networking rooms, and interact with speakers through our advanced online platform.",
+            "Yes! ICASEM 2025 offers a hybrid format. Virtual attendees can participate in live sessions, access recorded presentations, join networking rooms, and interact with speakers through our advanced online platform.",
         },
         {
           question: "What is included in the registration fee?",
@@ -59,7 +59,7 @@ export default function FaqSection() {
         {
           question: "What is the paper submission deadline?",
           answer:
-            "The final deadline for paper submission is October 30, 2024. We recommend submitting early for better review scheduling. Accepted papers will be notified by November 5, 2024.",
+   "Please scroll up to view the Important Dates for ICASEM 2025 section where all submission deadlines are clearly mentioned. We recommend submitting early for better review scheduling and to avoid any last-minute technical issues.",
         },
         {
           question: "What are the presentation formats available?",
@@ -84,17 +84,17 @@ export default function FaqSection() {
         {
           question: "Do you provide visa support letters?",
           answer:
-            "Yes, we provide official invitation letters for visa applications. Request your letter through the registration portal after completing your registration and payment. Processing takes 3-5 business days.",
+            "Yes, we may provide official invitation letters for visa applications. Request your letter through the registration portal after completing your registration and payment. Processing takes 3-5 business days.",
         },
         {
           question: "Are there recommended hotels near the venue?",
           answer:
-            "We have partnerships with several hotels offering special conference rates: Marina Bay Sands, The Ritz-Carlton, Pan Pacific Singapore, and Holiday Inn Express. Book through our portal for discounted rates.",
+   "We will provide accommodation assistance once the venue is confirmed. After registration, you'll receive detailed hotel recommendations with exclusive conference discounts and booking information via email. All recommended hotels will offer convenient access to the conference location.",
         },
         {
           question: "How do I get from the airport to the venue?",
           answer:
-            "Changi Airport is 30 minutes from Marina Bay. Options include: MRT (most economical), taxi (convenient), Grab/Uber (app-based), or airport shuttle. The venue is directly connected to Bayfront MRT station.",
+  "Detailed transportation information including airport transfer options, public transport routes, taxi services, and shuttle arrangements will be provided via email after registration and once the venue is confirmed. Singapore has excellent connectivity from Changi Airport with various convenient transportation modes to reach any location in the city.",
         },
         {
           question: "What COVID-19 safety measures are in place?",
@@ -121,11 +121,7 @@ export default function FaqSection() {
           answer:
             "Yes, all registered participants receive a digital certificate of attendance. Physical certificates can be requested for an additional fee. Certificates include conference details, dates, and your participation status.",
         },
-        {
-          question: "What is the cancellation policy?",
-          answer:
-            "Cancellations before October 1: 90% refund. October 1-15: 50% refund. After October 15: No refund, but registration can be transferred to another person or converted to virtual attendance.",
-        },
+      
       ],
     },
   ]
