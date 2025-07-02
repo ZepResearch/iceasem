@@ -279,7 +279,7 @@ export default function Footer() {
                   <li key={linkIndex}>
                     <Link
                       href={link.href}
-                      className="text-white/70 hover:text-white hover:text-[#00adef] transition-colors flex items-center group"
+                      className="text-white/70  hover:text-[#00adef] transition-colors flex items-center group"
                     >
                       <span className="group-hover:translate-x-1 transition-transform">{link.label}</span>
                     </Link>
