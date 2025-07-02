@@ -367,7 +367,7 @@ export default function ObjectivesSection() {
                 <div className="w-12 h-12 bg-[#00adef] rounded-full flex items-center justify-center mx-auto mb-3">
                   <Award className="w-6 h-6 text-white" />
                 </div>
-                <div className="text-2xl lg:text-3xl font-bold text-[#07416b]">50+</div>
+                <div className="text-2xl lg:text-3xl font-bold text-[#07416b]">200+</div>
                 <div className="text-gray-600 text-sm">Research Papers</div>
               </div>
               <div className="text-center">

@@ -144,8 +144,8 @@ export default function FaqSection() {
       icon: <Phone className="w-5 h-5" />,
       title: "Phone Support",
       description: "Speak directly with our team",
-      contact: "+91 78488 54815",
-      href:"tel:+917848854815",
+      contact: "+91 9237388328",
+      href:"tel:+919237388328",
       action: "Call Now",
       type: "link"
     },

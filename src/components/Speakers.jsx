@@ -345,7 +345,7 @@ export default function SpeakerSection() {
         {/* Call to Action */}
         <div className="mt-16 text-center">
           <div className="bg-gradient-to-r from-[#07416b] to-[#00adef] rounded-3xl p-8 lg:p-12 text-white">
-            <h3 className="text-2xl lg:text-3xl font-bold mb-4">Want to Be a Speaker?</h3>
+            <h3 className="text-2xl lg:text-3xl font-bold mb-4">Want to be a part of the conference?</h3>
             <p className="text-lg lg:text-xl mb-8 opacity-90 max-w-2xl mx-auto">
               Join our distinguished panel of experts and share your research with the global ICASEM community
             </p>
