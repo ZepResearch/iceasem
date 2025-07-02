@@ -16,9 +16,9 @@ export default function Home() {
       <Hero/>
       <About/>
       <Objective/>
+      <TimelineSection/>
       <SpeakerSection/>
       <CtaSection/>
-      <TimelineSection/>
       <VenueCtaSection/>
       <FaqSection/>
       {/* 

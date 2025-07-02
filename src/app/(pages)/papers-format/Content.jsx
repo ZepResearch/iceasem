@@ -17,21 +17,21 @@ export default function PapersFormatPage() {
   const templates = [
     {
       title: "Abstract Template",
-      description: "IEEE format template for 300-word abstract submissions",
+      description: "The abstract should be a concise summary of your research, not exceeding 300 words. It should include the research objectives, methodology, results, and conclusions. Use clear, concise language and avoid jargon or acronyms.",
       file: "/templates/ICASEM_Abstract_Template.docx",
       icon: <FileText className="h-6 w-6 text-[#00adef]" />,
       format: "DOCX",
     },
     {
       title: "Full Paper Template",
-      description: "IEEE format template for 6-8 page full paper submissions",
+      description: "Full papers should be between 3000-5000 words, excluding references and appendices. Use Times New Roman, 12-point font, double-spaced. Include an abstract, keywords, introduction, methodology, results, discussion, conclusion, and references. Follow APA 7th edition for citations and references.",
       file: "/templates/ICASEM_Fullpaper_Template.docx",
       icon: <BookOpen className="h-6 w-6 text-[#00adef]" />,
       format: "DOCX",
     },
     {
       title: "Presentation Template",
-      description: "PowerPoint template for conference presentations",
+      description: "Posters should be designed in A0 size (841 x 1189 mm) in portrait orientation. Use a clear, readable font (at least 24-point for body text, larger for headings). Include a title, authors, affiliation, introduction, methods, results, conclusions, and key references. Use graphics, charts, and images to convey your research visually.",
       file: "/templates/ICASEM_Presentation_Template.pptx",
       icon: <Users className="h-6 w-6 text-[#00adef]" />,
       format: "PPTX",
@@ -139,7 +139,7 @@ export default function PapersFormatPage() {
                 review.
               </p>
 
-              <div className="bg-[#f0f4f8] rounded-3xl p-6 border border-[#00adef]/20">
+              {/* <div className="bg-[#f0f4f8] rounded-3xl p-6 border border-[#00adef]/20">
                 <h3 className="text-xl font-bold text-[#07416b] mb-4">General Requirements</h3>
                 <ul className="space-y-3">
                   {generalRequirements.map((requirement, index) => (
@@ -151,46 +151,13 @@ export default function PapersFormatPage() {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
       </section>
 
-      {/* Submission Types Section */}
-      <section className="py-16 bg-gradient-to-br from-[#f0f4f8] to-[#e8f2ff]">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#07416b] mb-6">Submission Types</h2>
-            <p className="text-[#07416b]/80">Choose the appropriate submission type for your research</p>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {submissionTypes.map((type, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-3xl p-8 shadow-sm border border-[#00adef]/20 hover:shadow-lg transition-all duration-300 group"
-              >
-                <div className="bg-gradient-to-br from-[#00adef] to-[#07416b] rounded-2xl p-4 inline-block mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <div className="text-white">{type.icon}</div>
-                </div>
-                <h3 className="text-2xl font-bold text-[#07416b] mb-4 group-hover:text-[#00adef] transition-colors duration-300">
-                  {type.title}
-                </h3>
-                <p className="text-[#07416b]/80 mb-6 text-sm leading-relaxed">{type.description}</p>
-                <ul className="space-y-2">
-                  {type.requirements.map((req, reqIndex) => (
-                    <li key={reqIndex} className="flex items-center">
-                      <div className="w-2 h-2 bg-[#00adef] rounded-full mr-3 flex-shrink-0"></div>
-                      <span className="text-[#07416b]/80 text-sm">{req}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Citation Style Section */}
       <section className="py-16 bg-white">

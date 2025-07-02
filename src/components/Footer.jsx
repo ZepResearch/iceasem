@@ -197,7 +197,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <p className="text-white font-semibold">Singapore</p>
-                  <p className="text-white/70 text-sm">Marina Bay Convention Centre</p>
+                  <p className="text-white/70 text-sm">Exact Venue will decalare soon</p>
                 </div>
               </div>
 

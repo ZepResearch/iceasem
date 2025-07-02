@@ -94,23 +94,20 @@ export default function CtaSection() {
               </p>
 
               {/* Award Categories */}
-              <div className="grid grid-cols-2 gap-4 mb-3">
+              <div className="grid md:grid-cols-3 grid-cols-1 gap-1 mb-3">
                 <div className="flex items-center gap-3">
                   <Star className="w-5 h-5 text-[#00adef]" />
-                  <span className="text-sm text-gray-600">Best Research Paper</span>
+                  <span className="text-sm text-gray-600">BEST PAPER PRESENTATION AWARD</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Star className="w-5 h-5 text-[#00adef]" />
-                  <span className="text-sm text-gray-600">Innovation Excellence</span>
+                  <span className="text-sm text-gray-600">BEST PAPER AWARD</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Star className="w-5 h-5 text-[#00adef]" />
-                  <span className="text-sm text-gray-600">Young Researcher</span>
+                  <span className="text-sm text-gray-600 uppercase">Best International student presentation Award</span>
                 </div>
-                <div className="flex items-center gap-3">
-                  <Star className="w-5 h-5 text-[#00adef]" />
-                  <span className="text-sm text-gray-600">Industry Impact</span>
-                </div>
+              
               </div>
 
               {/* CTA */}
@@ -146,17 +143,17 @@ export default function CtaSection() {
 
               {/* Venue Details */}
               <div className="space-y-3 mb-6">
-                <div className="flex items-center gap-2">
+                {/* <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-[#07416b] rounded-full"></div>
                   <span className="text-xs text-gray-600">Marina Bay Convention Centre</span>
-                </div>
+                </div> */}
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-[#07416b] rounded-full"></div>
                   <span className="text-xs text-gray-600">Hybrid Format Available</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-[#07416b] rounded-full"></div>
-                  <span className="text-xs text-gray-600">Nov 14-15, 2025</span>
+                  <span className="text-xs text-gray-600">Nov 14<sup>th</sup>-15<sup>th</sup>, 2025</span>
                 </div>
               </div>
 
@@ -221,7 +218,7 @@ export default function CtaSection() {
           </div>
 
           {/* Committee Card */}
-          <div className="col-span-2 row-start-3">
+          <div className="col-span-2 row-start-4">
             <Card className="h-full bg-white rounded-2xl p-6 relative overflow-hidden border-l-4 border-[#07416b] hover:shadow-xl transition-all duration-300 group">
               {/* Background Pattern */}
               <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-[#07416b]/10 to-transparent rounded-full translate-y-12 -translate-x-12"></div>
@@ -262,7 +259,7 @@ export default function CtaSection() {
           </div>
 
           {/* Schedule Card */}
-          <div className="row-start-4">
+          <div className="row-start-3">
             <Card className="h-full bg-white rounded-2xl p-6 relative overflow-hidden border-l-4 border-[#00adef] hover:shadow-xl transition-all duration-300 group">
               {/* Icon */}
               <div className="mb-4">
@@ -292,7 +289,7 @@ export default function CtaSection() {
           </div>
 
           {/* Organizer Card */}
-          <div className="row-start-4">
+          <div className="row-start-3">
             <Card className="h-full bg-white rounded-2xl p-6 relative overflow-hidden border-l-4 border-[#07416b] hover:shadow-xl transition-all duration-300 group">
               {/* Icon */}
               <div className="mb-4">

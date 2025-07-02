@@ -150,7 +150,7 @@ const [showVirtualTour, setShowVirtualTour] = useState(false)
                 <span className="absolute inset-0 bg-[#00adef] rounded-full transform -rotate-1 scale-110 z-0 opacity-20"></span>
               </span>
             </h1>
-            <p className="text-xl text-[#07416b]/80 mb-8">Join us at Marina Bay Convention Centre, Singapore</p>
+             <p className="text-xl text-[#07416b]/80 mb-8">Join us at  Singapore</p>{/*Join us at  Marina Bay Convention Centre, Singapore*/}
 
             {/* Quick Stats */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
@@ -192,57 +192,57 @@ const [showVirtualTour, setShowVirtualTour] = useState(false)
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="relative bg-gradient-to-br from-[#f0f4f8] to-[#e8f2ff] rounded-3xl overflow-hidden shadow-sm border border-[#00adef]/20">
-            {/* Decorative elements */}
-            <div className="absolute top-0 right-0 w-64 h-64 bg-[#00adef]/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
-            <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#07416b]/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
+           { /* Decorative elements */}
+                  <div className="absolute top-0 right-0 w-64 h-64 bg-[#00adef]/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+                  <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#07416b]/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
 
-            <div className="relative p-8 md:p-12 lg:p-16">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <div>
-                  <div className="flex items-center gap-4 mb-6">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-[#00adef] to-[#07416b] p-0.5">
-                      <div className="flex h-full w-full items-center justify-center rounded-lg bg-white">
+                  <div className="relative p-8 md:p-12 lg:p-16">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div>
+                      <div className="flex items-center gap-4 mb-6">
+                      <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-[#00adef] to-[#07416b] p-0.5">
+                        <div className="flex h-full w-full items-center justify-center rounded-lg bg-white">
                         <Building className="h-6 w-6 text-[#07416b]" />
+                        </div>
                       </div>
-                    </div>
-                    <h2 className="text-2xl md:text-3xl font-bold text-[#07416b]">Marina Bay Convention Centre</h2>
-                  </div>
+                      <h2 className="text-2xl md:text-3xl font-bold text-[#07416b]">Singapore</h2>
+                      </div>
 
-                  <div className="space-y-6 text-[#07416b]/80">
-                    <p>
-                      Marina Bay Convention Centre stands as Singapore's premier venue for international conferences and
-                      events. Located in the heart of Marina Bay, this world-class facility offers state-of-the-art
-                      technology, flexible spaces, and stunning views of Singapore's iconic skyline - the perfect
-                      setting for ICASEM 2025.
-                    </p>
+                      <div className="space-y-6 text-[#07416b]/80">
+                      <p>
+                        The venue for ICASEM 2025 will be declared soon and will be located in Singapore.
+                      </p>
 
-                    <div className="space-y-4">
-                      <h3 className="text-xl font-medium text-[#07416b]">Venue Features</h3>
-
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div className="space-y-4">
+                        <h3 className="text-xl font-medium text-[#07416b]">Venue Features</h3>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         {venueFeatures.map((feature, index) => (
                           <div
-                            key={index}
-                            className="bg-white rounded-2xl p-4 border border-[#00adef]/20 hover:shadow-lg transition-all duration-300 group"
+                          key={index}
+                          className="bg-white rounded-2xl p-4 border border-[#00adef]/20 hover:shadow-lg transition-all duration-300 group"
                           >
-                            <div className="flex items-start gap-3">
-                              <div className="w-10 h-10 bg-gradient-to-br from-[#00adef] to-[#07416b] rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                                {feature.icon}
-                              </div>
-                              <div>
-                                <h4 className="font-semibold text-[#07416b] text-sm mb-1">{feature.title}</h4>
-                                <p className="text-[#07416b]/70 text-xs leading-relaxed">{feature.description}</p>
-                              </div>
+                          <div className="flex items-start gap-3">
+                            <div className="w-10 h-10 bg-gradient-to-br from-[#00adef] to-[#07416b] rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                            {feature.icon}
+                            </div>
+                            <div>
+                            <h4 className="font-semibold text-[#07416b] text-sm mb-1">{feature.title}</h4>
+                            <p className="text-[#07416b]/70 text-xs leading-relaxed">{feature.description}</p>
                             </div>
                           </div>
+                          </div>
                         ))}
+                        </div>
                       </div>
-                    </div>
 
-                    <div className="bg-white rounded-2xl border border-[#00adef]/20 p-6 mt-8">
-                      <div className="flex items-center gap-3 mb-4">
+                      <div className="bg-white rounded-2xl border border-[#00adef]/20 p-6 mt-8">
+                        <div className="flex items-center gap-3 mb-4">
                         <MapPin className="h-5 w-5 text-[#00adef]" />
                         <h3 className="text-lg font-medium text-[#07416b]">Address</h3>
+                        </div>
+                        <p className="text-[#07416b]/80 mb-4">Venue will be declared soon, Singapore</p>
+                        <div className="flex items-center gap-2 text-sm text-[#07416b]/60">
+                        {/* <Train className="h-4 w
                       </div>
                       <p className="text-[#07416b]/80 mb-4">[Declared Soon]</p>
                       <div className="flex items-center gap-2 text-sm text-[#07416b]/60">
@@ -479,93 +479,6 @@ const [showVirtualTour, setShowVirtualTour] = useState(false)
         </div>
       </section>
 
-      {/* Dining Options */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="relative bg-gradient-to-br from-[#f0f4f8] to-[#e8f2ff] rounded-3xl border border-[#00adef]/20 overflow-hidden shadow-sm">
-            {/* Decorative elements */}
-            <div className="absolute top-0 left-1/4 w-72 h-72 bg-[#00adef]/20 rounded-full blur-3xl"></div>
-            <div className="absolute bottom-0 right-1/4 w-72 h-72 bg-[#07416b]/20 rounded-full blur-3xl"></div>
-
-            <div className="relative p-8 md:p-12 lg:p-16">
-              <div className="max-w-4xl mx-auto">
-                <div className="flex items-center gap-4 mb-8">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-[#00adef] to-[#07416b] p-0.5">
-                    <div className="flex h-full w-full items-center justify-center rounded-lg bg-white">
-                      <Utensils className="h-6 w-6 text-[#07416b]" />
-                    </div>
-                  </div>
-                  <h2 className="text-2xl md:text-3xl font-bold text-[#07416b]">Dining & Hospitality</h2>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div className="space-y-6 text-[#07416b]/80">
-                    <div>
-                      <h3 className="text-xl font-semibold text-[#07416b] mb-3">Conference Catering:</h3>
-                      <ul className="space-y-2">
-                        <li className="flex items-start gap-3">
-                          <div className="w-2 h-2 bg-[#00adef] rounded-full mt-2 flex-shrink-0"></div>
-                          <span>
-                            <strong>Welcome Reception:</strong> Networking cocktails with panoramic Marina Bay views
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <div className="w-2 h-2 bg-[#00adef] rounded-full mt-2 flex-shrink-0"></div>
-                          <span>
-                            <strong>Coffee Breaks:</strong> Premium refreshments during technical sessions
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <div className="w-2 h-2 bg-[#00adef] rounded-full mt-2 flex-shrink-0"></div>
-                          <span>
-                            <strong>Gala Dinner:</strong> Fine dining experience featuring international and local
-                            cuisine
-                          </span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div className="space-y-6 text-[#07416b]/80">
-                    <div>
-                      <h3 className="text-xl font-semibold text-[#07416b] mb-3">Nearby Dining Options:</h3>
-                      <ul className="space-y-2">
-                        <li className="flex items-start gap-3">
-                          <div className="w-2 h-2 bg-[#07416b] rounded-full mt-2 flex-shrink-0"></div>
-                          <span>
-                            <strong>Marina Bay Sands:</strong> Celebrity chef restaurants and luxury dining
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <div className="w-2 h-2 bg-[#07416b] rounded-full mt-2 flex-shrink-0"></div>
-                          <span>
-                            <strong>Lau Pa Sat:</strong> Historic hawker center with authentic local cuisine
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <div className="w-2 h-2 bg-[#07416b] rounded-full mt-2 flex-shrink-0"></div>
-                          <span>
-                            <strong>The Shoppes:</strong> International dining options and casual eateries
-                          </span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="mt-8 bg-white rounded-2xl border border-[#00adef]/20 p-6">
-                  <h4 className="text-lg font-semibold text-[#07416b] mb-3">Special Dietary Requirements</h4>
-                  <p className="text-[#07416b]/80 text-sm">
-                    We accommodate all dietary preferences including vegetarian, vegan, halal, kosher, and gluten-free
-                    options. Please indicate your requirements during registration to ensure we can provide suitable
-                    meal arrangements.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="py-16 bg-[#f0f4f8]">

@@ -43,7 +43,7 @@ export default function VenueCtaSection() {
             Exact Venue will be announced soon!
           </h2>
           <p className="text-gray-600 text-lg lg:text-xl max-w-3xl mx-auto leading-relaxed">
-            Experience ICASEM 2025 in Singapore's premier convention facility, located in the heart of Marina Bay with world-class amenities and stunning city views
+            Experience ICASEM 2025 in Singapore's premier convention facility, located in the heart of Singapore with world-class amenities and stunning city views
           </p>
         </div>
 
@@ -65,7 +65,7 @@ export default function VenueCtaSection() {
                 <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-2 rounded-full">
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4 text-[#00adef]" />
-                    <span className="text-sm font-semibold text-[#07416b]">Marina Bay, Singapore</span>
+                    <span className="text-sm font-semibold text-[#07416b]"> Singapore</span>
                   </div>
                 </div>
               </div>
@@ -132,7 +132,7 @@ export default function VenueCtaSection() {
 
             {/* Location Benefits */}
             <Card className="p-6 rounded-2xl border-t-4 border-[#00adef]">
-              <h3 className="text-xl font-bold text-[#07416b] mb-4">Why Marina Bay?</h3>
+              <h3 className="text-xl font-bold text-[#07416b] mb-4">Why Singapore?</h3>
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-[#00adef] rounded-full"></div>

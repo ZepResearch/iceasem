@@ -46,7 +46,7 @@ function Nav() {
   }
 
   return (
-    <div className="max-w-screen-2xl mx-auto px-4 py-4 relative z-50">
+    <div className="max-w-screen-2xl mx-auto px-4 pb-4 relative z-50">
       <div className="shadow-lg border-0 bg-white/95 backdrop-blur-sm rounded-lg">
         <header className="flex items-center justify-between px-6 py-4">
           <Link href={"/"}>
