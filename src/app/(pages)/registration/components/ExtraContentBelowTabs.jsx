@@ -17,73 +17,14 @@ import {
 } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import Guidline from "./guidline"
 
 function ExtraContentBelowTabs() {
   return (
     <div>
       {/* Registration Process Section */}
       <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#07416b] mb-6">Registration Process</h2>
-            <div className="h-1 w-20 bg-gradient-to-r from-[#00adef] to-[#07416b] mx-auto mb-8 rounded-full"></div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-5xl mx-auto">
-            {/* Step 1 */}
-            <div className="relative">
-              <div className="bg-white rounded-xl border border-[#bfdbfe] p-6 h-full flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow duration-300">
-                <div className="h-16 w-16 rounded-full bg-gradient-to-r from-[#00adef] to-[#07416b] flex items-center justify-center mb-4 shadow-lg">
-                  <Ticket className="h-8 w-8 text-white" />
-                </div>
-                <h3 className="text-xl font-bold text-[#07416b] mb-2">Select Registration</h3>
-                <p className="text-[#07416b]/80">Choose the registration type that suits your needs.</p>
-              </div>
-              <div className="hidden md:block absolute -right-9 top-1/2 transform -translate-y-1/2 z-10">
-                <ArrowRight className="h-8 w-8 text-[#00adef]" />
-              </div>
-            </div>
-
-            {/* Step 2 */}
-            <div className="relative">
-              <div className="bg-white rounded-xl border border-[#bfdbfe] p-6 h-full flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow duration-300">
-                <div className="h-16 w-16 rounded-full bg-gradient-to-r from-[#00adef] to-[#07416b] flex items-center justify-center mb-4 shadow-lg">
-                  <CreditCard className="h-8 w-8 text-white" />
-                </div>
-                <h3 className="text-xl font-bold text-[#07416b] mb-2">Secure Payment</h3>
-                <p className="text-[#07416b]/80">Complete your payment through our secure gateway.</p>
-              </div>
-              <div className="hidden md:block absolute -right-9 top-1/2 transform -translate-y-1/2 z-10">
-                <ArrowRight className="h-8 w-8 text-[#00adef]" />
-              </div>
-            </div>
-
-            {/* Step 3 */}
-            <div className="relative">
-              <div className="bg-white rounded-xl border border-[#bfdbfe] p-6 h-full flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow duration-300">
-                <div className="h-16 w-16 rounded-full bg-gradient-to-r from-[#00adef] to-[#07416b] flex items-center justify-center mb-4 shadow-lg">
-                  <Mail className="h-8 w-8 text-white" />
-                </div>
-                <h3 className="text-xl font-bold text-[#07416b] mb-2">Confirmation</h3>
-                <p className="text-[#07416b]/80">Receive confirmation email with registration details.</p>
-              </div>
-              <div className="hidden md:block absolute -right-9 top-1/2 transform -translate-y-1/2 z-10">
-                <ArrowRight className="h-8 w-8 text-[#00adef]" />
-              </div>
-            </div>
-
-            {/* Step 4 */}
-            <div>
-              <div className="bg-white rounded-xl border border-[#bfdbfe] p-6 h-full flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow duration-300">
-                <div className="h-16 w-16 rounded-full bg-gradient-to-r from-[#00adef] to-[#07416b] flex items-center justify-center mb-4 shadow-lg">
-                  <Calendar className="h-8 w-8 text-white" />
-                </div>
-                <h3 className="text-xl font-bold text-[#07416b] mb-2">Conference Day</h3>
-                <p className="text-[#07416b]/80">Join us in Singapore for an amazing experience!</p>
-              </div>
-            </div>
-          </div>
-        </div>
+  <Guidline />
       </section>
 
       {/* Cancellation Policy Section */}
