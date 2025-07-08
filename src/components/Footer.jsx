@@ -313,6 +313,9 @@ export default function Footer() {
             <Link href="/cancellation-policy" className="text-white/60 text-sm hover:text-[#00adef] transition-colors">
               Cancellation Policy
             </Link>
+            <Link href="/complaints-policy" className="text-white/60 text-sm hover:text-[#00adef] transition-colors">
+             Complaints Policy
+            </Link>
           </div>
         </div>
       </div>
