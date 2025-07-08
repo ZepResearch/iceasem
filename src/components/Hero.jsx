@@ -17,7 +17,7 @@ export default function ConferenceLanding() {
                 <div className="h-full flex flex-col lg:flex-row items-center">
                   {/* Left side content */}
                   <div className="flex-1 lg:pr-6 xl:pr-8 text-center lg:text-left">
-                    <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-[#07416b] leading-tight mb-3 sm:mb-4 xl:mb-6">
+                    <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-6xl font-bold text-[#07416b] leading-tight mb-3 sm:mb-4 xl:mb-6">
                       International Conference on Applied Science, Engineering & Management
                     </h1>
                     <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-6 xl:gap-8 mb-4 sm:mb-6 xl:mb-8 text-[#07416b]">
@@ -67,8 +67,8 @@ export default function ConferenceLanding() {
                       <Image
                         src="/assets/hero.png"
                         alt="Conference Illustration"
-                        width={500}
-                        height={400}
+                        width={400}
+                        height={300}
                         className="w-full h-full drop-shadow-xl"
                       />
                     </div>
