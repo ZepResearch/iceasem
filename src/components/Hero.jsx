@@ -20,14 +20,14 @@ export default function ConferenceLanding() {
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-6xl font-bold text-[#07416b] leading-tight mb-3 sm:mb-4 xl:mb-6">
                       2<sup>nd</sup> International Conference on Applied Science, Engineering & Management
                     </h1>
-                    <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-6 xl:gap-8 mb-4 sm:mb-6 xl:mb-8 text-[#07416b]">
-                      <div className="flex items-center gap-2">
+                    <div className="mt-12 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-6 xl:gap-12 mb-4 sm:mb-6 xl:mb-8 text-[#07416b]">
+                      <div className="flex items-center gap-2 drop-shadow-xl">
                         <Calendar className="w-4 h-4 sm:w-5 sm:h-5 xl:w-6 xl:h-6" />
-                        <span className="font-semibold text-sm sm:text-base xl:text-xl">November 14-15</span>
+                        <span className="font-bold text-sm sm:text-base xl:text-2xl">November 14<sup>th</sup>-15<sup>th</sup></span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <MapPin className="w-4 h-4 sm:w-5 sm:h-5 xl:w-6 xl:h-6" />
-                        <span className="font-semibold text-sm sm:text-base xl:text-xl">Singapore</span>
+                        <MapPin className="w-4 h-4 sm:w-5 sm:h-5 xl:w-6 xl:h-6 drop-shadow-xl" />
+                        <span className="font-bold text-sm sm:text-base xl:text-2xl">Singapore</span>
                       </div>
                     </div>
                        <div className="mt-4 max-w-xs py-3">
