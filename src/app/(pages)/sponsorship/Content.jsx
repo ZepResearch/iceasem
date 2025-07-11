@@ -198,7 +198,7 @@ export default function ExhibitAndSponsorPage() {
             </h1>
 
             <p className="text-xl text-[#07416b]/80 mb-8">
-              Partner with ICASEM to showcase your commitment to applied science, engineering excellence, and management
+              Partner with  2<sup>nd</sup>ICASEM to showcase your commitment to applied science, engineering excellence, and management
               innovation
             </p>
           </div>
@@ -221,11 +221,11 @@ export default function ExhibitAndSponsorPage() {
                   </div>
                 </div>
 
-                <h2 className="text-2xl md:text-3xl font-bold mb-6 text-[#07416b]">Why Sponsor ICASEM 2025?</h2>
+                <h2 className="text-2xl md:text-3xl font-bold mb-6 text-[#07416b]">Why Sponsor  2<sup>nd</sup>ICASEM 2025?</h2>
 
                 <div className="space-y-6 text-[#07416b]/80">
                   <p>
-                    ICASEM 2025 offers a unique opportunity to connect with leading researchers, academics, and industry
+                     2<sup>nd</sup>ICASEM 2025 offers a unique opportunity to connect with leading researchers, academics, and industry
                     professionals in applied science, engineering, and management. By sponsoring our conference, you'll
                     gain visibility among a diverse audience of innovators and decision-makers from Singapore and around
                     the world.
@@ -397,7 +397,7 @@ export default function ExhibitAndSponsorPage() {
       </section>
 
       {/* Custom Sponsorship */}
-      <section className="py-16 bg-gradient-to-br from-[#f0f4f8] to-[#e8f2ff]">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <div className="relative bg-white rounded-3xl border border-[#bfdbfe] overflow-hidden p-8 shadow-sm">
@@ -407,7 +407,7 @@ export default function ExhibitAndSponsorPage() {
                 <h3 className="text-2xl font-bold text-[#07416b] mb-3">Looking for a Custom Package?</h3>
                 <p className="text-[#07416b]/80 mb-6">
                   We understand that every organization has unique goals and requirements. Contact us to discuss a
-                  customized sponsorship package tailored to your specific needs and objectives for ICASEM 2025.
+                  customized sponsorship package tailored to your specific needs and objectives for  2<sup>nd</sup>ICASEM 2025.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">

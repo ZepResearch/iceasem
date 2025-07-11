@@ -43,7 +43,7 @@ export default function VenueCtaSection() {
             Exact Venue will be announced soon!
           </h2>
           <p className="text-gray-600 text-lg lg:text-xl max-w-3xl mx-auto leading-relaxed">
-            Experience ICASEM 2025 in Singapore's premier convention facility, located in the heart of Singapore with world-class amenities and stunning city views
+            Experience  2<sup>nd</sup>  ICASEM 2025 in Singapore's premier convention facility, located in the heart of Singapore with world-class amenities and stunning city views
           </p>
         </div>
 

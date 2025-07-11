@@ -40,7 +40,7 @@ function About() {
 
                 <div className="space-y-4 mb-8">
                   <p className="text-gray-600 text-base lg:text-lg leading-relaxed">
-                    The International Conference on Applied Science, Engineering & Management (ICASEM) brings together
+                    The  2<sup>nd</sup>  International Conference on Applied Science, Engineering & Management ( 2<sup>nd</sup>  ICASEM) brings together
                     leading researchers, industry professionals, and academics from around the world to share
                     cutting-edge innovations and foster meaningful collaborations.
                   </p>

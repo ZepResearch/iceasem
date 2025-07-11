@@ -98,7 +98,7 @@ export default function TimelineSection() {
             <h2 className="text-3xl lg:text-5xl font-bold text-[#07416b] leading-tight mb-6">
               Important Dates for{" "}
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#00adef] to-[#07416b]">
-                ICASEM 2025
+                2nd  ICASEM 2025
               </span>
             </h2>
 

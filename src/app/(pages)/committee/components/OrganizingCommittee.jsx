@@ -113,7 +113,7 @@ export default function CommitteePage() {
               </span>
             </h1>
             <p className="text-xl text-[#07416b]/80 mb-8">
-              Meet the distinguished experts behind ICASEM 2025: International Conference on Applied Science,
+              Meet the distinguished experts behind 2<sup>nd</sup>International Conference on Applied Science,
               Engineering & Management
             </p>
           </div>
@@ -149,7 +149,7 @@ export default function CommitteePage() {
                     breakthrough solutions.
                   </p>
                   <p>
-                    Each committee member contributes unique expertise and perspectives, ensuring ICASEM 2025 delivers
+                    Each committee member contributes unique expertise and perspectives, ensuring 2<sup>nd</sup>ICASEM 2025 delivers
                     cutting-edge research presentations, meaningful networking opportunities, and practical insights
                     that drive technological advancement and organizational excellence.
                   </p>

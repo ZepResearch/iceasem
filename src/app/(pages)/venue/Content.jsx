@@ -210,7 +210,7 @@ const [showVirtualTour, setShowVirtualTour] = useState(false)
 
                       <div className="space-y-6 text-[#07416b]/80">
                       <p>
-                        The venue for ICASEM 2025 will be declared soon and will be located in Singapore.
+                        The venue for 2<sup>nd</sup>ICASEM 2025 will be declared soon and will be located in Singapore.
                       </p>
 
                       <div className="space-y-4">
@@ -418,7 +418,7 @@ const [showVirtualTour, setShowVirtualTour] = useState(false)
             <h2 className="text-3xl md:text-4xl font-bold text-[#07416b] mb-6">Explore Singapore</h2>
             <div className="h-1 w-20 bg-gradient-to-r from-[#00adef] to-[#07416b] mx-auto mb-8 rounded-full"></div>
             <p className="text-lg text-[#07416b]/80 max-w-2xl mx-auto">
-              Discover iconic attractions within walking distance of ICASEM 2025
+              Discover iconic attractions within walking distance of  2<sup>nd</sup>ICASEM 2025
             </p>
           </div>
 
@@ -491,7 +491,7 @@ const [showVirtualTour, setShowVirtualTour] = useState(false)
                 <div className="w-16 h-16 bg-gradient-to-br from-[#00adef] to-[#07416b] rounded-full flex items-center justify-center mx-auto mb-6">
                   <Building className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-[#07416b] mb-3">Ready to Join ICASEM 2025?</h3>
+                <h3 className="text-2xl font-bold text-[#07416b] mb-3">Ready to Join  2<sup>nd</sup>ICASEM 2025?</h3>
                 <p className="text-[#07416b]/80 mb-6">
                   Experience Singapore's premier conference venue and be part of the global Applied Science, Engineering
                   & Management community.

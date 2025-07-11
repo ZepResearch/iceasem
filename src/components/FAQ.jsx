@@ -32,7 +32,7 @@ export default function FaqSection() {
       title: "Registration & Participation",
       faqs: [
         {
-          question: "How do I register for ICASEM 2025?",
+          question: "How do I register for 2nd ICASEM 2025?",
           answer:
             `You can register online through our official website. Early bird registration is available until its Date. Choose between in-person attendance in Singapore or virtual participation through our hybrid platform.`,
         },
@@ -44,7 +44,7 @@ export default function FaqSection() {
         {
           question: "Can I attend virtually?",
           answer:
-            "Yes! ICASEM 2025 offers a hybrid format. Virtual attendees can participate in live sessions, access recorded presentations, join networking rooms, and interact with speakers through our advanced online platform.",
+            "Yes! 2nd ICASEM 2025 offers a hybrid format. Virtual attendees can participate in live sessions, access recorded presentations, join networking rooms, and interact with speakers through our advanced online platform.",
         },
         {
           question: "What is included in the registration fee?",
@@ -59,7 +59,7 @@ export default function FaqSection() {
         {
           question: "What is the paper submission deadline?",
           answer:
-   "Please scroll up to view the Important Dates for ICASEM 2025 section where all submission deadlines are clearly mentioned. We recommend submitting early for better review scheduling and to avoid any last-minute technical issues.",
+   "Please scroll up to view the Important Dates for 2nd ICASEM 2025 section where all submission deadlines are clearly mentioned. We recommend submitting early for better review scheduling and to avoid any last-minute technical issues.",
         },
         {
           question: "What are the presentation formats available?",
@@ -168,7 +168,7 @@ export default function FaqSection() {
             Everything You Need to Know
           </h2>
           <p className="text-gray-600 text-lg lg:text-xl max-w-3xl mx-auto leading-relaxed">
-            Find answers to common questions about ICASEM 2025. Can't find what you're looking for? Contact our support
+            Find answers to common questions about  2<sup>nd</sup>  ICASEM 2025. Can't find what you're looking for? Contact our support
             team.
           </p>
         </div>
@@ -227,7 +227,7 @@ export default function FaqSection() {
         {/* Quick Stats */}
         <Card className="p-8 rounded-2xl bg-white border-t-4 border-[#00adef] mb-16">
           <div className="text-center mb-8">
-            <h3 className="text-2xl lg:text-3xl font-bold text-[#07416b] mb-4">ICASEM 2025 at a Glance</h3>
+            <h3 className="text-2xl lg:text-3xl font-bold text-[#07416b] mb-4"> 2<sup>nd</sup> ICASEM 2025 at a Glance</h3>
             <p className="text-gray-600 text-base lg:text-lg">Key information about the conference</p>
           </div>
 
@@ -237,7 +237,7 @@ export default function FaqSection() {
                 <span className="text-white text-xl font-bold">2</span>
               </div>
               <div className="text-2xl font-bold text-[#07416b]">Days</div>
-              <div className="text-gray-600 text-sm">Nov 14-15, 2024</div>
+              <div className="text-gray-600 text-sm">Nov 14 <sup>th</sup> -15 <sup>th</sup> , 2025</div>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-[#07416b] rounded-full flex items-center justify-center mx-auto mb-3">

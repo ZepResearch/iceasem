@@ -24,7 +24,7 @@ export default function CtaSection() {
     {
       id: 'sponsorship',
       title: 'Sponsorship',
-      description: 'Partner with ICASEM to showcase your organization\'s commitment to Applied Science, Engineering & Management and connect with global industry leaders.',
+      description: 'Partner with 2nd ICASEM to showcase your organization\'s commitment to Applied Science, Engineering & Management and connect with global industry leaders.',
       href: '/sponsorship',
       icon: <Presentation className="w-6 h-6" />,
       color: 'blue'
@@ -68,7 +68,7 @@ export default function CtaSection() {
             Everything You Need to Know
           </h2>
           <p className="text-gray-600 text-lg lg:text-xl max-w-3xl mx-auto leading-relaxed">
-            Discover all aspects of ICASEM 2025 - from awards and venue details to sponsorship opportunities and our organizing committee
+            Discover all aspects of 2<sup>nd</sup>  ICASEM 2025 - from awards and venue details to sponsorship opportunities and our organizing committee
           </p>
         </div>
 
@@ -184,7 +184,7 @@ export default function CtaSection() {
               {/* Content */}
               <h3 className="text-xl font-bold text-[#07416b] mb-4">Partnership</h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-6">
-                Partner with ICASEM to showcase your organization's commitment to Applied Science, Engineering & Management.
+                Partner with  2<sup>nd</sup> ICASEM to showcase your organization's commitment to Applied Science, Engineering & Management.
               </p>
 
               {/* Sponsorship Levels */}
@@ -371,7 +371,7 @@ export default function CtaSection() {
             <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-24 -translate-x-24"></div>
             
             <div className="relative z-10">
-              <h3 className="text-2xl lg:text-4xl font-bold mb-4">Ready to Join ICASEM 2025?</h3>
+              <h3 className="text-2xl lg:text-4xl font-bold mb-4">Ready to Join  2<sup>nd</sup>  ICASEM 2025?</h3>
               <p className="text-lg lg:text-xl mb-8 opacity-90 max-w-2xl mx-auto">
                 Don't miss this opportunity to be part of Singapore's premier Applied Science, Engineering & Management conference
               </p>

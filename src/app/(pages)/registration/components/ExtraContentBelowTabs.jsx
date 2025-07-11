@@ -43,7 +43,7 @@ function ExtraContentBelowTabs() {
                 </div>
 
                 <p className="text-[#07416b]/80 mb-6">
-                  We understand that plans can change. Our cancellation policy for ICASEM 2025 is designed to be fair
+                  We understand that plans can change. Our cancellation policy for  2<sup>nd</sup>ICASEM 2025 is designed to be fair
                   and flexible:
                 </p>
 
@@ -234,16 +234,16 @@ function ExtraContentBelowTabs() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-[#f0f4f8]">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <div className="relative bg-white rounded-3xl border border-[#bfdbfe] overflow-hidden p-8 shadow-sm">
               <div className="absolute -inset-px rounded-3xl bg-gradient-to-r from-[#bfdbfe] to-[#93c5fd] opacity-20"></div>
 
               <div className="relative">
-                <h3 className="text-2xl font-bold text-[#07416b] mb-3">Ready to Join ICASEM 2025?</h3>
+                <h3 className="text-2xl font-bold text-[#07416b] mb-3">Ready to Join  2<sup>nd</sup>ICASEM 2025?</h3>
                 <p className="text-[#07416b]/80 mb-6">
-                  Register now to secure your spot at the International Conference Applied Science, Engineering &
+                  Register now to secure your spot at the  2<sup>nd</sup>International Conference Applied Science, Engineering &
                   Management in Singapore.
                 </p>
 

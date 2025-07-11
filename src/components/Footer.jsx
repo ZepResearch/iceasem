@@ -186,7 +186,7 @@ export default function Footer() {
                   <Calendar className="w-5 h-5 text-[#00adef]" />
                 </div>
                 <div>
-                  <p className="text-white font-semibold">November 14-15, 2024</p>
+                  <p className="text-white font-semibold">November 14 <sup>th</sup> -15<sup>th</sup> , 2025</p>
                   <p className="text-white/70 text-sm">Two days of innovation and networking</p>
                 </div>
               </div>
@@ -296,7 +296,7 @@ export default function Footer() {
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="flex flex-col md:flex-row items-center gap-4 mb-4 md:mb-0">
             <p className="text-white/60 text-sm">
-              © 2024 ICASEM. All rights reserved. Organized with excellence in Singapore.
+              © 2025 ICASEM. All rights reserved. Organized with excellence in Singapore.
             </p>
             <div className="flex items-center gap-2 text-white/60 text-sm">
               <Globe className="w-4 h-4" />

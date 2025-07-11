@@ -97,7 +97,7 @@ export default function ContactPage() {
               Us
             </h1>
             <p className="text-xl text-[#07416b]/80 mb-8">
-              Get in touch with the ICASEM team for any inquiries or support
+              Get in touch with the  2<sup>nd</sup>ICASEM team for any inquiries or support
             </p>
           </div>
         </div>
@@ -118,7 +118,7 @@ export default function ContactPage() {
                   <h2 className="text-2xl font-bold text-[#07416b] mb-6">Get In Touch</h2>
 
                   <p className="text-[#07416b]/80 mb-8">
-                    Have questions about ICASEM 2025? Our team is here to help. Reach out to us using the contact
+                    Have questions about  2<sup>nd</sup>ICASEM 2025? Our team is here to help. Reach out to us using the contact
                     information below or fill out the form.
                   </p>
 
@@ -158,7 +158,7 @@ export default function ContactPage() {
                         <p className="text-[#07416b] font-medium">
                           Singapore
                           <br />
-                          November 14-15, 2025
+                          November 14th - 15th, 2025
                         </p>
                       </div>
                     </div>

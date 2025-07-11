@@ -95,7 +95,7 @@ export default function AwardsPage() {
                       How are recipients selected?
                     </h3>
                     <p className="text-[#07416b]/80 mb-4">
-                      The Conference Program Committee of The 2nd ICSIFT will award scholarships to eligible applicants
+                      The Conference Program Committee of The  2<sup>nd</sup>ICASEM will award scholarships to eligible applicants
                       who have submitted exceptional abstracts that have passed the blind peer review process and been
                       accepted for presentation at the conference.
                     </p>
@@ -304,7 +304,7 @@ export default function AwardsPage() {
 
                 <div className="space-y-6 text-[#07416b]/80">
                   <p>
-                    All submissions and presentations at ICSIFT 2025 will be evaluated by our panel of expert judges,
+                    All submissions and presentations at  2<sup>nd</sup>ICASEM 2025 will be evaluated by our panel of expert judges,
                     comprising leading researchers, industry professionals, and academic leaders in sustainability,
                     innovation, and future technologies.
                   </p>
@@ -355,7 +355,7 @@ export default function AwardsPage() {
                       <div>
                         <h3 className="text-xl font-medium text-[#07416b] mb-2">Award Ceremony</h3>
                         <p className="text-[#07416b]/80">
-                          Winners are announced and recognized during the closing ceremony on December 27, 2025.
+                          Winners are announced and recognized during the closing ceremony 
                         </p>
                       </div>
                     </div>
@@ -368,7 +368,7 @@ export default function AwardsPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-br from-[#f0f4f8] to-[#e8f2ff]">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <div className="relative bg-white rounded-3xl border border-[#bfdbfe] overflow-hidden p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
@@ -377,7 +377,7 @@ export default function AwardsPage() {
               <div className="relative">
                 <h3 className="text-2xl font-bold text-[#07416b] mb-3">Ready to Showcase Your Research?</h3>
                 <p className="text-[#07416b]/80 mb-6">
-                  Submit your paper and register for ICSIFT 2025 to be considered for our prestigious awards.
+                  Submit your paper and register for  2<sup>nd</sup>ICASEM 2025 to be considered for our prestigious awards.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">

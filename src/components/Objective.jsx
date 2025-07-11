@@ -16,7 +16,7 @@ export default function ObjectivesSection() {
             Our Mission & Vision
           </h2>
           <p className="text-gray-600 text-lg lg:text-xl max-w-3xl mx-auto leading-relaxed">
-            ICASEM 2025 aims to foster innovation, collaboration, and knowledge exchange across multiple disciplines
+            2<sup>nd</sup>  ICASEM 2025 aims to foster innovation, collaboration, and knowledge exchange across multiple disciplines
           </p>
         </div>
 

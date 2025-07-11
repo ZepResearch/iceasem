@@ -65,7 +65,7 @@ export default function ModeOfPresentationPage() {
               </span>
             </h1>
             <p className="text-xl text-[#07416b]/80 mb-8">
-              Discover the different ways to present your research at ICASEM 2025: Applied Science, Engineering &
+              Discover the different ways to present your research at 2<sup>nd</sup>ICASEM 2025: Applied Science, Engineering &
               Management
             </p>
 
@@ -330,7 +330,7 @@ export default function ModeOfPresentationPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-[#07416b] mb-12 text-center">Presentation Guidelines</h2>
             <p className="text-[#07416b]/80 text-center mb-8 text-lg">
               Regardless of your presentation mode, please adhere to the following guidelines to ensure a smooth and
-              engaging experience for all ICASEM 2025 participants:
+              engaging experience for all 2<sup>nd</sup>ICASEM 2025 participants:
             </p>
 
             <div className="bg-white rounded-3xl p-8 shadow-sm border border-[#00adef]/20">
@@ -412,7 +412,7 @@ export default function ModeOfPresentationPage() {
               <div className="mb-6 md:mb-0 md:mr-6">
                 <h3 className="text-2xl font-bold text-[#07416b] mb-2">Ready to Present Your Research?</h3>
                 <p className="text-[#07416b]/80 max-w-xl">
-                  Choose your preferred presentation mode and submit your proposal for ICASEM 2025. Join the global
+                  Choose your preferred presentation mode and submit your proposal for 2<sup>nd</sup>ICASEM 2025. Join the global
                   community of Applied Science, Engineering & Management researchers.
                 </p>
               </div>

@@ -144,7 +144,7 @@ export default function ThemeAndTopicsPage() {
                 <span className="absolute inset-0 bg-[#00adef] rounded-full transform -rotate-1 scale-110 z-0 opacity-20"></span>
               </span>
             </h1>
-            <p className="text-xl text-[#07416b]/80 mb-8">Explore the research areas and themes for ICASEM 2025</p>
+            <p className="text-xl text-[#07416b]/80 mb-8">Explore the research areas and themes for 2<sup>nd</sup>ICASEM 2025</p>
           </div>
         </div>
       </section>
@@ -161,7 +161,7 @@ export default function ThemeAndTopicsPage() {
                 "Advancing Innovation Through Multidisciplinary Excellence in Applied Science, Engineering & Management"
               </h2>
               <p className="text-[#07416b]/80 mb-4">
-                ICASEM 2025 explores how the convergence of Applied Science, Engineering, and Management is driving
+                2<sup>nd</sup>ICASEM 2025 explores how the convergence of Applied Science, Engineering, and Management is driving
                 unprecedented innovation and solving complex global challenges. As traditional boundaries between
                 disciplines continue to blur, new opportunities emerge for breakthrough research and practical
                 applications that benefit society.
@@ -292,7 +292,7 @@ export default function ThemeAndTopicsPage() {
               <h3 className="text-2xl lg:text-4xl font-bold mb-4">Ready to Share Your Research?</h3>
               <p className="text-lg lg:text-xl mb-8 opacity-90 max-w-2xl mx-auto">
                 Submit your research paper and be part of the global conversation on Applied Science, Engineering &
-                Management innovation at ICASEM 2025.
+                Management innovation at 2<sup>nd</sup>ICASEM 2025.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/submission">
