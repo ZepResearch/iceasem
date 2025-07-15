@@ -110,14 +110,14 @@ export default function VenueCtaSection() {
                     <Clock className="w-4 h-4 text-[#00adef]" />
                     <span className="font-semibold text-[#07416b] text-sm">Day 1 - Nov 14</span>
                   </div>
-                  <span className="text-gray-600 text-sm">9:00 AM - 6:00 PM</span>
+                  {/* <span className="text-gray-600 text-sm">9:00 AM - 6:00 PM</span> */}
                 </div>
                 <div className="flex items-center justify-between p-3 bg-[#f0f4f8] rounded-lg">
                   <div className="flex items-center gap-3">
                     <Clock className="w-4 h-4 text-[#00adef]" />
                     <span className="font-semibold text-[#07416b] text-sm">Day 2 - Nov 15</span>
                   </div>
-                  <span className="text-gray-600 text-sm">9:00 AM - 5:00 PM</span>
+                  {/* <span className="text-gray-600 text-sm">9:00 AM - 5:00 PM</span> */}
                 </div>
               </div>
 
