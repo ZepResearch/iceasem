@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Calendar, MapPin, Users, ArrowBigRightDash, ArrowBigRightDashIcon } from "lucide-react"
 import Link from "next/link"
+import { ReserveButton } from "./reserve-button"
 
 export default function ConferenceLanding() {
   return (
@@ -50,6 +51,7 @@ export default function ConferenceLanding() {
                           <ArrowBigRightDash className="w-4 h-4 sm:w-5 sm:h-5 xl:w-6 xl:h-6" />
                         </button>
                       </Link>
+                      <ReserveButton/>
                     </div>
 
                     <div className="flex  sm:flex-row flex-col-reverse items-start sm:items-start justify-start gap-3 px-4 max-w-4xl backdrop-blur-sm bg-gray-50/30 py-4 rounded-3xl mt-4">
