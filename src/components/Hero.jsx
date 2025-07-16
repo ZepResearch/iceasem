@@ -69,9 +69,9 @@ export default function ConferenceLanding() {
                       <Image
                         src="/assets/hero.png"
                         alt="Conference Illustration"
-                        width={400}
+                        width={500}
                         height={300}
-                        className="w-full h-full drop-shadow-xl"
+                        className=" drop-shadow-xl"
                       />
                     </div>
                   </div>
