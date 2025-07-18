@@ -76,7 +76,7 @@ export default function ConferenceSchedule() {
         <div className="grid gap-8 md:grid-cols-[300px_1fr]">
           <Card className="border-primary">
             <CardHeader>
-              <CardTitle>April 2025</CardTitle>
+              <CardTitle>November 2025</CardTitle>
             </CardHeader>
             <CardContent>
               <Calendar
