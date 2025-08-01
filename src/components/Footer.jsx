@@ -293,17 +293,13 @@ export default function Footer() {
     
 
         {/* Bottom Section */}
-        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <div className="flex flex-col md:flex-row items-center gap-4 mb-4 md:mb-0">
+        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-12">
+          <div className="flex flex-col md:flex-row items-center gap-4 mb-4 md:mb-0 md:border-r-2 md:border-b-0 border-b-2  pb-4">
             <p className="text-white/60 text-sm">
               © 2025 ICASEM. All rights reserved. Organized with excellence in Singapore.
             </p>
-            <div className="flex items-center gap-2 text-white/60 text-sm">
-              <Globe className="w-4 h-4" />
-              <span>icasem.org</span>
-            </div>
           </div>
-          <div className="flex flex-wrap gap-6">
+          <div className="grid md:grid-cols-4 grid-cols-2  gap-8 text-center">
             <Link href="/terms-&-condition" className="text-white/60 text-sm hover:text-[#00adef] transition-colors">
               Terms of Service
             </Link>
@@ -315,6 +311,18 @@ export default function Footer() {
             </Link>
             <Link href="/complaints-policy" className="text-white/60 text-sm hover:text-[#00adef] transition-colors">
              Complaints Policy
+            </Link>
+
+
+
+            <Link href="/disability-discrimination-policy" className="text-white/60 text-sm hover:text-[#00adef] transition-colors ">
+             Disability Discrimination Policy
+            </Link>
+            <Link href="/health-and-safety-policy" className="text-white/60 text-sm hover:text-[#00adef] transition-colors">
+             Health and Safety Policy
+            </Link>
+            <Link href="/equal-treatment-policy" className="text-white/60 text-sm hover:text-[#00adef] transition-colors">
+             Equal Treatment Policy
             </Link>
           </div>
         </div>
