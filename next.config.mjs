@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-    domains: ['res.cloudinary.com','illustrations.popsy.co', 'images.unsplash.com','plus.unsplash.com','illustrations.popsy.co','icasem-robotechsummit.pockethost.io'],
+    domains: ['res.cloudinary.com','illustrations.popsy.co', 'images.unsplash.com','plus.unsplash.com','illustrations.popsy.co','icasem-robotechsummit.pockethost.io','zep-research.pockethost.io'],
   },
   experimental: {
     serverActions: true,

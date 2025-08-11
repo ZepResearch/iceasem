@@ -46,7 +46,7 @@ export default function ConferenceLanding() {
                         </Button>
                       </Link>
                       <Link href="/about-conference">
-                        <button className="flex items-center hover:border-[#00adef]  gap-2 text-[#07416b] hover:text-[#00adef] text-sm sm:text-base xl:text-lg border p-2 rounded-2xl">
+                        <button className="flex items-center hover:border-[  ]  gap-2 text-[#07416b] hover:text-[#00adef] text-sm sm:text-base xl:text-lg border p-2 rounded-2xl">
                           Learn more
                           <ArrowBigRightDash className="w-4 h-4 sm:w-5 sm:h-5 xl:w-6 xl:h-6" />
                         </button>

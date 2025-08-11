@@ -28,6 +28,8 @@ const navLinks = [
   { title: "SUBMISSION", href: "/submission" },
   { title: "VENUE", href: "/venue" },
   { title: "AWARDS", href: "/awards" },
+  { title: "JOURNALS", href: "/journals" },
+
   { title: "CONTACT", href: "/contact" },
   { title: "EXHIBIT & SPONSOR", href: "/sponsorship" },
 ]
