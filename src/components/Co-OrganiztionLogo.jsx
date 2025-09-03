@@ -3,32 +3,32 @@ import { CoOrganizationLogosClient } from "./ui/co-org-logo";
 const logos = [
   {
     name: "Company 1",
-    src: "https://res.cloudinary.com/dwlhesiyi/image/upload/v1730747171/pather%20logo/pagmkfmpwxmpa8szlvcy.jpg  ",
+    src: "/organizer/rit.png",
   },
-  {
-    name: "Company 2",
-    src: "https://res.cloudinary.com/dwlhesiyi/image/upload/v1730747142/pather%20logo/e4zln7v0g3nrh0vs92qd.jpg",
-  },
-  {
-    name: "Company 3",
-    src: "https://res.cloudinary.com/dwlhesiyi/image/upload/v1730747111/pather%20logo/wpp20uugpj4gegwaxqit.jpg",
-  },
-  {
-    name: "Company 4",
-    src: "https://res.cloudinary.com/dwlhesiyi/image/upload/v1730747074/pather%20logo/lfwclyhudaxhntxmnt59.jpg",
-  },
-  {
-    name: "Company 5",
-    src: "https://res.cloudinary.com/dwlhesiyi/image/upload/v1730747023/pather%20logo/g6o2riwdeghed8rw8jr1.jpg",
-  },
-  {
-    name: "Company 6",
-    src: "https://res.cloudinary.com/dwlhesiyi/image/upload/v1727851537/pather%20logo/an4uoqfpuhitlpzc1myq.png  ",
-  },
-  {
-    name: "Company 7",
-    src: "https://res.cloudinary.com/dwlhesiyi/image/upload/v1727851535/pather%20logo/afcvjzohrxc4gnuii3yc.png",
-  },
+  // {
+  //   name: "Company 2",
+  //   src: "/organizer/rit.png",
+  // },
+  // {
+  //   name: "Company 3",
+  //   src: "https://res.cloudinary.com/dwlhesiyi/image/upload/v1730747111/pather%20logo/wpp20uugpj4gegwaxqit.jpg",
+  // },
+  // {
+  //   name: "Company 4",
+  //   src: "https://res.cloudinary.com/dwlhesiyi/image/upload/v1730747074/pather%20logo/lfwclyhudaxhntxmnt59.jpg",
+  // },
+  // {
+  //   name: "Company 5",
+  //   src: "https://res.cloudinary.com/dwlhesiyi/image/upload/v1730747023/pather%20logo/g6o2riwdeghed8rw8jr1.jpg",
+  // },
+  // {
+  //   name: "Company 6",
+  //   src: "https://res.cloudinary.com/dwlhesiyi/image/upload/v1727851537/pather%20logo/an4uoqfpuhitlpzc1myq.png  ",
+  // },
+  // {
+  //   name: "Company 7",
+  //   src: "https://res.cloudinary.com/dwlhesiyi/image/upload/v1727851535/pather%20logo/afcvjzohrxc4gnuii3yc.png",
+  // },
   // {
   //   name: "Company 8",
   //   src: "https://res.cloudinary.com/dwlhesiyi/image/upload/v1727851536/pather%20logo/itr0sezg2mkyt0noyfvl.png",
