@@ -54,9 +54,10 @@ export default function ConferenceLanding() {
                       <ReserveButton/>
                     </div>
 
-                    <div className="flex  sm:flex-row flex-col-reverse items-start sm:items-start justify-start gap-3 px-4 max-w-4xl backdrop-blur-sm bg-gray-50/30 py-4 rounded-3xl mt-4">
+                    <div className="flex  sm:flex-row flex-col-reverse items-start sm:items-center justify-start gap-3 px-4 max-w-4xl backdrop-blur-sm bg-gray-50/30 py-4 rounded-3xl mt-4">
                       <img src="/assets/scopus.png" alt="" className="h-12 drop-shadow-lg" />
                       <img src="/assets/clarivate.png" alt="" className="h-12 drop-shadow-lg" />
+                      <img src="assets/cpd.png" alt="" className="h-20 drop-shadow-lg" />
                       <img src="assets/zepresearch.png" alt="" className="h-12 drop-shadow-lg" />
                     </div>
                     {/* Hybrid Conference Card */}
