@@ -8,6 +8,7 @@ import PhoneInput from "react-phone-number-input"
 import { FileText, Upload, ChevronDown, Send } from "lucide-react"
 import { GeometricShapesCSS } from "./geometric-shapes-css"
 import AbstractSubmissionGuidelines from "./SubmitGuidline"
+import Link from "next/link"
 
 export default function PaperSubmissionPage() {
   const router = useRouter()
@@ -385,13 +386,13 @@ export default function PaperSubmissionPage() {
 
            {/* Info Card for Submission Issues */}
       <section className="py-8">
-        <div className="container mx-auto px-4 ">
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-2xl mx-auto ">
             <div className="bg-gray-50/50 shadow-2xl border-l-4 border-red-500 p-6 rounded-2xl  flex items-center gap-4">
               <svg className="h-8 w-8 text-red-500 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z" /></svg>
               <div>
                 <p className="text-lg font-semibold text-neutral-900 mb-1">Facing issues submitting?</p>
-                <p className="text-neutral-700">If you have any trouble submitting your paper, please email us at <a href="mailto:submit@icasem.org" className="underline font-medium">submit@icasem.org</a>.</p>
+                <p className="text-neutral-700">If you have any trouble submitting your paper, please email us at .</p><a href="mailto:submit@icasem.org" className="underline font-medium">submit@icasem.org</a>
               </div>
             </div>
           </div>
