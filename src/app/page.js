@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import CoOrganizationLogos from "@/components/Co-OrganiztionLogo";
+import CPD from "@/components/CPD";
 
 import CtaSection from "@/components/CTA";
 import TimelineSection from "@/components/Dates-Timeline";
@@ -15,6 +16,7 @@ export default function Home() {
   return (
     <main>
       <Hero/>
+      <CPD/>
       <CoOrganizationLogos/>
       <About/>
       <Objective/>
