@@ -3,8 +3,9 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { DownloadCloudIcon } from "lucide-react";
 import PocketBase from 'pocketbase';
+import { pb } from "@/lib/pocketbase";
 
-const pb = new PocketBase('https://icasem.pockethost.io');
+
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -66,7 +67,7 @@ export default function Buttons() {
   if (isLoading) {
     return (
       <div className="flex justify-center items-center min-h-[200px]">
-        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-800"></div>
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-sky-800"></div>
       </div>
     );
   }
@@ -83,7 +84,7 @@ export default function Buttons() {
     <section className="py-4 max-w-7xl mx-auto">
       <div className="container max-w-7xl mx-auto px-4">
         <div className="flex justify-center items-center mx-auto">
-          <h1 className="text-center text-2xl pb-6 inline-flex justify-center items-center gap-3 font-medium text-blue-800">
+          <h1 className="text-center text-2xl pb-6 inline-flex justify-center items-center gap-3 font-medium text-sky-800">
             Download Conference Materials <DownloadCloudIcon />
           </h1>
         </div>
@@ -97,8 +98,8 @@ export default function Buttons() {
           {materials.map((material) => (
             <motion.a
               key={material.id}
-              href={`https://icasem.pockethost.io/api/files/${material.collectionId}/${material.id}/${material.file}`}
-              className="bg-blue-400 hover:bg-blue-500/80 text-white font-bold py-3 px-6 rounded-lg shadow-md transition-colors duration-300 text-sm sm:text-sm text-center drop-shadow-sm"
+              href={`https://icasem-robotechsummit.pockethost.io/api/files/${material.collectionId}/${material.id}/${material.file}`}
+              className="bg-sky-400 hover:bg-sky-500/80 text-white font-bold py-3 px-6 rounded-lg shadow-md transition-colors duration-300 text-sm sm:text-sm text-center drop-shadow-sm"
               variants={itemVariants}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

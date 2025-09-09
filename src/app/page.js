@@ -10,6 +10,7 @@ import Objective from "@/components/Objective";
 import SDGSection from "@/components/SDGS";
 import SpeakerSection from "@/components/Speakers";
 import VenueCtaSection from "@/components/Venue-cta";
+import Buttons from "../components/buttons";
 
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <CPD/>
       <CoOrganizationLogos/>
       <About/>
+      <Buttons/>
       <Objective/>
       <TimelineSection/>
       <SpeakerSection/>
