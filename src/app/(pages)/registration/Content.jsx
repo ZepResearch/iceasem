@@ -434,7 +434,7 @@ export default function RegistrationPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-[#07416b] mb-6"> 2<sup>nd</sup>ICASEM 2025 Registration</h2>
             <div className="h-1 w-20 bg-[#00adef] mx-auto mb-8 rounded-full"></div>
             <p className="text-[#07416b] max-w-3xl mx-auto">
-              Join us for  2<sup>nd</sup> the International Conference on Applied Science, Engineering & Management in Singapore, November 14th -15th, 2024
+              Join us for  2<sup>nd</sup> the International Conference on Applied Science, Engineering & Management in Singapore, November 14th -15th, 2025
             </p>
           </div>
 
