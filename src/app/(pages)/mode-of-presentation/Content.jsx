@@ -274,7 +274,7 @@ export default function ModeOfPresentationPage() {
                 <h2 className="text-3xl md:text-4xl font-bold text-[#07416b]">Virtual Presentation</h2>
               </div>
               <p className="text-[#07416b]/80 mb-6">
-                Can't attend in Singapore? Present your research virtually through our advanced online platform. This
+                Can't attend in Kuala Lumper, Malaysia? Present your research virtually through our advanced online platform. This
                 hybrid option provides flexibility while still allowing for meaningful engagement with the global
                 Applied Science, Engineering & Management community.
               </p>

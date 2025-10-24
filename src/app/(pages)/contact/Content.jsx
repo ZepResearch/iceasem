@@ -156,7 +156,7 @@ export default function ContactPage() {
                       <div>
                         <p className="text-sm text-[#07416b]/70">Conference Location</p>
                         <p className="text-[#07416b] font-medium">
-                          Singapore
+                          Kuala Lumper, Malaysia
                           <br />
                           November 14th - 15th, 2025
                         </p>

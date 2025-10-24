@@ -35,7 +35,7 @@ function ExtraContentAboveCard() {
             </h1>
 
             <p className="text-xl text-[#07416b]/80 mb-8">
-              Join us at the International Conference Applied Science, Engineering & Management in Singapore
+              Join us at the International Conference Applied Science, Engineering & Management in Kuala Lumper, Malaysia
             </p>
           </div>
         </div>

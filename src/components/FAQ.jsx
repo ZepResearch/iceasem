@@ -34,7 +34,7 @@ export default function FaqSection() {
         {
           question: "How do I register for 2nd ICASEM 2025?",
           answer:
-            `You can register online through our official website. Early bird registration is available until its Date. Choose between in-person attendance in Singapore or virtual participation through our hybrid platform.`,
+            `You can register online through our official website. Early bird registration is available until its Date. Choose between in-person attendance in Kuala Lumper, Malaysia or virtual participation through our hybrid platform.`,
         },
         {
           question: "What are the registration fees?",
@@ -94,12 +94,12 @@ export default function FaqSection() {
         {
           question: "How do I get from the airport to the venue?",
           answer:
-  "Detailed transportation information including airport transfer options, public transport routes, taxi services, and shuttle arrangements will be provided via email after registration and once the venue is confirmed. Singapore has excellent connectivity from Changi Airport with various convenient transportation modes to reach any location in the city.",
+  "Detailed transportation information including airport transfer options, public transport routes, taxi services, and shuttle arrangements will be provided via email after registration and once the venue is confirmed. Kuala Lumper, Malaysia has excellent connectivity from Changi Airport with various convenient transportation modes to reach any location in the city.",
         },
         {
           question: "What COVID-19 safety measures are in place?",
           answer:
-            "We follow Singapore's health guidelines. Current measures include optional mask-wearing, hand sanitizing stations, and flexible attendance options. Virtual participation remains available for those unable to travel.",
+            "We follow Kuala Lumper, Malaysia's health guidelines. Current measures include optional mask-wearing, hand sanitizing stations, and flexible attendance options. Virtual participation remains available for those unable to travel.",
         },
       ],
     },

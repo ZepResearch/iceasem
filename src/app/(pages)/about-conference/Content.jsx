@@ -95,7 +95,8 @@ export default function AboutConferencePage() {
               </div>
               <div className="flex items-center bg-white rounded-full px-5 py-2 shadow-sm border border-[#00adef]/20">
                 <MapPin className="h-5 w-5 text-[#00adef] mr-2" />
-                <span className="text-[#07416b]">Singapore</span>
+                <span className="text-[#07416b]">Kuala Lumper, Malaysia
+</span>
               </div>
               <div className="flex items-center bg-white rounded-full px-5 py-2 shadow-sm border border-[#00adef]/20">
                 <Users className="h-5 w-5 text-[#00adef] mr-2" />
@@ -119,7 +120,8 @@ export default function AboutConferencePage() {
               <h2 className="text-3xl md:text-4xl font-bold text-[#07416b] mb-6">About the Conference</h2>
               <p className="text-[#07416b]/80 mb-4">
                 The  2<sup>nd</sup>  International Conference on Applied Science, Engineering & Management ( 2<sup>nd</sup> ICASEM) 2025, taking place in
-                the dynamic city-state of Singapore, aims to foster innovation and collaboration across multiple
+                the dynamic city-state of Kuala Lumper, Malaysia
+, aims to foster innovation and collaboration across multiple
                 disciplines where applied science, engineering excellence, and management innovation converge.
               </p>
               <p className="text-[#07416b]/80 mb-4">
@@ -143,7 +145,8 @@ export default function AboutConferencePage() {
               />
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <div className="bg-white/90 backdrop-blur-sm rounded-full py-3 px-6 inline-flex items-center border border-[#00adef]/30">
-                  <span className="text-[#07416b] font-medium">Join us in Singapore</span>
+                  <span className="text-[#07416b] font-medium">Join us in Kuala Lumper, Malaysia
+</span>
                 </div>
               </div>
             </div>
@@ -206,7 +209,8 @@ export default function AboutConferencePage() {
 
           <div className="mt-16 text-center">
             <p className="text-xl text-[#07416b]/80 mb-6">
-              Join us in Singapore from November 14th-15th, 2025, to be part of a global community dedicated to advancing
+              Join us in Kuala Lumper, Malaysia
+ from November 14th-15th, 2025, to be part of a global community dedicated to advancing
               applied science, engineering excellence, and management innovation!
             </p>
             <Link href="/schedule">

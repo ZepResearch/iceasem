@@ -7,10 +7,10 @@ import { ReserveButton } from "./reserve-button"
 
 export default function ConferenceLanding() {
   return (
-    <div className="min-h-screen bg-[#f0f4f8] p-2 sm:p-4 md:px-6 overflow-hidden z-50  ">
-      <div className="w-full max-w-screen-2xl mx-auto zoom-container">
+    <div className="min-h-full bg-[#f0f4f8] p-2 sm:p-4 md:px-6 overflow-hidden z-50  ">
+      <div className="w-full max-w-screen-2xl mx-auto px-4 h-full ">
         {/* Single Responsive Grid Layout */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-9 grid-rows-auto lg:grid-rows-7 gap-2 sm:gap-4 min-h-screen  z-0  ">
+        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-9 grid-rows-auto lg:grid-rows-7 gap-2 sm:gap-4 min-h-full  z-0  ">
           {/* Card 1 - Main Hero Section (Expanded) */}
           <div className="col-span-2 sm:col-span-4 row-span-4 lg:col-span-9 lg:row-span-7 lg:col-start-1 lg:row-start-1 order-1 lg:order-1">
             <Card className="h-full bg-white rounded-2xl p-3 sm:p-6 xl:p-8 relative overflow-hidden">
@@ -28,7 +28,7 @@ export default function ConferenceLanding() {
                       </div>
                       <div className="flex items-center gap-2">
                         <MapPin className="w-4 h-4 sm:w-5 sm:h-5 xl:w-6 xl:h-6 drop-shadow-xl" />
-                        <span className="font-bold text-sm sm:text-base xl:text-2xl">Singapore</span>
+                        <span className="font-bold text-sm sm:text-base xl:text-2xl">Kuala Lumper, Malaysia</span>
                       </div>
                     </div>
                        <div className="mt-4 max-w-xs py-3">

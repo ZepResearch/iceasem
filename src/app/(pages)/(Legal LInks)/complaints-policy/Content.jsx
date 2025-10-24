@@ -125,7 +125,7 @@ export default function ComplaintsPolicy() {
                 </div>
                 <div className="flex items-center space-x-3 text-[#07416b]">
                   <MapPin className="w-5 h-5" />
-                  <span>Singapore</span>
+                  <span>Kuala Lumper, Malaysia</span>
                 </div>
               </div>
             </section>

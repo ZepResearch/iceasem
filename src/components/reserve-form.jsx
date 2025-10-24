@@ -74,7 +74,7 @@ export function ReserveForm({ isOpen, onClose, onSubmitSuccess }) {
           <DialogTitle className="text-xl font-semibold text-white">Pre-book your slot !</DialogTitle>
           <DialogDescription className="text-white/90">
            International Conference on Applied Science, Engineering & Management
-            <span className="text-white/80 text-sm mt-1">November 14th - 15th, 2025 • Singapore</span>
+            <span className="text-white/80 text-sm mt-1">November 14th - 15th, 2025 • Kuala Lumper, Malaysia</span>
           </DialogDescription>
         </DialogHeader>
         <div className="relative">

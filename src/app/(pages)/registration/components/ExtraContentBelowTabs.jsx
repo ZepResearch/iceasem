@@ -125,7 +125,7 @@ function ExtraContentBelowTabs() {
 
                 <h3 className="text-xl font-semibold text-[#07416b] mb-3">International Networking</h3>
                 <p className="text-[#07416b]/80">
-                  Connect with researchers and professionals from Singapore and worldwide
+                  Connect with researchers and professionals from Kuala Lumper, Malaysia and worldwide
                 </p>
               </div>
             </div>
@@ -244,7 +244,7 @@ function ExtraContentBelowTabs() {
                 <h3 className="text-2xl font-bold text-[#07416b] mb-3">Ready to Join  2<sup>nd</sup>ICASEM 2025?</h3>
                 <p className="text-[#07416b]/80 mb-6">
                   Register now to secure your spot at the  2<sup>nd</sup>International Conference Applied Science, Engineering &
-                  Management in Singapore.
+                  Management in Kuala Lumper, Malaysia.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">

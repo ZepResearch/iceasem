@@ -167,7 +167,8 @@ export default function Footer() {
 
             
             <p className="text-white/80 mb-6 max-w-xl leading-relaxed">
-              Join us for Singapore's premier conference bringing together leading researchers to explore cutting-edge innovations in Applied Science, Engineering & Management. 
+              Join us for Kuala Lumper, Malaysia
+ conference bringing together leading researchers to explore cutting-edge innovations in Applied Science, Engineering & Management. 
             
             </p>
 
@@ -196,7 +197,7 @@ export default function Footer() {
                   <MapPin className="w-5 h-5 text-[#00adef]" />
                 </div>
                 <div>
-                  <p className="text-white font-semibold">Singapore</p>
+                  <p className="text-white font-semibold">Kuala Lumper, Malaysia</p>
                   <p className="text-white/70 text-sm">Exact Venue will decalare soon</p>
                 </div>
               </div>
@@ -296,7 +297,8 @@ export default function Footer() {
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-12">
           <div className="flex flex-col md:flex-row items-center gap-4 mb-4 md:mb-0 md:border-r-2 md:border-b-0 border-b-2  pb-4">
             <p className="text-white/60 text-sm">
-              © 2025 ICASEM. All rights reserved. Organized with excellence in Singapore.
+              © 2025 ICASEM. All rights reserved. Organized with excellence in Kuala Lumper, Malaysia
+.
             </p>
           </div>
           <div className="grid md:grid-cols-4 grid-cols-2  gap-8 text-center">
