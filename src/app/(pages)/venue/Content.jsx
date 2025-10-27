@@ -165,7 +165,7 @@ const [showVirtualTour, setShowVirtualTour] = useState(false)
                 <span className="absolute inset-0 bg-[#00adef] rounded-full transform -rotate-1 scale-110 z-0 opacity-20"></span>
               </span>
             </h1>
-             <p className="text-xl text-[#07416b]/80 mb-8">Join us at  Kuala Lumper, Malaysia
+             <p className="text-xl text-[#07416b]/80 mb-8">Join us at  Kuala Lumpur, Malaysia
 </p>{/*Join us at  Marina Bay Convention Centre, Singapore*/}
 
             {/* Quick Stats */}
@@ -221,13 +221,13 @@ const [showVirtualTour, setShowVirtualTour] = useState(false)
                         <Building className="h-6 w-6 text-[#07416b]" />
                         </div>
                       </div>
-                      <h2 className="text-2xl md:text-3xl font-bold text-[#07416b]">Kuala Lumper, Malaysia
+                      <h2 className="text-2xl md:text-3xl font-bold text-[#07416b]">Kuala Lumpur, Malaysia
 </h2>
                       </div>
 
                       <div className="space-y-6 text-[#07416b]/80">
                       <p>
-                        The venue for 2<sup>nd</sup>ICASEM 2025 will be declared soon and will be located in Kuala Lumper, Malaysia
+                        The venue for 2<sup>nd</sup>ICASEM 2025 will be declared soon and will be located in Kuala Lumpur, Malaysia
 .
                       </p>
 
@@ -258,7 +258,7 @@ const [showVirtualTour, setShowVirtualTour] = useState(false)
                         <MapPin className="h-5 w-5 text-[#00adef]" />
                         <h3 className="text-lg font-medium text-[#07416b]">Address</h3>
                         </div>
-                        <p className="text-[#07416b]/80 mb-4">Venue will be declared soon, Kuala Lumper, Malaysia
+                        <p className="text-[#07416b]/80 mb-4">Holiday Inn Express, Kuala Lumpur City Centre, an IHG Hotel,Kuala Lumpur, Malaysia
 </p>
                         <div className="flex items-center gap-2 text-sm text-[#07416b]/60">
                         {/* <Train className="h-4 w
@@ -307,8 +307,7 @@ const [showVirtualTour, setShowVirtualTour] = useState(false)
                     {/* Venue name overlay */}
                     <div className="absolute bottom-0 left-0 right-0 p-6">
                       <div className="bg-white/90 backdrop-blur-sm rounded-full py-3 px-6 inline-flex items-center border border-[#00adef]/30">
-                        <span className="text-[#07416b] font-medium">Kuala Lumper, Malaysia
-Premier Convention Venue</span>
+                        <span className="text-[#07416b] font-medium">Holiday Inn Express, Kuala Lumpur City Centre</span>
                       </div>
                     </div>
                   </div>
@@ -417,7 +416,7 @@ Premier Convention Venue</span>
 
             <div className="relative rounded-2xl overflow-hidden h-[500px] w-full">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8176894834147!2d103.85594731475394!3d1.2830688990637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da190d593a26b5%3A0x7a2b2b2b2b2b2b2b!2sMarina%20Bay%20Sands!5e0!3m2!1sen!2ssg!4v1635000000000!5m2!1sen!2ssg"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d45071.50991839457!2d101.69167443411027!3d3.148273266376987!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc362aba001bed%3A0x1a95bd9e2e38cad4!2sHoliday%20Inn%20Express%20Kuala%20Lumpur%20City%20Centre%20by%20IHG!5e0!3m2!1sen!2sin!4v1761562631284!5m2!1sen!2sing"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -435,7 +434,7 @@ Premier Convention Venue</span>
       <section className="py-16 bg-[#f0f4f8]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#07416b] mb-6">Explore Kuala Lumper, Malaysia </h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#07416b] mb-6">Explore Kuala Lumpur, Malaysia </h2>
             <div className="h-1 w-20 bg-gradient-to-r from-[#00adef] to-[#07416b] mx-auto mb-8 rounded-full"></div>
             <p className="text-lg text-[#07416b]/80 max-w-2xl mx-auto">
               Discover iconic attractions within walking distance of  2<sup>nd</sup>ICASEM 2025
@@ -513,7 +512,7 @@ Premier Convention Venue</span>
                 </div>
                 <h3 className="text-2xl font-bold text-[#07416b] mb-3">Ready to Join  2<sup>nd</sup>ICASEM 2025?</h3>
                 <p className="text-[#07416b]/80 mb-6">
-                  Experience Kuala Lumper, Malaysia  premier conference venue and be part of the global Applied Science, Engineering
+                  Experience Kuala Lumpur, Malaysia  premier conference venue and be part of the global Applied Science, Engineering
                   & Management community.
                 </p>
 

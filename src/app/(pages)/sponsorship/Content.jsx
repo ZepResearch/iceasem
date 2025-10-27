@@ -227,7 +227,7 @@ export default function ExhibitAndSponsorPage() {
                   <p>
                      2<sup>nd</sup>ICASEM 2025 offers a unique opportunity to connect with leading researchers, academics, and industry
                     professionals in applied science, engineering, and management. By sponsoring our conference, you'll
-                    gain visibility among a diverse audience of innovators and decision-makers from Kuala Lumper, Malaysia and around
+                    gain visibility among a diverse audience of innovators and decision-makers from Kuala Lumpur, Malaysia and around
                     the world.
                   </p>
 

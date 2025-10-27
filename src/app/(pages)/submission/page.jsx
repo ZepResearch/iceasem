@@ -11,7 +11,7 @@ export const metadata = {
     'applied science conference',
     'engineering conference',
     'management conference',
-    'Kuala Lumper, Malaysia conference 2025',
+    'Kuala Lumpur, Malaysia conference 2025',
     'academic conference',
     'research conference',
     'scientific networking',
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'About ICASEM 2025',
-    description: 'Join leading experts at ICASEM 2025 in Kuala Lumper, Malaysia. Explore cutting-edge research in applied science, engineering, and management.',
+    description: 'Join leading experts at ICASEM 2025 in Kuala Lumpur, Malaysia. Explore cutting-edge research in applied science, engineering, and management.',
    
   },
   alternates: {

@@ -28,7 +28,7 @@ export default function ConferenceLanding() {
                       </div>
                       <div className="flex items-center gap-2">
                         <MapPin className="w-4 h-4 sm:w-5 sm:h-5 xl:w-6 xl:h-6 drop-shadow-xl" />
-                        <span className="font-bold text-sm sm:text-base xl:text-2xl">Kuala Lumper, Malaysia</span>
+                        <span className="font-bold text-sm sm:text-base xl:text-2xl">Kuala Lumpur, Malaysia</span>
                       </div>
                     </div>
                        <div className="mt-4 max-w-xs py-3">

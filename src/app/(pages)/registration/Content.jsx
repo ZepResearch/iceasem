@@ -434,7 +434,7 @@ export default function RegistrationPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-[#07416b] mb-6"> 2<sup>nd</sup>ICASEM 2025 Registration</h2>
             <div className="h-1 w-20 bg-[#00adef] mx-auto mb-8 rounded-full"></div>
             <p className="text-[#07416b] max-w-3xl mx-auto">
-              Join us for  2<sup>nd</sup> the International Conference on Applied Science, Engineering & Management in Kuala Lumper, Malaysia, November 14th -15th, 2025
+              Join us for  2<sup>nd</sup> the International Conference on Applied Science, Engineering & Management in Kuala Lumpur, Malaysia, November 14th -15th, 2025
             </p>
           </div>
 
@@ -469,7 +469,7 @@ export default function RegistrationPage() {
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold text-[#07416b] mb-3">In-Person Conference Experience</h3>
                 <p className="text-[#07416b] max-w-2xl mx-auto">
-                  Join us in Kuala Lumper, Malaysia for the complete conference experience with face-to-face networking and professional development
+                  Join us in Kuala Lumpur, Malaysia for the complete conference experience with face-to-face networking and professional development
                 </p>
               </div>
 

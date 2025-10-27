@@ -16,7 +16,7 @@ export default function CtaSection() {
     {
       id: 'venue',
       title: 'Venue',
-      description: 'Join us in the vibrant city of Kuala Lumper, Malaysia from November 14-15, or participate virtually through our interactive online platform—experience ICASEM your way.',
+      description: 'Join us in the vibrant city of Kuala Lumpur, Malaysia from November 14-15, or participate virtually through our interactive online platform—experience ICASEM your way.',
       href: '/venue',
       icon: <MapPin className="w-6 h-6" />,
       color: 'navy'
@@ -136,9 +136,9 @@ export default function CtaSection() {
               </div>
 
               {/* Content */}
-              <h3 className="text-xl font-bold text-[#07416b] mb-4">Kuala Lumper, Malaysia Venue</h3>
+              <h3 className="text-xl font-bold text-[#07416b] mb-4">Kuala Lumpur, Malaysia Venue</h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-6">
-                Join us in the vibrant city of Kuala Lumper, Malaysia from November 14-15, or participate virtually through our interactive online platform.
+                Join us in the vibrant city of Kuala Lumpur, Malaysia from November 14-15, or participate virtually through our interactive online platform.
               </p>
 
               {/* Venue Details */}
@@ -373,7 +373,7 @@ export default function CtaSection() {
             <div className="relative z-10">
               <h3 className="text-2xl lg:text-4xl font-bold mb-4">Ready to Join  2<sup>nd</sup>  ICASEM 2025?</h3>
               <p className="text-lg lg:text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-                Don't miss this opportunity to be part of Kuala Lumper, Malaysia premier Applied Science, Engineering & Management conference
+                Don't miss this opportunity to be part of Kuala Lumpur, Malaysia premier Applied Science, Engineering & Management conference
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/registration">

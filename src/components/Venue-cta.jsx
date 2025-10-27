@@ -43,7 +43,7 @@ export default function VenueCtaSection() {
             Exact Venue will be announced soon!
           </h2>
           <p className="text-gray-600 text-lg lg:text-xl max-w-3xl mx-auto leading-relaxed">
-            Experience  2<sup>nd</sup>  ICASEM 2025 in Kuala Lumper premier convention facility, located in the heart of  Malaysia with world-class amenities and stunning city views
+            Experience  2<sup>nd</sup>  ICASEM 2025 in Kuala Lumpur premier convention facility, located in the heart of  Malaysia with world-class amenities and stunning city views
           </p>
         </div>
 
@@ -65,7 +65,7 @@ export default function VenueCtaSection() {
                 <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-2 rounded-full">
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4 text-[#00adef]" />
-                    <span className="text-sm font-semibold text-[#07416b]"> Kuala Lumper, Malaysia</span>
+                    <span className="text-sm font-semibold text-[#07416b]"> Kuala Lumpur, Malaysia</span>
                   </div>
                 </div>
               </div>
@@ -132,7 +132,7 @@ export default function VenueCtaSection() {
 
             {/* Location Benefits */}
             <Card className="p-6 rounded-2xl border-t-4 border-[#00adef]">
-              <h3 className="text-xl font-bold text-[#07416b] mb-4">Why Kuala Lumper, Malaysia?</h3>
+              <h3 className="text-xl font-bold text-[#07416b] mb-4">Why Kuala Lumpur, Malaysia?</h3>
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-[#00adef] rounded-full"></div>
@@ -140,7 +140,7 @@ export default function VenueCtaSection() {
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-[#00adef] rounded-full"></div>
-                  <span className="text-gray-600 text-sm">Strategic location in Kuala Lumper, Malaysia's business district</span>
+                  <span className="text-gray-600 text-sm">Strategic location in Kuala Lumpur, Malaysia's business district</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-[#00adef] rounded-full"></div>

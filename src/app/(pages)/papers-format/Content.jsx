@@ -177,7 +177,7 @@ export default function PapersFormatPage() {
               <div className="bg-[#f0f4f8] rounded-2xl p-4 border border-[#00adef]/20">
                 <h4 className="font-semibold text-[#07416b] mb-2">IEEE Reference Example:</h4>
                 <p className="text-sm text-[#07416b]/80 font-mono">
-                  [1] A. Author, "Title of paper," in Proc. ICASEM, Kuala Lumper, Malaysia, 2025, pp. 1-8.
+                  [1] A. Author, "Title of paper," in Proc. ICASEM, Kuala Lumpur, Malaysia, 2025, pp. 1-8.
                 </p>
               </div>
             </div>

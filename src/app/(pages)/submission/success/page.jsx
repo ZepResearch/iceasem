@@ -5,7 +5,7 @@ import { CheckCircle, ArrowRight, ArrowLeft, Calendar } from "lucide-react"
 export const submissionSuccessMetadata = {
   title: "Success Submission | ICASEM: International Conference Applied Science, Engineering & Management",
   description:
-    "Successfully submitted your research to ICASEM 2025 in Kuala Lumper, Malaysia. Access submission guidelines, important dates, topics of interest, review process details, and submission portal instructions.",
+    "Successfully submitted your research to ICASEM 2025 in Kuala Lumpur, Malaysia. Access submission guidelines, important dates, topics of interest, review process details, and submission portal instructions.",
   keywords: [
     "ICASEM submission",
     "Bangkok conference paper",
@@ -23,7 +23,7 @@ export const submissionSuccessMetadata = {
     url: "https://www.icasem.org/submission/success",
     title: "Paper Submission | ICASEM: International Conference Applied Science, Engineering & Management",
     description:
-      "Submit your research to ICASEM 2025 in Kuala Lumper, Malaysia. Access submission guidelines, important dates, topics of interest, review process details, and submission portal instructions.",
+      "Submit your research to ICASEM 2025 in Kuala Lumpur, Malaysia. Access submission guidelines, important dates, topics of interest, review process details, and submission portal instructions.",
     siteName: "ICASEM",
     images: [
       {
@@ -39,7 +39,7 @@ export const submissionSuccessMetadata = {
     card: "summary_large_image",
     title: "Paper Submission | ICASEM: International Conference Applied Science, Engineering & Management",
     description:
-      "Submit your research to ICASEM 2025 in Kuala Lumper, Malaysia. Access submission guidelines, important dates, topics of interest, review process details, and submission portal instructions.",
+      "Submit your research to ICASEM 2025 in Kuala Lumpur, Malaysia. Access submission guidelines, important dates, topics of interest, review process details, and submission portal instructions.",
     images: ["https://www.icasem.org/opengraph.png"],
   },
 
@@ -55,7 +55,7 @@ export const submissionSuccessMetadata = {
       "@type": "WebPage",
       name: "Paper Submission | ICASEM: International Conference Applied Science, Engineering & Management",
       description:
-        "Submit your research to ICASEM 2025 in Kuala Lumper, Malaysia. Access submission guidelines, important dates, topics of interest, review process details, and submission portal instructions.",
+        "Submit your research to ICASEM 2025 in Kuala Lumpur, Malaysia. Access submission guidelines, important dates, topics of interest, review process details, and submission portal instructions.",
       url: "https://www.icasem.org/submission/success",
       mainEntity: {
         "@type": "HowTo",
