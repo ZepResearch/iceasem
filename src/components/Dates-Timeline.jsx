@@ -20,13 +20,10 @@ const getIconForTitle = (title) => {
 
 export default function TimelineSection() {
   const [timelineItems, setTimeline] = useState([])
-  const [loading, setLoading] = useState(false) // Set to false since no data fetching
+  const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
 
-  // Empty useEffect ready for data integration
   useEffect(() => {
-    // This is where you would fetch your timeline data
-    // Example:
     async function fetchDates() {
       try {
         setLoading(true)
@@ -116,15 +113,24 @@ export default function TimelineSection() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             {timelineItems.map((item, index) => {
               const IconComponent = getIconForTitle(item.title)
+              const isExpired = index === 0
+              
               return (
                 <div key={item.id} className="group">
                   {/* Card with ICASEM styling */}
-                  <div className="relative bg-white border-2 border-gray-200 hover:border-[#00adef] transition-all duration-300 h-80 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl">
+                  <div className={`relative bg-white border-2 ${isExpired ? 'border-gray-300 opacity-75' : 'border-gray-200 hover:border-[#00adef]'} transition-all duration-300 h-80 rounded-2xl overflow-hidden ${isExpired ? 'shadow-sm' : 'shadow-sm hover:shadow-xl'}`}>
+                    {/* Strike-through line for expired item */}
+                    {isExpired && (
+                      <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-10">
+                        <div className="w-full h-0.5 bg-red-500 transform -rotate-12"></div>
+                      </div>
+                    )}
+
                     {/* Card Content */}
-                    <div className="p-6 h-full flex flex-col">
+                    <div className="p-6 h-full flex flex-col relative">
                       {/* Icon */}
                       <div className="mb-6">
-                        <div className="w-14 h-14 bg-gradient-to-br from-[#00adef] to-[#07416b] rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <div className={`w-14 h-14 ${isExpired ? 'bg-gray-400' : 'bg-gradient-to-br from-[#00adef] to-[#07416b]'} rounded-xl flex items-center justify-center ${isExpired ? '' : 'group-hover:scale-110'} transition-transform duration-300`}>
                           <IconComponent className="w-7 h-7 text-white" />
                         </div>
                       </div>
@@ -136,21 +142,23 @@ export default function TimelineSection() {
                             <div
                               key={i}
                               className={`w-1 h-8 ${
-                                i % 2 === 0 ? "bg-[#00adef]" : "bg-[#07416b]"
-                              } transform skew-x-12 opacity-20 group-hover:opacity-40 transition-opacity duration-300`}
+                                isExpired 
+                                  ? 'bg-gray-300' 
+                                  : i % 2 === 0 ? "bg-[#00adef]" : "bg-[#07416b]"
+                              } transform skew-x-12 ${isExpired ? 'opacity-30' : 'opacity-20 group-hover:opacity-40'} transition-opacity duration-300`}
                             ></div>
                           ))}
                         </div>
                       </div>
 
                       {/* Title */}
-                      <h3 className="text-xl font-bold text-[#07416b] mb-4 leading-tight group-hover:text-[#00adef] transition-colors duration-300">
+                      <h3 className={`text-xl font-bold ${isExpired ? 'text-gray-500 line-through' : 'text-[#07416b] group-hover:text-[#00adef]'} mb-4 leading-tight transition-colors duration-300`}>
                         {item.title?.toUpperCase()}
                       </h3>
 
                       {/* Date */}
                       <div className="mb-4">
-                        <p className="bg-clip-text text-transparent bg-gradient-to-r from-[#00adef] to-[#07416b] font-bold text-lg">
+                        <p className={`font-bold text-lg ${isExpired ? 'text-gray-400 line-through' : 'bg-clip-text text-transparent bg-gradient-to-r from-[#00adef] to-[#07416b]'}`}>
                           {item.date}
                         </p>
                       </div>
@@ -158,18 +166,29 @@ export default function TimelineSection() {
                       {/* Description (if available) */}
                       {item.description && (
                         <div className="flex-grow">
-                          <p className="text-gray-600 text-sm leading-relaxed">{item.description}</p>
+                          <p className={`text-sm leading-relaxed ${isExpired ? 'text-gray-400' : 'text-gray-600'}`}>{item.description}</p>
+                        </div>
+                      )}
+
+                      {/* Expired label */}
+                      {isExpired && (
+                        <div className="mt-4">
+                          <span className="inline-block px-3 py-1 bg-red-100 text-red-600 text-xs font-semibold rounded-full">
+                            EXPIRED
+                          </span>
                         </div>
                       )}
 
                       {/* Bottom accent */}
                       <div className="mt-auto pt-4">
-                        <div className="h-1 w-full bg-gradient-to-r from-[#00adef] to-[#07416b] rounded-full opacity-20 group-hover:opacity-60 transition-opacity duration-300"></div>
+                        <div className={`h-1 w-full rounded-full ${isExpired ? 'bg-gray-300 opacity-30' : 'bg-gradient-to-r from-[#00adef] to-[#07416b] opacity-20 group-hover:opacity-60'} transition-opacity duration-300`}></div>
                       </div>
                     </div>
 
                     {/* Hover effect overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-[#00adef]/5 to-[#07416b]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+                    {!isExpired && (
+                      <div className="absolute inset-0 bg-gradient-to-br from-[#00adef]/5 to-[#07416b]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+                    )}
                   </div>
                 </div>
               )
