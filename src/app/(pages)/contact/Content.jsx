@@ -143,7 +143,7 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <p className="text-sm text-[#07416b]/70">Phone</p>
-                        <p className="text-[#07416b] font-medium">+91 92373 88328</p>
+                        <p className="text-[#07416b] font-medium">+91 9237388328</p>
                       </div>
                     </div>
 
