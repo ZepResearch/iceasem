@@ -26,6 +26,8 @@ const navLinks = [
   },
   { title: "COMMITTEE", href: "/committee" },
   { title: "SUBMISSION", href: "/submission" },
+  { title: "GALLERY", href: "/gallery" },
+
   { title: "VENUE", href: "/venue" },
   { title: "AWARDS", href: "/awards" },
   { title: "JOURNALS", href: "/journals" },
@@ -50,7 +52,7 @@ function Nav() {
   return (
     <div className="max-w-screen-2xl mx-auto px-4 pb-4 relative z-50">
       <div className="shadow-lg border-0 bg-white/95 backdrop-blur-sm rounded-lg">
-        <header className="flex items-center justify-between px-6 py-4">
+        <header className="flex items-center justify-between px-2 py-4">
           <Link href={"/"}>
             <div className="flex items-center space-x-2">
               <Image src={"/logo.svg"} alt="logo" height={300} width={190} className="text-white" />
@@ -58,12 +60,12 @@ function Nav() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-7 bg-gray-50 px-8 py-3 rounded-full border text-xs relative z-50">
+          <nav className="hidden md:flex items-center space-x-2 bg-gray-50 px-2 py-3 rounded-full border text-xs relative z-50">
             {navLinks.map((link) =>
               link.dropdown ? (
                 <div key={link.title} className="relative group">
                   <div
-                    className="flex items-center space-x-1 px-4 py-2 hover:bg-gray-100 rounded text-gray-700 text-xs transition-colors duration-200 cursor-pointer"
+                    className="flex items-center space-x-1 px-2 py-2 hover:bg-gray-100 rounded text-gray-700 text-xs transition-colors duration-200 cursor-pointer"
                     onMouseEnter={() => setOpenDropdown(link.title)}
                     onMouseLeave={() => setOpenDropdown(null)}
                   >
