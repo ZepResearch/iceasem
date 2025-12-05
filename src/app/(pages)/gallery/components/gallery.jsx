@@ -64,7 +64,7 @@ function VideoSection({ videos }) {
 
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-1 gap-6">
         {videos.map((video) => (
           <div
             key={video.id}
@@ -166,16 +166,11 @@ const firstConferenceImages = [
 const conferenceVideos = [
   {
     id: "video1",
-    title: "ICASEM 2024 | Day 1 Highlights | Full Video",
-    thumbnail: "/gallery/thubnail1.jpg?height=400&width=600",
-    videoUrl: "https://www.youtube.com/embed/jQsiUOr53Bo",
+    title: "ICASEM 2024 | Days  Highlights | Full Video",
+    thumbnail: "/gallery/thumbnail.jpg",
+    videoUrl: "https://www.youtube.com/embed/jR12HcQLAA4",
   },
-  {
-    id: "video2",
-    title: "ICASEM Highlights || International Conference on Applied Science",
-    thumbnail: "/gallery/thubnail2.jpg?height=400&width=600",
-    videoUrl: "https://www.youtube.com/embed/B49Gm3b9VgA",
-  },
+ 
 ]
 
 export default function Gallery() {
@@ -209,7 +204,7 @@ export default function Gallery() {
           </section>
 
           {/* Video Section - Commented out */}
-          {/* <section className="bg-gradient-to-br from-blue-50 via-blue-50 to-blue-100 rounded-2xl p-6 md:p-8 shadow-xl border border-blue-100 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-200/50">
+          <section className="bg-gradient-to-br from-blue-50 via-blue-50 to-blue-100 rounded-2xl p-6 md:p-8 shadow-xl border border-blue-100 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-200/50">
             <div>
               <div className="inline-block px-3 py-1 mb-3 text-xs font-semibold tracking-wider text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 rounded-full">
                 FEATURED MEDIA
@@ -223,7 +218,7 @@ export default function Gallery() {
             </div>
 
             <VideoSection videos={conferenceVideos} />
-          </section> */}
+          </section>
         </div>
 
         <footer className="mt-20 text-center text-gray-600">
