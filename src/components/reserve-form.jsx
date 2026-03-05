@@ -73,8 +73,8 @@ export function ReserveForm({ isOpen, onClose, onSubmitSuccess }) {
         <DialogHeader className="bg-gradient-to-bl from-blue-500  to-blue-500 -mx-6 -mt-6 px-6 py-4 rounded-t-lg">
           <DialogTitle className="text-xl font-semibold text-white">Pre-book your slot !</DialogTitle>
           <DialogDescription className="text-white/90">
-           International Conference on Applied Science, Engineering & Management
-            <span className="text-white/80 text-sm mt-1">November 14th - 15th, 2025 • Kuala Lumpur, Malaysia</span>
+            International Conference on Applied Science, Engineering & Management
+            <span className="text-white/80 text-sm mt-1">March 11th - 12th, 2027 • Vietnam </span>
           </DialogDescription>
         </DialogHeader>
         <div className="relative">
@@ -167,9 +167,9 @@ export function ReserveForm({ isOpen, onClose, onSubmitSuccess }) {
               >
                 Cancel
               </Button>
-              <Button 
-                type="submit" 
-                disabled={isSubmitting} 
+              <Button
+                type="submit"
+                disabled={isSubmitting}
                 className="bg-gradient-to-r from-blue-600 to-blue-500  text-white font-medium shadow-lg hover:shadow-xl transition-all duration-200"
               >
                 {isSubmitting ? (
