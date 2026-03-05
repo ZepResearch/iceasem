@@ -113,7 +113,7 @@ export default function CommitteePage() {
               </span>
             </h1>
             <p className="text-xl text-[#07416b]/80 mb-8">
-              Meet the distinguished experts behind 2<sup>nd</sup>International Conference on Applied Science,
+              Meet the distinguished experts behind 3<sup>rd</sup>International Conference on Applied Science,
               Engineering & Management
             </p>
           </div>
@@ -149,7 +149,7 @@ export default function CommitteePage() {
                     breakthrough solutions.
                   </p>
                   <p>
-                    Each committee member contributes unique expertise and perspectives, ensuring 2<sup>nd</sup>ICASEM 2025 delivers
+                    Each committee member contributes unique expertise and perspectives, ensuring 3<sup>rd</sup>ICASEM 2027 delivers
                     cutting-edge research presentations, meaningful networking opportunities, and practical insights
                     that drive technological advancement and organizational excellence.
                   </p>
@@ -270,7 +270,7 @@ export default function CommitteePage() {
                 </div>
                 <h3 className="text-2xl font-bold text-[#07416b] mb-4">Committee Members Coming Soon</h3>
                 <p className="text-[#07416b]/80 text-lg mb-6">
-                  We're finalizing our distinguished organizing committee for ICASEM 2025. Check back soon to meet the
+                  We're finalizing our distinguished organizing committee for ICASEM 2027. Check back soon to meet the
                   experts who will be leading this premier conference.
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">
@@ -310,7 +310,7 @@ export default function CommitteePage() {
               </div>
               <h3 className="text-xl font-bold text-[#07416b] mb-3">Conference Chairs</h3>
               <p className="text-[#07416b]/80 text-sm">
-                Overall conference leadership and strategic direction for ICASEM 2025
+                Overall conference leadership and strategic direction for ICASEM 2027
               </p>
             </div>
 

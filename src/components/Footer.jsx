@@ -155,9 +155,9 @@ export default function Footer() {
               <Link href="/">
                 <div className="flex items-center space-x-3 bg-white/90 backdrop-blur-md px-6 rounded-lg py-2 ">
                   <Image
-                    src="/logo.svg" 
+                    src="/logo.svg"
                     alt="ICASEM Logo"
-                    width={200}  
+                    width={200}
                     height={50}
                     className="  z-10"
                   />
@@ -165,72 +165,72 @@ export default function Footer() {
               </Link>
             </div>
 
-            
+
             <p className="text-white/80 mb-6 max-w-xl leading-relaxed">
-              Join us for Kuala Lumpur, Malaysia
- conference bringing together leading researchers to explore cutting-edge innovations in Applied Science, Engineering & Management. 
-            
+              Join us for Vietnam
+              conference bringing together leading researchers to explore cutting-edge innovations in Applied Science, Engineering & Management.
+
             </p>
 
-         
+
           </div>
 
           {/* Right Side - Conference Stats */}
           <div className="grid grid-cols-1 gap-1">
-             {/* Conference Details */}
+            {/* Conference Details */}
             <div className="space-y-2 mb-2">
               <div className="grid grid-cols-2 gap-4">
 
-              
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-[#00adef]/20 rounded-lg flex items-center justify-center">
-                  <Calendar className="w-5 h-5 text-[#00adef]" />
-                </div>
-                <div>
-                  <p className="text-white font-semibold">November 14 <sup>th</sup> -15<sup>th</sup> , 2025</p>
-                  <p className="text-white/70 text-sm">Two days of innovation and networking</p>
-                </div>
-              </div>
 
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-[#00adef]/20 rounded-lg flex items-center justify-center">
-                  <MapPin className="w-5 h-5 text-[#00adef]" />
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-[#00adef]/20 rounded-lg flex items-center justify-center">
+                    <Calendar className="w-5 h-5 text-[#00adef]" />
+                  </div>
+                  <div>
+                    <p className="text-white font-semibold">March 11 <sup>th</sup> -12<sup>th</sup> , 2027</p>
+                    <p className="text-white/70 text-sm">Two days of innovation and networking</p>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-white font-semibold">Kuala Lumper, Malaysia</p>
-                  <p className="text-white/70 text-sm">Exact Venue will decalare soon</p>
-                </div>
-              </div>
 
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-[#00adef]/20 rounded-lg flex items-center justify-center">
-                  <Mail className="w-5 h-5 text-[#00adef]" />
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-[#00adef]/20 rounded-lg flex items-center justify-center">
+                    <MapPin className="w-5 h-5 text-[#00adef]" />
+                  </div>
+                  <div>
+                    <p className="text-white font-semibold">Vietnam</p>
+                    <p className="text-white/70 text-sm">Exact Venue will decalare soon</p>
+                  </div>
                 </div>
-                <div>
-                  <a
-                    href="mailto:submit@icasem.org"
-                    className="text-white font-semibold hover:text-[#00adef] transition-colors"
-                  >
-                    submit@icasem.org
-                  </a>
-                  <p className="text-white/70 text-sm">Paper submissions & inquiries</p>
-                </div>
-              </div>
 
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-[#00adef]/20 rounded-lg flex items-center justify-center">
-                  <Phone className="w-5 h-5 text-[#00adef]" />
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-[#00adef]/20 rounded-lg flex items-center justify-center">
+                    <Mail className="w-5 h-5 text-[#00adef]" />
+                  </div>
+                  <div>
+                    <a
+                      href="mailto:submit@icasem.org"
+                      className="text-white font-semibold hover:text-[#00adef] transition-colors"
+                    >
+                      submit@icasem.org
+                    </a>
+                    <p className="text-white/70 text-sm">Paper submissions & inquiries</p>
+                  </div>
                 </div>
-                <div>
-                  <a
-                    href="tel:+917848854815"
-                    className="text-white font-semibold hover:text-[#00adef] transition-colors"
-                  >
-                    +91 9237388328
-                  </a>
-                  <p className="text-white/70 text-sm">Conference support hotline</p>
+
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-[#00adef]/20 rounded-lg flex items-center justify-center">
+                    <Phone className="w-5 h-5 text-[#00adef]" />
+                  </div>
+                  <div>
+                    <a
+                      href="tel:+917848854815"
+                      className="text-white font-semibold hover:text-[#00adef] transition-colors"
+                    >
+                      +91 9237388328
+                    </a>
+                    <p className="text-white/70 text-sm">Conference support hotline</p>
+                  </div>
                 </div>
-              </div>
               </div>
             </div>
 
@@ -242,12 +242,12 @@ export default function Footer() {
               >
                 <Facebook className="w-5 h-5 group-hover:text-white" />
               </a>
-              <a
+              {/* <a
                 href="#"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#00adef] transition-colors group"
               >
                 <Twitter className="w-5 h-5 group-hover:text-white" />
-              </a>
+              </a> */}
               <a
                 href="#"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#00adef] transition-colors group"
@@ -291,14 +291,13 @@ export default function Footer() {
           ))}
         </div>
 
-    
+
 
         {/* Bottom Section */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-12">
-          <div className="flex flex-col md:flex-row items-center gap-4 mb-4 md:mb-0 md:border-r-2 md:border-b-0 border-b-2  pb-4">
+          <div className="flex flex-col md:flex-row items-center gap-4 mb-4 md:mb-0 md:border-r-2 md:border-b-0 border-b-2 border-white/70  pb-4">
             <p className="text-white/60 text-sm">
-              © 2025 ICASEM. All rights reserved. Organized with excellence in Kuala Lumpur, Malaysia
-.
+              © 2027 ICASEM. All rights reserved. Organized with excellence in Vietnam.
             </p>
           </div>
           <div className="grid md:grid-cols-4 grid-cols-2  gap-8 text-center">
@@ -312,19 +311,19 @@ export default function Footer() {
               Cancellation Policy
             </Link>
             <Link href="/complaints-policy" className="text-white/60 text-sm hover:text-[#00adef] transition-colors">
-             Complaints Policy
+              Complaints Policy
             </Link>
 
 
 
             <Link href="/disability-discrimination-policy" className="text-white/60 text-sm hover:text-[#00adef] transition-colors ">
-             Disability Discrimination Policy
+              Disability Discrimination Policy
             </Link>
             <Link href="/health-and-safety-policy" className="text-white/60 text-sm hover:text-[#00adef] transition-colors">
-             Health and Safety Policy
+              Health and Safety Policy
             </Link>
             <Link href="/equal-treatment-policy" className="text-white/60 text-sm hover:text-[#00adef] transition-colors">
-             Equal Treatment Policy
+              Equal Treatment Policy
             </Link>
           </div>
         </div>
@@ -333,9 +332,8 @@ export default function Footer() {
       {/* Scroll to top button */}
       <button
         onClick={scrollToTop}
-        className={`fixed right-6 bottom-6 w-12 h-12 rounded-full bg-[#00adef] text-white flex items-center justify-center shadow-lg transition-all duration-300 z-50 hover:bg-[#0099d4] ${
-          showScrollTop ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 pointer-events-none"
-        }`}
+        className={`fixed right-6 bottom-6 w-12 h-12 rounded-full bg-[#00adef] text-white flex items-center justify-center shadow-lg transition-all duration-300 z-50 hover:bg-[#0099d4] ${showScrollTop ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 pointer-events-none"
+          }`}
       >
         <ArrowUp size={20} />
       </button>

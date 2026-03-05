@@ -16,7 +16,7 @@ export default function ObjectivesSection() {
             Our Mission & Vision
           </h2>
           <p className="text-gray-600 text-lg lg:text-xl max-w-3xl mx-auto leading-relaxed">
-            2<sup>nd</sup>  ICASEM 2025 aims to foster innovation, collaboration, and knowledge exchange across multiple disciplines
+            3<sup>rd</sup>  ICASEM 2027 aims to foster innovation, collaboration, and knowledge exchange across multiple disciplines
           </p>
         </div>
 
@@ -36,7 +36,7 @@ export default function ObjectivesSection() {
               <h3 className="text-xl font-bold text-[#07416b] mb-4">
                 Knowledge Exchange
               </h3>
-              
+
               <p className="text-gray-600 text-sm leading-relaxed mb-6">
                 Facilitate the sharing of cutting-edge research findings, innovative methodologies, and best practices across applied sciences, engineering, and management disciplines.
               </p>
@@ -78,7 +78,7 @@ export default function ObjectivesSection() {
               <h3 className="text-xl font-bold text-[#07416b] mb-4">
                 Global Collaboration
               </h3>
-              
+
               <p className="text-gray-600 text-sm leading-relaxed mb-6">
                 Build international partnerships and foster cross-cultural collaboration among researchers, academics, and industry professionals from diverse backgrounds.
               </p>
@@ -120,7 +120,7 @@ export default function ObjectivesSection() {
               <h3 className="text-xl font-bold text-[#07416b] mb-4">
                 Innovation & Technology
               </h3>
-              
+
               <p className="text-gray-600 text-sm leading-relaxed mb-6">
                 Promote technological advancement and innovative solutions that address real-world challenges in science, engineering, and management sectors.
               </p>
@@ -162,7 +162,7 @@ export default function ObjectivesSection() {
               <h3 className="text-xl font-bold text-[#07416b] mb-4">
                 Industry Partnership
               </h3>
-              
+
               <p className="text-gray-600 text-sm leading-relaxed mb-6">
                 Bridge the gap between academia and industry by creating opportunities for collaboration, knowledge transfer, and practical application of research.
               </p>

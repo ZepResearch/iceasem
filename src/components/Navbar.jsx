@@ -72,11 +72,11 @@ function Nav() {
                     <span>{link.title}</span>
                     <ChevronDown className="w-3 h-3" />
                   </div>
-                  
+
                   {/* Dropdown Menu */}
                   {openDropdown === link.title && (
-                    <div 
-                      className="absolute top-full left-0 mt-1 min-w-[200px] bg-white rounded-md shadow-lg border z-50"
+                    <div
+                      className="absolute top-full left-0 mt-0 min-w-[200px] bg-white rounded-md shadow-lg border z-50"
                       onMouseEnter={() => setOpenDropdown(link.title)}
                       onMouseLeave={() => setOpenDropdown(null)}
                     >
@@ -143,7 +143,7 @@ function Nav() {
                   <X className="w-5 h-5" />
                 </button>
               </div>
-              
+
               {/* Mobile Menu Navigation */}
               <nav className="flex flex-col gap-1 px-6 py-4 flex-1">
                 {navLinks.map((link) =>
@@ -175,11 +175,11 @@ function Nav() {
                   )
                 )}
               </nav>
-              
+
               {/* Mobile Register Button */}
               <div className="px-6 pb-6">
                 <Link href={"/registration"}>
-                  <button 
+                  <button
                     className="w-full bg-gray-900 hover:bg-gray-800 text-white py-2 rounded-lg transition-colors duration-200"
                     onClick={closeMobileMenu}
                   >

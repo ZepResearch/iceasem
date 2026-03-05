@@ -5,7 +5,7 @@ import { Mail, Phone, MapPin } from "lucide-react"
 export default function ComplaintsPolicy() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white">
-    
+
       {/* Main Content */}
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
@@ -57,7 +57,7 @@ export default function ComplaintsPolicy() {
                   <strong>Complaints should be sent via email to:</strong> submit@icasem.org
                 </p>
                 <p className="text-gray-700 mt-2">
-                  <strong>Subject line:</strong> Formal Complaint – ICASEM 2024
+                  <strong>Subject line:</strong> Formal Complaint – ICASEM
                 </p>
               </div>
             </section>
@@ -115,25 +115,25 @@ export default function ComplaintsPolicy() {
               <h2 className="text-xl font-bold text-[#07416b] mb-4">8. Contact Information</h2>
               <p className="text-gray-700 leading-relaxed mb-4">For queries or complaints, please contact:</p>
               <div className="flex flex-col space-y-3">
-                <div className="flex items-center space-x-3 text-[#07416b]">
+                {/* <div className="flex items-center space-x-3 text-[#07416b]">
                   <Mail className="w-5 h-5" />
                   <span>submit@icasem.org</span>
-                </div>
+                </div> */}
                 <div className="flex items-center space-x-3 text-[#07416b]">
                   <Phone className="w-5 h-5" />
                   <span>+91 9237388328</span>
                 </div>
-                <div className="flex items-center space-x-3 text-[#07416b]">
+                {/* <div className="flex items-center space-x-3 text-[#07416b]">
                   <MapPin className="w-5 h-5" />
                   <span>Kuala Lumpur, Malaysia</span>
-                </div>
+                </div> */}
               </div>
             </section>
           </div>
         </div>
       </main>
 
-    
+
     </div>
   )
 }

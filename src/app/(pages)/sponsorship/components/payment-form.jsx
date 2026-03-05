@@ -54,7 +54,7 @@ export function CCavenuePaymentForm({
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold mb-4 text-[#07416b] flex items-center gap-2">
             <Building2 className="h-6 w-6 text-[#00adef]" />
-            ICASEM 2025 Sponsorship Payment
+            ICASEM 2027 Sponsorship Payment
           </DialogTitle>
         </DialogHeader>
 

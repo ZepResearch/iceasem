@@ -10,7 +10,7 @@ import { addDays } from "date-fns"
 
 const scheduleData = [
   {
-    date: "November - 14th | Registration",
+    date: "March - 11th | Registration",
     items: [
       { time: "8:00AM - 9:15AM", title: "Registration" },
       { time: "9:15AM - 9:30AM", title: "Inaugural Function" },
@@ -38,7 +38,7 @@ const scheduleData = [
   //   ]
   // },
   {
-    date: "November - 15th | Closing Day",
+    date: "March - 12th | Closing Day",
     items: [
       { time: "9:00AM - 9:30AM", title: "Registration" },
       { time: "9:30AM - 10:00AM", title: "Closing Ceremony Opening Remarks" },
@@ -54,11 +54,11 @@ const scheduleData = [
 ]
 
 export default function ConferenceSchedule() {
-  const startDate = new Date(2025, 10, 14) // March 21, 2024
+  const startDate = new Date(2027, 2, 11) // March 21, 2024
   const [selectedDates, setSelectedDates] = useState([
     startDate,
     addDays(startDate, 1),
-   
+
   ])
 
   return (
@@ -69,14 +69,14 @@ export default function ConferenceSchedule() {
             Shaping Tomorrow&apos;s Sustainable Landscape
           </h1>
           <p className="text-muted-foreground">
-            Join us November 14<sup>th</sup> - 15<sup>th</sup> for three days of cutting-edge insights and networking. Reserve your spot today!
+            Join us March 11<sup>th</sup> - 12<sup>th</sup> for two days of cutting-edge insights and networking. Reserve your spot today!
           </p>
         </div>
 
         <div className="grid gap-8 md:grid-cols-[300px_1fr]">
           <Card className="border-primary">
             <CardHeader>
-              <CardTitle>November 2025</CardTitle>
+              <CardTitle>March 2027</CardTitle>
             </CardHeader>
             <CardContent>
               <Calendar
@@ -89,7 +89,7 @@ export default function ConferenceSchedule() {
                   day_selected: "bg-primary text-primary-foreground hover:bg-primary/90 mr-0.5",
                   day_today: "bg-orange-100 text-orange-900",
                 }}
-                
+
               />
             </CardContent>
           </Card>

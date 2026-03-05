@@ -95,7 +95,7 @@ export default function TimelineSection() {
             <h2 className="text-3xl lg:text-5xl font-bold text-[#07416b] leading-tight mb-6">
               Important Dates for{" "}
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#00adef] to-[#07416b]">
-                2nd  ICASEM 2025
+                3rd  ICASEM 2027
               </span>
             </h2>
 
@@ -113,8 +113,8 @@ export default function TimelineSection() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             {timelineItems.map((item, index) => {
               const IconComponent = getIconForTitle(item.title)
-              const isExpired = index === 0
-              
+              const isExpired = index === -1 //change it to 0 for 1st item to get it expired
+
               return (
                 <div key={item.id} className="group">
                   {/* Card with ICASEM styling */}
@@ -141,11 +141,10 @@ export default function TimelineSection() {
                           {[...Array(6)].map((_, i) => (
                             <div
                               key={i}
-                              className={`w-1 h-8 ${
-                                isExpired 
-                                  ? 'bg-gray-300' 
-                                  : i % 2 === 0 ? "bg-[#00adef]" : "bg-[#07416b]"
-                              } transform skew-x-12 ${isExpired ? 'opacity-30' : 'opacity-20 group-hover:opacity-40'} transition-opacity duration-300`}
+                              className={`w-1 h-8 ${isExpired
+                                ? 'bg-gray-300'
+                                : i % 2 === 0 ? "bg-[#00adef]" : "bg-[#07416b]"
+                                } transform skew-x-12 ${isExpired ? 'opacity-30' : 'opacity-20 group-hover:opacity-40'} transition-opacity duration-300`}
                             ></div>
                           ))}
                         </div>
@@ -224,7 +223,7 @@ export default function TimelineSection() {
         )}
 
         {/* Call to Action */}
- 
+
       </div>
     </div>
   )

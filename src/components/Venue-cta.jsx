@@ -28,7 +28,7 @@ export default function VenueCtaSection() {
     }
   ]
 
- 
+
 
   return (
     <div className="w-full py-12 lg:py-16">
@@ -43,7 +43,7 @@ export default function VenueCtaSection() {
             Exact Venue will be announced soon!
           </h2>
           <p className="text-gray-600 text-lg lg:text-xl max-w-3xl mx-auto leading-relaxed">
-            Experience  2<sup>nd</sup>  ICASEM 2025 in Kuala Lumpur premier convention facility, located in the heart of  Malaysia with world-class amenities and stunning city views
+            Experience  3<sup>rd</sup>  ICASEM 2027 in Vietnam premier convention facility, located in the heart of  Vietnam with world-class amenities and stunning city views
           </p>
         </div>
 
@@ -55,7 +55,7 @@ export default function VenueCtaSection() {
               <div className="relative h-64 sm:h-80 lg:h-96">
                 <div className="w-full h-full bg-gradient-to-br from-[#00adef] to-[#07416b] flex items-center justify-center">
                   <Image
-                    src="https://images.unsplash.com/photo-1512580687892-1b04e29ea66f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=3901"
+                    src="https://images.unsplash.com/photo-1504214208698-ea1916a2195a?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="Marina Bay Convention Centre"
                     width={600}
                     height={400}
@@ -65,7 +65,7 @@ export default function VenueCtaSection() {
                 <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-2 rounded-full">
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4 text-[#00adef]" />
-                    <span className="text-sm font-semibold text-[#07416b]"> Kuala Lumpur, Malaysia</span>
+                    <span className="text-sm font-semibold text-[#07416b]"> Vietnam</span>
                   </div>
                 </div>
               </div>
@@ -100,7 +100,7 @@ export default function VenueCtaSection() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-[#07416b]">Conference Schedule</h3>
-                  <p className="text-gray-600 text-sm">November 14-15, 2025</p>
+                  <p className="text-gray-600 text-sm">March 11th - 12th, 2027</p>
                 </div>
               </div>
 
@@ -108,14 +108,14 @@ export default function VenueCtaSection() {
                 <div className="flex items-center justify-between p-3 bg-[#f0f4f8] rounded-lg">
                   <div className="flex items-center gap-3">
                     <Clock className="w-4 h-4 text-[#00adef]" />
-                    <span className="font-semibold text-[#07416b] text-sm">Day 1 - Nov 14</span>
+                    <span className="font-semibold text-[#07416b] text-sm">Day 1 - March 11th, 2027</span>
                   </div>
                   {/* <span className="text-gray-600 text-sm">9:00 AM - 6:00 PM</span> */}
                 </div>
                 <div className="flex items-center justify-between p-3 bg-[#f0f4f8] rounded-lg">
                   <div className="flex items-center gap-3">
                     <Clock className="w-4 h-4 text-[#00adef]" />
-                    <span className="font-semibold text-[#07416b] text-sm">Day 2 - Nov 15</span>
+                    <span className="font-semibold text-[#07416b] text-sm">Day 2 - March 12th, 2027</span>
                   </div>
                   {/* <span className="text-gray-600 text-sm">9:00 AM - 5:00 PM</span> */}
                 </div>
@@ -132,7 +132,7 @@ export default function VenueCtaSection() {
 
             {/* Location Benefits */}
             <Card className="p-6 rounded-2xl border-t-4 border-[#00adef]">
-              <h3 className="text-xl font-bold text-[#07416b] mb-4">Why Kuala Lumpur, Malaysia?</h3>
+              <h3 className="text-xl font-bold text-[#07416b] mb-4">Why Vietnam?</h3>
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-[#00adef] rounded-full"></div>
@@ -155,12 +155,12 @@ export default function VenueCtaSection() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-            <Link href="/venue" >
-              <Button className="bg-[#00adef] text-white px-6 py-3 rounded-full hover:bg-[#0099d4] flex-1">
-                View Venue Details
-                <ArrowRight className="w-4 h-4 ml-2" />
-              </Button>
-            </Link>
+              <Link href="/venue" >
+                <Button className="bg-[#00adef] text-white px-6 py-3 rounded-full hover:bg-[#0099d4] flex-1">
+                  View Venue Details
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Button>
+              </Link>
               <Button variant="outline" className="border-[#07416b] text-[#07416b] hover:bg-[#07416b] hover:text-white px-6 py-3 rounded-full flex-1">
                 Get Directions
                 <MapPin className="w-4 h-4 ml-2" />
@@ -169,7 +169,7 @@ export default function VenueCtaSection() {
           </div>
         </div>
 
-      
+
       </div>
     </div>
   )

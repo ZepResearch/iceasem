@@ -42,8 +42,6 @@ const logos = [
 export default function CoOrganizationLogos() {
   return (
     <section className="w-full py-8 ">
-   
-    
       <div className="max-w-3xl mx-auto px-4 md:px-6">
         <h2 className="text-3xl font-medium  text-pretty tracking-tighter sm:text-4xl md:text-5xl text-center sm:text-center mb-8 ">
           Our Co-organizations

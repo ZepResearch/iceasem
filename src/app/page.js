@@ -16,17 +16,17 @@ import Buttons from "../components/buttons";
 export default function Home() {
   return (
     <main>
-      <Hero/>
-      <CPD/>
-      <CoOrganizationLogos/>
-      <About/>
-      <Buttons/>
-      <Objective/>
-      <TimelineSection/>
-      <SpeakerSection/>
-      <CtaSection/>
-      <VenueCtaSection/>
-      <FaqSection/>
+      <Hero />
+      <CPD />
+      {/* <CoOrganizationLogos/> */}
+      <About />
+      <Buttons />
+      <Objective />
+      <TimelineSection />
+      <SpeakerSection />
+      <CtaSection />
+      <VenueCtaSection />
+      <FaqSection />
       {/* 
       <SDGSection/>
        */}

@@ -19,26 +19,26 @@ export default function ConferenceLanding() {
                   {/* Left side content */}
                   <div className="flex-1 lg:pr-6 xl:pr-8 text-center lg:text-left">
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-6xl font-bold text-[#07416b] leading-tight mb-3 sm:mb-4 xl:mb-6">
-                      2<sup>nd</sup> International Conference on Applied Science, Engineering & Management
+                      3<sup>rd</sup> International Conference on Applied Science, Engineering & Management
                     </h1>
                     <div className="mt-12 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-6 xl:gap-12 mb-4 sm:mb-6 xl:mb-8 text-[#07416b]">
                       <div className="flex items-center gap-2 drop-shadow-xl">
                         <Calendar className="w-4 h-4 sm:w-5 sm:h-5 xl:w-6 xl:h-6" />
-                        <span className="font-bold text-sm sm:text-base xl:text-2xl">November 14<sup>th</sup>-15<sup>th</sup></span>
+                        <span className="font-bold text-sm sm:text-base xl:text-2xl">March 11<sup>th</sup>- 12<sup>th</sup>, 2027</span>
                       </div>
                       <div className="flex items-center gap-2">
                         <MapPin className="w-4 h-4 sm:w-5 sm:h-5 xl:w-6 xl:h-6 drop-shadow-xl" />
-                        <span className="font-bold text-sm sm:text-base xl:text-2xl">Kuala Lumpur, Malaysia</span>
+                        <span className="font-bold text-sm sm:text-base xl:text-2xl">Vietnam</span>
                       </div>
                     </div>
-                       <div className="mt-4 max-w-xs py-3">
+                    <div className="mt-4 max-w-xs py-3">
                       <Card className="bg-[#e6f7ff] border border-[#00adef] rounded-xl px-4 py-3 flex items-center gap-3 shadow-sm">
                         <Users className="text-[#040f13] w-6 h-6" />
                         <span className="text-[#07416b] font-medium text-base">
                           This conference is <span className="text-[#00adef] font-semibold">Hybrid</span> (Virtual &amp; In-Person)
                         </span>
                       </Card>
-                    </div>  
+                    </div>
                     <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4">
                       <Link href="/registration">
                         <Button className="bg-[#00adef] text-white px-4 sm:px-6 xl:px-8 py-2 sm:py-3 xl:py-4 rounded-full hover:bg-[#0099d4] text-sm sm:text-base xl:text-lg w-full sm:w-auto">
@@ -51,7 +51,7 @@ export default function ConferenceLanding() {
                           <ArrowBigRightDash className="w-4 h-4 sm:w-5 sm:h-5 xl:w-6 xl:h-6" />
                         </button>
                       </Link>
-                      <ReserveButton/>
+                      <ReserveButton />
                     </div>
 
                     <div className="flex  md:flex-row flex-col-reverse items-start sm:items-center justify-start gap-3 px-4 max-w-4xl backdrop-blur-sm bg-gray-50/30 py-4 rounded-3xl mt-4">
@@ -61,7 +61,7 @@ export default function ConferenceLanding() {
                       <img src="assets/zepresearch.png" alt="" className="h-16 drop-shadow-lg" />
                     </div>
                     {/* Hybrid Conference Card */}
-                 
+
 
                   </div>
                   {/* Right side image */}
@@ -82,13 +82,13 @@ export default function ConferenceLanding() {
           </div>
 
           {/* Card 2 - Testimonial Card (Moved to align with CTA and Stats) */}
-        
+
 
           {/* Card 3 - CTA Card */}
-          
+
 
           {/* Card 4 - Stats Card */}
-         
+
         </div>
       </div>
     </div>

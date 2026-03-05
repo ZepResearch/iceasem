@@ -50,67 +50,67 @@ export default function VenuePage() {
   ]
 
   const nearbyAttractions = [
-  {
-    title: "Petronas Twin Towers",
-    description:
-      "Kuala Lumpur’s most iconic landmark featuring a sky bridge and stunning city views.",
-    distance: "2.0 km",
-    icon: <Landmark className="h-8 w-8 text-[#00adef]" />,
-    image:
-      "https://images.unsplash.com/photo-1472017053394-b29fded587cd?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=3570",
-    rating: 4.8,
-  },
-  {
-    title: "KL Tower (Menara Kuala Lumpur)",
-    description:
-      "Observation tower offering panoramic views of the city skyline and a revolving restaurant.",
-    distance: "2.5 km",
-    icon: <Camera className="h-8 w-8 text-[#00adef]" />,
-    image:
-      "https://images.unsplash.com/photo-1496031304571-f63558898308?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=3570",
-    rating: 4.7,
-  },
-  {
-    title: "Batu Caves",
-    description:
-      "Famous limestone hill with colorful temples and a giant golden Lord Murugan statue.",
-    distance: "13 km",
-    icon: <Mountain className="h-8 w-8 text-[#00adef]" />,
-    image:
-      "https://images.unsplash.com/photo-1589304122321-2344bad22557?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=3174",
-    rating: 4.6,
-  },
-  {
-    title: "Bukit Bintang",
-    description:
-      "Kuala Lumpur’s shopping and entertainment district, filled with malls, cafes, and nightlife.",
-    distance: "1.8 km",
-    icon: <ShoppingBag className="h-8 w-8 text-[#00adef]" />,
-    image:
-      "https://images.unsplash.com/photo-1712601979098-15dccb4d0996?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=3570",
-    rating: 4.5,
-  },
-  {
-    title: "Central Market",
-    description:
-      "Vibrant heritage market showcasing Malaysian crafts, souvenirs, and local delicacies.",
-    distance: "2.2 km",
-    icon: <Store className="h-8 w-8 text-[#00adef]" />,
-    image:
-      "https://images.unsplash.com/photo-1695782332230-27790b9490b4?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=3570",
-    rating: 4.4,
-  },
-  {
-    title: "Merdeka Square",
-    description:
-      "Historical square surrounded by colonial buildings where Malaysia declared independence.",
-    distance: "2.4 km",
-    icon: <Landmark className="h-8 w-8 text-[#00adef]" />,
-    image:
-      "https://images.unsplash.com/photo-1663237155810-a292cca8fe47?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=3570",
-    rating: 4.6,
-  },
-];
+    {
+      title: "Notre-Dame Cathedral Basilica of Saigon",
+      description:
+        "A historic French colonial cathedral and one of Ho Chi Minh City’s most famous architectural landmarks.",
+      distance: "1.2 km",
+      icon: <Landmark className="h-8 w-8 text-[#00adef]" />,
+      image:
+        "https://images.unsplash.com/photo-1583943349419-6ce221d3734a?q=80&w=776&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      rating: 4.7,
+    },
+    {
+      title: "Ben Thanh Market",
+      description:
+        "A vibrant market known for Vietnamese street food, handicrafts, textiles, and souvenirs.",
+      distance: "0.8 km",
+      icon: <Store className="h-8 w-8 text-[#00adef]" />,
+      image:
+        "https://images.unsplash.com/photo-1677729463462-d31766c829b7?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      rating: 4.6,
+    },
+    {
+      title: "War Remnants Museum",
+      description:
+        "A powerful museum showcasing Vietnam War history through photographs, artifacts, and exhibits.",
+      distance: "1.5 km",
+      icon: <Landmark className="h-8 w-8 text-[#00adef]" />,
+      image:
+        "https://images.unsplash.com/photo-1679761769662-bdf97aae3e4d?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      rating: 4.8,
+    },
+    {
+      title: "Saigon Central Post Office",
+      description:
+        "A stunning colonial-era building designed by Gustave Eiffel, famous for its grand interior and architecture.",
+      distance: "1.1 km",
+      icon: <Camera className="h-8 w-8 text-[#00adef]" />,
+      image:
+        "https://images.unsplash.com/photo-1561478557-9104e8b8cb7b?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      rating: 4.7,
+    },
+    {
+      title: "Nguyen Hue Walking Street",
+      description:
+        "A lively pedestrian boulevard surrounded by cafes, shopping centers, and vibrant nightlife.",
+      distance: "1.3 km",
+      icon: <ShoppingBag className="h-8 w-8 text-[#00adef]" />,
+      image:
+        "https://plus.unsplash.com/premium_photo-1664365805083-80ff9ccfde9d?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      rating: 4.6,
+    },
+    {
+      title: "Cu Chi Tunnels",
+      description:
+        "An extensive underground tunnel network used during the Vietnam War, offering a unique historical experience.",
+      distance: "48 km",
+      icon: <Mountain className="h-8 w-8 text-[#00adef]" />,
+      image:
+        "https://images.unsplash.com/photo-1678109158015-1055676c824c?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      rating: 4.7,
+    },
+  ];
 
 
   const transportationOptions = [
@@ -133,7 +133,7 @@ export default function VenuePage() {
       time: "Varies",
     },
   ]
-const [showVirtualTour, setShowVirtualTour] = useState(false)
+  const [showVirtualTour, setShowVirtualTour] = useState(false)
   return (
     <main className="bg-[#f0f4f8]">
       {/* Hero Section */}
@@ -165,8 +165,8 @@ const [showVirtualTour, setShowVirtualTour] = useState(false)
                 <span className="absolute inset-0 bg-[#00adef] rounded-full transform -rotate-1 scale-110 z-0 opacity-20"></span>
               </span>
             </h1>
-             <p className="text-xl text-[#07416b]/80 mb-8">Join us at  Kuala Lumpur, Malaysia
-</p>{/*Join us at  Marina Bay Convention Centre, Singapore*/}
+            <p className="text-xl text-[#07416b]/80 mb-8">Join us at Vietnam
+            </p>{/*Join us at  Marina Bay Convention Centre, Singapore*/}
 
             {/* Quick Stats */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
@@ -208,59 +208,59 @@ const [showVirtualTour, setShowVirtualTour] = useState(false)
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="relative bg-gradient-to-br from-[#f0f4f8] to-[#e8f2ff] rounded-3xl overflow-hidden shadow-sm border border-[#00adef]/20">
-           { /* Decorative elements */}
-                  <div className="absolute top-0 right-0 w-64 h-64 bg-[#00adef]/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
-                  <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#07416b]/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
+            { /* Decorative elements */}
+            <div className="absolute top-0 right-0 w-64 h-64 bg-[#00adef]/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+            <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#07416b]/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
 
-                  <div className="relative p-8 md:p-12 lg:p-16">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                    <div>
-                      <div className="flex items-center gap-4 mb-6">
-                      <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-[#00adef] to-[#07416b] p-0.5">
-                        <div className="flex h-full w-full items-center justify-center rounded-lg bg-white">
+            <div className="relative p-8 md:p-12 lg:p-16">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-[#00adef] to-[#07416b] p-0.5">
+                      <div className="flex h-full w-full items-center justify-center rounded-lg bg-white">
                         <Building className="h-6 w-6 text-[#07416b]" />
-                        </div>
                       </div>
-                      <h2 className="text-2xl md:text-3xl font-bold text-[#07416b]">Kuala Lumpur, Malaysia
-</h2>
-                      </div>
+                    </div>
+                    <h2 className="text-2xl md:text-3xl font-bold text-[#07416b]">Vietnam
+                    </h2>
+                  </div>
 
-                      <div className="space-y-6 text-[#07416b]/80">
-                      <p>
-                        The venue for 2<sup>nd</sup>ICASEM 2025 will be declared soon and will be located in Kuala Lumpur, Malaysia
-.
-                      </p>
+                  <div className="space-y-6 text-[#07416b]/80">
+                    <p>
+                      The venue for 3<sup>rd</sup>ICASEM 2027 will be declared soon and will be located in Vietnam
+                      .
+                    </p>
 
-                      <div className="space-y-4">
-                        <h3 className="text-xl font-medium text-[#07416b]">Venue Features</h3>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-medium text-[#07416b]">Venue Features</h3>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         {venueFeatures.map((feature, index) => (
                           <div
-                          key={index}
-                          className="bg-white rounded-2xl p-4 border border-[#00adef]/20 hover:shadow-lg transition-all duration-300 group"
+                            key={index}
+                            className="bg-white rounded-2xl p-4 border border-[#00adef]/20 hover:shadow-lg transition-all duration-300 group"
                           >
-                          <div className="flex items-start gap-3">
-                            <div className="w-10 h-10 bg-gradient-to-br from-[#00adef] to-[#07416b] rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                            {feature.icon}
+                            <div className="flex items-start gap-3">
+                              <div className="w-10 h-10 bg-gradient-to-br from-[#00adef] to-[#07416b] rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                                {feature.icon}
+                              </div>
+                              <div>
+                                <h4 className="font-semibold text-[#07416b] text-sm mb-1">{feature.title}</h4>
+                                <p className="text-[#07416b]/70 text-xs leading-relaxed">{feature.description}</p>
+                              </div>
                             </div>
-                            <div>
-                            <h4 className="font-semibold text-[#07416b] text-sm mb-1">{feature.title}</h4>
-                            <p className="text-[#07416b]/70 text-xs leading-relaxed">{feature.description}</p>
-                            </div>
-                          </div>
                           </div>
                         ))}
-                        </div>
                       </div>
+                    </div>
 
-                      <div className="bg-white rounded-2xl border border-[#00adef]/20 p-6 mt-8">
-                        <div className="flex items-center gap-3 mb-4">
+                    <div className="bg-white rounded-2xl border border-[#00adef]/20 p-6 mt-8">
+                      <div className="flex items-center gap-3 mb-4">
                         <MapPin className="h-5 w-5 text-[#00adef]" />
                         <h3 className="text-lg font-medium text-[#07416b]">Address</h3>
-                        </div>
-                        <p className="text-[#07416b]/80 mb-4">Holiday Inn Express, Kuala Lumpur City Centre, an IHG Hotel,Kuala Lumpur, Malaysia
-</p>
-                        <div className="flex items-center gap-2 text-sm text-[#07416b]/60">
+                      </div>
+                      <p className="text-[#07416b]/80 mb-4">Vietnam
+                      </p>
+                      <div className="flex items-center gap-2 text-sm text-[#07416b]/60">
                         {/* <Train className="h-4 w
                       </div>
                       <p className="text-[#07416b]/80 mb-4">[Declared Soon]</p>
@@ -276,7 +276,7 @@ const [showVirtualTour, setShowVirtualTour] = useState(false)
                       <Navigation className="mr-2 h-5 w-5" />
                       Get Directions
                     </Button>
-                  {/* <Button
+                    {/* <Button
   variant="outline"
   className="border-[#07416b] text-[#07416b] hover:bg-[#07416b] hover:text-white rounded-full px-6 py-3 transition-all duration-300"
   onClick={() => setShowVirtualTour(true)}
@@ -290,7 +290,7 @@ const [showVirtualTour, setShowVirtualTour] = useState(false)
                 <div>
                   <div className="relative h-[400px] w-full rounded-2xl overflow-hidden border-4 border-[#00adef]/20">
                     <Image
-                      src="https://images.unsplash.com/photo-1512580687892-1b04e29ea66f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=3901"
+                      src="https://images.unsplash.com/photo-1643029891412-92f9a81a8c16?q=80&w=2686&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                       alt="Marina Bay Convention Centre Singapore"
                       fill
                       className="object-cover"
@@ -307,7 +307,7 @@ const [showVirtualTour, setShowVirtualTour] = useState(false)
                     {/* Venue name overlay */}
                     <div className="absolute bottom-0 left-0 right-0 p-6">
                       <div className="bg-white/90 backdrop-blur-sm rounded-full py-3 px-6 inline-flex items-center border border-[#00adef]/30">
-                        <span className="text-[#07416b] font-medium">Holiday Inn Express, Kuala Lumpur City Centre</span>
+                        <span className="text-[#07416b] font-medium">Vietnam</span>
                       </div>
                     </div>
                   </div>
@@ -415,8 +415,9 @@ const [showVirtualTour, setShowVirtualTour] = useState(false)
             <div className="absolute -inset-px rounded-3xl bg-gradient-to-r from-[#00adef]/10 to-[#07416b]/10 opacity-50"></div>
 
             <div className="relative rounded-2xl overflow-hidden h-[500px] w-full">
+
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d45071.50991839457!2d101.69167443411027!3d3.148273266376987!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc362aba001bed%3A0x1a95bd9e2e38cad4!2sHoliday%20Inn%20Express%20Kuala%20Lumpur%20City%20Centre%20by%20IHG!5e0!3m2!1sen!2sin!4v1761562631284!5m2!1sen!2sing"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.424167419747!2d106.70175551139417!3d10.775658359096123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f40a1b779bb%3A0x8fc470731f287311!2sHo%20Chi%20Minh%20City%2C%20Vietnam!5e0!3m2!1sen!2s!4v1715626312840!5m2!1sen!2s"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -425,6 +426,7 @@ const [showVirtualTour, setShowVirtualTour] = useState(false)
                 referrerPolicy="no-referrer-when-downgrade"
                 className="rounded-2xl"
               ></iframe>
+
             </div>
           </div>
         </div>
@@ -434,10 +436,10 @@ const [showVirtualTour, setShowVirtualTour] = useState(false)
       <section className="py-16 bg-[#f0f4f8]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#07416b] mb-6">Explore Kuala Lumpur, Malaysia </h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#07416b] mb-6">Explore Vietnam </h2>
             <div className="h-1 w-20 bg-gradient-to-r from-[#00adef] to-[#07416b] mx-auto mb-8 rounded-full"></div>
             <p className="text-lg text-[#07416b]/80 max-w-2xl mx-auto">
-              Discover iconic attractions within walking distance of  2<sup>nd</sup>ICASEM 2025
+              Discover iconic attractions within walking distance of  3<sup>rd</sup>ICASEM 2027
             </p>
           </div>
 
@@ -510,9 +512,9 @@ const [showVirtualTour, setShowVirtualTour] = useState(false)
                 <div className="w-16 h-16 bg-gradient-to-br from-[#00adef] to-[#07416b] rounded-full flex items-center justify-center mx-auto mb-6">
                   <Building className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-[#07416b] mb-3">Ready to Join  2<sup>nd</sup>ICASEM 2025?</h3>
+                <h3 className="text-2xl font-bold text-[#07416b] mb-3">Ready to Join  3<sup>rd</sup>ICASEM 2027?</h3>
                 <p className="text-[#07416b]/80 mb-6">
-                  Experience Kuala Lumpur, Malaysia  premier conference venue and be part of the global Applied Science, Engineering
+                  Experience Vietnam  premier conference venue and be part of the global Applied Science, Engineering
                   & Management community.
                 </p>
 
@@ -538,42 +540,42 @@ const [showVirtualTour, setShowVirtualTour] = useState(false)
         </div>
       </section>
       {/* Virtual Tour Modal */}
-{showVirtualTour && (
-  <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
-    <div className="bg-white rounded-3xl border border-[#00adef]/20 overflow-hidden max-w-4xl w-full max-h-[90vh] shadow-2xl">
-      <div className="flex items-center justify-between p-6 border-b border-[#00adef]/20">
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-gradient-to-br from-[#00adef] to-[#07416b] rounded-lg flex items-center justify-center">
-            <Camera className="h-5 w-5 text-white" />
+      {showVirtualTour && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-3xl border border-[#00adef]/20 overflow-hidden max-w-4xl w-full max-h-[90vh] shadow-2xl">
+            <div className="flex items-center justify-between p-6 border-b border-[#00adef]/20">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-gradient-to-br from-[#00adef] to-[#07416b] rounded-lg flex items-center justify-center">
+                  <Camera className="h-5 w-5 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-[#07416b]">Virtual Tour - Marina Bay Convention Centre</h3>
+              </div>
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => setShowVirtualTour(false)}
+                className="border-[#07416b] text-[#07416b] hover:bg-[#07416b] hover:text-white rounded-full"
+              >
+                ✕
+              </Button>
+            </div>
+            <div className="p-6">
+              <div className="rounded-2xl overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!4v1750879848773!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ1I3Y3piOUFF!2m2!1d1.286744930631622!2d103.8543872077277!3f277.2678614574391!4f-8.846132534092959!5f0.7820865974627469"
+                  width="100%"
+                  height="450"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="rounded-2xl"
+                />
+              </div>
+            </div>
           </div>
-          <h3 className="text-xl font-bold text-[#07416b]">Virtual Tour - Marina Bay Convention Centre</h3>
         </div>
-        <Button
-          variant="outline"
-          size="sm"
-          onClick={() => setShowVirtualTour(false)}
-          className="border-[#07416b] text-[#07416b] hover:bg-[#07416b] hover:text-white rounded-full"
-        >
-          ✕
-        </Button>
-      </div>
-      <div className="p-6">
-        <div className="rounded-2xl overflow-hidden">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!4v1750879848773!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ1I3Y3piOUFF!2m2!1d1.286744930631622!2d103.8543872077277!3f277.2678614574391!4f-8.846132534092959!5f0.7820865974627469" 
-            width="100%" 
-            height="450" 
-            style={{border:0}} 
-            allowFullScreen 
-            loading="lazy" 
-            referrerPolicy="no-referrer-when-downgrade"
-            className="rounded-2xl"
-          />
-        </div>
-      </div>
-    </div>
-  </div>
-)}
+      )}
     </main>
   )
 }

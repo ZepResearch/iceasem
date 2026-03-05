@@ -16,7 +16,7 @@ const EqualTreatmentPolicy = () => {
               <Scale className="w-8 h-8 text-white" />
               <div>
                 <h1 className="text-2xl font-bold text-white">Equal Treatment Policy</h1>
-        
+
               </div>
             </div>
           </div>
@@ -25,7 +25,7 @@ const EqualTreatmentPolicy = () => {
             {/* Introduction */}
             <div className="prose max-w-none">
               <p className="text-gray-700 leading-relaxed">
-                The  International Conference on Applied Science, Engineering & Management   (ICASEM 2025) is committed to fostering an inclusive, respectful, and equitable environment for all participants. This policy ensures that every attendee, including authors, presenters, delegates, session chairs, reviewers, organizers, and sponsors, is treated fairly and without any form of discrimination.
+                The  International Conference on Applied Science, Engineering & Management    is committed to fostering an inclusive, respectful, and equitable environment for all participants. This policy ensures that every attendee, including authors, presenters, delegates, session chairs, reviewers, organizers, and sponsors, is treated fairly and without any form of discrimination.
               </p>
             </div>
 
@@ -89,8 +89,8 @@ const EqualTreatmentPolicy = () => {
                 <Shield className="w-6 h-6 text-blue-500" />
                 <h2 className="text-xl font-semibold text-gray-900">3. Commitment to Equal Treatment</h2>
               </div>
-              <p className="text-gray-700 mb-6">ICASEM 2025 ensures that:</p>
-              
+              <p className="text-gray-700 mb-6">ICASEM  ensures that:</p>
+
               <div className="space-y-6">
                 {/* Non-Discrimination */}
                 <div className="bg-red-50 p-6 rounded-lg border border-red-200">
@@ -215,10 +215,10 @@ const EqualTreatmentPolicy = () => {
           </div>
         </div>
 
-       
+
       </main>
 
-      
+
     </div>
   );
 };

@@ -16,7 +16,7 @@ export default function CtaSection() {
     {
       id: 'venue',
       title: 'Venue',
-      description: 'Join us in the vibrant city of Kuala Lumpur, Malaysia from November 14-15, or participate virtually through our interactive online platform—experience ICASEM your way.',
+      description: 'Join us in Vietnam from March 11-12, 2027, or participate virtually through our interactive online platform—experience ICASEM your way.',
       href: '/venue',
       icon: <MapPin className="w-6 h-6" />,
       color: 'navy'
@@ -24,7 +24,7 @@ export default function CtaSection() {
     {
       id: 'sponsorship',
       title: 'Sponsorship',
-      description: 'Partner with 2nd ICASEM to showcase your organization\'s commitment to Applied Science, Engineering & Management and connect with global industry leaders.',
+      description: 'Partner with 3rd ICASEM to showcase your organization\'s commitment to Applied Science, Engineering & Management and connect with global industry leaders.',
       href: '/sponsorship',
       icon: <Presentation className="w-6 h-6" />,
       color: 'blue'
@@ -68,7 +68,7 @@ export default function CtaSection() {
             Everything You Need to Know
           </h2>
           <p className="text-gray-600 text-lg lg:text-xl max-w-3xl mx-auto leading-relaxed">
-            Discover all aspects of 2<sup>nd</sup>  ICASEM 2025 - from awards and venue details to sponsorship opportunities and our organizing committee
+            Discover all aspects of 3<sup>rd</sup>  ICASEM 2027 - from awards and venue details to sponsorship opportunities and our organizing committee
           </p>
         </div>
 
@@ -79,7 +79,7 @@ export default function CtaSection() {
             <Card className="h-full bg-white rounded-2xl p-8 relative overflow-hidden border-l-4 border-[#00adef] hover:shadow-xl transition-all duration-300 group">
               {/* Background Pattern */}
               <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#00adef]/10 to-transparent rounded-full -translate-y-16 translate-x-16"></div>
-              
+
               {/* Icon */}
               <div className="mb-6">
                 <div className="w-20 h-20 bg-gradient-to-br from-[#00adef] to-[#07416b] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
@@ -107,7 +107,7 @@ export default function CtaSection() {
                   <Star className="w-5 h-5 text-[#00adef]" />
                   <span className="text-sm text-gray-600 uppercase">Best International student presentation Award</span>
                 </div>
-              
+
               </div>
 
               {/* CTA */}
@@ -136,9 +136,9 @@ export default function CtaSection() {
               </div>
 
               {/* Content */}
-              <h3 className="text-xl font-bold text-[#07416b] mb-4">Kuala Lumpur, Malaysia Venue</h3>
+              <h3 className="text-xl font-bold text-[#07416b] mb-4">Vietnam Venue</h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-6">
-                Join us in the vibrant city of Kuala Lumpur, Malaysia from November 14-15, or participate virtually through our interactive online platform.
+                Join us in the vibrant city of Vietnam from March 11-12, 2027, or participate virtually through our interactive online platform.
               </p>
 
               {/* Venue Details */}
@@ -153,7 +153,7 @@ export default function CtaSection() {
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-[#07416b] rounded-full"></div>
-                  <span className="text-xs text-gray-600">Nov 14<sup>th</sup>-15<sup>th</sup>, 2025</span>
+                  <span className="text-xs text-gray-600">March 11<sup>th</sup>-12<sup>th</sup>, 2027</span>
                 </div>
               </div>
 
@@ -184,7 +184,7 @@ export default function CtaSection() {
               {/* Content */}
               <h3 className="text-xl font-bold text-[#07416b] mb-4">Partnership</h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-6">
-                Partner with  2<sup>nd</sup> ICASEM to showcase your organization's commitment to Applied Science, Engineering & Management.
+                Partner with 3<sup>rd</sup> ICASEM to showcase your organization's commitment to Applied Science, Engineering & Management.
               </p>
 
               {/* Sponsorship Levels */}
@@ -222,7 +222,7 @@ export default function CtaSection() {
             <Card className="h-full bg-white rounded-2xl p-6 relative overflow-hidden border-l-4 border-[#07416b] hover:shadow-xl transition-all duration-300 group">
               {/* Background Pattern */}
               <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-[#07416b]/10 to-transparent rounded-full translate-y-12 -translate-x-12"></div>
-              
+
               {/* Icon */}
               <div className="mb-4">
                 <div className="w-16 h-16 bg-gradient-to-br from-[#07416b] to-[#00adef] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
@@ -239,7 +239,7 @@ export default function CtaSection() {
                   </p>
 
                   {/* Committee Stats */}
-              
+
                 </div>
 
                 {/* CTA */}
@@ -270,9 +270,9 @@ export default function CtaSection() {
 
               {/* Content */}
               <h3 className="text-lg font-bold text-[#07416b] mb-1">2-Day Schedule</h3>
-              
+
               {/* Schedule Highlights */}
-            
+
 
               {/* CTA */}
               <Link href="/schedule">
@@ -300,10 +300,10 @@ export default function CtaSection() {
 
               {/* Content */}
               <h3 className="text-lg font-bold text-[#07416b] mb-1">Organizing Team</h3>
-             
+
 
               {/* Organizer Info */}
-           
+
 
               {/* CTA */}
               <Link href="/about-organizers">
@@ -369,23 +369,23 @@ export default function CtaSection() {
             {/* Background Pattern */}
             <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-32 translate-x-32"></div>
             <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-24 -translate-x-24"></div>
-            
+
             <div className="relative z-10">
-              <h3 className="text-2xl lg:text-4xl font-bold mb-4">Ready to Join  2<sup>nd</sup>  ICASEM 2025?</h3>
+              <h3 className="text-2xl lg:text-4xl font-bold mb-4">Ready to Join  3<sup>rd</sup>  ICASEM 2027?</h3>
               <p className="text-lg lg:text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-                Don't miss this opportunity to be part of Kuala Lumpur, Malaysia premier Applied Science, Engineering & Management conference
+                Don't miss this opportunity to be part of Vietnam premier Applied Science, Engineering & Management conference
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/registration">
-                <Button className="bg-white text-[#07416b] px-8 py-4 rounded-full hover:bg-gray-100 text-lg font-semibold">
-                  Register Now
-                  <ArrowRight className="w-5 h-5 ml-2" />
-                </Button>
+                  <Button className="bg-white text-[#07416b] px-8 py-4 rounded-full hover:bg-gray-100 text-lg font-semibold">
+                    Register Now
+                    <ArrowRight className="w-5 h-5 ml-2" />
+                  </Button>
                 </Link>
                 <Link href="/sponsorship">
-                <Button variant="outline" className="border-white text-black hover:bg-white hover:text-[#07416b] px-8 py-4 rounded-full text-lg font-semibold">
-           Become Sponsor
-                </Button>
+                  <Button variant="outline" className="border-white text-black hover:bg-white hover:text-[#07416b] px-8 py-4 rounded-full text-lg font-semibold">
+                    Become Sponsor
+                  </Button>
                 </Link>
               </div>
             </div>

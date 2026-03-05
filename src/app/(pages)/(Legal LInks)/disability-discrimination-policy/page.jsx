@@ -5,7 +5,7 @@ import Link from 'next/link';
 const DisabilityPolicy = () => {
   return (
     <div className="min-h-screen ">
- 
+
       {/* Main Content */}
       <main className="max-w-4xl mx-auto px-6 py-8">
         <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
@@ -21,7 +21,7 @@ const DisabilityPolicy = () => {
             {/* Introduction */}
             <div className="prose max-w-none">
               <p className="text-gray-700 leading-relaxed">
-                The  International Conference on Applied Science, Engineering & Management (ICASEM 2025) is committed to fostering an inclusive, accessible, and discrimination-free environment for all participants, regardless of physical, sensory, intellectual, or mental health conditions.
+                The  International Conference on Applied Science, Engineering & Management  is committed to fostering an inclusive, accessible, and discrimination-free environment for all participants, regardless of physical, sensory, intellectual, or mental health conditions.
               </p>
             </div>
 
@@ -32,7 +32,7 @@ const DisabilityPolicy = () => {
                 <h2 className="text-xl font-semibold text-gray-900">1. Policy Statement</h2>
               </div>
               <p className="text-gray-700 leading-relaxed">
-                ICASEM 2025 strictly prohibits any form of discrimination, harassment, or exclusion based on disability. All conference organizers, staff, and participants are expected to support and uphold the principles of inclusivity and equal access to conference activities, both in physical and virtual formats.
+                ICASEM  strictly prohibits any form of discrimination, harassment, or exclusion based on disability. All conference organizers, staff, and participants are expected to support and uphold the principles of inclusivity and equal access to conference activities, both in physical and virtual formats.
               </p>
             </section>
 
@@ -71,7 +71,7 @@ const DisabilityPolicy = () => {
                 <h2 className="text-xl font-semibold text-gray-900">3. Reasonable Accommodations</h2>
               </div>
               <p className="text-gray-700 mb-4">
-                ICASEM 2025 will provide reasonable accommodations to ensure the full participation of individuals with disabilities, which may include:
+                ICASEM  will provide reasonable accommodations to ensure the full participation of individuals with disabilities, which may include:
               </p>
               <div className="grid md:grid-cols-2 gap-3">
                 <div className="flex items-start space-x-2">
@@ -93,7 +93,7 @@ const DisabilityPolicy = () => {
               </div>
               <div className="mt-4 p-4 bg-blue-50 rounded-lg border-l-4 border-blue-500">
                 <p className="text-gray-700 text-sm">
-                  <strong>Note:</strong> Participants requiring accommodations are encouraged to notify the Organizing Committee in advance via info@ICASEM.in to ensure timely arrangements.
+                  <strong>Note:</strong> Participants requiring accommodations are encouraged to notify the Organizing Committee in advance via mail to ensure timely arrangements.
                 </p>
               </div>
             </section>
@@ -150,10 +150,10 @@ const DisabilityPolicy = () => {
               For accommodation requests or policy-related questions, please contact our team
             </p>
             <Link href={'/contact'}>
-            <div className="inline-flex items-center space-x-2 bg-blue-100 text-blue-700 px-4 py-2 rounded-lg">
-              <Phone className="w-4 h-4" />
-              <span className="text-sm font-medium">Contact us</span>
-            </div>
+              <div className="inline-flex items-center space-x-2 bg-blue-100 text-blue-700 px-4 py-2 rounded-lg">
+                <Phone className="w-4 h-4" />
+                <span className="text-sm font-medium">Contact us</span>
+              </div>
             </Link>
           </div>
         </div>

@@ -98,10 +98,10 @@ export default function PaperSubmissionPage() {
               </span>
             </h1>
             <h2 className="text-xl text-[#07416b]/80 mb-8">
-              Share your research at 2<sup>nd</sup>ICASEM 2025: International Conference Applied Science, Engineering & Management
+              Share your research at 3<sup>rd</sup>ICASEM 2027: International Conference Applied Science, Engineering & Management
             </h2>
             <a href="#guid" className="scroll-smooth transition-all py-2 px-3 bg-gradient-to-tl from-sky-400 via-blue-400 to-cyan-400 rounded-4xl text-white font-semibold hover:drop-shadow-2xl hover:bg-orange-500/90 rounded-3xl">
-             Read Submission Guidelines before submitting </a>
+              Read Submission Guidelines before submitting </a>
           </div>
         </div>
       </section>
@@ -381,23 +381,23 @@ export default function PaperSubmissionPage() {
             </div>
           </div>
           <div id="guid" className="mt-12 scroll-smooth ">
-          <AbstractSubmissionGuidelines />
+            <AbstractSubmissionGuidelines />
           </div>
 
-           {/* Info Card for Submission Issues */}
-      <section className="py-8">
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-2xl mx-auto ">
-            <div className="bg-gray-50/50 shadow-2xl border-l-4 border-red-500 p-6 rounded-2xl  flex items-center gap-4">
-              <svg className="h-8 w-8 text-red-500 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z" /></svg>
-              <div>
-                <p className="text-lg font-semibold text-neutral-900 mb-1">Facing issues submitting?</p>
-                <p className="text-neutral-700">If you have any trouble submitting your paper, please email us at .</p><a href="mailto:submit@icasem.org" className="underline font-medium">submit@icasem.org</a>
+          {/* Info Card for Submission Issues */}
+          <section className="py-8">
+            <div className="container mx-auto px-4 relative z-10">
+              <div className="max-w-2xl mx-auto ">
+                <div className="bg-gray-50/50 shadow-2xl border-l-4 border-red-500 p-6 rounded-2xl  flex items-center gap-4">
+                  <svg className="h-8 w-8 text-red-500 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z" /></svg>
+                  <div>
+                    <p className="text-lg font-semibold text-neutral-900 mb-1">Facing issues submitting?</p>
+                    <p className="text-neutral-700">If you have any trouble submitting your paper, please email us at .</p><a href="mailto:submit@icasem.org" className="underline font-medium">submit@icasem.org</a>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
+          </section>
         </div>
       </section>
     </main>

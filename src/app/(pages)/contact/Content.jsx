@@ -97,7 +97,7 @@ export default function ContactPage() {
               Us
             </h1>
             <p className="text-xl text-[#07416b]/80 mb-8">
-              Get in touch with the  2<sup>nd</sup>ICASEM team for any inquiries or support
+              Get in touch with the  3<sup>rd</sup>ICASEM team for any inquiries or support
             </p>
           </div>
         </div>
@@ -118,7 +118,7 @@ export default function ContactPage() {
                   <h2 className="text-2xl font-bold text-[#07416b] mb-6">Get In Touch</h2>
 
                   <p className="text-[#07416b]/80 mb-8">
-                    Have questions about  2<sup>nd</sup>ICASEM 2025? Our team is here to help. Reach out to us using the contact
+                    Have questions about  3<sup>rd</sup>ICASEM 2027? Our team is here to help. Reach out to us using the contact
                     information below or fill out the form.
                   </p>
 
@@ -156,9 +156,9 @@ export default function ContactPage() {
                       <div>
                         <p className="text-sm text-[#07416b]/70">Conference Location</p>
                         <p className="text-[#07416b] font-medium">
-                          Kuala Lumpur, Malaysia
+                          Vietnam
                           <br />
-                          November 14th - 15th, 2025
+                          March 11th - 12th, 2027
                         </p>
                       </div>
                     </div>
@@ -172,7 +172,7 @@ export default function ContactPage() {
                       <div>
                         <p className="text-sm text-[#07416b]/70">Conference</p>
                         <p className="text-[#07416b] font-medium">
-                          International Conference Applied Science, Engineering & Management 2025
+                          International Conference Applied Science, Engineering & Management 2027
                         </p>
                       </div>
                     </div>
@@ -219,7 +219,7 @@ export default function ContactPage() {
                           <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                         </svg>
                       </a>
-                      <a
+                      {/* <a
                         href="https://x.com/Zepresearch"
                         className="h-10 w-10 flex items-center justify-center rounded-full bg-white border border-[#bfdbfe] text-[#00adef] hover:text-white hover:bg-gradient-to-r hover:from-[#00adef] hover:to-[#07416b] transition-all duration-300"
                       >
@@ -236,7 +236,7 @@ export default function ContactPage() {
                         >
                           <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
                         </svg>
-                      </a>
+                      </a> */}
                       <a
                         href="https://www.linkedin.com/company/zep-research/"
                         className="h-10 w-10 flex items-center justify-center rounded-full bg-white border border-[#bfdbfe] text-[#00adef] hover:text-white hover:bg-gradient-to-r hover:from-[#00adef] hover:to-[#07416b] transition-all duration-300"

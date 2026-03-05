@@ -32,9 +32,9 @@ export default function FaqSection() {
       title: "Registration & Participation",
       faqs: [
         {
-          question: "How do I register for 2nd ICASEM 2025?",
+          question: "How do I register for 3rd ICASEM 2027?",
           answer:
-            `You can register online through our official website. Early bird registration is available until its Date. Choose between in-person attendance in Kuala Lumpur, Malaysia or virtual participation through our hybrid platform.`,
+            `You can register online through our official website. Early bird registration is available until its Date. Choose between in-person attendance in Vietnam or virtual participation through our hybrid platform.`,
         },
         {
           question: "What are the registration fees?",
@@ -44,7 +44,7 @@ export default function FaqSection() {
         {
           question: "Can I attend virtually?",
           answer:
-            "Yes! 2nd ICASEM 2025 offers a hybrid format. Virtual attendees can participate in live sessions, access recorded presentations, join networking rooms, and interact with speakers through our advanced online platform.",
+            "Yes! 3rd ICASEM 2027 offers a hybrid format. Virtual attendees can participate in live sessions, access recorded presentations, join networking rooms, and interact with speakers through our advanced online platform.",
         },
         {
           question: "What is included in the registration fee?",
@@ -59,7 +59,7 @@ export default function FaqSection() {
         {
           question: "What is the paper submission deadline?",
           answer:
-   "Please scroll up to view the Important Dates for 2nd ICASEM 2025 section where all submission deadlines are clearly mentioned. We recommend submitting early for better review scheduling and to avoid any last-minute technical issues.",
+            "Please scroll up to view the Important Dates for 3rd ICASEM 2027 section where all submission deadlines are clearly mentioned. We recommend submitting early for better review scheduling and to avoid any last-minute technical issues.",
         },
         {
           question: "What are the presentation formats available?",
@@ -89,17 +89,17 @@ export default function FaqSection() {
         {
           question: "Are there recommended hotels near the venue?",
           answer:
-   "We will provide accommodation assistance once the venue is confirmed. After registration, you'll receive detailed hotel recommendations with exclusive conference discounts and booking information via email. All recommended hotels will offer convenient access to the conference location.",
+            "We will provide accommodation assistance once the venue is confirmed. After registration, you'll receive detailed hotel recommendations with exclusive conference discounts and booking information via email. All recommended hotels will offer convenient access to the conference location.",
         },
         {
           question: "How do I get from the airport to the venue?",
           answer:
-  "Detailed transportation information including airport transfer options, public transport routes, taxi services, and shuttle arrangements will be provided via email after registration and once the venue is confirmed. Kuala Lumpur, Malaysia has excellent connectivity from Changi Airport with various convenient transportation modes to reach any location in the city.",
+            "Detailed transportation information including airport transfer options, public transport routes, taxi services, and shuttle arrangements will be provided via email after registration and once the venue is confirmed. Vietnam has excellent connectivity from Changi Airport with various convenient transportation modes to reach any location in the city.",
         },
         {
           question: "What COVID-19 safety measures are in place?",
           answer:
-            "We follow Kuala Lumpur, Malaysia's health guidelines. Current measures include optional mask-wearing, hand sanitizing stations, and flexible attendance options. Virtual participation remains available for those unable to travel.",
+            "We follow Vietnam's health guidelines. Current measures include optional mask-wearing, hand sanitizing stations, and flexible attendance options. Virtual participation remains available for those unable to travel.",
         },
       ],
     },
@@ -121,7 +121,7 @@ export default function FaqSection() {
           answer:
             "Yes, all registered participants receive a digital certificate of attendance. Physical certificates can be requested for an additional fee. Certificates include conference details, dates, and your participation status.",
         },
-      
+
       ],
     },
   ]
@@ -132,7 +132,7 @@ export default function FaqSection() {
       title: "Email Support",
       description: "Get detailed answers to your questions",
       contact: "submit@icasem.org",
-      href:"mailto:submit@icasem.org",
+      href: "mailto:submit@icasem.org",
       action: "Send Email",
       type: "link"
     },
@@ -141,7 +141,7 @@ export default function FaqSection() {
       title: "Phone Support",
       description: "Speak directly with our team",
       contact: "+91 9237388328",
-      href:"tel:+919237388328",
+      href: "tel:+919237388328",
       action: "Call Now",
       type: "link"
     },
@@ -168,7 +168,7 @@ export default function FaqSection() {
             Everything You Need to Know
           </h2>
           <p className="text-gray-600 text-lg lg:text-xl max-w-3xl mx-auto leading-relaxed">
-            Find answers to common questions about  2<sup>nd</sup>  ICASEM 2025. Can't find what you're looking for? Contact our support
+            Find answers to common questions about  3<sup>rd</sup>  ICASEM 2027. Can't find what you're looking for? Contact our support
             team.
           </p>
         </div>
@@ -227,7 +227,7 @@ export default function FaqSection() {
         {/* Quick Stats */}
         <Card className="p-8 rounded-2xl bg-white border-t-4 border-[#00adef] mb-16">
           <div className="text-center mb-8">
-            <h3 className="text-2xl lg:text-3xl font-bold text-[#07416b] mb-4"> 2<sup>nd</sup> ICASEM 2025 at a Glance</h3>
+            <h3 className="text-2xl lg:text-3xl font-bold text-[#07416b] mb-4"> 3<sup>rd</sup> ICASEM 2027 at a Glance</h3>
             <p className="text-gray-600 text-base lg:text-lg">Key information about the conference</p>
           </div>
 
@@ -237,7 +237,7 @@ export default function FaqSection() {
                 <span className="text-white text-xl font-bold">2</span>
               </div>
               <div className="text-2xl font-bold text-[#07416b]">Days</div>
-              <div className="text-gray-600 text-sm">Nov 14 <sup>th</sup> -15 <sup>th</sup> , 2025</div>
+              <div className="text-gray-600 text-sm">March 11 <sup>th</sup> -12 <sup>th</sup> , 2027</div>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-[#07416b] rounded-full flex items-center justify-center mx-auto mb-3">
@@ -283,7 +283,7 @@ export default function FaqSection() {
               <h4 className="text-lg font-bold text-[#07416b] mb-2">{option.title}</h4>
               <p className="text-gray-600 text-sm mb-3">{option.description}</p>
               <p className="text-[#00adef] font-semibold text-sm mb-4">{option.contact}</p>
-              
+
               {option.type === "chat" ? (
                 <Button
                   onClick={openTawkToChat}
@@ -306,7 +306,7 @@ export default function FaqSection() {
           ))}
         </div>
 
-     
+
       </div>
     </div>
   )

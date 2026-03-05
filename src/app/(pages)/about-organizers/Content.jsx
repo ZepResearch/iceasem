@@ -117,7 +117,7 @@ export default function AboutOrganizersPage() {
               </span>
             </h1>
             <p className="text-xl text-[#07416b]/80 mb-8">
-              Meet the team behind 2<sup>nd</sup>the International Conference on Applied Science, Engineering & Management
+              Meet the team behind 3<sup>rd</sup>the International Conference on Applied Science, Engineering & Management
             </p>
           </div>
         </div>
@@ -143,12 +143,12 @@ export default function AboutOrganizersPage() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-[#07416b] mb-6">About Zep Research Organizers</h2>
               <p className="text-[#07416b]/80 mb-4">
-              Zep Research is a global leader in advancing academic excellence and fostering innovation. Specializing in organizing impactful conferences, research initiatives, and collaboration opportunities, Zep Research creates dynamic environments where researchers, academics, and industry professionals come together to share knowledge, exchange ideas, and collaborate on groundbreaking work across various industries.
+                Zep Research is a global leader in advancing academic excellence and fostering innovation. Specializing in organizing impactful conferences, research initiatives, and collaboration opportunities, Zep Research creates dynamic environments where researchers, academics, and industry professionals come together to share knowledge, exchange ideas, and collaborate on groundbreaking work across various industries.
               </p>
               <p className="text-[#07416b]/80 mb-4">
-              With a commitment to providing a platform for high-quality research dissemination, Zep Research enables individuals and institutions to engage in meaningful discussions about emerging trends, challenges, and solutions. The focus spans diverse fields such as tourism, hospitality, education, sustainability, and technology. By connecting experts, thought leaders, and innovators, Zep Research drives progress and fosters advancements that leave a lasting impact on both academia and industry.
+                With a commitment to providing a platform for high-quality research dissemination, Zep Research enables individuals and institutions to engage in meaningful discussions about emerging trends, challenges, and solutions. The focus spans diverse fields such as tourism, hospitality, education, sustainability, and technology. By connecting experts, thought leaders, and innovators, Zep Research drives progress and fosters advancements that leave a lasting impact on both academia and industry.
               </p>
-           
+
             </div>
           </div>
         </div>
@@ -160,13 +160,13 @@ export default function AboutOrganizersPage() {
           <div className="max-w-4xl mx-auto text-center">
             <h3 className="text-3xl md:text-4xl font-bold text-[#07416b] mb-6">Our Mission</h3>
             <p className="text-xl text-[#07416b]/80 mb-8">
-              At 2<sup>nd</sup>ICASEM, our mission is to bridge the gap between theoretical knowledge and practical application by
+              At 3<sup>rd</sup>ICASEM, our mission is to bridge the gap between theoretical knowledge and practical application by
               fostering innovation, encouraging cross-disciplinary collaboration, and accelerating breakthroughs in
               Applied Science, Engineering & Management. We believe that transformative solutions emerge when diverse
               minds unite — researchers, engineers, managers, and innovators working together.
             </p>
             <p className="text-xl text-[#07416b]/80">
-              2<sup>nd</sup>ICASEM is more than a conference; it's a catalyst for real-world impact. Our goal is to create a
+              3<sup>rd</sup>ICASEM is more than a conference; it's a catalyst for real-world impact. Our goal is to create a
               collaborative ecosystem where cutting-edge research meets practical implementation, partnerships flourish
               organically, and emerging talents are empowered to lead the next generation of technological and
               managerial advancement.
@@ -278,7 +278,7 @@ export default function AboutOrganizersPage() {
           <div className="bg-white rounded-3xl p-8 shadow-sm border border-[#00adef]/20">
             <div className="flex flex-col md:flex-row items-center justify-between">
               <div className="mb-6 md:mb-0 md:mr-6">
-                <h3 className="text-2xl font-bold text-[#07416b] mb-2">Partner with 2<sup>nd</sup>ICASEM</h3>
+                <h3 className="text-2xl font-bold text-[#07416b] mb-2">Partner with 3<sup>rd</sup>ICASEM</h3>
                 <p className="text-[#07416b]/80 max-w-xl">
                   Interested in collaborating with us for future conferences or research initiatives? Get in touch to
                   explore partnership opportunities in Applied Science, Engineering & Management.

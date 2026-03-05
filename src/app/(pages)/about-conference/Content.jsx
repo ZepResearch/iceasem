@@ -79,24 +79,24 @@ export default function AboutConferencePage() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#07416b] mb-6">
               About
               <span className="relative inline-block mx-2 ml-4">
-                <span className="relative z-10"> 2<sup>nd</sup> ICASEM</span>
+                <span className="relative z-10"> 3<sup>rd</sup> ICASEM</span>
                 <span className="absolute inset-0 bg-[#00adef] rounded-full transform -rotate-1 scale-110 z-0 opacity-20"></span>
               </span>
-              2025
+              2027
             </h1>
             <p className="text-xl text-[#07416b] mb-8">
-            2<sup>nd</sup>    International Conference on Applied Science, Engineering & Management
+              3<sup>rd</sup>    International Conference on Applied Science, Engineering & Management
             </p>
 
             <div className="flex flex-wrap justify-center gap-6 mb-12">
               <div className="flex items-center bg-white rounded-full px-5 py-2 shadow-sm border border-[#00adef]/20">
                 <Calendar className="h-5 w-5 text-[#00adef] mr-2" />
-                <span className="text-[#07416b]">November 14 <sup>th</sup> -15<sup>th</sup> , 2025</span>
+                <span className="text-[#07416b]">March 11 <sup>th</sup> -   12<sup>th</sup> , 2027</span>
               </div>
               <div className="flex items-center bg-white rounded-full px-5 py-2 shadow-sm border border-[#00adef]/20">
                 <MapPin className="h-5 w-5 text-[#00adef] mr-2" />
-                <span className="text-[#07416b]">Kuala Lumpur, Malaysia
-</span>
+                <span className="text-[#07416b]">Vietnam
+                </span>
               </div>
               <div className="flex items-center bg-white rounded-full px-5 py-2 shadow-sm border border-[#00adef]/20">
                 <Users className="h-5 w-5 text-[#00adef] mr-2" />
@@ -119,20 +119,20 @@ export default function AboutConferencePage() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-[#07416b] mb-6">About the Conference</h2>
               <p className="text-[#07416b]/80 mb-4">
-                The  2<sup>nd</sup>  International Conference on Applied Science, Engineering & Management ( 2<sup>nd</sup> ICASEM) 2025, taking place in
-                the dynamic city-state of Kuala Lumpur, Malaysia
-, aims to foster innovation and collaboration across multiple
+                The  3<sup>rd</sup>  International Conference on Applied Science, Engineering & Management ( 3<sup>rd</sup> ICASEM) 2027, taking place in
+                Vietnam
+                , aims to foster innovation and collaboration across multiple
                 disciplines where applied science, engineering excellence, and management innovation converge.
               </p>
               <p className="text-[#07416b]/80 mb-4">
-                From November 14 to 15, 2025,  2<sup>nd</sup> ICASEM will bring together leading researchers, industry professionals,
+                From March 11 to 12, 2027,  3<sup>rd</sup> ICASEM will bring together leading researchers, industry professionals,
                 and academics from around the world to share cutting-edge research, practical solutions, and
                 technological breakthroughs.
               </p>
               <p className="text-[#07416b]/80">
                 The conference features keynote presentations, technical sessions, and interactive workshops designed to
                 advance knowledge and foster partnerships that drive innovation in applied sciences, engineering, and
-                management. With a focus on practical applications and forward-thinking research, 2<sup>nd</sup>ICASEM 2025 promises
+                management. With a focus on practical applications and forward-thinking research, 3<sup>rd</sup>ICASEM 2027 promises
                 to be an inspiring platform for shaping the future of multidisciplinary collaboration.
               </p>
             </div>
@@ -145,8 +145,8 @@ export default function AboutConferencePage() {
               />
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <div className="bg-white/90 backdrop-blur-sm rounded-full py-3 px-6 inline-flex items-center border border-[#00adef]/30">
-                  <span className="text-[#07416b] font-medium">Join us in Kuala Lumpur, Malaysia
-</span>
+                  <span className="text-[#07416b] font-medium">Join us in Vietnam
+                  </span>
                 </div>
               </div>
             </div>
@@ -160,7 +160,7 @@ export default function AboutConferencePage() {
           <div className="max-w-4xl mx-auto text-center">
             <h3 className="text-3xl md:text-4xl font-bold text-[#07416b] mb-6">Our Mission</h3>
             <p className="text-xl text-[#07416b]/80 mb-8">
-               2<sup>nd</sup> ICASEM aims to bridge the gap between theoretical knowledge and practical application by bringing together
+              3<sup>rd</sup> ICASEM aims to bridge the gap between theoretical knowledge and practical application by bringing together
               leading researchers, industry professionals, and academics to share innovations, discuss challenges, and
               forge partnerships that advance applied science, engineering, and management globally.
             </p>
@@ -209,8 +209,8 @@ export default function AboutConferencePage() {
 
           <div className="mt-16 text-center">
             <p className="text-xl text-[#07416b]/80 mb-6">
-              Join us in Kuala Lumpur, Malaysia
- from November 14th-15th, 2025, to be part of a global community dedicated to advancing
+              Join us in Vietnam
+              from March 11th-12th, 2027, to be part of a global community dedicated to advancing
               applied science, engineering excellence, and management innovation!
             </p>
             <Link href="/schedule">
@@ -226,9 +226,9 @@ export default function AboutConferencePage() {
       <section className="py-16 bg-[#f0f4f8]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto mb-12 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#07416b] mb-6">Why Attend 2<sup>nd</sup>ICASEM 2025</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#07416b] mb-6">Why Attend 3<sup>rd</sup>ICASEM 2027</h2>
             <p className="text-[#07416b]/80">
-              The 2<sup>nd</sup>International Conference on Applied Science, Engineering & Management (2<sup>nd</sup>ICASEM) is the premier platform
+              The 3<sup>rd</sup>International Conference on Applied Science, Engineering & Management (3<sup>rd</sup>ICASEM) is the premier platform
               for exploring innovative solutions and advancing multidisciplinary research and collaboration.
             </p>
           </div>
@@ -307,7 +307,7 @@ export default function AboutConferencePage() {
           <div className="bg-white rounded-3xl p-8 shadow-sm border border-[#00adef]/20">
             <div className="flex flex-col md:flex-row items-center justify-between">
               <div className="mb-6 md:mb-0 md:mr-6">
-                <h3 className="text-2xl font-bold text-[#07416b] mb-2">Ready to join 2<sup>nd</sup>ICASEM 2025?</h3>
+                <h3 className="text-2xl font-bold text-[#07416b] mb-2">Ready to join 3<sup>rd</sup>ICASEM 2027?</h3>
                 <p className="text-[#07416b]/80 max-w-xl">
                   Register now to secure your spot at the premier conference on applied science, engineering, and
                   management innovation.

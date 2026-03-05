@@ -23,7 +23,9 @@ export async function getJournals() {
 
     // Get the start and end dates for 2025
     const startDate = '2025-01-01 00:00:00'
-    const endDate = '2025-12-31 23:59:59'
+
+    const endDate = new Date().toISOString()
+
 
     // Fetch journals from 2025 only, sorted by creation date (newest first)
     const records = await pb.collection("Journals").getFullList({
@@ -66,26 +68,26 @@ export const committeeService = {
 };
 
 export const speakersService = {
-    async getAll() {
-      try {
-        if (!pb) throw new Error('PocketBase not initialized');
-        const records = await pb.collection('speakers').getFullList({
-          sort: '-created',
-        });
-  
-        // Group speakers by category
-        const groupedSpeakers = records.reduce((acc, speaker) => {
-          if (!acc[speaker.category]) {
-            acc[speaker.category] = [];
-          }
-          acc[speaker.category].push(speaker);
-          return acc;
-        }, {});
-  
-        return groupedSpeakers;
-      } catch (error) {
-        console.error('Error fetching speakers:', error);
-        throw error;
-      }
+  async getAll() {
+    try {
+      if (!pb) throw new Error('PocketBase not initialized');
+      const records = await pb.collection('speakers').getFullList({
+        sort: '-created',
+      });
+
+      // Group speakers by category
+      const groupedSpeakers = records.reduce((acc, speaker) => {
+        if (!acc[speaker.category]) {
+          acc[speaker.category] = [];
+        }
+        acc[speaker.category].push(speaker);
+        return acc;
+      }, {});
+
+      return groupedSpeakers;
+    } catch (error) {
+      console.error('Error fetching speakers:', error);
+      throw error;
     }
-  };
+  }
+};

@@ -102,7 +102,7 @@ export default function PapersFormatPage() {
               </span>
             </h1>
             <p className="text-xl text-[#07416b]/80 mb-8">
-              Download templates and learn how to format your 2<sup>nd</sup>ICASEM 2025 submission
+              Download templates and learn how to format your 3<sup>rd</sup>ICASEM 2027 submission
             </p>
           </div>
         </div>
@@ -129,7 +129,7 @@ export default function PapersFormatPage() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-[#07416b] mb-6">Paper Format Guidelines</h2>
               <p className="text-[#07416b]/80 mb-4">
-                All submissions to 2<sup>nd</sup>ICASEM 2025 must follow IEEE formatting guidelines to ensure consistency,
+                All submissions to 3<sup>rd</sup>ICASEM 2027 must follow IEEE formatting guidelines to ensure consistency,
                 readability, and professional presentation. We provide comprehensive templates for different types of
                 submissions to streamline this process.
               </p>
@@ -166,7 +166,7 @@ export default function PapersFormatPage() {
             <div>
               <h2 className="text-3xl font-bold text-[#07416b] mb-6">Citation Style</h2>
               <p className="text-[#07416b]/80 mb-4">
-                2<sup>nd</sup>ICASEM 2025 uses the IEEE citation style for all submissions. Please ensure that your references are
+                3<sup>rd</sup>ICASEM 2027 uses the IEEE citation style for all submissions. Please ensure that your references are
                 formatted according to this standard. The templates provided include examples of how to format different
                 types of references including journal articles, conference papers, books, and web sources.
               </p>
@@ -177,7 +177,7 @@ export default function PapersFormatPage() {
               <div className="bg-[#f0f4f8] rounded-2xl p-4 border border-[#00adef]/20">
                 <h4 className="font-semibold text-[#07416b] mb-2">IEEE Reference Example:</h4>
                 <p className="text-sm text-[#07416b]/80 font-mono">
-                  [1] A. Author, "Title of paper," in Proc. ICASEM, Kuala Lumpur, Malaysia, 2025, pp. 1-8.
+                  [1] A. Author, "Title of paper," in Proc. ICASEM, Vietnam, 2027, pp. 1-8.
                 </p>
               </div>
             </div>
@@ -324,7 +324,7 @@ export default function PapersFormatPage() {
             <div className="relative z-10">
               <h3 className="text-2xl lg:text-4xl font-bold mb-4">Ready to Submit Your Research?</h3>
               <p className="text-lg lg:text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-                Download the appropriate template and prepare your submission for 2<sup>nd</sup>ICASEM 2025 following our IEEE
+                Download the appropriate template and prepare your submission for 3<sup>rd</sup>ICASEM 2027 following our IEEE
                 formatting guidelines.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">

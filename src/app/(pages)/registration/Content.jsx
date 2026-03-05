@@ -303,7 +303,7 @@ export default function RegistrationPage() {
 
   const renderPricingCard = (categoryData, participantType, presentationType) => {
     const getCurrencySymbol = (currency) => currency === "USD" ? "$" : "₹"
-    
+
     return (
       <div key={`${categoryData.category}-${participantType}`} className="bg-white rounded-3xl border border-[#00adef] overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col h-full">
         <div className="bg-slate-100 p-6 h-60">
@@ -318,14 +318,14 @@ export default function RegistrationPage() {
             </div>
             <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#07416b] p-0.5">
               <div className="flex h-full w-full items-center justify-center rounded-full bg-white">
-                {presentationType === "physical" ? 
+                {presentationType === "physical" ?
                   <Presentation className="h-5 w-5 text-[#07416b]" /> :
                   <Globe className="h-5 w-5 text-[#07416b]" />
                 }
               </div>
             </div>
           </div>
-          
+
           <div className="space-y-2">
             {/* <div className="flex justify-between items-center">
               <span className="text-sm text-black">Early Bird:</span>
@@ -358,32 +358,32 @@ export default function RegistrationPage() {
           </div>
         </div>
 
-       <div className="p-6 flex flex-col flex-1">
-    <div className="flex-1">
-      <h3 className="text-xl font-bold text-black mb-4">Benefits & Features</h3>
-        <ul className="space-y-3 mb-6">
-            {categoryData.features.map((feature, i) => (
-              <li key={i} className="flex items-start">
-                <div className="h-5 w-5 rounded-full bg-[#00adef] flex items-center justify-center mt-0.5 mr-3 flex-shrink-0">
-                  <svg
-                    className="h-3 w-3 text-[#07416b]"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                </div>
-                <span className="text-[#07416b] text-sm">{feature}</span>
-              </li>
-            ))}
-          </ul>
-</div>
+        <div className="p-6 flex flex-col flex-1">
+          <div className="flex-1">
+            <h3 className="text-xl font-bold text-black mb-4">Benefits & Features</h3>
+            <ul className="space-y-3 mb-6">
+              {categoryData.features.map((feature, i) => (
+                <li key={i} className="flex items-start">
+                  <div className="h-5 w-5 rounded-full bg-[#00adef] flex items-center justify-center mt-0.5 mr-3 flex-shrink-0">
+                    <svg
+                      className="h-3 w-3 text-[#07416b]"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </div>
+                  <span className="text-[#07416b] text-sm">{feature}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
           <div className="space-y-2">
             {/* <Button
               onClick={() => handleTicketSelect(createTicketFromPricing(categoryData, "earlyBird", participantType, presentationType))}
@@ -426,15 +426,15 @@ export default function RegistrationPage() {
   return (
     <main className="bg-[#f8fbff]">
       {/* <ExtraContentAboveCard/> */}
-      
+
       {/* Registration Cards */}
       <section className="py-16 bg-[#f8fbff]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#07416b] mb-6"> 2<sup>nd</sup>ICASEM 2025 Registration</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#07416b] mb-6"> 3<sup>rd</sup>ICASEM 2027 Registration</h2>
             <div className="h-1 w-20 bg-[#00adef] mx-auto mb-8 rounded-full"></div>
             <p className="text-[#07416b] max-w-3xl mx-auto">
-              Join us for  2<sup>nd</sup> the International Conference on Applied Science, Engineering & Management in Kuala Lumpur, Malaysia, November 14th -15th, 2025
+              Join us for  3<sup>rd</sup> the International Conference on Applied Science, Engineering & Management in Vietnam, March 11th - 12th, 2027
             </p>
           </div>
 
@@ -469,7 +469,7 @@ export default function RegistrationPage() {
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold text-[#07416b] mb-3">In-Person Conference Experience</h3>
                 <p className="text-[#07416b] max-w-2xl mx-auto">
-                  Join us in Kuala Lumpur, Malaysia for the complete conference experience with face-to-face networking and professional development
+                  Join us in Vietnam for the complete conference experience with face-to-face networking and professional development
                 </p>
               </div>
 
@@ -480,7 +480,7 @@ export default function RegistrationPage() {
                   International Participants
                 </h4>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {pricingData.physical.foreign.map((categoryData) => 
+                  {pricingData.physical.foreign.map((categoryData) =>
                     renderPricingCard(categoryData, "foreign", "physical")
                   )}
                 </div>
@@ -515,7 +515,7 @@ export default function RegistrationPage() {
                   International Participants
                 </h4>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {pricingData.virtual.foreign.map((categoryData) => 
+                  {pricingData.virtual.foreign.map((categoryData) =>
                     renderPricingCard(categoryData, "foreign", "virtual")
                   )}
                 </div>
@@ -604,7 +604,7 @@ export default function RegistrationPage() {
         </div>
       </section>
 
-      <ExtraContentBelowTabs/>
+      <ExtraContentBelowTabs />
 
       {/* Payment Form Dialog */}
       <PaymentForm
