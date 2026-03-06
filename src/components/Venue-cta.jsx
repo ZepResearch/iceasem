@@ -140,7 +140,7 @@ export default function VenueCtaSection() {
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-[#00adef] rounded-full"></div>
-                  <span className="text-gray-600 text-sm">Strategic location in Kuala Lumpur, Malaysia's business district</span>
+                  <span className="text-gray-600 text-sm">Strategic location in Vietnam's business district</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-[#00adef] rounded-full"></div>
