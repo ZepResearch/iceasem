@@ -25,7 +25,7 @@ export const adminNotificationTemplate = (data) => `
             margin: 20px;
         }
         .header {
-            background: linear-gradient(135deg, #32CD32, #7CFC00);
+            background: linear-gradient(135deg, #1E90FF, #00BFFF);
             padding: 40px 20px;
             text-align: center;
             color: white;
@@ -53,7 +53,7 @@ export const adminNotificationTemplate = (data) => `
         }
         .field-label {
             font-weight: 700;
-            color: #32CD32;
+            color: #1E90FF;
             display: block;
             margin-bottom: 8px;
             font-size: 14px;
@@ -66,19 +66,19 @@ export const adminNotificationTemplate = (data) => `
             background-color: #ffffff;
             padding: 12px;
             border-radius: 6px;
-            border-left: 4px solid #32CD32;
+            border-left: 4px solid #1E90FF;
         }
         .pdf-link {
-            color: #32CD32;
+            color: #1E90FF;
             text-decoration: none;
             font-weight: 700;
             transition: color 0.3s ease;
         }
         .pdf-link:hover {
-            color: #228B22;
+            color: #104E8B;
         }
         .footer {
-            background-color: #228B22;
+            background-color: #104E8B;
             color: #fff;
             text-align: center;
             padding: 25px;
@@ -91,7 +91,7 @@ export const adminNotificationTemplate = (data) => `
             height: 24px;
             vertical-align: middle;
             margin-right: 8px;
-            fill: #32CD32;
+            fill: #1E90FF;
         }
     </style>
 </head>

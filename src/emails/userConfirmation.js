@@ -25,7 +25,7 @@ export const userConfirmationTemplate = (data) => `
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         }
         .header {
-            background: linear-gradient(135deg, #32CD32, #7CFC00);
+            background: linear-gradient(135deg, #1E90FF, #00BFFF);
             color: #ffffff;
             padding: 40px 30px;
             text-align: center;
@@ -48,11 +48,11 @@ export const userConfirmationTemplate = (data) => `
             font-size: 20px;
             font-weight: 600;
             margin-bottom: 20px;
-            color: #228B22;
+            color: #1E90FF;
         }
         .submission-details {
             background-color: #f8f9fa;
-            border-left: 4px solid #32CD32;
+            border-left: 4px solid #1E90FF;
             padding: 25px;
             margin-top: 30px;
             margin-bottom: 30px;
@@ -62,7 +62,7 @@ export const userConfirmationTemplate = (data) => `
         .submission-details h2 {
             margin-top: 0;
             font-size: 22px;
-            color: #228B22;
+            color: #1E90FF;
         }
         .submission-details ul {
             list-style-type: none;
@@ -80,7 +80,7 @@ export const userConfirmationTemplate = (data) => `
             min-width: 150px;
         }
         .footer {
-            background-color: #228B22;
+            background-color: #104E8B;
             color: #ffffff;
             text-align: center;
             padding: 25px;
@@ -91,7 +91,7 @@ export const userConfirmationTemplate = (data) => `
             height: 24px;
             vertical-align: middle;
             margin-right: 10px;
-            fill: #32CD32;
+            fill: #1E90FF;
         }
         @media only screen and (max-width: 600px) {
             .container {
@@ -113,7 +113,7 @@ export const userConfirmationTemplate = (data) => `
         <div class="content">
             <p class="greeting">Dear ${data.authorName},</p>
             <p>Thank you for submitting your paper to ICASEM. We are pleased to confirm that we have received your submission titled:</p>
-            <p style="font-weight: 600; font-style: italic; color: #228B22; font-size: 18px; margin: 20px 0; padding: 15px; background-color: #f0f8f0; border-radius: 8px; text-align: center;">"${data.paperTitle}"</p>
+            <p style="font-weight: 600; font-style: italic; color: #1E90FF; font-size: 18px; margin: 20px 0; padding: 15px; background-color: #f0f4ff; border-radius: 8px; text-align: center;">"${data.paperTitle}"</p>
             
             <div class="submission-details">
                 <h2>Submission Details</h2>
@@ -141,7 +141,7 @@ export const userConfirmationTemplate = (data) => `
             
             <p>Our expert review panel will carefully evaluate your submission. You can expect to hear back from us within 2-3 weeks with further information regarding the acceptance status and presentation details.</p>
             
-            <p>If you have any questions or need to make changes to your submission, please don't hesitate to contact us at <a href="mailto:submit@icasem.org" style="color: #228B22; text-decoration: none;">submit@icasem.org</a>.</p>
+            <p>If you have any questions or need to make changes to your submission, please don't hesitate to contact us at <a href="mailto:submit@icasem.org" style="color: #1E90FF; text-decoration: none;">submit@icasem.org</a>.</p>
             
             <p>We appreciate your contribution to ICASEM and look forward to potentially featuring your work at the conference.</p>
             
@@ -149,7 +149,7 @@ export const userConfirmationTemplate = (data) => `
         </div>
         <div class="footer">
             <p>This is an automated confirmation of your paper submission. Please do not reply to this email.</p>
-            <p>&copy; 2023 International Conference on Applied Science, Engineering & Management. All rights reserved.</p>
+            <p>&copy; 2027 International Conference on Applied Science, Engineering & Management. All rights reserved.</p>
         </div>
     </div>
 </body>

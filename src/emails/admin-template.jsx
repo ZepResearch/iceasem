@@ -246,13 +246,13 @@ export const adminEmailTemplate = (data) => `
         <div class="main-container gradient-border">
             <!-- Header -->
             <div class="header">
-                <h1>NEW CONTACT FORM SUBMISSION - ICASEM 2025</h1>
+                <h1>NEW CONTACT FORM SUBMISSION - ICASEM </h1>
                 <hr class="divider">
             </div>
 
             <!-- Intro text -->
             <p class="intro-text">
-                You have received a new contact form submission for ICASEM 2025:
+                You have received a new contact form submission for ICASEM 
             </p>
 
             <!-- Submission details -->
@@ -301,7 +301,7 @@ export const adminEmailTemplate = (data) => `
                 </div>
                 <hr class="divider">
                 <p class="copyright">
-                    © 2025 International Conference Applied Science, Engineering & Management (ICASEM)
+                    © International Conference Applied Science, Engineering & Management (ICASEM)
                 </p>
             </div>
         </div>

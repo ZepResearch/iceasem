@@ -313,7 +313,7 @@ export const userEmailTemplate = (data) => `
         <div class="main-container gradient-border">
             <!-- Header -->
             <div class="header">
-                <h1>THANK YOU FOR CONTACTING ICASEM 2025</h1>
+                <h1>THANK YOU FOR CONTACTING <br/>ICASEM 2027</h1>
                 <hr class="divider">
             </div>
 
@@ -321,7 +321,7 @@ export const userEmailTemplate = (data) => `
             <p class="greeting">Hello, ${data.name}!</p>
             <p class="content-text">
                 We've received your message and appreciate your interest in the International Conference Applied Science, 
-                Engineering & Management (ICASEM) 2025. Our team will review your inquiry and get back to you as soon as possible.
+                Engineering & Management (ICASEM) 2027. Our team will review your inquiry and get back to you as soon as possible.
             </p>
             <p class="content-text">
                 In the meantime, you might find answers to common questions on our website or explore our conference program 
@@ -334,12 +334,12 @@ export const userEmailTemplate = (data) => `
 
                 <div class="detail-item date">
                     <div class="detail-label date">Conference Dates:</div>
-                    <p class="detail-value">November 14-15, 2025</p>
+                    <p class="detail-value">March 11th- 12th, 2027</p>
                 </div>
 
                 <div class="detail-item location">
                     <div class="detail-label location">Location:</div>
-                    <p class="detail-value">Singapore</p>
+                    <p class="detail-value">Vietnam</p>
                 </div>
 
                 <div class="detail-item focus">
@@ -367,7 +367,7 @@ export const userEmailTemplate = (data) => `
             <div class="footer">
                 <hr class="divider">
                 <p class="copyright">
-                    © 2025 International Conference Applied Science, Engineering & Management (ICASEM)
+                    © 2027 International Conference Applied Science, Engineering & Management (ICASEM)
                 </p>
                 <p class="disclaimer">
                     This is an automated response. Please do not reply to this email.

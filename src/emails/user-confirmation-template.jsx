@@ -211,8 +211,8 @@ export const userConfirmationTemplate = (data) => `
             
             <div class="conference-info">
                 <h3>Conference Details</h3>
-                <div class="conference-date">November 14th - 15th, 2024</div>
-                <div class="conference-venue">📍 Singapore</div>
+                <div class="conference-date">March 11th- 12th, 2027</div>
+                <div class="conference-venue">📍 Vietnam</div>
             </div>
             
             <div class="registration-details">
@@ -260,10 +260,7 @@ export const userConfirmationTemplate = (data) => `
         <div class="footer">
             <p>© ${new Date().getFullYear()} International Conference on Applied Science, Engineering & Management</p>
             <p>This is an automated confirmation. Please do not reply to this email.</p>
-            <div class="social-links">
-                <a href="https://www.icasem.org/">Website</a> |
-                <a href="mailto:submit@icasem.org">Contact Us</a>
-            </div>
+            
         </div>
     </div>
 </body>

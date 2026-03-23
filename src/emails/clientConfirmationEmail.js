@@ -111,12 +111,12 @@ const ClientConfirmationEmail = (data) => {
                 <p>If you need to add any information to your request or have any urgent concerns, please don't hesitate to contact us directly.</p>
                 <p>We appreciate your patience and look forward to assisting you soon.</p>
                 <p>Best regards,<br>Your Support Team</p>
-                <a href="#" class="button">View Your Request</a>
+                
             </div>
         </div>
         <div class="footer">
             <p>This is an automated response to your contact form submission. Please do not reply to this email.</p>
-            <p>&copy; 2023 Your Company Name. All rights reserved.</p>
+            <p>&copy;  ICASEM. All rights reserved.</p>
         </div>
     </div>
 </body>

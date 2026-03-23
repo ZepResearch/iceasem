@@ -124,15 +124,13 @@ export function getUserEmailTemplate(data) {
   </head>
   <body>
     <div class="header">
-      <div class="conference-title">ICASEM 2025</div>
-      <div class="conference-date">November 14-15, 2025</div>
-      <div class="conference-location">Singapore</div>
+      <div class="conference-title">ICASEM </div>
       <div style="font-size: 14px; margin-top: 8px; color: #ffffff;">International Conference on Applied Science, Engineering & Management</div>
     </div>
     <div class="content">
       <p>Dear ${data.author},</p>
       
-      <p>Thank you for submitting your paper titled <span class="highlight">"${data.paper_title}"</span> to ICASEM 2025: International Conference on Applied Science, Engineering & Management.</p>
+      <p>Thank you for submitting your paper titled <span class="highlight">"${data.paper_title}"</span> to ICASEM  International Conference on Applied Science, Engineering & Management.</p>
       
       <p>We have received your submission and our review committee will evaluate it shortly. You will be notified about the status of your submission in the coming weeks.</p>
       
@@ -144,20 +142,16 @@ export function getUserEmailTemplate(data) {
         <li><span class="detail-label">Submission Date:</span> <span class="detail-value">${new Date().toLocaleDateString()}</span></li>
       </ul>
       
-      <p><strong>Conference Details:</strong></p>
-      <ul>
-        <li><span class="detail-label">Date:</span> <span class="detail-value">November 14-15, 2025</span></li>
-        <li><span class="detail-label">Location:</span> <span class="detail-value">Singapore</span></li>
-      </ul>
+    
       
       <p>If you have any questions or need to make changes to your submission, please contact us at <a href="mailto:submit@icasem.org">submit@icasem.org</a>.</p>
       
       <p>Best regards,<br>
-      ICASEM 2025 Organizing Committee<br>
+      ICASEM  Organizing Committee<br>
       International Conference on Applied Science, Engineering & Management</p>
     </div>
     <div class="footer">
-      <p>© 2025 ICASEM. All rights reserved.</p>
+      <p>© ICASEM. All rights reserved.</p>
     </div>
   </body>
   </html>
@@ -310,13 +304,11 @@ export function getAdminEmailTemplate(data, fileUrl) {
   </head>
   <body>
     <div class="header">
-      <div class="conference-title">ICASEM 2025</div>
-      <div class="conference-date">November 14-15, 2025</div>
-      <div class="conference-location">Singapore</div>
+      <div class="conference-title">ICASEM </div>
       <div style="font-size: 14px; margin-top: 8px; color: #ffffff;">New Paper Submission Alert</div>
     </div>
     <div class="content">
-      <p>A new paper has been submitted to ICASEM 2025: International Conference on Applied Science, Engineering & Management.</p>
+      <p>A new paper has been submitted to International Conference on Applied Science, Engineering & Management.</p>
       
       <h2>Submission Details:</h2>
       <table>
@@ -388,17 +380,12 @@ export function getAdminEmailTemplate(data, fileUrl) {
         }
       </table>
       
-      <p><strong>Conference Details:</strong></p>
-      <ul style="list-style: none; padding: 0;">
-        <li style="padding: 5px 0; color: #07416b;"><strong>Date:</strong> November 14-15, 2025</li>
-        <li style="padding: 5px 0; color: #07416b;"><strong>Location:</strong> Singapore</li>
-        <li style="padding: 5px 0; color: #07416b;"><strong>Conference:</strong> International Conference on Applied Science, Engineering & Management</li>
-      </ul>
+      
       
       <p>Please review this submission at your earliest convenience.</p>
     </div>
     <div class="footer">
-      <p>© 2025 ICASEM. All rights reserved.</p>
+      <p>© ICASEM. All rights reserved.</p>
     </div>
   </body>
   </html>

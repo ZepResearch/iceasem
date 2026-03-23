@@ -27,7 +27,7 @@ const ContactFormEmail = (data) => {
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
         }
         .header {
-            background: linear-gradient(135deg, #32CD32, #7CFC00);
+            background: linear-gradient(135deg, #1E90FF, #00BFFF);
             color: white;
             padding: 40px 20px;
             text-align: center;
@@ -55,7 +55,7 @@ const ContactFormEmail = (data) => {
         }
         .label {
             font-weight: 500;
-            color: #228B22;
+            color: #1E90FF;
             font-size: 14px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
@@ -67,12 +67,12 @@ const ContactFormEmail = (data) => {
             background-color: #ffffff;
             padding: 12px;
             border-radius: 6px;
-            border-left: 4px solid #32CD32;
+            border-left: 4px solid #1E90FF;
         }
         .footer {
             text-align: center;
             padding: 25px;
-            background-color: #228B22;
+            background-color: #104E8B;
             color: #ffffff;
             font-size: 14px;
         }
@@ -81,7 +81,7 @@ const ContactFormEmail = (data) => {
             height: 24px;
             vertical-align: middle;
             margin-right: 8px;
-            fill: #32CD32;
+            fill: #1E90FF;
         }
         @media only screen and (max-width: 600px) {
             .container {
@@ -149,7 +149,7 @@ const ContactFormEmail = (data) => {
         </div>
         <div class="footer">
             <p>This email was sent from the contact form of the International Conference on Applied Science, Engineering & Management website.</p>
-            <p>&copy; 2023 ICASEM. All rights reserved.</p>
+            <p>&copy;  ICASEM. All rights reserved.</p>
         </div>
     </div>
 </body>

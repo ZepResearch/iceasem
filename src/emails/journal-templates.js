@@ -193,10 +193,7 @@ export function getUserEmailTemplate(data) {
         <div class="header-content">
           <h1 class="conference-logo">ICASEM</h1>
           <p class="conference-subtitle">International Conference on Applied Science, Engineering & Management</p>
-          <div class="conference-details">
-            <strong>📅 Conference Date:</strong> 14th-15th November, 2025<br>
-            <strong>📍 Venue:</strong> Singapore
-          </div>
+          
         </div>
       </div>
       
@@ -211,23 +208,7 @@ export function getUserEmailTemplate(data) {
         
         <p>We are pleased to confirm that your submission has been received and is now under review by our distinguished panel of experts. You will be notified about the review outcome and conference acceptance status within the next 2-3 weeks.</p>
         
-        <div class="conference-info-box">
-          <div class="info-title">🏨 Conference Details</div>
-          <ul class="info-list">
-            <li>
-              <span class="info-label">Conference Date</span>
-              <span class="info-value"><strong>14th-15th November, 2025</strong></span>
-            </li>
-            <li>
-              <span class="info-label">Venue</span>
-              <span class="info-value">Singapore</span>
-            </li>
-            <li>
-              <span class="info-label">Conference Focus</span>
-              <span class="info-value">Applied Science, Engineering & Management</span>
-            </li>
-          </ul>
-        </div>
+       
         
         <div class="info-box">
           <div class="info-title">📋 Submission Summary</div>
@@ -260,7 +241,7 @@ export function getUserEmailTemplate(data) {
           <p><strong>📧 Need Assistance?</strong></p>
           <p>If you have any questions, need to make changes to your submission, or require additional information about the conference, please don't hesitate to contact us:</p>
           <p>📧 Email: <a href="mailto:submit@icasem.org" style="color: #3b82f6;">submit@icasem.org</a><br>
-          🌐 Website: <a href="https://icasem.org" style="color: #3b82f6;">www.icasem.org</a></p>
+          🌐 Website: <a href="https://icasem.zepresearch.com" style="color: #3b82f6;">icasem.zepresearch.com</a></p>
         </div>
         
         <div class="signature">
@@ -273,11 +254,7 @@ export function getUserEmailTemplate(data) {
       
       <div class="footer">
         <p>© ${new Date().getFullYear()} ICASEM Conference. All rights reserved.</p>
-        <div class="footer-links">
-          <a href="#">Conference Website</a>
-          <a href="#">Program Schedule</a>
-          <a href="#">Contact Us</a>
-        </div>
+        
       </div>
     </div>
   </body>
@@ -525,7 +502,7 @@ export function getAdminEmailTemplate(data, fileUrl) {
           <p class="header-subtitle">Administrative Notification</p>
           <div class="conference-details">
             International Conference on Applied Science, Engineering & Management<br>
-            📅 14th-15th November, 2025 | 📍 Singapore
+          
           </div>
         </div>
       </div>

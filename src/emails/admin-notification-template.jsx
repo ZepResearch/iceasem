@@ -119,8 +119,7 @@ export const adminNotificationTemplate = (data) => `
         <div class="header">
             <h1>New Conference Registration</h1>
             <div class="conference-details">International Conference on Applied Science, Engineering & Management</div>
-            <div class="conference-date">November 14th-15th, 2024</div>
-            <div class="conference-details">Singapore</div>
+          
         </div>
         <div class="content">
             <div class="alert-badge">New Registration</div>
