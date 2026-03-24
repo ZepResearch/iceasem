@@ -160,13 +160,13 @@ export default function ThemeAndTopicsPage() {
               <h2 className="text-3xl md:text-4xl font-bold text-[#07416b] mb-6">
                 "Advancing Innovation Through Multidisciplinary Excellence in Applied Science, Engineering & Management"
               </h2>
-              <p className="text-[#07416b]/80 mb-4">
+              <p className="text-[#07416b]/80 mb-4 text-justify">
                 3<sup>rd</sup>ICASEM 2027 explores how the convergence of Applied Science, Engineering, and Management is driving
                 unprecedented innovation and solving complex global challenges. As traditional boundaries between
                 disciplines continue to blur, new opportunities emerge for breakthrough research and practical
                 applications that benefit society.
               </p>
-              <p className="text-[#07416b]/80">
+              <p className="text-[#07416b]/80 text-justify">
                 This conference brings together researchers, engineers, managers, and innovators from diverse fields to
                 examine cutting-edge developments and future possibilities. We invite contributions that highlight
                 innovative approaches to real-world problems, novel applications of technology, and critical

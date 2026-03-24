@@ -93,7 +93,7 @@ export default function ExhibitAndSponsorPage() {
   const sponsorshipPackages = [
     {
       title: "Platinum",
-      price: 15000,
+      price: 6000,
       color: "from-[#00adef] to-[#07416b]",
       icon: <Award className="h-8 w-8 text-[#00adef]" />,
       benefits: [
@@ -111,7 +111,7 @@ export default function ExhibitAndSponsorPage() {
     },
     {
       title: "Diamond",
-      price: 12000,
+      price: 4000,
       color: "from-[#0284c7] to-[#00adef]",
       icon: <Sparkles className="h-8 w-8 text-[#0284c7]" />,
       benefits: [
@@ -129,7 +129,7 @@ export default function ExhibitAndSponsorPage() {
     },
     {
       title: "Gold",
-      price: 10000,
+      price: 2000,
       color: "from-[#60a5fa] to-[#0284c7]",
       icon: <Star className="h-8 w-8 text-[#60a5fa]" />,
       benefits: [
@@ -145,7 +145,7 @@ export default function ExhibitAndSponsorPage() {
     },
     {
       title: "Silver",
-      price: 7500,
+      price: 1000,
       color: "from-[#93c5fd] to-[#60a5fa]",
       icon: <Zap className="h-8 w-8 text-[#93c5fd]" />,
       benefits: [

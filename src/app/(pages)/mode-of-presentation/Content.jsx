@@ -115,7 +115,7 @@ export default function ModeOfPresentationPage() {
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold text-[#07416b]">Oral Presentation</h2>
               </div>
-              <p className="text-[#07416b]/80 mb-6">
+              <p className="text-[#07416b]/80 mb-6 text-justify">
                 Present your research in a 15-minute oral presentation followed by a 5-minute Q&A session. This format
                 is ideal for sharing detailed findings in Applied Science, Engineering & Management and engaging
                 directly with international experts and industry professionals.
@@ -170,7 +170,7 @@ export default function ModeOfPresentationPage() {
       </section>
 
       {/* Show a Poster Section */}
-      <section className="py-16 bg-gradient-to-br from-[#f0f4f8] to-[#e8f2ff]">
+      {/* <section className="py-16 bg-gradient-to-br from-[#f0f4f8] to-[#e8f2ff]">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
@@ -246,7 +246,7 @@ export default function ModeOfPresentationPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Present Online Section */}
       <section className="py-16 bg-white">
@@ -273,7 +273,7 @@ export default function ModeOfPresentationPage() {
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold text-[#07416b]">Virtual Presentation</h2>
               </div>
-              <p className="text-[#07416b]/80 mb-6">
+              <p className="text-[#07416b]/80 mb-6 text-justify">
                 Can't attend in Vietnam? Present your research virtually through our advanced online platform. This
                 hybrid option provides flexibility while still allowing for meaningful engagement with the global
                 Applied Science, Engineering & Management community.

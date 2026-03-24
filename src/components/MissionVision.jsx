@@ -37,7 +37,7 @@ export default function ObjectivesSection() {
                 Knowledge Exchange
               </h3>
 
-              <p className="text-gray-600 text-sm leading-relaxed mb-6">
+              <p className="text-gray-600 text-sm leading-relaxed mb-6 text-justify">
                 Facilitate the sharing of cutting-edge research findings, innovative methodologies, and best practices across applied sciences, engineering, and management disciplines.
               </p>
 
@@ -79,7 +79,7 @@ export default function ObjectivesSection() {
                 Global Collaboration
               </h3>
 
-              <p className="text-gray-600 text-sm leading-relaxed mb-6">
+              <p className="text-gray-600 text-sm leading-relaxed mb-6 text-justify">
                 Build international partnerships and foster cross-cultural collaboration among researchers, academics, and industry professionals from diverse backgrounds.
               </p>
 
@@ -121,7 +121,7 @@ export default function ObjectivesSection() {
                 Innovation & Technology
               </h3>
 
-              <p className="text-gray-600 text-sm leading-relaxed mb-6">
+              <p className="text-gray-600 text-sm leading-relaxed mb-6 text-justify">
                 Promote technological advancement and innovative solutions that address real-world challenges in science, engineering, and management sectors.
               </p>
 
@@ -163,7 +163,7 @@ export default function ObjectivesSection() {
                 Industry Partnership
               </h3>
 
-              <p className="text-gray-600 text-sm leading-relaxed mb-6">
+              <p className="text-gray-600 text-sm leading-relaxed mb-6 text-justify">
                 Bridge the gap between academia and industry by creating opportunities for collaboration, knowledge transfer, and practical application of research.
               </p>
 

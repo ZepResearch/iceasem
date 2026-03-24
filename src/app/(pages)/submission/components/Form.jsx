@@ -380,10 +380,7 @@ export default function PaperSubmissionPage() {
               </div>
             </div>
           </div>
-          <div id="guid" className="mt-12 scroll-smooth ">
-            <AbstractSubmissionGuidelines />
-          </div>
-
+        
           {/* Info Card for Submission Issues */}
           <section className="py-8">
             <div className="container mx-auto px-4 relative z-10">
@@ -398,6 +395,10 @@ export default function PaperSubmissionPage() {
               </div>
             </div>
           </section>
+            <div id="guid" className="mt-12 scroll-smooth ">
+            <AbstractSubmissionGuidelines />
+          </div>
+
         </div>
       </section>
     </main>

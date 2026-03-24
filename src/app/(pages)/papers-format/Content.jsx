@@ -18,23 +18,23 @@ export default function PapersFormatPage() {
     {
       title: "Abstract Template",
       description: "The abstract should be a concise summary of your research, not exceeding 300 words. It should include the research objectives, methodology, results, and conclusions. Use clear, concise language and avoid jargon or acronyms.",
-      file: "/templates/ICASEM_Abstract_Template.docx",
+      file: "/templates/Abstract_Template.docx",
       icon: <FileText className="h-6 w-6 text-[#00adef]" />,
       format: "DOCX",
     },
     {
       title: "Full Paper Template",
       description: "Full papers should be between 3000-5000 words, excluding references and appendices. Use Times New Roman, 12-point font, double-spaced. Include an abstract, keywords, introduction, methodology, results, discussion, conclusion, and references. Follow APA 7th edition for citations and references.",
-      file: "/templates/ICASEM_Fullpaper_Template.docx",
+      file: "/templates/Fullpaper_Template.doc",
       icon: <BookOpen className="h-6 w-6 text-[#00adef]" />,
       format: "DOCX",
     },
     {
-      title: "Presentation Template",
-      description: "Posters should be designed in A0 size (841 x 1189 mm) in portrait orientation. Use a clear, readable font (at least 24-point for body text, larger for headings). Include a title, authors, affiliation, introduction, methods, results, conclusions, and key references. Use graphics, charts, and images to convey your research visually.",
-      file: "/templates/ICASEM_Presentation_Template.pptx",
+      title: "Copyright Form Template",
+      description: "The copyright form must be completed and submitted with your paper.",
+      file: "/templates/Copyright_Form2025.docx",
       icon: <Users className="h-6 w-6 text-[#00adef]" />,
-      format: "PPTX",
+      format: "DOCX",
     },
   ]
 
@@ -128,12 +128,12 @@ export default function PapersFormatPage() {
             </div>
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-[#07416b] mb-6">Paper Format Guidelines</h2>
-              <p className="text-[#07416b]/80 mb-4">
+              <p className="text-[#07416b]/80 mb-4 text-justify">
                 All submissions to 3<sup>rd</sup>ICASEM 2027 must follow IEEE formatting guidelines to ensure consistency,
                 readability, and professional presentation. We provide comprehensive templates for different types of
                 submissions to streamline this process.
               </p>
-              <p className="text-[#07416b]/80 mb-6">
+              <p className="text-[#07416b]/80 mb-6 text-justify">
                 Please carefully review the guidelines below and use the appropriate template for your submission type.
                 Papers that do not follow these guidelines will be returned for revision before being considered for
                 review.
@@ -165,12 +165,12 @@ export default function PapersFormatPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
               <h2 className="text-3xl font-bold text-[#07416b] mb-6">Citation Style</h2>
-              <p className="text-[#07416b]/80 mb-4">
+              <p className="text-[#07416b]/80 mb-4 text-justify">
                 3<sup>rd</sup>ICASEM 2027 uses the IEEE citation style for all submissions. Please ensure that your references are
                 formatted according to this standard. The templates provided include examples of how to format different
                 types of references including journal articles, conference papers, books, and web sources.
               </p>
-              <p className="text-[#07416b]/80 mb-6">
+              <p className="text-[#07416b]/80 mb-6 text-justify">
                 For detailed information on IEEE citation style, please refer to the IEEE Reference Guide or consult the
                 IEEE Editorial Style Manual available on the IEEE website.
               </p>
@@ -184,12 +184,12 @@ export default function PapersFormatPage() {
 
             <div>
               <h2 className="text-3xl font-bold text-[#07416b] mb-6">Language & Quality</h2>
-              <p className="text-[#07416b]/80 mb-4">
+              <p className="text-[#07416b]/80 mb-4 text-justify">
                 All submissions must be in English with clear, professional writing. We strongly recommend having your
                 paper reviewed by a native English speaker or professional editing service before submission to ensure
                 clarity and readability.
               </p>
-              <p className="text-[#07416b]/80 mb-6">
+              <p className="text-[#07416b]/80 mb-6 text-justify">
                 Pay particular attention to the clarity of your abstract, introduction, and conclusion, as these
                 sections are critical for reviewers and readers to understand the significance and contribution of your
                 work.

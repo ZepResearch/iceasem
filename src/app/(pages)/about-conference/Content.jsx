@@ -118,18 +118,18 @@ export default function AboutConferencePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-[#07416b] mb-6">About the Conference</h2>
-              <p className="text-[#07416b]/80 mb-4">
+              <p className="text-[#07416b]/80 mb-4 text-justify">
                 The  3<sup>rd</sup>  International Conference on Applied Science, Engineering & Management ( 3<sup>rd</sup> ICASEM) 2027, taking place in
                 Vietnam
                 , aims to foster innovation and collaboration across multiple
                 disciplines where applied science, engineering excellence, and management innovation converge.
               </p>
-              <p className="text-[#07416b]/80 mb-4">
+              <p className="text-[#07416b]/80 mb-4 text-justify">
                 From March 11 to 12, 2027,  3<sup>rd</sup> ICASEM will bring together leading researchers, industry professionals,
                 and academics from around the world to share cutting-edge research, practical solutions, and
                 technological breakthroughs.
               </p>
-              <p className="text-[#07416b]/80">
+              <p className="text-[#07416b]/80 text-justify">
                 The conference features keynote presentations, technical sessions, and interactive workshops designed to
                 advance knowledge and foster partnerships that drive innovation in applied sciences, engineering, and
                 management. With a focus on practical applications and forward-thinking research, 3<sup>rd</sup>ICASEM 2027 promises
@@ -242,7 +242,7 @@ export default function AboutConferencePage() {
                 <h3 className="text-xl font-bold text-[#07416b] mb-3 group-hover:text-[#00adef] transition-colors duration-300">
                   {reason.title}
                 </h3>
-                <p className="text-[#07416b]/80">{reason.description}</p>
+                <p className="text-[#07416b]/80 text-justify">{reason.description}</p>
               </div>
             ))}
           </div>
@@ -257,7 +257,7 @@ export default function AboutConferencePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             <div className="bg-white rounded-3xl p-6 shadow-sm border border-[#00adef]/20 hover:shadow-lg transition-all duration-300">
               <h3 className="text-xl font-bold text-[#07416b] mb-3">Academicians & Researchers</h3>
-              <p className="text-[#07416b]/80">
+              <p className="text-[#07416b]/80 text-justify">
                 Present your research, exchange knowledge, and collaborate with peers to advance applied science,
                 engineering, and management disciplines.
               </p>
@@ -265,7 +265,7 @@ export default function AboutConferencePage() {
 
             <div className="bg-white rounded-3xl p-6 shadow-sm border border-[#00adef]/20 hover:shadow-lg transition-all duration-300">
               <h3 className="text-xl font-bold text-[#07416b] mb-3">Industry Professionals</h3>
-              <p className="text-[#07416b]/80">
+              <p className="text-[#07416b]/80 text-justify">
                 Explore innovative solutions and cutting-edge technologies that can drive growth and efficiency in your
                 industry sector.
               </p>
@@ -273,7 +273,7 @@ export default function AboutConferencePage() {
 
             <div className="bg-white rounded-3xl p-6 shadow-sm border border-[#00adef]/20 hover:shadow-lg transition-all duration-300">
               <h3 className="text-xl font-bold text-[#07416b] mb-3">Engineers & Technologists</h3>
-              <p className="text-[#07416b]/80">
+              <p className="text-[#07416b]/80 text-justify">
                 Discover breakthrough engineering solutions and emerging technologies that are shaping the future of
                 various industries.
               </p>
@@ -281,7 +281,7 @@ export default function AboutConferencePage() {
 
             <div className="bg-white rounded-3xl p-6 shadow-sm border border-[#00adef]/20 hover:shadow-lg transition-all duration-300">
               <h3 className="text-xl font-bold text-[#07416b] mb-3">Management Professionals</h3>
-              <p className="text-[#07416b]/80">
+              <p className="text-[#07416b]/80 text-justify">
                 Learn advanced management strategies, organizational methodologies, and leadership approaches for modern
                 business success.
               </p>
@@ -289,7 +289,7 @@ export default function AboutConferencePage() {
 
             <div className="bg-white rounded-3xl p-6 shadow-sm border border-[#00adef]/20 hover:shadow-lg transition-all duration-300">
               <h3 className="text-xl font-bold text-[#07416b] mb-3">Students & Early Career Researchers</h3>
-              <p className="text-[#07416b]/80">
+              <p className="text-[#07416b]/80 text-justify">
                 Learn from experts, present your research, and build professional networks to advance your career in
                 applied sciences, engineering, or management.
               </p>
@@ -297,7 +297,7 @@ export default function AboutConferencePage() {
 
             <div className="bg-white rounded-3xl p-6 shadow-sm border border-[#00adef]/20 hover:shadow-lg transition-all duration-300">
               <h3 className="text-xl font-bold text-[#07416b] mb-3">Entrepreneurs & Innovators</h3>
-              <p className="text-[#07416b]/80">
+              <p className="text-[#07416b]/80 text-justify">
                 Connect with researchers and industry experts to explore new technologies, business opportunities, and
                 collaborative ventures.
               </p>

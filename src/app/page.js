@@ -6,7 +6,7 @@ import CtaSection from "@/components/CTA";
 import TimelineSection from "@/components/Dates-Timeline";
 import FaqSection from "@/components/FAQ";
 import Hero from "@/components/Hero";
-import Objective from "@/components/Objective";
+import Objective from "@/components/MissionVision";
 import SDGSection from "@/components/SDGS";
 import SpeakerSection from "@/components/Speakers";
 import VenueCtaSection from "@/components/Venue-cta";

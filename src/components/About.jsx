@@ -39,13 +39,13 @@ function About() {
               </h2>
 
               <div className="space-y-4 mb-8">
-                <p className="text-gray-600 text-base lg:text-lg leading-relaxed">
+                <p className="text-gray-600 text-base lg:text-lg leading-relaxed text-justify">
                   The  3<sup>rd</sup>  International Conference on Applied Science, Engineering & Management ( 3<sup>rd</sup>  ICASEM) brings together
                   leading researchers, industry professionals, and academics from around the world to share
                   cutting-edge innovations and foster meaningful collaborations.
                 </p>
 
-                <p className="text-gray-600 text-base lg:text-lg leading-relaxed">
+                <p className="text-gray-600 text-base lg:text-lg leading-relaxed text-justify">
                   Our mission is to create a platform where theoretical knowledge meets practical application, driving
                   forward the frontiers of science and engineering for a better tomorrow.
                 </p>
@@ -58,7 +58,7 @@ function About() {
                     <span className="text-white text-sm font-bold">✓</span>
                   </div>
                   <span className="text-[#07416b] font-semibold text-sm lg:text-base">
-                    Peer-reviewed Publications
+                      Global Networking
                   </span>
                 </div>
 
@@ -66,7 +66,7 @@ function About() {
                   <div className="w-8 h-8 bg-[#00adef] rounded-full flex items-center justify-center flex-shrink-0">
                     <span className="text-white text-sm font-bold">✓</span>
                   </div>
-                  <span className="text-[#07416b] font-semibold text-sm lg:text-base">Global Networking</span>
+                  <span className="text-[#07416b] font-semibold text-sm lg:text-base">Peer-reviewed Publications</span>
                 </div>
 
                 <div className="flex items-center gap-3">
@@ -85,7 +85,7 @@ function About() {
               </div>
 
               {/* Stats */}
-              <div className="flex flex-wrap gap-6 lg:gap-8 mb-8">
+              <div className="flex justify-evenly items-center flex-wrap gap-6 lg:gap-8 mb-8">
                 <div className="text-center">
                   <div className="text-2xl lg:text-3xl font-bold text-[#07416b]">2+</div>
                   <div className="text-gray-600 text-sm">Years Running</div>
@@ -101,7 +101,7 @@ function About() {
               </div>
 
               {/* CTA */}
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col justify-center sm:flex-row gap-12">
                 <Link href="/about-conference">
                   <Button className="bg-[#00adef] text-white px-6  rounded-full hover:bg-[#0099d4] text-base py-6">
                     Learn More

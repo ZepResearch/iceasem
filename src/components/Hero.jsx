@@ -21,6 +21,9 @@ export default function ConferenceLanding() {
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-6xl font-bold text-[#07416b] leading-tight mb-3 sm:mb-4 xl:mb-6">
                       3<sup>rd</sup> International Conference on Applied Science, Engineering & Management
                     </h1>
+                    <p className="text-lg sm:text-xl lg:text-2xl text-[#333] leading-relaxed">
+                      Advancing Innovation Through Multidisciplinary Excellence in Applied Science, Engineering & Management
+                    </p>
                     <div className="mt-12 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-6 xl:gap-12 mb-4 sm:mb-6 xl:mb-8 text-[#07416b]">
                       <div className="flex items-center gap-2 drop-shadow-xl">
                         <Calendar className="w-4 h-4 sm:w-5 sm:h-5 xl:w-6 xl:h-6" />
@@ -108,8 +111,8 @@ export default function ConferenceLanding() {
                         src="/assets/hero.png"
                         alt="Conference Illustration"
                         width={500}
-                        height={300}
-                        className=" drop-shadow-xl"
+                        height={500}
+                        className=" object-fit h-fit sm:h-[450px] drop-shadow-xl"
                       />
                     </div>
                   </div>

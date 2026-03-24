@@ -64,7 +64,7 @@ export default function AwardsPage() {
                   About Zep Research's Grants and Scholarships
                 </h2>
 
-                <div className="space-y-6 text-[#07416b]/80 text-left max-w-3xl mx-auto">
+                <div className="space-y-6 text-[#07416b]/80 text-left max-w-3xl mx-auto text-justify">
                   <p>
                     Zep Research is dedicated to helping young scholars achieve their research and academic goals, while
                     encouraging them to apply the principles of interdisciplinary study to their work.
@@ -165,7 +165,7 @@ export default function AwardsPage() {
                     BEST PAPER PRESENTATION AWARD
                   </h3>
 
-                  <div className="space-y-4 text-[#07416b]/80 flex-grow">
+                  <div className="space-y-4 text-[#07416b]/80 flex-grow text-justify">
                     <p>
                       Recognizing exceptional oral presentation skills, clarity of communication, and audience
                       engagement. This award celebrates researchers who can effectively convey complex ideas in
@@ -210,7 +210,7 @@ export default function AwardsPage() {
                     BEST PAPER AWARD
                   </h3>
 
-                  <div className="space-y-4 text-[#07416b]/80 flex-grow">
+                  <div className="space-y-4 text-[#07416b]/80 flex-grow text-justify">
                     <p>
                       Honoring outstanding research papers that demonstrate methodological rigor, innovative approaches,
                       and significant contributions to sustainability and future technologies. This award recognizes the
@@ -255,7 +255,7 @@ export default function AwardsPage() {
                     Best International student presentation Award
                   </h3>
 
-                  <div className="space-y-4 text-[#07416b]/80 flex-grow">
+                  <div className="space-y-4 text-[#07416b]/80 flex-grow text-justify">
                     <p>
                       Celebrating outstanding research contributions from student participants. This award recognizes
                       emerging scholars who demonstrate exceptional promise, innovative thinking, and high-quality

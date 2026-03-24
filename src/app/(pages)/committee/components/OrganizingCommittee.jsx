@@ -140,7 +140,7 @@ export default function CommitteePage() {
                   Advancing Innovation Through Multidisciplinary Excellence
                 </h2>
 
-                <div className="space-y-6 text-[#07416b]/80">
+                <div className="space-y-6 text-[#07416b]/80 text-justify">
                   <p>
                     Our organizing committee brings together distinguished experts from Applied Science, Engineering,
                     and Management to create a truly interdisciplinary forum for innovation and collaboration. With

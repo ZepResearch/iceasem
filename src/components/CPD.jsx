@@ -31,7 +31,7 @@ function CPD() {
             <h2 className="text-2xl lg:text-3xl font-bold  mb-4">
               Continuing Professional Development
             </h2>
-            <p className=" leading-relaxed text-sm lg:text-base">
+            <p className=" leading-relaxed text-sm lg:text-base text-justify">
               Commit to lifelong learning and professional growth through CPD. Enhance your skills, knowledge, and competencies to stay current in your field and maintain professional standards.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
