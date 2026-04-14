@@ -43,7 +43,7 @@ function ExtraContentBelowTabs() {
                 </div>
 
                 <p className="text-[#07416b]/80 mb-6">
-                  We understand that plans can change. Our cancellation policy for  2<sup>nd</sup>ICASEM 2025 is designed to be fair
+                  We understand that plans can change. Our cancellation policy for  3<sup>rd</sup>ICASEM 2027 is designed to be fair
                   and flexible:
                 </p>
 
@@ -241,9 +241,9 @@ function ExtraContentBelowTabs() {
               <div className="absolute -inset-px rounded-3xl bg-gradient-to-r from-[#bfdbfe] to-[#93c5fd] opacity-20"></div>
 
               <div className="relative">
-                <h3 className="text-2xl font-bold text-[#07416b] mb-3">Ready to Join  2<sup>nd</sup>ICASEM 2025?</h3>
+                <h3 className="text-2xl font-bold text-[#07416b] mb-3">Ready to Join  3<sup>rd</sup>ICASEM 2027?</h3>
                 <p className="text-[#07416b]/80 mb-6">
-                  Register now to secure your spot at the  2<sup>nd</sup>International Conference Applied Science, Engineering &
+                  Register now to secure your spot at the  3<sup>rd</sup>International Conference Applied Science, Engineering &
                   Management in Kuala Lumper, Malaysia.
                 </p>
 

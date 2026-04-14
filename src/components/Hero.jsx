@@ -108,11 +108,11 @@ export default function ConferenceLanding() {
                   <div className="flex-1 mt-4 lg:mt-0">
                     <div className="w-full bg-white rounded-2xl overflow-hidden flex items-center justify-center">
                       <Image
-                        src="/assets/hero.png"
+                        src="/hero2.png"
                         alt="Conference Illustration"
-                        width={500}
-                        height={500}
-                        className=" object-fit h-fit sm:h-[450px] drop-shadow-xl"
+                        width={700}
+                        height={700}
+                        className=" object-contain h-fit sm:h-[950px] drop-shadow-xl sm:absolute -bottom-24 right-0"
                       />
                     </div>
                   </div>
