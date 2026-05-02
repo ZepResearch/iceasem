@@ -110,9 +110,9 @@ export default function ConferenceLanding() {
                       <Image
                         src="/hero2.png"
                         alt="Conference Illustration"
-                        width={700}
-                        height={700}
-                        className=" object-contain h-fit sm:h-[950px] drop-shadow-xl sm:absolute -bottom-24 right-0"
+                        width={650}
+                        height={650}
+                        className=" object-contain h-fit  lg:h-[950px] drop-shadow-xl sm:absolute -bottom-32 right-0"
                       />
                     </div>
                   </div>
