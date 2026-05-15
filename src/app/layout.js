@@ -95,7 +95,7 @@ export default function RootLayout({ children }) {
         <Footer/>
         <ToastProvider/>
         <TawkToChat/>
-        <FloatingWhatsAppButton phoneNumber="919237388328" message="" />
+        <FloatingWhatsAppButton phoneNumber="918260080050" message="" />
       </body>
     </html>
   );

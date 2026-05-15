@@ -226,7 +226,7 @@ export default function Footer() {
                       href="tel:+917848854815"
                       className="text-white font-semibold hover:text-[#00adef] transition-colors"
                     >
-                      +91 9237388328
+                      +91 82600 80050
                     </a>
                     <p className="text-white/70 text-sm">Conference support hotline</p>
                   </div>
