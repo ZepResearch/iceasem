@@ -140,8 +140,8 @@ export default function FaqSection() {
       icon: <Phone className="w-5 h-5" />,
       title: "Phone Support",
       description: "Speak directly with our team",
-      contact: "+91 9237388328",
-      href: "tel:+919237388328",
+      contact: "+91 82600 80050",
+      href: "tel:+918260080050",
       action: "Call Now",
       type: "link"
     },
