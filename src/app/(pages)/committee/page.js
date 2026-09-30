@@ -2,24 +2,25 @@ import React from 'react'
 import IACommitte from './components/IACommitte'
 import ScientificCommittee from './components/ScientificCommittee'
 import OrganizingCommittee from './components/OrganizingCommittee'
+import { CONFERENCE } from "@/constants/conference"
 export const metadata = {
-  title: 'ICASEM 2025 Committee ',
-  description: 'Join ICASEM 2025 in Vietnam, a top conference for applied science, engineering & management. Connect with global experts & explore groundbreaking research.',
+  title: `${CONFERENCE.shortForm} ${CONFERENCE.year} Committee`,
+  description: `Join ${CONFERENCE.name} in ${CONFERENCE.venue.location} on ${CONFERENCE.date}. Connect with global experts and explore groundbreaking research.`,
   keywords: [
-    'ICASEM 2025',
+    `${CONFERENCE.shortForm} ${CONFERENCE.year}`,
     'about ICASEM',
     'applied science conference',
     'engineering conference',
     'management conference',
-    'Vietnam conference 2025',
+    `${CONFERENCE.venue.location} conference ${CONFERENCE.year}`,
     'academic conference',
     'research conference',
     'scientific networking',
     'innovation conference'
   ],
   openGraph: {
-    title: 'ICASEM 2025 Committee ',
-    description: 'Join leading experts at ICASEM 2025 in Vietnam. Explore cutting-edge research in applied science, engineering, and management while networking with global innovators.',
+    title: `${CONFERENCE.shortForm} ${CONFERENCE.year} Committee`,
+    description: `Join leading experts at ${CONFERENCE.name} in ${CONFERENCE.venue.location}. Explore cutting-edge research while networking with global innovators.`,
     type: 'website',
     
   },
@@ -28,8 +29,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'About ICASEM 2025',
-    description: 'Join leading experts at ICASEM 2025 in Vietnam. Explore cutting-edge research in applied science, engineering, and management.',
+    title: `${CONFERENCE.shortForm} ${CONFERENCE.year} Committee`,
+    description: `Join leading experts at ${CONFERENCE.name} in ${CONFERENCE.venue.location}. Explore cutting-edge research in applied science, engineering, and management.`,
    
   }
 }

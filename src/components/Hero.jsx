@@ -4,6 +4,7 @@ import { Card } from "@/components/ui/card"
 import { Calendar, MapPin, Users, ArrowBigRightDash, ArrowBigRightDashIcon } from "lucide-react"
 import Link from "next/link"
 import { ReserveButton } from "./reserve-button"
+import { CONFERENCE } from "@/constants/conference"
 
 export default function ConferenceLanding() {
   return (
@@ -19,7 +20,7 @@ export default function ConferenceLanding() {
                   {/* Left side content */}
                   <div className="flex-1 lg:pr-6 xl:pr-8 text-center lg:text-left">
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-6xl font-bold text-[#07416b] leading-tight mb-3 sm:mb-4 xl:mb-6">
-                      3<sup>rd</sup> International Conference on Applied Science, Engineering & Management
+                      {CONFERENCE.name}
                     </h1>
                     <p className="text-lg sm:text-xl lg:text-2xl text-[#333] leading-relaxed">
                       Advancing Innovation Through Multidisciplinary Excellence in Applied Science, Engineering & Management
@@ -27,11 +28,11 @@ export default function ConferenceLanding() {
                     <div className="mt-12 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-6 xl:gap-12 mb-4 sm:mb-6 xl:mb-8 text-[#07416b]">
                       <div className="flex items-center gap-2 drop-shadow-xl">
                         <Calendar className="w-4 h-4 sm:w-5 sm:h-5 xl:w-6 xl:h-6" />
-                        <span className="font-bold text-sm sm:text-base xl:text-2xl">March 11<sup>th</sup>- 12<sup>th</sup>, 2027</span>
+                        <span className="font-bold text-sm sm:text-base xl:text-2xl">{CONFERENCE.date}</span>
                       </div>
                       <div className="flex items-center gap-2">
                         <MapPin className="w-4 h-4 sm:w-5 sm:h-5 xl:w-6 xl:h-6 drop-shadow-xl" />
-                        <span className="font-bold text-sm sm:text-base xl:text-2xl">Vietnam</span>
+                        <span className="font-bold text-sm sm:text-base xl:text-2xl">{CONFERENCE.venue.location}</span>
                       </div>
                     </div>
                     <div className="mt-4 max-w-xs py-3">
@@ -108,11 +109,11 @@ export default function ConferenceLanding() {
                   <div className="flex-1 mt-4 lg:mt-0">
                     <div className="w-full bg-white rounded-2xl overflow-hidden flex items-center justify-center">
                       <Image
-                        src="/hero2.png"
+                        src="/assets/hero1.png"
                         alt="Conference Illustration"
                         width={650}
                         height={650}
-                        className=" object-contain h-fit  lg:h-[950px] drop-shadow-xl sm:absolute -bottom-32 right-0"
+                        className=" object-contain h-fit  lg:h-[800px] drop-shadow-xl sm:absolute -top-12 right-0"
                       />
                     </div>
                   </div>

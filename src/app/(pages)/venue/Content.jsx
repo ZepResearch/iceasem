@@ -23,6 +23,7 @@ import {
   Mountain,
   Store,
 } from "lucide-react"
+import { CONFERENCE } from "@/constants/conference"
 import { useState } from "react"
 
 export default function VenuePage() {
@@ -165,7 +166,7 @@ export default function VenuePage() {
                 <span className="absolute inset-0 bg-[#00adef] rounded-full transform -rotate-1 scale-110 z-0 opacity-20"></span>
               </span>
             </h1>
-            <p className="text-xl text-[#07416b]/80 mb-8">Join us at Vietnam
+            <p className="text-xl text-[#07416b]/80 mb-8">Join us at {CONFERENCE.venue.location}
             </p>{/*Join us at  Marina Bay Convention Centre, Singapore*/}
 
             {/* Quick Stats */}
@@ -221,14 +222,13 @@ export default function VenuePage() {
                         <Building className="h-6 w-6 text-[#07416b]" />
                       </div>
                     </div>
-                    <h2 className="text-2xl md:text-3xl font-bold text-[#07416b]">Vietnam
+                    <h2 className="text-2xl md:text-3xl font-bold text-[#07416b]">{CONFERENCE.venue.location}
                     </h2>
                   </div>
 
                   <div className="space-y-6 text-[#07416b]/80">
                     <p>
-                      The venue for 3<sup>rd</sup>ICASEM 2027 will be declared soon and will be located in Vietnam
-                      .
+                      The venue for {CONFERENCE.shortForm} {CONFERENCE.year} will be {CONFERENCE.venue.name} in {CONFERENCE.venue.location}.
                     </p>
 
                     <div className="space-y-4">
@@ -258,16 +258,8 @@ export default function VenuePage() {
                         <MapPin className="h-5 w-5 text-[#00adef]" />
                         <h3 className="text-lg font-medium text-[#07416b]">Address</h3>
                       </div>
-                      <p className="text-[#07416b]/80 mb-4">Vietnam
-                      </p>
-                      <div className="flex items-center gap-2 text-sm text-[#07416b]/60">
-                        {/* <Train className="h-4 w
-                      </div>
-                      <p className="text-[#07416b]/80 mb-4">[Declared Soon]</p>
-                      <div className="flex items-center gap-2 text-sm text-[#07416b]/60">
-                        {/* <Train className="h-4 w-4 text-[#00adef]" /> */}
-                        {/* <span>Bayfront MRT Station (CE1/DT16) - Direct Connection</span> */}
-                      </div>
+                      <p className="text-[#07416b]/80 mb-4">{CONFERENCE.venue.location}</p>
+                      <p className="text-[#07416b]/80 mb-4">{CONFERENCE.venue.address}</p>
                     </div>
                   </div>
 
@@ -291,7 +283,7 @@ export default function VenuePage() {
                   <div className="relative h-[400px] w-full rounded-2xl overflow-hidden border-4 border-[#00adef]/20">
                     <Image
                       src="https://images.unsplash.com/photo-1643029891412-92f9a81a8c16?q=80&w=2686&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                      alt="Marina Bay Convention Centre Singapore"
+                      alt={`${CONFERENCE.venue.name}, ${CONFERENCE.venue.location}`}
                       fill
                       className="object-cover"
                     />
@@ -307,7 +299,7 @@ export default function VenuePage() {
                     {/* Venue name overlay */}
                     <div className="absolute bottom-0 left-0 right-0 p-6">
                       <div className="bg-white/90 backdrop-blur-sm rounded-full py-3 px-6 inline-flex items-center border border-[#00adef]/30">
-                        <span className="text-[#07416b] font-medium">Vietnam</span>
+                        <span className="text-[#07416b] font-medium">{CONFERENCE.venue.location}</span>
                       </div>
                     </div>
                   </div>
@@ -417,7 +409,7 @@ export default function VenuePage() {
             <div className="relative rounded-2xl overflow-hidden h-[500px] w-full">
 
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.424167419747!2d106.70175551139417!3d10.775658359096123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f40a1b779bb%3A0x8fc470731f287311!2sHo%20Chi%20Minh%20City%2C%20Vietnam!5e0!3m2!1sen!2s!4v1715626312840!5m2!1sen!2s"
+                src={`https://maps.google.com/maps?q=${encodeURIComponent(CONFERENCE.venue.location)}&output=embed`}
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -436,10 +428,10 @@ export default function VenuePage() {
       <section className="py-16 bg-[#f0f4f8]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#07416b] mb-6">Explore Vietnam </h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#07416b] mb-6">Explore {CONFERENCE.venue.location}</h2>
             <div className="h-1 w-20 bg-gradient-to-r from-[#00adef] to-[#07416b] mx-auto mb-8 rounded-full"></div>
             <p className="text-lg text-[#07416b]/80 max-w-2xl mx-auto">
-              Discover iconic attractions within walking distance of  3<sup>rd</sup>ICASEM 2027
+              Discover iconic attractions near {CONFERENCE.shortForm} {CONFERENCE.year}
             </p>
           </div>
 
@@ -512,9 +504,9 @@ export default function VenuePage() {
                 <div className="w-16 h-16 bg-gradient-to-br from-[#00adef] to-[#07416b] rounded-full flex items-center justify-center mx-auto mb-6">
                   <Building className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-[#07416b] mb-3">Ready to Join  3<sup>rd</sup>ICASEM 2027?</h3>
+                <h3 className="text-2xl font-bold text-[#07416b] mb-3">Ready to Join {CONFERENCE.shortForm} {CONFERENCE.year}?</h3>
                 <p className="text-[#07416b]/80 mb-6">
-                  Experience Vietnam  premier conference venue and be part of the global Applied Science, Engineering
+                  Experience the premier conference venue in {CONFERENCE.venue.location} and be part of the global Applied Science, Engineering
                   & Management community.
                 </p>
 

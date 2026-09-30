@@ -3,24 +3,25 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { Separator } from "@/components/ui/separator"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import { CONFERENCE } from "@/constants/conference"
 export const metadata = {
-  title: 'ICASEM 2025 Cancellation Policy ',
-  description: 'Join ICASEM 2025 in Vietnam, a top conference for applied science, engineering & management. Connect with global experts & explore groundbreaking research.',
+  title: `${CONFERENCE.shortForm} ${CONFERENCE.year} Cancellation Policy`,
+  description: `Join ${CONFERENCE.name} in ${CONFERENCE.venue.location} on ${CONFERENCE.date}. Connect with global experts and explore groundbreaking research.`,
   keywords: [
-    'ICASEM 2025',
+    `${CONFERENCE.shortForm} ${CONFERENCE.year}`,
     'about ICASEM',
     'applied science conference',
     'engineering conference',
     'management conference',
-    'Vietnam conference 2025',
+    `${CONFERENCE.venue.location} conference ${CONFERENCE.year}`,
     'academic conference',
     'research conference',
     'scientific networking',
     'innovation conference'
   ],
   openGraph: {
-    title: 'About ICASEM 2025 ',
-    description: 'Join leading experts at ICASEM 2025 in Vietnam. Explore cutting-edge research in applied science, engineering, and management while networking with global innovators.',
+    title: `${CONFERENCE.shortForm} ${CONFERENCE.year} Cancellation Policy`,
+    description: `Join leading experts at ${CONFERENCE.name} in ${CONFERENCE.venue.location}. Explore cutting-edge research and connect with global innovators.`,
     type: 'website',
     
   },
@@ -29,8 +30,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'About ICASEM 2025',
-    description: 'Join leading experts at ICASEM 2025 in Vietnam. Explore cutting-edge research in applied science, engineering, and management.',
+    title: `${CONFERENCE.shortForm} ${CONFERENCE.year} Cancellation Policy`,
+    description: `Join leading experts at ${CONFERENCE.name} in ${CONFERENCE.venue.location}. Explore cutting-edge research in applied science, engineering, and management.`,
    
   }
 }
@@ -45,7 +46,7 @@ export default function CancellationPolicy() {
           <section className="mb-10">
             <h1 className="text-2xl font-semibold text-blue-600 mb-4">Overview</h1>
             <p className="text-gray-700 leading-relaxed">
-              This policy outlines the terms for cancellation of registration and paper submission for the International Conference on Applied Science, Engineering & Management (ICASEM).
+              This policy outlines the terms for cancellation of registration and paper submission for {CONFERENCE.name} ({CONFERENCE.shortForm}).
             </p>
           </section>
 

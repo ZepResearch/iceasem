@@ -6,6 +6,7 @@ import { SponsorshipPackage } from "./components/sponsorship-package"
 import { CCavenuePaymentForm } from "./components/payment-form"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import { CONFERENCE } from "@/constants/conference"
 
 export default function ExhibitAndSponsorPage() {
   const [selectedPackage, setSelectedPackage] = useState(null)
@@ -185,7 +186,7 @@ export default function ExhibitAndSponsorPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center rounded-full border border-[#bfdbfe] bg-[#f0f4f8] px-4 py-1.5 text-sm font-medium text-[#00adef] mb-6">
-              <span>ICASEM 2027</span>
+              <span>{CONFERENCE.shortForm} {CONFERENCE.year}</span>
               <ChevronRight className="ml-1 h-4 w-4" />
             </div>
 
@@ -198,7 +199,7 @@ export default function ExhibitAndSponsorPage() {
             </h1>
 
             <p className="text-xl text-[#07416b]/80 mb-8">
-              Partner with  3<sup>rd</sup>ICASEM to showcase your commitment to applied science, engineering excellence, and management
+              Partner with {CONFERENCE.shortForm} to showcase your commitment to applied science, engineering excellence, and management
               innovation
             </p>
           </div>
@@ -221,13 +222,13 @@ export default function ExhibitAndSponsorPage() {
                   </div>
                 </div>
 
-                <h2 className="text-2xl md:text-3xl font-bold mb-6 text-[#07416b]">Why Sponsor    3<sup>rd</sup>ICASEM 2027?</h2>
+                <h2 className="text-2xl md:text-3xl font-bold mb-6 text-[#07416b]">Why Sponsor {CONFERENCE.shortForm} {CONFERENCE.year}?</h2>
 
                 <div className="space-y-6 text-[#07416b]/80">
                   <p>
-                    3<sup>rd</sup>ICASEM 2027 offers a unique opportunity to connect with leading researchers, academics, and industry
+                    {CONFERENCE.shortForm} {CONFERENCE.year} offers a unique opportunity to connect with leading researchers, academics, and industry
                     professionals in applied science, engineering, and management. By sponsoring our conference, you'll
-                    gain visibility among a diverse audience of innovators and decision-makers from Kuala Lumpur, Malaysia and around
+                    gain visibility among a diverse audience of innovators and decision-makers in {CONFERENCE.venue.location} and around
                     the world.
                   </p>
 
@@ -407,7 +408,7 @@ export default function ExhibitAndSponsorPage() {
                 <h3 className="text-2xl font-bold text-[#07416b] mb-3">Looking for a Custom Package?</h3>
                 <p className="text-[#07416b]/80 mb-6">
                   We understand that every organization has unique goals and requirements. Contact us to discuss a
-                  customized sponsorship package tailored to your specific needs and objectives for  3<sup>rd</sup>ICASEM 2027.
+                  customized sponsorship package tailored to your specific needs and objectives for {CONFERENCE.shortForm} {CONFERENCE.year}.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">

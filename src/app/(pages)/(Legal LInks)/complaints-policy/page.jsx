@@ -1,19 +1,20 @@
 import React from 'react'
 import ComplaintsPolicy from './Content'
+import { CONFERENCE } from "@/constants/conference"
 export const metadata = {
-  title: 'Complaints Policy - International Conference on Applied Science, Engineering & Management',
-  description: 'Join ICASEM 2024 in Singapore. A 2-day multidisciplinary conference bringing together 1000+ academics and professionals from 50+ countries for cutting-edge research in applied science, engineering, and management.',
-  keywords: ['ICASEM', 'applied science conference', 'engineering conference', 'management conference', 'academic conference Singapore', 'research conference 2024'],
+  title: `Complaints Policy - ${CONFERENCE.name}`,
+  description: `Join ${CONFERENCE.shortForm} ${CONFERENCE.year} in ${CONFERENCE.venue.location} on ${CONFERENCE.date} for a multidisciplinary research conference.`,
+  keywords: [CONFERENCE.shortForm, 'applied science conference', 'engineering conference', 'management conference', `${CONFERENCE.venue.location} conference`, `research conference ${CONFERENCE.year}`],
   alternates: {
     canonical: 'https://www.icasem.org/complaints-policy',
   },
   openGraph: {
-    title: 'ICASEM 2024 - International Conference on Applied Science, Engineering & Management',
-    description: 'Join ICASEM 2024 in Singapore. A premier academic conference featuring 30+ workshops and global researchers.',
+    title: `${CONFERENCE.shortForm} ${CONFERENCE.year} - ${CONFERENCE.name}`,
+    description: `Join ${CONFERENCE.shortForm} in ${CONFERENCE.venue.location} for a multidisciplinary research conference.`,
    
     type: 'website',
     locale: 'en_US',
-    site_name: 'ICASEM 2024',
+    site_name: `${CONFERENCE.shortForm} ${CONFERENCE.year}`,
   },
 }
 

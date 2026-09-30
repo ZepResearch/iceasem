@@ -1,32 +1,33 @@
 import React from "react";
 import PaperSubmissionPage from "./components/Form";
+import { CONFERENCE } from "@/constants/conference"
 
 
 export const metadata = {
-  title: 'ICASEM 2025 Paper Submission ',
-  description: 'Learn about ICASEM 2025, a premier conference uniting global experts in applied science, engineering, and management. Join us in Vietnam for groundbreaking research and networking.',
+  title: `${CONFERENCE.shortForm} ${CONFERENCE.year} Paper Submission`,
+  description: `Learn about ${CONFERENCE.name}, a conference uniting global experts in applied science, engineering, and management. Join us in ${CONFERENCE.venue.location} on ${CONFERENCE.date} for research and networking.`,
   keywords: [
-    'ICASEM 2025',
+    `${CONFERENCE.shortForm} ${CONFERENCE.year}`,
     'about ICASEM',
     'applied science conference',
     'engineering conference',
     'management conference',
-    'Kuala Lumpur, Malaysia conference 2025',
+    `${CONFERENCE.venue.location} conference ${CONFERENCE.year}`,
     'academic conference',
     'research conference',
     'scientific networking',
     'innovation conference'
   ],
   openGraph: {
-    title: 'ICASEM 2025 Paper Submission ',
-    description: 'Join ICASEM 2025 in Vietnam, a top conference for applied science, engineering & management. Connect with global experts & explore groundbreaking research.',
+    title: `${CONFERENCE.shortForm} ${CONFERENCE.year} Paper Submission`,
+    description: `Join ${CONFERENCE.name} in ${CONFERENCE.venue.location} on ${CONFERENCE.date}. Connect with global experts and explore groundbreaking research.`,
     type: 'website',
     
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'About ICASEM 2025',
-    description: 'Join leading experts at ICASEM 2025 in Kuala Lumpur, Malaysia. Explore cutting-edge research in applied science, engineering, and management.',
+    title: `${CONFERENCE.shortForm} ${CONFERENCE.year} Paper Submission`,
+    description: `Join leading experts at ${CONFERENCE.name} in ${CONFERENCE.venue.location}. Explore cutting-edge research in applied science, engineering, and management.`,
    
   },
   alternates: {

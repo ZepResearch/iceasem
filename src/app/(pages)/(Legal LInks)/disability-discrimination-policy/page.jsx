@@ -1,6 +1,7 @@
 import React from 'react';
 import { Shield, Heart, Users, FileText, Phone, Eye } from 'lucide-react';
 import Link from 'next/link';
+import { CONFERENCE } from "@/constants/conference"
 
 const DisabilityPolicy = () => {
   return (
@@ -21,7 +22,7 @@ const DisabilityPolicy = () => {
             {/* Introduction */}
             <div className="prose max-w-none">
               <p className="text-gray-700 leading-relaxed">
-                The  International Conference on Applied Science, Engineering & Management  is committed to fostering an inclusive, accessible, and discrimination-free environment for all participants, regardless of physical, sensory, intellectual, or mental health conditions.
+                {CONFERENCE.name} is committed to fostering an inclusive, accessible, and discrimination-free environment for all participants, regardless of physical, sensory, intellectual, or mental health conditions.
               </p>
             </div>
 

@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { ChevronDown, ChevronUp, HelpCircle, MessageCircle, Mail, Phone, ArrowRight } from "lucide-react"
 import { useState } from "react"
 import Link from "next/link"
+import { CONFERENCE } from "@/constants/conference"
 
 export default function FaqSection() {
   const [openItems, setOpenItems] = useState([0]) // First item open by default
@@ -32,9 +33,9 @@ export default function FaqSection() {
       title: "Registration & Participation",
       faqs: [
         {
-          question: "How do I register for 3rd ICASEM 2027?",
+          question: `How do I register for ${CONFERENCE.shortForm} ${CONFERENCE.year}?`,
           answer:
-            `You can register online through our official website. Early bird registration is available until its Date. Choose between in-person attendance in Vietnam or virtual participation through our hybrid platform.`,
+            `You can register online through our official website. Early bird registration is available until its Date. Choose between in-person attendance in ${CONFERENCE.venue.location} or virtual participation through our hybrid platform.`,
         },
         {
           question: "What are the registration fees?",
@@ -44,7 +45,7 @@ export default function FaqSection() {
         {
           question: "Can I attend virtually?",
           answer:
-            "Yes! 3rd ICASEM 2027 offers a hybrid format. Virtual attendees can participate in live sessions, access recorded presentations, join networking rooms, and interact with speakers through our advanced online platform.",
+            `Yes! ${CONFERENCE.shortForm} ${CONFERENCE.year} offers a hybrid format. Virtual attendees can participate in live sessions, access recorded presentations, join networking rooms, and interact with speakers through our advanced online platform.`,
         },
         {
           question: "What is included in the registration fee?",
@@ -59,7 +60,7 @@ export default function FaqSection() {
         {
           question: "What is the paper submission deadline?",
           answer:
-            "Please scroll up to view the Important Dates for 3rd ICASEM 2027 section where all submission deadlines are clearly mentioned. We recommend submitting early for better review scheduling and to avoid any last-minute technical issues.",
+            `Please scroll up to view the Important Dates for ${CONFERENCE.shortForm} ${CONFERENCE.year} section where all submission deadlines are clearly mentioned. We recommend submitting early for better review scheduling and to avoid any last-minute technical issues.`,
         },
         {
           question: "What are the presentation formats available?",
@@ -94,12 +95,12 @@ export default function FaqSection() {
         {
           question: "How do I get from the airport to the venue?",
           answer:
-            "Detailed transportation information including airport transfer options, public transport routes, taxi services, and shuttle arrangements will be provided via email after registration and once the venue is confirmed. Vietnam has excellent connectivity from Changi Airport with various convenient transportation modes to reach any location in the city.",
+            `Detailed transportation information including airport transfer options, public transport routes, taxi services, and shuttle arrangements will be provided via email after registration and once the venue is confirmed. ${CONFERENCE.venue.location} has excellent connectivity from the airport with various convenient transportation modes to reach any location in the city.`,
         },
         {
           question: "What COVID-19 safety measures are in place?",
           answer:
-            "We follow Vietnam's health guidelines. Current measures include optional mask-wearing, hand sanitizing stations, and flexible attendance options. Virtual participation remains available for those unable to travel.",
+            `We follow local health guidelines in ${CONFERENCE.venue.location}. Current measures include optional mask-wearing, hand sanitizing stations, and flexible attendance options. Virtual participation remains available for those unable to travel.`,
         },
       ],
     },
@@ -168,7 +169,7 @@ export default function FaqSection() {
             Everything You Need to Know
           </h2>
           <p className="text-gray-600 text-lg lg:text-xl max-w-3xl mx-auto leading-relaxed">
-            Find answers to common questions about  3<sup>rd</sup>  ICASEM 2027. Can't find what you're looking for? Contact our support
+            Find answers to common questions about {CONFERENCE.shortForm} {CONFERENCE.year}. Can't find what you're looking for? Contact our support
             team.
           </p>
         </div>
@@ -227,17 +228,17 @@ export default function FaqSection() {
         {/* Quick Stats */}
         <Card className="p-8 rounded-2xl bg-white border-t-4 border-[#00adef] mb-16">
           <div className="text-center mb-8">
-            <h3 className="text-2xl lg:text-3xl font-bold text-[#07416b] mb-4"> 3<sup>rd</sup> ICASEM 2027 at a Glance</h3>
+            <h3 className="text-2xl lg:text-3xl font-bold text-[#07416b] mb-4">{CONFERENCE.shortForm} {CONFERENCE.year} at a Glance</h3>
             <p className="text-gray-600 text-base lg:text-lg">Key information about the conference</p>
           </div>
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-[#00adef] rounded-full flex items-center justify-center mx-auto mb-3">
-                <span className="text-white text-xl font-bold">2</span>
+                <span className="text-white text-xl font-bold">{CONFERENCE.scheduleDates.days.length}</span>
               </div>
               <div className="text-2xl font-bold text-[#07416b]">Days</div>
-              <div className="text-gray-600 text-sm">March 11 <sup>th</sup> -12 <sup>th</sup> , 2027</div>
+              <div className="text-gray-600 text-sm">{CONFERENCE.date}</div>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-[#07416b] rounded-full flex items-center justify-center mx-auto mb-3">

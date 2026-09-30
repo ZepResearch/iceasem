@@ -4,14 +4,11 @@ import { Calendar } from "@/components/ui/calendar"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { cn } from "@/lib/utils"
-import { addDays } from "date-fns"
+import { CONFERENCE } from "@/constants/conference"
 
 
-
-const scheduleData = [
-  {
-    date: "March - 11th | Registration",
-    items: [
+const scheduleItems = [
+  [
       { time: "8:00AM - 9:15AM", title: "Registration" },
       { time: "9:15AM - 9:30AM", title: "Inaugural Function" },
       { time: "9:30AM - 10:00AM", title: "Keynote Speech (Session 1)" },
@@ -21,25 +18,8 @@ const scheduleData = [
       { time: "01:00PM - 02:00PM", title: "Lunch Break" },
       { time: "02:00PM - 02:30PM", title: "Keynote Speech" },
       { time: "2:30PM - 5:00PM", title: "2nd Session" },
-    ]
-  },
-  // {
-  //   date: "March - 22 | Day 2",
-  //   items: [
-  //     { time: "9:00AM - 9:15AM", title: "Registration" },
-  //     { time: "9:15AM - 9:30AM", title: "Day 2 Opening Remarks" },
-  //     { time: "9:30AM - 10:00AM", title: "Keynote Speech (Session 3)" },
-  //     { time: "10:00AM - 10:15AM", title: "Coffee Break" },
-  //     { time: "10:15AM - 10:30AM", title: "Introduction to the Session Chairs" },
-  //     { time: "10:30AM - 01:00PM", title: "3rd Session" },
-  //     { time: "01:00PM - 02:00PM", title: "Lunch Break" },
-  //     { time: "02:00PM - 02:30PM", title: "Keynote Speech (Session 4)" },
-  //     { time: "2:30PM - 5:00PM", title: "4th Session" },
-  //   ]
-  // },
-  {
-    date: "March - 12th | Closing Day",
-    items: [
+  ],
+  [
       { time: "9:00AM - 9:30AM", title: "Registration" },
       { time: "9:30AM - 10:00AM", title: "Closing Ceremony Opening Remarks" },
       { time: "10:00AM - 11:00AM", title: "Final Keynote Speech" },
@@ -49,17 +29,33 @@ const scheduleData = [
       { time: "2:00PM - 3:30PM", title: "Workshops and Breakout Sessions" },
       { time: "3:30PM - 4:00PM", title: "Closing Remarks and Next Steps" },
       { time: "4:00PM - 5:00PM", title: "Farewell Reception" },
-    ]
-  }
+  ],
 ]
 
-export default function ConferenceSchedule() {
-  const startDate = new Date(2027, 2, 11) // March 21, 2024
-  const [selectedDates, setSelectedDates] = useState([
-    startDate,
-    addDays(startDate, 1),
+const formatScheduleDate = (day) => new Date(Date.UTC(
+  CONFERENCE.scheduleDates.year,
+  CONFERENCE.scheduleDates.month,
+  day,
+)).toLocaleDateString("en-US", { month: "long", day: "numeric", timeZone: "UTC" })
 
-  ])
+const scheduleData = scheduleItems.map((items, index) => ({
+  date: `${formatScheduleDate(CONFERENCE.scheduleDates.days[index])} | ${index === 0 ? "Registration" : "Closing Day"}`,
+  items,
+}))
+
+export default function ConferenceSchedule() {
+  const startDate = new Date(
+    CONFERENCE.scheduleDates.year,
+    CONFERENCE.scheduleDates.month,
+    CONFERENCE.scheduleDates.days[0],
+  )
+  const [selectedDates, setSelectedDates] = useState(
+    CONFERENCE.scheduleDates.days.map((day) => new Date(
+      CONFERENCE.scheduleDates.year,
+      CONFERENCE.scheduleDates.month,
+      day,
+    )),
+  )
 
   return (
     <div className="container mx-auto py-10">
@@ -69,14 +65,14 @@ export default function ConferenceSchedule() {
             Shaping Tomorrow&apos;s Sustainable Landscape
           </h1>
           <p className="text-muted-foreground">
-            Join us March 11<sup>th</sup> - 12<sup>th</sup> for two days of cutting-edge insights and networking. Reserve your spot today!
+            Join us {CONFERENCE.date} for two days of cutting-edge insights and networking. Reserve your spot today!
           </p>
         </div>
 
         <div className="grid gap-8 md:grid-cols-[300px_1fr]">
           <Card className="border-primary">
             <CardHeader>
-              <CardTitle>March 2027</CardTitle>
+              <CardTitle>{startDate.toLocaleDateString("en-US", { month: "long", year: "numeric" })}</CardTitle>
             </CardHeader>
             <CardContent>
               <Calendar

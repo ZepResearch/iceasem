@@ -1,6 +1,7 @@
 'use client'
 
 import { useRef, useState, useEffect } from "react"
+import { CONFERENCE } from "@/constants/conference"
 
 export default function SDGSection() {
   const scrollRef = useRef(null)
@@ -73,7 +74,7 @@ export default function SDGSection() {
     <section className="w-full py-16 px-4">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-center text-3xl md:text-5xl font-medium mb-12 text-pretty lea">
-          <span className="font-semibold  ">ICASEM  2025</span> is Dedicated to Advancing the
+          <span className="font-semibold">{CONFERENCE.shortForm} {CONFERENCE.year}</span> is Dedicated to Advancing the
            Nations Sustainable Development Goals (SDGS)
         </h1>
         

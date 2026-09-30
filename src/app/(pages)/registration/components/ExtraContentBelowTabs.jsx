@@ -18,6 +18,7 @@ import {
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import Guidline from "./guidline"
+import { CONFERENCE } from "@/constants/conference"
 
 function ExtraContentBelowTabs() {
   return (
@@ -43,7 +44,7 @@ function ExtraContentBelowTabs() {
                 </div>
 
                 <p className="text-[#07416b]/80 mb-6">
-                  We understand that plans can change. Our cancellation policy for  3<sup>rd</sup>ICASEM 2027 is designed to be fair
+                  We understand that plans can change. Our cancellation policy for {CONFERENCE.shortForm} {CONFERENCE.year} is designed to be fair
                   and flexible:
                 </p>
 
@@ -125,7 +126,7 @@ function ExtraContentBelowTabs() {
 
                 <h3 className="text-xl font-semibold text-[#07416b] mb-3">International Networking</h3>
                 <p className="text-[#07416b]/80">
-                  Connect with researchers and professionals from Kuala Lumper, Malaysia and worldwide
+                  Connect with researchers and professionals in {CONFERENCE.venue.location} and worldwide
                 </p>
               </div>
             </div>
@@ -241,10 +242,9 @@ function ExtraContentBelowTabs() {
               <div className="absolute -inset-px rounded-3xl bg-gradient-to-r from-[#bfdbfe] to-[#93c5fd] opacity-20"></div>
 
               <div className="relative">
-                <h3 className="text-2xl font-bold text-[#07416b] mb-3">Ready to Join  3<sup>rd</sup>ICASEM 2027?</h3>
+                <h3 className="text-2xl font-bold text-[#07416b] mb-3">Ready to Join {CONFERENCE.shortForm} {CONFERENCE.year}?</h3>
                 <p className="text-[#07416b]/80 mb-6">
-                  Register now to secure your spot at the  3<sup>rd</sup>International Conference Applied Science, Engineering &
-                  Management in Kuala Lumper, Malaysia.
+                  Register now to secure your spot at {CONFERENCE.name} in {CONFERENCE.venue.location}.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">

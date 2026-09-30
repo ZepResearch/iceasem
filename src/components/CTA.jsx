@@ -2,58 +2,59 @@ import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Trophy, MapPin, Presentation, Users, Calendar, Building2, ArrowRight, Star } from 'lucide-react'
 import Link from "next/link"
+import { CONFERENCE } from "@/constants/conference"
 
 export default function CtaSection() {
-  const cards = [
-    {
-      id: 'awards',
-      title: 'Awards',
-      description: 'Recognizing outstanding contributions in Applied Science, Engineering & Management, celebrating innovation and excellence that drives technological advancement and societal impact.',
-      href: '/awards',
-      icon: <Trophy className="w-6 h-6" />,
-      color: 'blue'
-    },
-    {
-      id: 'venue',
-      title: 'Venue',
-      description: 'Join us in Vietnam from March 11-12, 2027, or participate virtually through our interactive online platform—experience ICASEM your way.',
-      href: '/venue',
-      icon: <MapPin className="w-6 h-6" />,
-      color: 'navy'
-    },
-    {
-      id: 'sponsorship',
-      title: 'Sponsorship',
-      description: 'Partner with 3rd ICASEM to showcase your organization\'s commitment to Applied Science, Engineering & Management and connect with global industry leaders.',
-      href: '/sponsorship',
-      icon: <Presentation className="w-6 h-6" />,
-      color: 'blue'
-    },
-    {
-      id: 'committee',
-      title: 'Committee',
-      description: 'Meet our distinguished panel of Applied Science, Engineering & Management experts, researchers, and thought leaders shaping the conference\'s vision.',
-      href: '/committee',
-      icon: <Users className="w-6 h-6" />,
-      color: 'navy'
-    },
-    {
-      id: 'schedule',
-      title: 'Schedule',
-      description: 'Explore our comprehensive 2-day agenda featuring keynotes, technical sessions, workshops, and networking events on Applied Science, Engineering & Management.',
-      href: '/schedule',
-      icon: <Calendar className="w-6 h-6" />,
-      color: 'blue'
-    },
-    {
-      id: 'organizer',
-      title: 'Organizer',
-      description: 'Learn about the organizing team behind ICASEM and their dedication to advancing Applied Science, Engineering & Management research and innovation.',
-      href: '/about-organizers',
-      icon: <Building2 className="w-6 h-6" />,
-      color: 'navy'
-    }
-  ]
+    const cards = [
+      {
+        id: 'awards',
+        title: 'Awards',
+        description: 'Recognizing outstanding contributions in Applied Science, Engineering & Management, celebrating innovation and excellence that drives technological advancement and societal impact.',
+        href: '/awards',
+        icon: <Trophy className="w-6 h-6" />,
+        color: 'blue'
+      },
+      {
+        id: 'venue',
+        title: 'Venue',
+        description: `Join us in ${CONFERENCE.venue.location} from ${CONFERENCE.date}, or participate virtually through our interactive online platform—experience ${CONFERENCE.shortForm} your way.`,
+        href: '/venue',
+        icon: <MapPin className="w-6 h-6" />,
+        color: 'navy'
+      },
+      {
+        id: 'sponsorship',
+        title: 'Sponsorship',
+        description: `ssPartner with ${CONFERENCE.shortForm} to showcase your organization's commitment to Applied Science, Engineering & Management and connect with global industry leaders.`,
+        href: '/sponsorship',
+        icon: <Presentation className="w-6 h-6" />,
+        color: 'blue'
+      },
+      {
+        id: 'committee',
+        title: 'Committee',
+        description: 'Meet our distinguished panel of Applied Science, Engineering & Management experts, researchers, and thought leaders shaping the conference\'s vision.',
+        href: '/committee',
+        icon: <Users className="w-6 h-6" />,
+        color: 'navy'
+      },
+      {
+        id: 'schedule',
+        title: 'Schedule',
+        description: `Explore our comprehensive ${CONFERENCE.scheduleDates.days.length}-day agenda featuring keynotes, technical sessions, workshops, and networking events on Applied Science, Engineering & Management.`,
+        href: '/schedule',
+        icon: <Calendar className="w-6 h-6" />,
+        color: 'blue'
+      },
+      {
+        id: 'organizer',
+        title: 'Organizer',
+        description: 'Learn about the organizing team behind ICASEM and their dedication to advancing Applied Science, Engineering & Management research and innovation.',
+        href: '/about-organizers',
+        icon: <Building2 className="w-6 h-6" />,
+        color: 'navy'
+      }
+    ]
 
   return (
     <div className="w-full bg-[#f0f4f8] py-12 lg:py-16">
@@ -68,7 +69,7 @@ export default function CtaSection() {
             Everything You Need to Know
           </h2>
           <p className="text-gray-600 text-lg lg:text-xl max-w-3xl mx-auto leading-relaxed">
-            Discover all aspects of 3<sup>rd</sup>  ICASEM 2027 - from awards and venue details to sponsorship opportunities and our organizing committee
+            Discover all aspects of {CONFERENCE.shortForm} {CONFERENCE.year} - from awards and venue details to sponsorship opportunities and our organizing committee
           </p>
         </div>
 
@@ -136,9 +137,9 @@ export default function CtaSection() {
               </div>
 
               {/* Content */}
-              <h3 className="text-xl font-bold text-[#07416b] mb-4">Vietnam Venue</h3>
+              <h3 className="text-xl font-bold text-[#07416b] mb-4">Venue in {CONFERENCE.venue.location}</h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-6">
-                Join us in the vibrant city of Vietnam from March 11-12, 2027, or participate virtually through our interactive online platform.
+                Join us in {CONFERENCE.venue.location} from {CONFERENCE.date}, or participate virtually through our interactive online platform.
               </p>
 
               {/* Venue Details */}
@@ -153,7 +154,7 @@ export default function CtaSection() {
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-[#07416b] rounded-full"></div>
-                  <span className="text-xs text-gray-600">March 11<sup>th</sup>-12<sup>th</sup>, 2027</span>
+                  <span className="text-xs text-gray-600">{CONFERENCE.date}</span>
                 </div>
               </div>
 
@@ -184,7 +185,7 @@ export default function CtaSection() {
               {/* Content */}
               <h3 className="text-xl font-bold text-[#07416b] mb-4">Partnership</h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-6">
-                Partner with 3<sup>rd</sup> ICASEM to showcase your organization's commitment to Applied Science, Engineering & Management.
+                Partner with {CONFERENCE.shortForm}  to showcase your organization's commitment to Applied Science, Engineering & Management.
               </p>
 
               {/* Sponsorship Levels */}
@@ -371,9 +372,9 @@ export default function CtaSection() {
             <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-24 -translate-x-24"></div>
 
             <div className="relative z-10">
-              <h3 className="text-2xl lg:text-4xl font-bold mb-4">Ready to Join  3<sup>rd</sup>  ICASEM 2027?</h3>
+              <h3 className="text-2xl lg:text-4xl font-bold mb-4">Ready to Join {CONFERENCE.shortForm} {CONFERENCE.year}?</h3>
               <p className="text-lg lg:text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-                Don't miss this opportunity to be part of Vietnam premier Applied Science, Engineering & Management conference
+                Don't miss this opportunity to be part of the Applied Science, Engineering & Management conference in {CONFERENCE.venue.location}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/registration">

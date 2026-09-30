@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Calendar, Clock, ExternalLink } from 'lucide-react';
 import { pb } from '@/lib/pocketbase';
+import { CONFERENCE } from '@/constants/conference';
 
 
 
@@ -73,7 +74,7 @@ const ImportantDatesCard = () => {
               </div>
               <div>
                 <h2 className="text-white font-bold text-lg xl:text-xl">Important Dates</h2>
-                <p className="text-white/80 text-sm">ICASEM 2024</p>
+                <p className="text-white/80 text-sm">{CONFERENCE.shortForm} {CONFERENCE.year}</p>
               </div>
             </div>
             <a 

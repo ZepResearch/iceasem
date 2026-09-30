@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog"
+import { CONFERENCE } from "@/constants/conference"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -73,8 +74,8 @@ export function ReserveForm({ isOpen, onClose, onSubmitSuccess }) {
         <DialogHeader className="bg-gradient-to-bl from-blue-500  to-blue-500 -mx-6 -mt-6 px-6 py-4 rounded-t-lg">
           <DialogTitle className="text-xl font-semibold text-white">Pre-book your slot !</DialogTitle>
           <DialogDescription className="text-white/90">
-            International Conference on Applied Science, Engineering & Management
-            <span className="text-white/80 text-sm mt-1">March 11th - 12th, 2027 • Vietnam </span>
+            {CONFERENCE.name}
+            <span className="text-white/80 text-sm mt-1">{CONFERENCE.date} • {CONFERENCE.venue.location}</span>
           </DialogDescription>
         </DialogHeader>
         <div className="relative">

@@ -1,31 +1,32 @@
 import React from 'react'
 import VenuePage from './Content'
+import { CONFERENCE } from "@/constants/conference"
 
 export const metadata = {
-  title: 'ICASEM 2025 Venue | Intl. Conf. on Science & Engg.',
-  description: 'Learn about ICASEM 2025, a premier conference uniting global experts in applied science, engineering, and management. Join us in Vietnam for groundbreaking research and networking.',
+  title: `${CONFERENCE.shortForm} ${CONFERENCE.year} Venue`,
+  description: `Learn about ${CONFERENCE.name}, a conference uniting global experts in applied science, engineering, and management. Join us in ${CONFERENCE.venue.location} on ${CONFERENCE.date}.`,
   keywords: [
-    'ICASEM 2025',
+    `${CONFERENCE.shortForm} ${CONFERENCE.year}`,
     'about ICASEM',
     'applied science conference',
     'engineering conference',
     'management conference',
-    'Vietnam conference 2025',
+    `${CONFERENCE.venue.location} conference ${CONFERENCE.year}`,
     'academic conference',
     'research conference',
     'scientific networking',
     'innovation conference'
   ],
   openGraph: {
-    title: 'ICASEM 2025 Venue | Intl. Conf. on Science & Engg.',
-    description: 'Join ICASEM 2025 in Vietnam, a top conference for applied science, engineering & management. Connect with global experts & explore groundbreaking research.',
+    title: `${CONFERENCE.shortForm} ${CONFERENCE.year} Venue`,
+    description: `Join ${CONFERENCE.name} in ${CONFERENCE.venue.location} on ${CONFERENCE.date}. Connect with global experts and explore groundbreaking research.`,
     type: 'website',
     
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'About ICASEM 2025',
-    description: 'Join leading experts at ICASEM 2025 in Vietnam. Explore cutting-edge research in applied science, engineering, and management.',
+    title: `${CONFERENCE.shortForm} ${CONFERENCE.year} Venue`,
+    description: `Join leading experts at ${CONFERENCE.name} in ${CONFERENCE.venue.location}. Explore cutting-edge research in applied science, engineering, and management.`,
    
   },
   alternates: {

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Scale, Target, Globe, Shield, FileText, Users, AlertCircle, UserCheck } from 'lucide-react';
+import { CONFERENCE } from "@/constants/conference"
 
 const EqualTreatmentPolicy = () => {
   return (
@@ -25,7 +26,7 @@ const EqualTreatmentPolicy = () => {
             {/* Introduction */}
             <div className="prose max-w-none">
               <p className="text-gray-700 leading-relaxed">
-                The  International Conference on Applied Science, Engineering & Management    is committed to fostering an inclusive, respectful, and equitable environment for all participants. This policy ensures that every attendee, including authors, presenters, delegates, session chairs, reviewers, organizers, and sponsors, is treated fairly and without any form of discrimination.
+                {CONFERENCE.name} is committed to fostering an inclusive, respectful, and equitable environment for all participants. This policy ensures that every attendee, including authors, presenters, delegates, session chairs, reviewers, organizers, and sponsors, is treated fairly and without any form of discrimination.
               </p>
             </div>
 
@@ -77,7 +78,7 @@ const EqualTreatmentPolicy = () => {
                   </div>
                   <div className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
                     <Globe className="w-5 h-5 text-blue-500 flex-shrink-0" />
-                    <span className="text-gray-700 text-sm">All ICASEM 2025 events, including presentations, workshops, networking sessions, and social gatherings</span>
+                    <span className="text-gray-700 text-sm">All {CONFERENCE.shortForm} {CONFERENCE.year} events, including presentations, workshops, networking sessions, and social gatherings</span>
                   </div>
                 </div>
               </div>
@@ -171,7 +172,7 @@ const EqualTreatmentPolicy = () => {
                     <div className="flex items-start space-x-3">
                       <AlertCircle className="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" />
                       <p className="text-gray-700 text-sm">
-                        Any participant who experiences or witnesses unfair treatment, harassment, or discrimination is encouraged to report the issue to the ICASEM 2025 organizing committee.
+                        Any participant who experiences or witnesses unfair treatment, harassment, or discrimination is encouraged to report the issue to the {CONFERENCE.shortForm} {CONFERENCE.year} organizing committee.
                       </p>
                     </div>
                     <div className="flex items-start space-x-3">

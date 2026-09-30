@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Award, Trophy, GraduationCap, Star, Users, FileText } from "lucide-react"
 import Link from "next/link"
+import { CONFERENCE } from "@/constants/conference"
 
 export default function AwardsPage() {
   return (
@@ -95,7 +96,7 @@ export default function AwardsPage() {
                       How are recipients selected?
                     </h3>
                     <p className="text-[#07416b]/80 mb-4">
-                      The Conference Program Committee of The 3<sup>rd</sup>ICASEM will award scholarships to eligible applicants
+                      The Conference Program Committee of {CONFERENCE.shortForm} will award scholarships to eligible applicants
                       who have submitted exceptional abstracts that have passed the blind peer review process and been
                       accepted for presentation at the conference.
                     </p>
@@ -108,7 +109,7 @@ export default function AwardsPage() {
                   <div className="bg-gradient-to-r from-[#00adef] to-[#07416b] rounded-xl p-6 text-white">
                     <h3 className="text-xl font-semibold mb-4">Details of Scholarship</h3>
                     <p className="text-lg">
-                      A <span className="font-bold">50% fee refund</span> will be provided to the best paper and best
+                      Upto <span className="font-bold"> 20% off on next registration</span> will be provided to the best paper and best
                       paper presenters.
                     </p>
                   </div>
@@ -116,8 +117,8 @@ export default function AwardsPage() {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10">
                   <div className="bg-white rounded-xl border border-[#bfdbfe] p-4">
-                    <div className="text-3xl font-bold text-[#00adef] mb-1">50%</div>
-                    <div className="text-[#07416b]/80">Fee Refund</div>
+                    <div className="text-3xl font-bold text-[#00adef] mb-1">20%</div>
+                    <div className="text-[#07416b]/80">Registration Discount</div>
                   </div>
 
                   <div className="bg-white rounded-xl border border-[#bfdbfe] p-4">
@@ -304,7 +305,7 @@ export default function AwardsPage() {
 
                 <div className="space-y-6 text-[#07416b]/80">
                   <p>
-                    All submissions and presentations at  3<sup>rd</sup>ICASEM 2027 will be evaluated by our panel of expert judges,
+                    All submissions and presentations at {CONFERENCE.shortForm} {CONFERENCE.year} will be evaluated by our panel of expert judges,
                     comprising leading researchers, industry professionals, and academic leaders in sustainability,
                     innovation, and future technologies.
                   </p>
@@ -377,7 +378,7 @@ export default function AwardsPage() {
               <div className="relative">
                 <h3 className="text-2xl font-bold text-[#07416b] mb-3">Ready to Showcase Your Research?</h3>
                 <p className="text-[#07416b]/80 mb-6">
-                  Submit your paper and register for  3<sup>rd</sup>ICASEM 2027 to be considered for our prestigious awards.
+                  Submit your paper and register for {CONFERENCE.shortForm} {CONFERENCE.year} to be considered for our prestigious awards.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">

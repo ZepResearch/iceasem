@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { cn } from "@/lib/utils"
 import { Calendar, Clock, FileText, UserCheck, Award, Users, MapPin, Presentation } from "lucide-react"
 import { pb } from "@/lib/pocketbase"
+import { CONFERENCE } from "@/constants/conference"
 
 // Icon mapping based on title keywords for ICASEM
 const getIconForTitle = (title) => {
@@ -95,15 +96,14 @@ export default function TimelineSection() {
             <h2 className="text-3xl lg:text-5xl font-bold text-[#07416b] leading-tight mb-6">
               Important Dates for{" "}
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#00adef] to-[#07416b]">
-                3rd  ICASEM 2027
+                {CONFERENCE.shortForm} {CONFERENCE.year}
               </span>
             </h2>
 
             <div className="h-1 w-20 bg-gradient-to-r from-[#00adef] to-[#07416b] mx-auto mb-8 rounded-full"></div>
 
             <p className="text-gray-600 text-lg lg:text-xl max-w-3xl mx-auto leading-relaxed">
-              Stay updated with all the key dates and deadlines for the International Conference on Applied Science,
-              Engineering & Management
+              Stay updated with all the key dates and deadlines for {CONFERENCE.name}
             </p>
           </div>
         </div>
@@ -202,7 +202,7 @@ export default function TimelineSection() {
               </div>
               <h3 className="text-2xl font-bold text-[#07416b] mb-4">Timeline Coming Soon</h3>
               <p className="text-gray-600 text-lg mb-6">
-                We're finalizing the important dates and deadlines for ICASEM 2025. Check back soon for updates!
+                We're finalizing the important dates and deadlines for {CONFERENCE.shortForm} {CONFERENCE.year}. Check back soon for updates!
               </p>
               <div className="flex flex-wrap justify-center gap-4">
                 <div className="flex items-center gap-2 text-sm text-gray-500">

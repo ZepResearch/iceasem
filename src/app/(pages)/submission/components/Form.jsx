@@ -9,6 +9,7 @@ import { FileText, Upload, ChevronDown, Send } from "lucide-react"
 import { GeometricShapesCSS } from "./geometric-shapes-css"
 import AbstractSubmissionGuidelines from "./SubmitGuidline"
 import Link from "next/link"
+import { CONFERENCE } from "@/constants/conference"
 
 export default function PaperSubmissionPage() {
   const router = useRouter()
@@ -98,7 +99,7 @@ export default function PaperSubmissionPage() {
               </span>
             </h1>
             <h2 className="text-xl text-[#07416b]/80 mb-8">
-              Share your research at 3<sup>rd</sup>ICASEM 2027: International Conference Applied Science, Engineering & Management
+              Share your research at {CONFERENCE.shortForm} {CONFERENCE.year}: {CONFERENCE.name}
             </h2>
             <a href="#guid" className="scroll-smooth transition-all py-2 px-3 bg-gradient-to-tl from-sky-400 via-blue-400 to-cyan-400 rounded-4xl text-white font-semibold hover:drop-shadow-2xl hover:bg-orange-500/90 rounded-3xl">
               Read Submission Guidelines before submitting </a>

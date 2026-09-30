@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { Button } from './ui/button'
 import { Calendar } from 'lucide-react'
 import Link from 'next/link'
+import { CONFERENCE } from "@/constants/conference"
 
 function About() {
   return (
@@ -40,7 +41,7 @@ function About() {
 
               <div className="space-y-4 mb-8">
                 <p className="text-gray-600 text-base lg:text-lg leading-relaxed text-justify">
-                  The  3<sup>rd</sup>  International Conference on Applied Science, Engineering & Management ( 3<sup>rd</sup>  ICASEM) brings together
+                  {CONFERENCE.name} ({CONFERENCE.shortForm}) brings together
                   leading researchers, industry professionals, and academics from around the world to share
                   cutting-edge innovations and foster meaningful collaborations.
                 </p>

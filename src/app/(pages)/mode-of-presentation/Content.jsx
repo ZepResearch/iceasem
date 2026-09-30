@@ -4,6 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Presentation, ImageIcon, Monitor, Check, Users, Globe, Award } from "lucide-react"
+import { CONFERENCE } from "@/constants/conference"
 
 export default function ModeOfPresentationPage() {
   const presentationGuidelines = [
@@ -65,8 +66,7 @@ export default function ModeOfPresentationPage() {
               </span>
             </h1>
             <p className="text-xl text-[#07416b]/80 mb-8">
-              Discover the different ways to present your research at 3<sup>rd</sup>ICASEM 2027: Applied Science, Engineering &
-              Management
+              Discover the different ways to present your research at {CONFERENCE.shortForm} {CONFERENCE.year}: {CONFERENCE.name}
             </p>
 
             {/* Stats */}
@@ -274,7 +274,7 @@ export default function ModeOfPresentationPage() {
                 <h2 className="text-3xl md:text-4xl font-bold text-[#07416b]">Virtual Presentation</h2>
               </div>
               <p className="text-[#07416b]/80 mb-6 text-justify">
-                Can't attend in Vietnam? Present your research virtually through our advanced online platform. This
+                Can't attend in {CONFERENCE.venue.location}? Present your research virtually through our advanced online platform. This
                 hybrid option provides flexibility while still allowing for meaningful engagement with the global
                 Applied Science, Engineering & Management community.
               </p>
@@ -330,7 +330,7 @@ export default function ModeOfPresentationPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-[#07416b] mb-12 text-center">Presentation Guidelines</h2>
             <p className="text-[#07416b]/80 text-center mb-8 text-lg">
               Regardless of your presentation mode, please adhere to the following guidelines to ensure a smooth and
-              engaging experience for all 3<sup>rd</sup>ICASEM 2027 participants:
+              engaging experience for all {CONFERENCE.shortForm} {CONFERENCE.year} participants:
             </p>
 
             <div className="bg-white rounded-3xl p-8 shadow-sm border border-[#00adef]/20">
@@ -412,7 +412,7 @@ export default function ModeOfPresentationPage() {
               <div className="mb-6 md:mb-0 md:mr-6">
                 <h3 className="text-2xl font-bold text-[#07416b] mb-2">Ready to Present Your Research?</h3>
                 <p className="text-[#07416b]/80 max-w-xl">
-                  Choose your preferred presentation mode and submit your proposal for 3<sup>rd</sup> ICASEM 2027. Join the global
+                  Choose your preferred presentation mode and submit your proposal for {CONFERENCE.shortForm} {CONFERENCE.year}. Join the global
                   community of Applied Science, Engineering & Management researchers.
                 </p>
               </div>

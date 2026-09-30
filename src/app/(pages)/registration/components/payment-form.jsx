@@ -1,4 +1,5 @@
 "use client"
+import { CONFERENCE } from "@/constants/conference"
 
 import { useState } from "react"
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
@@ -54,7 +55,7 @@ export function PaymentForm({
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold mb-4 text-[#07416b] flex items-center gap-2">
             <Building2 className="h-6 w-6 text-[#00adef]" />
-            ICASEM 2025 Sponsorship Payment
+            {CONFERENCE.shortForm} {CONFERENCE.year} Sponsorship Payment
           </DialogTitle>
         </DialogHeader>
 

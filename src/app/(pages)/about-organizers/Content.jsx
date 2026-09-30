@@ -3,6 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, Target, Users, Globe, Award, BookOpen, Cog, TrendingUp, Building2 } from "lucide-react"
+import { CONFERENCE } from "@/constants/conference"
 
 export default function AboutOrganizersPage() {
   const teamMembers = [
@@ -117,7 +118,7 @@ export default function AboutOrganizersPage() {
               </span>
             </h1>
             <p className="text-xl text-[#07416b]/80 mb-8">
-              Meet the team behind 3<sup>rd</sup>the International Conference on Applied Science, Engineering & Management
+              Meet the team behind {CONFERENCE.name}
             </p>
           </div>
         </div>
@@ -160,13 +161,13 @@ export default function AboutOrganizersPage() {
           <div className="max-w-4xl mx-auto text-center">
             <h3 className="text-3xl md:text-4xl font-bold text-[#07416b] mb-6">Our Mission</h3>
             <p className="text-xl text-[#07416b]/80 mb-8 text-justify">
-              At 3<sup>rd</sup>ICASEM, our mission is to bridge the gap between theoretical knowledge and practical application by
+              At {CONFERENCE.shortForm}, our mission is to bridge the gap between theoretical knowledge and practical application by
               fostering innovation, encouraging cross-disciplinary collaboration, and accelerating breakthroughs in
               Applied Science, Engineering & Management. We believe that transformative solutions emerge when diverse
               minds unite — researchers, engineers, managers, and innovators working together.
             </p>
             <p className="text-xl text-[#07416b]/80 text-justify">
-              3<sup>rd</sup>ICASEM is more than a conference; it's a catalyst for real-world impact. Our goal is to create a
+              {CONFERENCE.shortForm} is more than a conference; it's a catalyst for real-world impact. Our goal is to create a
               collaborative ecosystem where cutting-edge research meets practical implementation, partnerships flourish
               organically, and emerging talents are empowered to lead the next generation of technological and
               managerial advancement.
@@ -232,7 +233,7 @@ export default function AboutOrganizersPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
               <div className="bg-[#f0f4f8] rounded-3xl p-6 border border-[#00adef]/20">
-                <div className="text-3xl font-bold text-[#07416b] mb-2">2025</div>
+                <div className="text-3xl font-bold text-[#07416b] mb-2">{CONFERENCE.year}</div>
                 <p className="text-[#07416b]/80">Year of Innovation</p>
               </div>
 
@@ -278,7 +279,7 @@ export default function AboutOrganizersPage() {
           <div className="bg-white rounded-3xl p-8 shadow-sm border border-[#00adef]/20">
             <div className="flex flex-col md:flex-row items-center justify-between">
               <div className="mb-6 md:mb-0 md:mr-6">
-                <h3 className="text-2xl font-bold text-[#07416b] mb-2">Partner with 3<sup>rd</sup>ICASEM</h3>
+                <h3 className="text-2xl font-bold text-[#07416b] mb-2">Partner with {CONFERENCE.shortForm}</h3>
                 <p className="text-[#07416b]/80 max-w-xl">
                   Interested in collaborating with us for future conferences or research initiatives? Get in touch to
                   explore partnership opportunities in Applied Science, Engineering & Management.

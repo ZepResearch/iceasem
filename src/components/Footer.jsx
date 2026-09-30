@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { Facebook, Twitter, Instagram, Linkedin, ArrowUp, Calendar, MapPin, Youtube, Mail, Phone, Globe, Users, Award, BookOpen, Building2 } from 'lucide-react'
+import { CONFERENCE } from "@/constants/conference"
 
 export default function Footer() {
   const [showScrollTop, setShowScrollTop] = useState(false)
@@ -167,7 +168,7 @@ export default function Footer() {
 
 
             <p className="text-white/80 mb-6 max-w-xl leading-relaxed">
-              Join us for Vietnam
+              Join us in {CONFERENCE.venue.location} for the
               conference bringing together leading researchers to explore cutting-edge innovations in Applied Science, Engineering & Management.
 
             </p>
@@ -187,7 +188,7 @@ export default function Footer() {
                     <Calendar className="w-5 h-5 text-[#00adef]" />
                   </div>
                   <div>
-                    <p className="text-white font-semibold">March 11 <sup>th</sup> -12<sup>th</sup> , 2027</p>
+                    <p className="text-white font-semibold">{CONFERENCE.date}</p>
                     <p className="text-white/70 text-sm">Two days of innovation and networking</p>
                   </div>
                 </div>
@@ -197,8 +198,8 @@ export default function Footer() {
                     <MapPin className="w-5 h-5 text-[#00adef]" />
                   </div>
                   <div>
-                    <p className="text-white font-semibold">Vietnam</p>
-                    <p className="text-white/70 text-sm">Exact Venue will decalare soon</p>
+                    <p className="text-white font-semibold">{CONFERENCE.venue.location}</p>
+                    <p className="text-white/70 text-sm">{CONFERENCE.venue.name}</p>
                   </div>
                 </div>
 
@@ -297,7 +298,7 @@ export default function Footer() {
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-12">
           <div className="flex flex-col md:flex-row items-center gap-4 mb-4 md:mb-0 md:border-r-2 md:border-b-0 border-b-2 border-white/70  pb-4">
             <p className="text-white/60 text-sm">
-              © 2027 ICASEM. All rights reserved. Organized with excellence in Vietnam.
+              © {CONFERENCE.year} {CONFERENCE.shortForm}. All rights reserved. Organized with excellence in {CONFERENCE.venue.location}.
             </p>
           </div>
           <div className="grid md:grid-cols-4 grid-cols-2  gap-8 text-center">

@@ -1,5 +1,6 @@
 import { ChevronRight, Users, Presentation, Headphones } from "lucide-react"
 import { GeometricShapes } from "./geometric-shapes"
+import { CONFERENCE } from "@/constants/conference"
 
 function ExtraContentAboveCard() {
   return (
@@ -22,7 +23,7 @@ function ExtraContentAboveCard() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center rounded-full border border-[#bfdbfe] bg-[#f0f4f8] px-4 py-1.5 text-sm font-medium text-[#00adef] mb-6">
-              <span>ICASEM 2025</span>
+              <span>{CONFERENCE.shortForm} {CONFERENCE.year}</span>
               <ChevronRight className="ml-1 h-4 w-4" />
             </div>
 
@@ -35,7 +36,7 @@ function ExtraContentAboveCard() {
             </h1>
 
             <p className="text-xl text-[#07416b]/80 mb-8">
-              Join us at the International Conference Applied Science, Engineering & Management in Kuala Lumper, Malaysia
+              Join us at {CONFERENCE.name} in {CONFERENCE.venue.location}
             </p>
           </div>
         </div>

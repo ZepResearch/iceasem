@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin } from "lucide-react"
+import { CONFERENCE } from "@/constants/conference"
 
 
 
@@ -20,8 +21,7 @@ export default function ComplaintsPolicy() {
             <section>
               <h2 className="text-xl font-bold text-[#07416b] mb-4">1. Introduction</h2>
               <p className="text-gray-700 leading-relaxed">
-                The Organizing Committee of the International Conference on Applied Science, Engineering & Management
-                (ICASEM) is committed to providing a professional, respectful, and inclusive environment for all
+                The Organizing Committee of {CONFERENCE.name} ({CONFERENCE.shortForm}) is committed to providing a professional, respectful, and inclusive environment for all
                 participants. We aim to handle all complaints fairly, consistently, and promptly to maintain the
                 integrity and quality of the conference.
               </p>

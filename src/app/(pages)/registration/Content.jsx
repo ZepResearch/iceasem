@@ -15,6 +15,7 @@ import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import ExtraContentBelowTabs from "./components/ExtraContentBelowTabs"
 import ExtraContentAboveCard from "./components/ExtraContentAboveCard"
+import { CONFERENCE } from "@/constants/conference"
 
 export default function RegistrationPage() {
   const router = useRouter()
@@ -431,10 +432,10 @@ export default function RegistrationPage() {
       <section className="py-16 bg-[#f8fbff]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#07416b] mb-6"> 3<sup>rd</sup>ICASEM 2027 Registration</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#07416b] mb-6">{CONFERENCE.shortForm} {CONFERENCE.year} Registration</h2>
             <div className="h-1 w-20 bg-[#00adef] mx-auto mb-8 rounded-full"></div>
             <p className="text-[#07416b] max-w-3xl mx-auto">
-              Join us for  3<sup>rd</sup> the International Conference on Applied Science, Engineering & Management in Vietnam, March 11th - 12th, 2027
+              Join us for {CONFERENCE.name} in {CONFERENCE.venue.location}, {CONFERENCE.date}
             </p>
           </div>
 
@@ -469,7 +470,7 @@ export default function RegistrationPage() {
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold text-[#07416b] mb-3">In-Person Conference Experience</h3>
                 <p className="text-[#07416b] max-w-2xl mx-auto">
-                  Join us in Vietnam for the complete conference experience with face-to-face networking and professional development
+                  Join us in {CONFERENCE.venue.location} for the complete conference experience with face-to-face networking and professional development
                 </p>
               </div>
 

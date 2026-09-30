@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle, Globe, YoutubeIcon } from "lucide-react"
 import "react-phone-number-input/style.css"
 import PhoneInput from "react-phone-number-input"
+import { CONFERENCE } from "@/constants/conference"
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -97,7 +98,7 @@ export default function ContactPage() {
               Us
             </h1>
             <p className="text-xl text-[#07416b]/80 mb-8">
-              Get in touch with the  3<sup>rd</sup>ICASEM team for any inquiries or support
+              Get in touch with the {CONFERENCE.shortForm} team for any inquiries or support
             </p>
           </div>
         </div>
@@ -118,7 +119,7 @@ export default function ContactPage() {
                   <h2 className="text-2xl font-bold text-[#07416b] mb-6">Get In Touch</h2>
 
                   <p className="text-[#07416b]/80 mb-8">
-                    Have questions about  3<sup>rd</sup>ICASEM 2027? Our team is here to help. Reach out to us using the contact
+                    Have questions about {CONFERENCE.shortForm} {CONFERENCE.year}? Our team is here to help. Reach out to us using the contact
                     information below or fill out the form.
                   </p>
 
@@ -156,9 +157,9 @@ export default function ContactPage() {
                       <div>
                         <p className="text-sm text-[#07416b]/70">Conference Location</p>
                         <p className="text-[#07416b] font-medium">
-                          Vietnam
+                          {CONFERENCE.venue.location}
                           <br />
-                          March 11th - 12th, 2027
+                          {CONFERENCE.date}
                         </p>
                       </div>
                     </div>
@@ -172,7 +173,7 @@ export default function ContactPage() {
                       <div>
                         <p className="text-sm text-[#07416b]/70">Conference</p>
                         <p className="text-[#07416b] font-medium">
-                          International Conference Applied Science, Engineering & Management 2027
+                          {CONFERENCE.name}
                         </p>
                       </div>
                     </div>

@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { Card } from "@/components/ui/card"
 import { Target, Users, Lightbulb, Globe, BookOpen, Award, Handshake, TrendingUp } from 'lucide-react'
+import { CONFERENCE } from "@/constants/conference"
 
 export default function ObjectivesSection() {
   return (
@@ -16,7 +17,7 @@ export default function ObjectivesSection() {
             Our Mission & Vision
           </h2>
           <p className="text-gray-600 text-lg lg:text-xl max-w-3xl mx-auto leading-relaxed">
-            3<sup>rd</sup>  ICASEM 2027 aims to foster innovation, collaboration, and knowledge exchange across multiple disciplines
+            {CONFERENCE.shortForm} {CONFERENCE.year} aims to foster innovation, collaboration, and knowledge exchange across multiple disciplines
           </p>
         </div>
 

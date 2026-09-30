@@ -1,14 +1,15 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { CheckCircle, ArrowRight, ArrowLeft, Calendar } from "lucide-react"
+import { CONFERENCE } from "@/constants/conference"
 
 export const submissionSuccessMetadata = {
-  title: "Success Submission | ICASEM: International Conference Applied Science, Engineering & Management",
+  title: `Success Submission | ${CONFERENCE.shortForm}: ${CONFERENCE.name}`,
   description:
-    "Successfully submitted your research to ICASEM 2025 in Kuala Lumpur, Malaysia. Access submission guidelines, important dates, topics of interest, review process details, and submission portal instructions.",
+    `Successfully submitted your research to ${CONFERENCE.name} in ${CONFERENCE.venue.location}. Access submission guidelines, important dates, topics of interest, review process details, and submission portal instructions.`,
   keywords: [
     "ICASEM submission",
-    "Bangkok conference paper",
+    `${CONFERENCE.venue.location} conference paper`,
     "sustainability research",
     "innovation research",
     "future technologies paper",
@@ -21,9 +22,9 @@ export const submissionSuccessMetadata = {
   openGraph: {
     type: "website",
     url: "https://www.icasem.org/submission/success",
-    title: "Paper Submission | ICASEM: International Conference Applied Science, Engineering & Management",
+    title: `Paper Submission | ${CONFERENCE.shortForm}: ${CONFERENCE.name}`,
     description:
-      "Submit your research to ICASEM 2025 in Kuala Lumpur, Malaysia. Access submission guidelines, important dates, topics of interest, review process details, and submission portal instructions.",
+      `Submit your research to ${CONFERENCE.name} in ${CONFERENCE.venue.location}. Access submission guidelines, important dates, topics of interest, review process details, and submission portal instructions.`,
     siteName: "ICASEM",
     images: [
       {
@@ -37,9 +38,9 @@ export const submissionSuccessMetadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Paper Submission | ICASEM: International Conference Applied Science, Engineering & Management",
+    title: `Paper Submission | ${CONFERENCE.shortForm}: ${CONFERENCE.name}`,
     description:
-      "Submit your research to ICASEM 2025 in Kuala Lumpur, Malaysia. Access submission guidelines, important dates, topics of interest, review process details, and submission portal instructions.",
+      `Submit your research to ${CONFERENCE.name} in ${CONFERENCE.venue.location}. Access submission guidelines, important dates, topics of interest, review process details, and submission portal instructions.`,
     images: ["https://www.icasem.org/opengraph.png"],
   },
 
@@ -53,9 +54,9 @@ export const submissionSuccessMetadata = {
     "application/ld+json": JSON.stringify({
       "@context": "https://schema.org",
       "@type": "WebPage",
-      name: "Paper Submission | ICASEM: International Conference Applied Science, Engineering & Management",
+      name: `Paper Submission | ${CONFERENCE.shortForm}: ${CONFERENCE.name}`,
       description:
-        "Submit your research to ICASEM 2025 in Kuala Lumpur, Malaysia. Access submission guidelines, important dates, topics of interest, review process details, and submission portal instructions.",
+        `Submit your research to ${CONFERENCE.name} in ${CONFERENCE.venue.location}. Access submission guidelines, important dates, topics of interest, review process details, and submission portal instructions.`,
       url: "https://www.icasem.org/submission/success",
       mainEntity: {
         "@type": "HowTo",
@@ -120,7 +121,7 @@ export default function SubmissionSuccess() {
               </span>
             </h1>
             <p className="text-xl text-[#4d6672] mb-8">
-              Thank you for contributing to ICASEM 2025: International Conference Applied Science, Engineering & Management
+              Thank you for contributing to {CONFERENCE.name}
             </p>
           </div>
         </div>
@@ -146,8 +147,7 @@ export default function SubmissionSuccess() {
 
                 <div className="space-y-6 text-[#4d6672] max-w-2xl mx-auto">
                   <p>
-                    Thank you for submitting your paper to ICASEM 2025: International Conference on Sustainability,
-                    Innovation, and Future Technologies. Your contribution is an important part of advancing research
+                    Thank you for submitting your paper to {CONFERENCE.name}. Your contribution is an important part of advancing research
                     and collaboration in sustainability and innovation.
                   </p>
 
@@ -185,7 +185,7 @@ export default function SubmissionSuccess() {
 
                   <div className="flex items-center justify-center gap-4 mt-8">
                     <Calendar className="h-5 w-5 text-[#4d6072]" />
-                    <span>Mark your calendar: ICASEM will take place on November 14-15, 2025</span>
+                    <span>Mark your calendar: {CONFERENCE.shortForm} takes place on {CONFERENCE.date}</span>
                   </div>
                 </div>
 
