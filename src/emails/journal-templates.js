@@ -240,7 +240,7 @@ export function getUserEmailTemplate(data) {
         <div class="contact-section">
           <p><strong>📧 Need Assistance?</strong></p>
           <p>If you have any questions, need to make changes to your submission, or require additional information about the conference, please don't hesitate to contact us:</p>
-          <p>📧 Email: <a href="mailto:submit@icasem.org" style="color: #3b82f6;">submit@icasem.org</a><br>
+          <p>📧 Email: <a href="mailto:icasemconference@gmail.com" style="color: #3b82f6;">icasemconference@gmail.com</a><br>
           🌐 Website: <a href="https://icasem.zepresearch.com" style="color: #3b82f6;">icasem.zepresearch.com</a></p>
         </div>
         
@@ -248,7 +248,7 @@ export function getUserEmailTemplate(data) {
           <div class="signature-title">Best regards,</div>
           Conference Organizing Committee<br>
           ICASEM - International Conference on Applied Science, Engineering & Management<br>
-          📧 submit@icasem.org
+          📧 icasemconference@gmail.com
         </div>
       </div>
       
@@ -613,7 +613,7 @@ export function getAdminEmailTemplate(data, fileUrl) {
       <div class="footer">
         <p>© ${new Date().getFullYear()} ICASEM Conference - Administrative System. All rights reserved.</p>
         <div class="footer-links">
-          <a href="mailto:submit@icasem.org">submit@icasem.org</a>
+          <a href="mailto:icasemconference@gmail.com">icasemconference@gmail.com</a>
         </div>
       </div>
     </div>

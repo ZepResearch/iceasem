@@ -17,8 +17,8 @@ export async function POST(request) {
 
     // Send email to admin
     const adminEmailData = await resend.emails.send({
-      from: "submit@icasem.org",
-      to: "submit@icasem.org", // Admin email
+      from: process.env.FROM_EMAIL,
+      to: process.env.ADMIN_EMAIL,
       subject: `ICASEM | New Contact Form Submission: ${subject}`,
       html: adminEmailTemplate({
         name,
@@ -31,7 +31,7 @@ export async function POST(request) {
 
     // Send confirmation email to user
     const userEmailData = await resend.emails.send({
-      from: "submit@icasem.org",
+      from: process.env.FROM_EMAIL,
       to: email, // User's email
       subject: "ICASEM | Thank you for contacting us",
       html: userEmailTemplate({

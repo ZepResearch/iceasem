@@ -55,7 +55,7 @@ export async function POST(request) {
 
     // Send confirmation email to user
     await resend.emails.send({
-      from: "ICASEM|Journal-Submission <submit@icasem.org>",
+      from: process.env.FROM_EMAIL,
       to: data.email,
       subject:
         "Journal Submission Confirmation - ICASEM ",
@@ -64,8 +64,8 @@ export async function POST(request) {
 
     // Send notification email to admin
     await resend.emails.send({
-      from: "ICASEM | Submission <submit@icasem.org>",
-      to: "submit@icasem.org", // Replace with actual admin email
+      from: process.env.FROM_EMAIL,
+      to: process.env.ADMIN_EMAIL,
       subject: "New Journal Submission - from ICASEM",
       html: getAdminEmailTemplate(data, fileUrl),
     })
@@ -79,4 +79,3 @@ export async function POST(request) {
     return NextResponse.json({ success: false, message: "Failed to submit paper" }, { status: 500 })
   }
 }
-

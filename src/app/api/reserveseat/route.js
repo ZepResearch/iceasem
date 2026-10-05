@@ -4,7 +4,6 @@ import { userConfirmationTemplate } from "@/emails/user-confirmation-template"
 import { adminNotificationTemplate } from "@/emails/admin-notification-template"
 
 const resend = new Resend(process.env.RESEND_API_KEY)
-const adminEmail = process.env.ADMIN_EMAIL || "submit@icasem.org"
 
 export async function POST(request) {
   try {
@@ -18,7 +17,7 @@ export async function POST(request) {
 
     // Send confirmation email to user
     await resend.emails.send({
-      from: "ICASEM . <noreply@icasem.org>",
+      from: process.env.FROM_EMAIL,
       to: email,
       subject: "ICASEM. Registration Seat Confirmation",
       html: userConfirmationTemplate(data),
@@ -26,8 +25,8 @@ export async function POST(request) {
 
     // Send notification email to admin
     await resend.emails.send({
-      from: "ICASEM. Registration <noreply@icasem.org>",
-      to: "submit@icasem.org",
+      from: process.env.FROM_EMAIL,
+      to: process.env.ADMIN_EMAIL,
       subject: "New ICASEM. Prebook Registration  ",
       html: adminNotificationTemplate(data),
     })

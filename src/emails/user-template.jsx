@@ -350,7 +350,7 @@ export const userEmailTemplate = (data) => `
                 <div class="detail-item contact">
                     <div class="detail-label contact">Contact:</div>
                     <p class="detail-value">
-                        Email: <a href="mailto:submit@icasem.org" class="detail-link">submit@icasem.org</a><br>
+                        Email: <a href="mailto:icasemconference@gmail.com" class="detail-link">icasemconference@gmail.com</a><br>
                         Phone: <a href="tel:+917848854815" class="detail-link">+91 78488 54815</a>
                     </p>
                 </div>
@@ -358,7 +358,7 @@ export const userEmailTemplate = (data) => `
 
             <!-- CTA Button -->
             <div class="cta-section">
-                <a href="https://www.icasem.org" class="gradient-button">
+                <a href="https://icasem.zepresearch.com" class="gradient-button">
                     EXPLORE CONFERENCE PROGRAM
                 </a>
             </div>
