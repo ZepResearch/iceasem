@@ -1,10 +1,10 @@
 module.exports = {
-    siteUrl: 'https://www.icasem.org',
+    siteUrl: 'https://icasem.zepresearch.com',
     generateRobotsTxt: true,
     exclude: ['/api/*'],
     robotsTxtOptions: {
       additionalSitemaps: [
-        'https://www.icasem.org/api/sitemap.xml',
+        'https://icasem.zepresearch.com/api/sitemap.xml',
       ],
     },
   };
