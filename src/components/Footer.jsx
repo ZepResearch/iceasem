@@ -209,10 +209,10 @@ export default function Footer() {
                   </div>
                   <div>
                     <a
-                      href="mailto:submit@icasem.org"
+                      href="mailto:icasemconference@gmail.com"
                       className="text-white font-semibold hover:text-[#00adef] transition-colors"
                     >
-                      submit@icasem.org
+                      icasemconference@gmail.com
                     </a>
                     <p className="text-white/70 text-sm">Paper submissions & inquiries</p>
                   </div>

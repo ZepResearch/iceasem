@@ -70,7 +70,7 @@ function ExtraContentBelowTabs() {
                 </ul>
 
                 <p className="text-[#07416b]/80 mb-6">
-                  All cancellations must be made in writing to submit@icasem.org. Transfer of registration to another
+                  All cancellations must be made in writing to icasemconference@gmail.com. Transfer of registration to another
                   person is allowed up to 7 days before the conference.
                 </p>
 

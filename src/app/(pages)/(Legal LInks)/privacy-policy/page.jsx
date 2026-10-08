@@ -112,7 +112,7 @@ export default function PrivacyPolicyPage() {
             <div className="text-gray-700 font-medium space-y-2">
               <div className="flex items-center">
                 <Mail className="mr-2 text-primary" />
-                <span>submit@icasem.org</span>
+                <span>icasemconference@gmail.com</span>
               </div>
               <div className="flex items-center">
                 <Phone className="mr-2 text-primary" />

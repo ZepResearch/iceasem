@@ -122,7 +122,7 @@ export default function TermsAndConditionsPage() {
               For inquiries about these terms, please contact the ICASEM Secretariat:
             </p>
             <p className="text-gray-700 font-semibold mt-2">
-              Email: submit@icasem.org<br />
+              Email: icasemconference@gmail.com<br />
               Phone: +91 82600 80050  
             </p>
           </div>

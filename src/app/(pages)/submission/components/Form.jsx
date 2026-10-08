@@ -390,7 +390,7 @@ export default function PaperSubmissionPage() {
                   <svg className="h-8 w-8 text-red-500 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z" /></svg>
                   <div>
                     <p className="text-lg font-semibold text-neutral-900 mb-1">Facing issues submitting?</p>
-                    <p className="text-neutral-700">If you have any trouble submitting your paper, please email us at .</p><a href="mailto:submit@icasem.org" className="underline font-medium">submit@icasem.org</a>
+                    <p className="text-neutral-700">If you have any trouble submitting your paper, please email us at .</p><a href="mailto:icasemconference@gmail.com" className="underline font-medium">icasemconference@gmail.com</a>
                   </div>
                 </div>
               </div>

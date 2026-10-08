@@ -54,7 +54,7 @@ export default function ComplaintsPolicy() {
               </ul>
               <div className="bg-blue-50 border-l-4 border-[#00adef] p-4 rounded">
                 <p className="text-gray-700">
-                  <strong>Complaints should be sent via email to:</strong> submit@icasem.org
+                  <strong>Complaints should be sent via email to:</strong> icasemconference@gmail.com
                 </p>
                 <p className="text-gray-700 mt-2">
                   <strong>Subject line:</strong> Formal Complaint – ICASEM
