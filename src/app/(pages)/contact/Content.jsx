@@ -132,7 +132,7 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <p className="text-sm text-[#07416b]/70">Email</p>
-                        <p className="text-[#07416b] font-medium">icasemconference@gmail.com</p>
+                        <p className="text-[#07416b] font-medium">conferenceicasem@gmail.com</p>
                       </div>
                     </div>
 
