@@ -157,7 +157,7 @@ export const adminNotificationTemplate = (data) => `
         </div>
         <div class="footer">
             <p>ICASEM Admin Notification System</p>
-            <p><a href="https://icasem.zepresearch.com">https://icasem.zepresearch.com</a> | <a href="mailto:icasemconference@gmail.com">icasemconference@gmail.com</a></p>
+            <p><a href="https://icasem.zepresearch.com">https://icasem.zepresearch.com</a> | <a href="mailto:conferenceicasem@gmail.com">conferenceicasem@gmail.com</a></p>
         </div>
     </div>
 </body>

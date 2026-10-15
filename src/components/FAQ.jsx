@@ -132,8 +132,8 @@ export default function FaqSection() {
       icon: <Mail className="w-5 h-5" />,
       title: "Email Support",
       description: "Get detailed answers to your questions",
-      contact: "icasemconference@gmail.com",
-      href: "mailto:icasemconference@gmail.com",
+      contact: "conferenceicasem@gmail.com",
+      href: "mailto:conferenceicasem@gmail.com",
       action: "Send Email",
       type: "link"
     },

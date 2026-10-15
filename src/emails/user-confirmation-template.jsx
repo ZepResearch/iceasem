@@ -250,8 +250,8 @@ export const userConfirmationTemplate = (data) => `
                 <p>We'll send you detailed conference information, including the agenda, accommodation options, and venue details as we get closer to the event date. Get ready for an inspiring experience in vibrant Singapore!</p>
             </div>
             
-            <p>If you have any questions or need assistance, please don't hesitate to contact our conference team at <a href="mailto:icasemconference@gmail.com" style="color: #3b82f6; text-decoration: none;">icasemconference@gmail.com</a>.</p>
-            
+            <p>If you have any questions or need assistance, please don't hesitate to contact our conference team at <a href="mailto:conferenceicasem@gmail.com" style="color: #3b82f6; text-decoration: none;"></a>.</p>
+            conferenceicasem@gmail.com
             <p>We look forward to your valuable participation in this important conference!</p>
             
             <p>Warm regards,<br>

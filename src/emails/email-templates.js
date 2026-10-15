@@ -144,7 +144,7 @@ export function getUserEmailTemplate(data) {
       
     
       
-      <p>If you have any questions or need to make changes to your submission, please contact us at <a href="mailto:icasemconference@gmail.com">icasemconference@gmail.com</a>.</p>
+      <p>If you have any questions or need to make changes to your submission, please contact us at <a href="mailto:conferenceicasem@gmail.com">conferenceicasem@gmail.com</a>.</p>
       
       <p>Best regards,<br>
       ICASEM  Organizing Committee<br>
